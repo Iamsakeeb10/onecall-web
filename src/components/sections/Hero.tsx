@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import { Button } from "@/components/ui/Button";
+import { motion, useReducedMotion } from "framer-motion";
+import { Building2, ShieldCheck, Wrench } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
-import { Wrench, Building2, ShieldCheck } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { useState } from "react";
 
 export function Hero() {
   const [heroImgError, setHeroImgError] = useState(false);
@@ -13,8 +13,8 @@ export function Hero() {
   const shouldReduceMotion = useReducedMotion();
 
   const heroImageUrl = "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1920&q=85";
-  const cardImageUrl = "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80";
-
+  const cardImageUrl = "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80";
+  
   const containerVariants = shouldReduceMotion ? undefined : {
     hidden: { opacity: 0 },
     visible: {

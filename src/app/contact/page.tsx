@@ -1,16 +1,15 @@
-import type { Metadata } from "next";
-import Image from "next/image";
 import { QuoteForm } from "@/components/forms/QuoteForm";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import {
-  Phone,
-  Mail,
-  MapPin,
-  Map,
   Clock,
-  Tag,
-  ShieldCheck
+  Mail,
+  Map,
+  MapPin,
+  Phone,
+  Tag
 } from "lucide-react";
+import type { Metadata } from "next";
+import Image from "next/image";
 
 import { generatePageMetadata } from "@/lib/metadata";
 
@@ -21,8 +20,7 @@ export const metadata: Metadata = generatePageMetadata({
 });
 
 export default function ContactPage() {
-  const heroImageUrl = "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80";
-
+  const heroImageUrl = "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1920&q=80";
   return (
     <>
       {/* Page Hero */}

@@ -51,7 +51,7 @@ export const services: Service[] = [
     title: "Property Cleaning Services",
     description: "Professional cleaning solutions for landlords, commercial spaces, and property managers across Texas.",
     icon: "Sparkles",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80",
     slug: "property-cleaning",
     features: [
       "Move-in / move-out cleaning",

@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { ClientsSection } from "@/components/sections/ClientsSection";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <Hero />
       <StatsBar />
       <ServicesSection />
-      {/* Who We Serve Section - Chunk 4 */}
+      <ClientsSection />
       {/* Why Choose Us Section - Chunk 5 */}
       {/* Testimonials - Chunk 6 */}
       {/* CTA Banner - Chunk 7 */}

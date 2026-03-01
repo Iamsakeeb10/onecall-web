@@ -1,0 +1,94 @@
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/Button";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
+
+interface CTABannerProps {
+  variant?: "dark" | "gold";
+}
+
+export function CTABanner({ variant = "dark" }: CTABannerProps) {
+  const [imgError, setImgError] = useState(false);
+  const backgroundImageUrl = "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1920&q=80";
+
+  if (variant === "gold") {
+    return (
+      <section className="py-20 lg:py-28 bg-gradient-to-r from-gold to-orange">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection variant="fadeUp">
+            <div className="text-center">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-navy-950 mb-4">
+                Ready to Get Started?
+              </h2>
+              <p className="font-body text-lg text-navy-950/80 mb-8 max-w-2xl mx-auto">
+                Contact MEGAFIXX today for professional property maintenance services across Texas.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="secondary" size="lg" asChild>
+                  <Link href="/contact">Get a Free Quote</Link>
+                </Button>
+                <Button variant="ghost" size="lg" asChild>
+                  <Link href="/contact">Contact Us</Link>
+                </Button>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+    );
+  }
+
+  // Dark variant (default)
+  return (
+    <section className="relative py-20 lg:py-28 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        {!imgError ? (
+          <Image
+            src={backgroundImageUrl}
+            alt="Professional property maintenance services Texas"
+            fill
+            className="object-cover"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="w-full h-full bg-navy-950" />
+        )}
+      </div>
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-navy-950/85 z-10" />
+
+      {/* Content */}
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection variant="fadeUp">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            {/* Left Content */}
+            <div className="text-center lg:text-left">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                Ready to Protect Your Properties?
+              </h2>
+              <p className="font-body text-lg text-muted max-w-2xl">
+                Get professional property maintenance services you can trust. 
+                Contact MEGAFIXX today for a free quote.
+              </p>
+            </div>
+
+            {/* Right CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="primary" size="lg" asChild>
+                <Link href="/contact">Get a Free Quote</Link>
+              </Button>
+              <Button variant="secondary" size="lg" asChild>
+                <a href="tel:4693789262">Call Now: (469) 378-9262</a>
+              </Button>
+            </div>
+          </div>
+        </AnimatedSection>
+      </div>
+    </section>
+  );
+}

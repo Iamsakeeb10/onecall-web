@@ -13,7 +13,7 @@ export function ClientsSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="py-20 lg:py-28 bg-navy-800">
+    <section id="clients" className="py-20 lg:py-28 bg-navy-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading

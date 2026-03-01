@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 
 export function ContactSection() {
   return (
-    <section className="py-20 lg:py-28 bg-navy-900">
+    <section id="contact" className="py-20 lg:py-28 bg-navy-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">

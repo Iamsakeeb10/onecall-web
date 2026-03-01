@@ -1,0 +1,77 @@
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
+import { Star } from "lucide-react";
+import { Testimonial } from "@/types";
+
+interface TestimonialCardProps {
+  testimonial: Testimonial;
+}
+
+function getInitials(name: string): string {
+  const parts = name.split(" ");
+  if (parts.length >= 2) {
+    return `${parts[0][0]}${parts[1][0]}`.toUpperCase();
+  }
+  return name.substring(0, 2).toUpperCase();
+}
+
+export function TestimonialCard({ testimonial }: TestimonialCardProps) {
+  const [imgError, setImgError] = useState(false);
+  const initials = getInitials(testimonial.name);
+
+  return (
+    <div className="bg-navy-800 border border-navy-700 rounded-xl p-6 h-full hover:border-gold transition-all duration-300">
+      {/* Stars */}
+      <div className="flex gap-1 mb-4">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <Star
+            key={i}
+            className="w-5 h-5 text-gold fill-gold"
+            aria-hidden="true"
+          />
+        ))}
+      </div>
+
+      {/* Quote */}
+      <p className="font-body text-muted italic mb-6">
+        &quot;{testimonial.content}&quot;
+      </p>
+
+      {/* Author Info */}
+      <div className="flex items-center gap-3">
+        {/* Avatar */}
+        <div className="flex-shrink-0">
+          {!imgError ? (
+            <Image
+              src={testimonial.avatar}
+              alt={testimonial.name}
+              width={48}
+              height={48}
+              className="rounded-full object-cover ring-2 ring-gold"
+              onError={() => setImgError(true)}
+            />
+          ) : (
+            <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center ring-2 ring-gold">
+              <span className="font-display text-sm font-bold text-navy-950">
+                {initials}
+              </span>
+            </div>
+          )}
+        </div>
+
+        {/* Name and Role */}
+        <div className="flex-grow">
+          <p className="font-body text-white font-bold">
+            {testimonial.name}
+          </p>
+          <p className="font-body text-muted text-sm">
+            {testimonial.role}
+            {testimonial.company && `, ${testimonial.company}`}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

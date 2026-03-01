@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Loading() {
   return (
@@ -17,9 +18,16 @@ export default function Loading() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.1 }}
-          className="font-display text-4xl md:text-5xl font-bold text-gold mb-8"
+          className="mb-8"
         >
-          MEGAFIXX
+          <Image
+            src="/images/logo.png"
+            alt="MEGAFIXX Home Services LLC"
+            width={240}
+            height={72}
+            className="h-20 w-auto object-contain mx-auto"
+            priority
+          />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}

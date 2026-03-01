@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { generatePageMetadata } from "@/lib/metadata";
@@ -20,6 +21,16 @@ export default function NotFound() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4">
+        <div className="mb-8">
+          <Image
+            src="/images/logo.png"
+            alt="MEGAFIXX Home Services LLC"
+            width={220}
+            height={66}
+            className="h-16 w-auto object-contain mx-auto"
+            priority
+          />
+        </div>
         <h1 className="font-display text-9xl font-bold text-gold mb-4">
           404
         </h1>

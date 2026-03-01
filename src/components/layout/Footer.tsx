@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -10,14 +11,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Column 1: Company Info */}
           <div>
-            <Link href="/" className="flex flex-col mb-4">
-              <span className="font-display text-2xl font-bold text-white">
-                MEGAFIXX
-              </span>
-              <span className="font-accent text-xs text-gold uppercase tracking-wider">
-                Home Services LLC
-              </span>
-            </Link>
+            <div className="inline-flex items-center rounded-lg bg-white border border-white/30 mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="MEGAFIXX Home Services LLC"
+                width={220}
+                height={66}
+                className="h-16 w-auto object-contain"
+              />
+            </div>
             <p className="font-body text-muted text-sm mb-4">
               Texas-based statewide property maintenance company. Serving property managers, investors, and financial institutions across Texas.
             </p>

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -32,16 +33,21 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between h-20 w-full">
           {/* Logo */}
-          <Link href="/" className="flex flex-col flex-shrink-0">
-            <span className="font-display text-2xl md:text-3xl font-bold text-white">
-              MEGAFIXX
-            </span>
-            <span className="font-accent text-xs text-gold uppercase tracking-wider">
-              Home Services LLC
-            </span>
+          <Link href="/" className="flex items-center">
+            <div className="relative flex items-center justify-center rounded-lg bg-white backdrop-blur-sm border border-white/30 shadow-[0_2px_8px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+              <Image
+                src="/images/logo.png"
+                alt="MEGAFIXX Home Services LLC"
+                width={220}
+                height={66}
+                className="h-12 w-auto sm:h-16 object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

@@ -37,17 +37,27 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between h-20 w-full">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <div className="relative inline-flex items-center justify-center rounded-lg bg-white backdrop-blur-sm border border-white/30 shadow-[0_2px_8px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-              <Image
-                src="/images/logo.png"
-                alt="MEGAFIXX Home Services LLC"
-                width={220}
-                height={66}
-                className="h-12 w-auto sm:h-16 object-contain"
-                priority
-              />
-            </div>
+          <Link href="/" className="flex items-center relative inline-block">
+            {/* Background layer - matches logo size exactly */}
+            <div 
+              className="absolute inset-0 bg-white/80 backdrop-blur-md rounded-lg -z-10"
+              style={{ 
+                width: '100%', 
+                height: '100%',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0
+              }}
+            />
+            <Image
+              src="/images/logo.png"
+              alt="MEGAFIXX Home Services LLC"
+              width={220}
+              height={66}
+              className="relative z-10 h-12 w-auto sm:h-16 object-contain brightness-110 contrast-110"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -2,6 +2,8 @@ import { Hero } from "@/components/sections/Hero";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { ClientsSection } from "@/components/sections/ClientsSection";
+import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
+import { QualityProcess } from "@/components/sections/QualityProcess";
 
 export default function Home() {
   return (
@@ -10,7 +12,8 @@ export default function Home() {
       <StatsBar />
       <ServicesSection />
       <ClientsSection />
-      {/* Why Choose Us Section - Chunk 5 */}
+      <WhyChooseUs />
+      <QualityProcess />
       {/* Testimonials - Chunk 6 */}
       {/* CTA Banner - Chunk 7 */}
     </>

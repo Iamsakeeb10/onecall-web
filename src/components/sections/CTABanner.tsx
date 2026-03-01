@@ -21,17 +21,14 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
           <AnimatedSection variant="fadeUp">
             <div className="text-center">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-navy-950 mb-4">
-                Ready to Get Started?
+                Looking for a Trusted Maintenance Partner?
               </h2>
               <p className="font-body text-lg text-navy-950/80 mb-8 max-w-2xl mx-auto">
-                Contact MEGAFIXX today for professional property maintenance services across Texas.
+                MEGAFIXX Home Services LLC is ready to serve your properties across Texas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="secondary" size="lg" asChild>
-                  <Link href="/contact">Get a Free Quote</Link>
-                </Button>
-                <Button variant="ghost" size="lg" asChild>
-                  <Link href="/contact">Contact Us</Link>
+                  <Link href="/contact">Contact Us Today</Link>
                 </Button>
               </div>
             </div>
@@ -72,8 +69,7 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
                 Ready to Protect Your Properties?
               </h2>
               <p className="font-body text-lg text-muted max-w-2xl">
-                Get professional property maintenance services you can trust. 
-                Contact MEGAFIXX today for a free quote.
+                Partner with Texas&apos;s trusted property maintenance team.
               </p>
             </div>
 

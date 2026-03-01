@@ -8,6 +8,7 @@ import {
   Wrench,
   Paintbrush,
   Home,
+  Trash2,
   ShieldCheck,
   Clock,
   Award
@@ -16,26 +17,26 @@ import {
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "About MEGAFIXX Home Services LLC | Texas Statewide Property Maintenance",
-  description: "Learn about MEGAFIXX Home Services LLC and our commitment to professional property maintenance across Texas. Texas-based. Statewide reach. Built for serious property operators.",
+  title: "About Us | MEGAFIXX Home Services LLC",
+  description: "Texas-based statewide property maintenance company serving property managers, investors, banks, and real estate professionals across Texas. Reliable, insured, and professional.",
   path: "/about"
 });
 
 const serviceCategories = [
   {
-    icon: Wrench,
-    title: "Maintenance & Repairs",
-    description: "Comprehensive property maintenance and minor plumbing repairs to keep properties running smoothly."
-  },
-  {
     icon: Paintbrush,
     title: "Interior Services",
-    description: "Drywall repair, interior painting, and property cleaning services for move-ins and turnovers."
+    description: "Drywall repair, interior painting, property cleaning, and minor plumbing maintenance for residential and commercial properties."
   },
   {
     icon: Home,
     title: "Exterior Services",
-    description: "Gutter cleaning, landscaping, siding repairs, and exterior maintenance to protect property value."
+    description: "Gutter cleaning, siding repair, landscaping, and exterior maintenance to protect and enhance property curb appeal."
+  },
+  {
+    icon: Trash2,
+    title: "Property Cleanouts",
+    description: "Full property cleanouts, debris removal, and junk hauling for rental turnovers, foreclosures, and estate properties."
   }
 ];
 
@@ -43,17 +44,17 @@ const values = [
   {
     icon: ShieldCheck,
     title: "Integrity",
-    description: "We do what we say we'll do, when we say we'll do it. Honest communication and transparent pricing."
+    description: "We operate with full transparency — honest pricing, clear timelines, and no hidden fees."
   },
   {
     icon: Clock,
     title: "Reliability",
-    description: "Consistent, dependable service that you can count on. We show up on time and complete projects on schedule."
+    description: "We show up, meet deadlines, and deliver what we promise. Every time, on every property."
   },
   {
     icon: Award,
     title: "Quality",
-    description: "Every job is completed to the highest standards. We take pride in our workmanship and attention to detail."
+    description: "We take pride in our work. Every job is completed to a professional standard with lasting results."
   }
 ];
 
@@ -88,13 +89,27 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-navy-950/75 z-10" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 text-center">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            About MEGAFIXX Home Services LLC
-          </h1>
-          <p className="font-body text-xl text-muted max-w-3xl mx-auto">
-            Texas-based. Statewide reach. Built for serious property operators.
-          </p>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+          {/* Breadcrumb */}
+          <nav className="mb-6" aria-label="Breadcrumb">
+            <ol className="flex items-center gap-2 text-sm">
+              <li>
+                <Link href="/" className="font-body text-muted hover:text-gold transition-colors duration-300">
+                  Home
+                </Link>
+              </li>
+              <li className="text-muted">/</li>
+              <li className="font-body text-gold">About</li>
+            </ol>
+          </nav>
+          <div className="text-center">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+              About MEGAFIXX Home Services LLC
+            </h1>
+            <p className="font-body text-xl text-muted max-w-3xl mx-auto">
+              Texas-based. Statewide reach. Built for serious property operators.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -108,20 +123,19 @@ export default function AboutPage() {
                   Our Mission
                 </h2>
                 <p className="font-body text-lg text-muted mb-4">
-                  MEGAFIXX Home Services LLC is a trusted statewide property maintenance partner 
-                  serving property managers, investors, financial institutions, and real estate 
-                  professionals across Texas. We understand that every property represents an 
-                  investment — and we treat it accordingly.
+                  MEGAFIXX Home Services LLC is a Texas-based statewide property maintenance partner built for property managers, investors, financial institutions, and real estate professionals. We provide reliable, affordable, and professional maintenance services throughout Texas — designed to protect, preserve, and enhance property value.
                 </p>
-                <p className="font-body text-lg text-muted mb-8">
-                  Our mission is to deliver reliable, professional property maintenance services 
-                  that protect your assets, enhance property value, and provide peace of mind. 
-                  We build long-term partnerships based on trust, quality workmanship, and 
-                  exceptional communication.
+                <p className="font-body text-lg text-muted mb-6">
+                  Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
                 </p>
+                <div className="bg-navy-800 border-l-4 border-gold rounded-lg p-6 mb-8">
+                  <p className="font-body text-lg text-gold italic font-medium">
+                    &quot;We understand that every property represents an investment — and we treat it accordingly.&quot;
+                  </p>
+                </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="primary" size="lg" asChild>
-                    <Link href="/services">View Services</Link>
+                    <Link href="/services">View Our Services</Link>
                   </Button>
                   <Button variant="secondary" size="lg" asChild>
                     <Link href="/contact">Contact Us</Link>
@@ -145,7 +159,10 @@ export default function AboutPage() {
               <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
                 What We Do
               </h2>
-              <div className="w-20 h-1 bg-gold rounded-full mx-auto" />
+              <div className="w-20 h-1 bg-gold rounded-full mx-auto mb-4" />
+              <p className="font-body text-lg text-muted max-w-3xl mx-auto">
+                Comprehensive property maintenance solutions across Texas — from routine upkeep to full property cleanouts.
+              </p>
             </div>
           </AnimatedSection>
 
@@ -193,7 +210,10 @@ export default function AboutPage() {
               <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
                 Serving Clients Across Texas
               </h2>
-              <div className="w-20 h-1 bg-gold rounded-full mx-auto mb-6" />
+              <div className="w-20 h-1 bg-gold rounded-full mx-auto mb-4" />
+              <p className="font-body text-lg text-muted max-w-2xl mx-auto mb-6">
+                No matter where your property is located in Texas, MEGAFIXX Home Services LLC delivers dependable maintenance solutions.
+              </p>
               <p className="font-body text-lg text-muted max-w-2xl mx-auto">
                 Major cities: Dallas, Houston, Austin, San Antonio
               </p>
@@ -255,14 +275,19 @@ export default function AboutPage() {
           <AnimatedSection variant="fadeUp">
             <div className="bg-navy-800 border border-gold/30 rounded-2xl p-8 md:p-12 text-center">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Work with MEGAFIXX?
+                Ready to Protect Your Properties?
               </h2>
               <p className="font-body text-lg text-muted mb-8 max-w-2xl mx-auto">
-                Let&apos;s discuss how we can help maintain and protect your property portfolio across Texas.
+                Partner with Texas&apos;s trusted property maintenance team.
               </p>
-              <Button variant="primary" size="lg" asChild>
-                <Link href="/contact">Get Started</Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="primary" size="lg" asChild>
+                  <Link href="/contact">Get a Free Quote</Link>
+                </Button>
+                <Button variant="secondary" size="lg" asChild>
+                  <a href="tel:4693789262">Call Now: (469) 378-9262</a>
+                </Button>
+              </div>
             </div>
           </AnimatedSection>
         </div>

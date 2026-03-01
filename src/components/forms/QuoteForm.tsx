@@ -87,9 +87,12 @@ export function QuoteForm() {
           role="alert"
           aria-live="polite"
         >
-          <p className="font-body font-medium">
-            Thank you! We&apos;ll be in touch within 24 hours.
-          </p>
+          <div>
+            <h3 className="font-display text-lg font-bold mb-2">Thank you!</h3>
+            <p className="font-body">
+              We&apos;ll be in touch within 24 hours. Our team at MEGAFIXX Home Services LLC will review your request and contact you shortly.
+            </p>
+          </div>
         </div>
       )}
 
@@ -128,7 +131,7 @@ export function QuoteForm() {
       {/* Company Name */}
       <div>
         <label htmlFor="companyName" className="block font-body text-sm font-medium text-white mb-2">
-          Company Name
+          Company Name (Optional)
         </label>
         <input
           type="text"
@@ -207,7 +210,7 @@ export function QuoteForm() {
           aria-describedby={errors.propertyType ? "propertyType-error" : undefined}
           aria-invalid={errors.propertyType ? "true" : "false"}
         >
-          <option value="">Select property type</option>
+          <option value="" disabled>Select Property Type</option>
           {propertyTypes.map((type) => (
             <option key={type} value={type} className="bg-navy-800">
               {type}
@@ -237,7 +240,7 @@ export function QuoteForm() {
           aria-describedby={errors.serviceNeeded ? "serviceNeeded-error" : undefined}
           aria-invalid={errors.serviceNeeded ? "true" : "false"}
         >
-          <option value="">Select a service</option>
+          <option value="" disabled>Select a Service</option>
           {services.map((service) => (
             <option key={service.id} value={service.title} className="bg-navy-800">
               {service.title}

@@ -56,9 +56,7 @@ export default function ServicesPage() {
 
           {/* Intro Paragraph */}
           <p className="font-body text-lg text-muted max-w-3xl">
-            MEGAFIXX Home Services LLC provides comprehensive property maintenance solutions across Texas. 
-            From routine maintenance to specialized repairs, we deliver professional, reliable service 
-            tailored to property managers, investors, and financial institutions statewide.
+            MEGAFIXX Home Services LLC provides reliable, affordable, and professional property maintenance services throughout Texas. We serve homeowners, landlords, property managers, real estate investors, and commercial clients across the state with solutions designed to protect, preserve, and enhance property value.
           </p>
         </div>
       </section>
@@ -82,15 +80,17 @@ export default function ServicesPage() {
           <AnimatedSection variant="fadeUp" delay={0.8}>
             <div className="text-center bg-navy-800 rounded-xl p-8 border border-navy-700">
               <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-4">
-                Need a Custom Maintenance Plan?
+                Looking for a Professional Property Maintenance Company in Texas?
               </h2>
               <p className="font-body text-muted mb-6 max-w-2xl mx-auto">
-                Our team can create a tailored maintenance program that fits your property portfolio&apos;s unique needs. 
-                Contact us today to discuss your requirements.
+                If you&apos;re searching for property maintenance services in Texas — residential, commercial, rental, or investment properties — MEGAFIXX Home Services LLC is your trusted statewide partner.
               </p>
               <Button variant="primary" size="lg" asChild>
-                <Link href="/contact">Get Started</Link>
+                <Link href="/contact">Get a Free Quote</Link>
               </Button>
+              <p className="font-body text-muted mt-6 text-sm">
+                📞 (469) 378-9262  |  📧 info@megafixxhomeservices.com
+              </p>
             </div>
           </AnimatedSection>
         </div>

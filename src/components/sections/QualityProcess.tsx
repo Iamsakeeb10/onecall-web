@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Camera, ShieldCheck, Megaphone } from "lucide-react";
+import { Camera, ShieldCheck, Bell } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
@@ -10,19 +10,19 @@ const steps = [
     number: "01",
     icon: Camera,
     title: "Detailed Documentation",
-    description: "Every project includes comprehensive before and after photos, detailed reports, and complete documentation for your records."
+    description: "We provide before photos, progress documentation, and completion photos. This ensures transparency, accountability, and verifiable results."
   },
   {
     number: "02",
     icon: ShieldCheck,
-    title: "Team Screening",
-    description: "All team members and vendors undergo thorough screening and background checks to ensure the highest standards."
+    title: "Vendor & Team Screening",
+    description: "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent MEGAFIXX on your property."
   },
   {
     number: "03",
-    icon: Megaphone,
+    icon: Bell,
     title: "Proactive Communication",
-    description: "We keep you informed at every step with regular updates, progress reports, and immediate notification of any issues."
+    description: "We notify stakeholders before service visits and provide status updates throughout the job lifecycle. Upon completion, we follow up to confirm satisfaction."
   }
 ];
 
@@ -32,8 +32,8 @@ export function QualityProcess() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
-            title="Quality Assurance Process"
-            subtitle="Our commitment to excellence in every project"
+            title="Our Quality Assurance Process"
+            subtitle="Maintaining high standards across Texas requires structured processes."
             align="center"
           />
         </AnimatedSection>

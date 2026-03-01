@@ -68,15 +68,13 @@ export default function ClientsPage() {
                   Building Long-Term Partnerships
                 </h2>
                 <p className="font-body text-lg text-muted mb-4">
-                  At MEGAFIXX Home Services LLC, we take pride in building long-term partnerships 
-                  with property managers, investors, financial institutions, and real estate professionals 
-                  across Texas. Our commitment to reliability, quality, and professional communication 
-                  has made us the trusted choice for property maintenance statewide.
+                  At MEGAFIXX Home Services LLC, we take pride in building long-term partnerships with clients across Texas. Our reputation is built on reliability, professional execution, and consistent performance across residential and commercial properties.
                 </p>
-                <p className="font-body text-lg text-muted">
-                  We understand that every property represents an investment, and we treat it accordingly. 
-                  From single-family homes to large portfolios, we deliver consistent, professional 
-                  service that protects your assets and enhances property value.
+                <p className="font-body text-lg text-muted mb-4">
+                  We understand that every property represents an investment — and we treat it accordingly. Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
+                </p>
+                <p className="font-body text-lg text-gold italic font-medium">
+                  &quot;We build relationships based on performance, accountability, and trust.&quot;
                 </p>
               </div>
             </AnimatedSection>
@@ -86,20 +84,20 @@ export default function ClientsPage() {
                 <h3 className="font-display text-2xl font-bold text-white mb-6">By The Numbers</h3>
                 <div className="space-y-6">
                   <div>
-                    <div className="text-4xl font-display font-bold text-gold mb-2">10+</div>
-                    <div className="font-body text-muted">Years of Experience</div>
-                  </div>
-                  <div>
                     <div className="text-4xl font-display font-bold text-gold mb-2">500+</div>
                     <div className="font-body text-muted">Properties Maintained</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-gold mb-2">100%</div>
-                    <div className="font-body text-muted">Client Satisfaction</div>
+                    <div className="text-4xl font-display font-bold text-gold mb-2">Texas</div>
+                    <div className="font-body text-muted">Statewide Coverage</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-gold mb-2">Statewide</div>
-                    <div className="font-body text-muted">Texas Coverage</div>
+                    <div className="text-4xl font-display font-bold text-gold mb-2">100%</div>
+                    <div className="font-body text-muted">Fully Insured</div>
+                  </div>
+                  <div>
+                    <div className="text-4xl font-display font-bold text-gold mb-2">10+</div>
+                    <div className="font-body text-muted">Years Experience</div>
                   </div>
                 </div>
               </div>
@@ -158,22 +156,22 @@ export default function ClientsPage() {
               {
                 icon: Clock,
                 title: "Reliability",
-                description: "We respond quickly, meet deadlines, and keep projects moving forward. Your properties are our priority."
+                description: "We understand that time is critical. Our team responds quickly, meets deadlines, and ensures projects move forward without delays."
               },
               {
                 icon: Award,
                 title: "Quality Workmanship",
-                description: "Every service is completed with attention to detail and professional standards that exceed expectations."
+                description: "Every service is completed with attention to detail and durability in mind. We focus on long-term solutions — not temporary fixes."
               },
               {
                 icon: BarChart,
                 title: "Scalable Solutions",
-                description: "One-time repairs or ongoing contracts, we tailor our services to fit your portfolio's unique needs."
+                description: "Whether you need one-time repairs or ongoing maintenance contracts, we tailor our services to fit your operational needs."
               },
               {
                 icon: MessageSquare,
                 title: "Professional Communication",
-                description: "Clear updates before, during, and after every project. You always know what's happening and when."
+                description: "We maintain clear communication before, during, and after each project. Our clients stay informed at every stage."
               }
             ].map((feature, index) => (
               <AnimatedSection
@@ -217,19 +215,19 @@ export default function ClientsPage() {
                 number: "01",
                 icon: Camera,
                 title: "Detailed Documentation",
-                description: "Every project includes comprehensive before and after photos, detailed reports, and complete documentation for your records."
+                description: "We provide before photos, progress documentation, and completion photos. This ensures transparency, accountability, and verifiable results."
               },
               {
                 number: "02",
                 icon: ShieldCheck,
                 title: "Vendor & Team Screening",
-                description: "All team members and vendors undergo thorough screening and background checks to ensure the highest standards."
+                description: "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent MEGAFIXX on your property."
               },
               {
                 number: "03",
                 icon: Bell,
                 title: "Proactive Communication",
-                description: "We keep you informed at every step with regular updates, progress reports, and immediate notification of any issues."
+                description: "We notify stakeholders before service visits and provide status updates throughout the job lifecycle. Upon completion, we follow up to confirm satisfaction."
               }
             ].map((step, index) => (
               <AnimatedSection
@@ -271,8 +269,7 @@ export default function ClientsPage() {
                 Ready to Partner with MEGAFIXX?
               </h2>
               <p className="font-body text-lg text-muted mb-8 max-w-2xl mx-auto">
-                Join the property professionals across Texas who trust MEGAFIXX for reliable, 
-                professional property maintenance services.
+                At MEGAFIXX Home Services LLC, our clients are at the center of everything we do. We are committed to exceeding expectations and delivering consistent, professional property maintenance services across Texas.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
                 <a

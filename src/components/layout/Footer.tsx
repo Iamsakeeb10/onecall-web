@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-navy-950 text-white border-t-2 border-gold/20">
@@ -21,7 +20,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="font-body text-muted text-sm mb-4">
-              Professional property maintenance services across Texas. Trusted by property managers, investors, and financial institutions statewide.
+              Texas-based statewide property maintenance company. Serving property managers, investors, and financial institutions across Texas.
             </p>
             <div className="flex items-center gap-2 text-gold">
               <span className="text-xs font-accent uppercase">Fully Insured</span>
@@ -86,7 +85,7 @@ export function Footer() {
                   href="/services"
                   className="font-body text-muted hover:text-gold transition-colors duration-300 text-sm"
                 >
-                  Property Maintenance
+                  General Maintenance
                 </Link>
               </li>
               <li>
@@ -119,6 +118,14 @@ export function Footer() {
                   className="font-body text-muted hover:text-gold transition-colors duration-300 text-sm"
                 >
                   Landscaping
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="font-body text-muted hover:text-gold transition-colors duration-300 text-sm"
+                >
+                  Siding & Exterior
                 </Link>
               </li>
               <li>
@@ -211,7 +218,7 @@ export function Footer() {
         <div className="border-t border-navy-700 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-body text-muted text-sm text-center md:text-left">
-              &copy; {currentYear} MEGAFIXX Home Services LLC. All rights reserved.
+              &copy; 2026 MEGAFIXX Home Services LLC. All rights reserved.
             </p>
             <Link
               href="/terms"

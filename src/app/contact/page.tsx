@@ -17,7 +17,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Contact Us | MEGAFIXX Home Services LLC",
-  description: "Get in touch with MEGAFIXX for professional property maintenance services. Serving all of Texas statewide.",
+  description: "Contact MEGAFIXX Home Services LLC for professional property maintenance across Texas. Call (469) 378-9262 or email info@megafixxhomeservices.com for a free estimate.",
   path: "/contact"
 });
 
@@ -74,9 +74,12 @@ export default function ContactPage() {
             {/* Left: Quote Form (60%) */}
             <div className="lg:col-span-3">
               <AnimatedSection variant="fadeLeft">
-                <h2 className="font-display text-3xl font-bold text-white mb-6">
-                  Request a Quote
+                <h2 className="font-display text-3xl font-bold text-white mb-2">
+                  Request a Free Quote
                 </h2>
+                <p className="font-body text-muted mb-6">
+                  Fill out the form below and we&apos;ll get back to you within 24 hours.
+                </p>
                 <QuoteForm />
               </AnimatedSection>
             </div>
@@ -137,9 +140,9 @@ export default function ContactPage() {
                       <div className="flex items-start gap-3">
                         <Clock className="w-5 h-5 text-gold mt-1 flex-shrink-0" aria-hidden="true" />
                         <div>
-                          <p className="font-body text-white mb-1">Mon–Fri 8AM–6PM</p>
-                          <p className="font-body text-white mb-1">Sat 9AM–4PM</p>
-                          <p className="font-body text-white">Sun Closed</p>
+                          <p className="font-body text-white mb-1">Monday – Friday: 8:00 AM – 6:00 PM</p>
+                          <p className="font-body text-white mb-1">Saturday: 9:00 AM – 4:00 PM</p>
+                          <p className="font-body text-white">Sunday: Closed</p>
                         </div>
                       </div>
                     </div>
@@ -171,17 +174,17 @@ export default function ContactPage() {
               {
                 icon: Clock,
                 title: "Fast Response",
-                description: "We respond within 24 hours"
+                description: "We respond to all inquiries within 24 hours"
               },
               {
                 icon: Tag,
                 title: "Free Estimates",
-                description: "No-obligation project estimate"
+                description: "Get a no-obligation project estimate"
               },
               {
                 icon: Map,
                 title: "Statewide Coverage",
-                description: "All major regions across Texas"
+                description: "We serve all major regions across Texas"
               }
             ].map((card, index) => (
               <AnimatedSection

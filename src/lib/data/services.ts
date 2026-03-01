@@ -4,96 +4,94 @@ export const services: Service[] = [
   {
     id: "maintenance-plumbing",
     title: "General Property Maintenance & Minor Plumbing",
-    description: "Professional maintenance and minor plumbing repairs to keep your properties running smoothly.",
+    description: "Prevent costly repairs with routine and responsive property maintenance. We keep residential and commercial properties operating efficiently year-round.",
     icon: "Wrench",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
-    slug: "maintenance-plumbing",
+    slug: "general-maintenance",
     features: [
       "Leaking faucet repairs",
       "Running toilet fixes",
       "Clogged drain service",
       "Fixture replacement",
-      "Minor plumbing maintenance"
+      "Minor plumbing maintenance",
+      "General repair work"
     ]
   },
   {
     id: "gutter-cleaning",
-    title: "Gutter Cleaning",
-    description: "Comprehensive gutter cleaning and maintenance to protect your property from water damage.",
+    title: "Gutter Cleaning & Preventative Maintenance",
+    description: "Protect your property from water damage and foundation issues. Texas weather demands proactive property care.",
     icon: "Droplets",
     image: "https://images.unsplash.com/photo-1628348070889-cb656235b4eb?auto=format&fit=crop&w=800&q=80",
     slug: "gutter-cleaning",
     features: [
-      "Full gutter clearing",
-      "Downspout flushing",
-      "Debris removal",
-      "Flow testing",
-      "Seasonal maintenance"
+      "Gutter debris removal",
+      "Downspout clearing",
+      "Drainage inspection",
+      "Seasonal preventative maintenance"
     ]
   },
   {
     id: "drywall-painting",
     title: "Drywall Repair & Interior Painting",
-    description: "Expert drywall repair and interior painting services for a professional finish.",
+    description: "Maintain a clean, professional interior. Ideal for rental turnovers and investment properties.",
     icon: "Paintbrush",
     image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80",
     slug: "drywall-painting",
     features: [
-      "Hole & crack patching",
-      "Texture matching",
+      "Drywall patching",
+      "Water damage repair",
       "Interior painting",
-      "Touch-up work",
-      "Surface prep"
+      "Texture matching",
+      "Rental property refresh"
     ]
   },
   {
     id: "property-cleaning",
-    title: "Property Cleaning",
-    description: "Thorough property cleaning services for move-ins, move-outs, and regular maintenance.",
+    title: "Property Cleaning Services",
+    description: "Professional cleaning solutions for landlords, commercial spaces, and property managers across Texas.",
     icon: "Sparkles",
     image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     slug: "property-cleaning",
     features: [
-      "Move-in/move-out cleans",
+      "Move-in / move-out cleaning",
       "Deep cleaning",
-      "Post-construction cleanup",
-      "Recurring maintenance cleans"
+      "Post-renovation cleaning",
+      "Routine maintenance cleaning"
     ]
   },
   {
     id: "landscaping-exterior",
-    title: "Landscaping & Exterior",
-    description: "Professional landscaping and exterior maintenance to enhance property curb appeal.",
+    title: "Landscaping & Exterior Property Maintenance",
+    description: "Improve curb appeal and long-term property value with professional exterior maintenance.",
     icon: "Leaf",
     image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80",
-    slug: "landscaping-exterior",
+    slug: "landscaping",
     features: [
-      "Lawn mowing",
-      "Edging & trimming",
-      "Shrub pruning",
-      "Leaf removal",
-      "Seasonal cleanup"
+      "Lawn maintenance",
+      "Hedge trimming",
+      "Seasonal yard cleanups",
+      "Exterior upkeep services"
     ]
   },
   {
     id: "siding-exterior-repairs",
     title: "Siding & Exterior Repairs",
-    description: "Quality siding and exterior repair services to maintain property value and appearance.",
+    description: "Durable solutions designed for Texas conditions. Protect your investment with professional exterior repair.",
     icon: "Home",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
-    slug: "siding-exterior-repairs",
+    slug: "siding-exterior",
     features: [
-      "Siding panel replacement",
-      "Caulking & sealing",
-      "Fascia & soffit repair",
-      "Exterior patching",
-      "Weather damage repair"
+      "Siding repair",
+      "Panel replacement",
+      "Storm damage repair",
+      "Exterior structural maintenance"
     ]
   },
   {
     id: "property-cleanouts",
-    title: "Property Cleanouts",
-    description: "Complete property cleanout services for vacant properties, estates, and turnovers.",
+    title: "Property Cleanouts & Debris Removal",
+    description: "Fast, reliable cleanout service across Texas for rental turnovers, foreclosures, and general junk removal.",
     icon: "Trash2",
     image: "https://images.unsplash.com/photo-1603796846097-bee99e4a601f?auto=format&fit=crop&w=800&q=80",
     slug: "property-cleanouts",

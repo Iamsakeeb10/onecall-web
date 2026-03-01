@@ -4,7 +4,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Terms & Conditions | MEGAFIXX Home Services LLC",
-  description: "Terms and conditions for MEGAFIXX Home Services LLC property maintenance services.",
+  description: "Terms and Conditions for MEGAFIXX Home Services LLC. Governing use of our website and services. Collin County, Texas.",
   path: "/terms"
 });
 
@@ -12,52 +12,132 @@ const termsContent = [
   {
     id: "acceptance",
     title: "Acceptance of Terms",
-    content: `By accessing and using the services of MEGAFIXX Home Services LLC ("Company", "we", "us", or "our"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.`
+    content: [
+      "By accessing or using the MEGAFIXX Home Services LLC website (\"Website\"), you agree to be bound by these Terms & Conditions and our Privacy Policy. If you do not agree with any part of these terms, please do not use this Website.",
+      "We reserve the right to update or modify these Terms at any time without prior notice. Continued use of the Website constitutes acceptance of any changes."
+    ]
   },
   {
-    id: "services",
-    title: "Services Provided",
-    content: `MEGAFIXX Home Services LLC provides professional property maintenance services across Texas, including but not limited to: general property maintenance, minor plumbing, gutter cleaning, drywall repair, interior painting, property cleaning, landscaping, exterior repairs, and property cleanouts. Services are provided on a project basis or through ongoing maintenance contracts.`
+    id: "website-services",
+    title: "Website Services",
+    content: [
+      "This Website is provided for informational purposes regarding handyman, renovation, maintenance, and related home services offered by MEGAFIXX Home Services LLC.",
+      "All content and services are provided on an \"AS IS\" basis. We reserve the right to modify, suspend, or discontinue any portion of the Website at any time without notice.",
+      "We are not responsible for:",
+      "• Temporary unavailability of the Website",
+      "• Technical errors",
+      "• Inaccurate or outdated information"
+    ]
   },
   {
-    id: "pricing",
-    title: "Pricing and Payment",
-    content: `All pricing is provided in writing before work begins. Estimates are valid for 30 days unless otherwise specified. Payment terms will be outlined in the service agreement. Full payment is due upon completion of work unless other arrangements have been made in writing.`
+    id: "user-responsibilities",
+    title: "User Responsibilities",
+    content: [
+      "If you submit information through contact forms, service requests, or account registration:",
+      "• You agree to provide accurate and truthful information.",
+      "• You are responsible for maintaining confidentiality of any login credentials.",
+      "• You must notify us immediately of unauthorized use of your account."
+    ]
+  },
+  {
+    id: "privacy",
+    title: "Privacy",
+    content: [
+      "Any personal information collected through this Website is handled in accordance with our Privacy Policy. We do not sell personal information."
+    ]
+  },
+  {
+    id: "acceptable-use",
+    title: "Acceptable Use",
+    content: [
+      "You agree not to:",
+      "• Use this Website for unlawful purposes",
+      "• Submit false, misleading, defamatory, or harmful content",
+      "• Attempt to interfere with Website functionality",
+      "• Upload viruses or malicious software",
+      "• Engage in spam or unauthorized marketing",
+      "We reserve the right to restrict access for violations of these Terms."
+    ]
+  },
+  {
+    id: "estimates",
+    title: "Service Estimates & Contracts",
+    content: [
+      "All project estimates provided via the Website or email are:",
+      "• Non-binding until confirmed in writing",
+      "• Subject to on-site inspection",
+      "• Subject to material cost changes",
+      "• Subject to availability of labor and scheduling",
+      "A separate written service agreement may be required for project execution."
+    ]
+  },
+  {
+    id: "third-party",
+    title: "Third-Party Services",
+    content: [
+      "This Website may reference third-party products, materials, or services. MEGAFIXX Home Services LLC is not responsible for third-party representations, warranties, or performance."
+    ]
+  },
+  {
+    id: "ip",
+    title: "Intellectual Property",
+    content: [
+      "All content on this Website — including logos, text, images, service descriptions, and branding — is the property of MEGAFIXX Home Services LLC and may not be reproduced without written permission."
+    ]
   },
   {
     id: "liability",
-    title: "Liability and Insurance",
-    content: `MEGAFIXX Home Services LLC is fully insured and licensed. We carry general liability insurance and workers' compensation insurance as required by law. Our liability is limited to the cost of the services provided. We are not responsible for damage to property that existed prior to our service or damage caused by factors beyond our control.`
+    title: "Limitation of Liability",
+    content: [
+      "To the fullest extent permitted by Texas law, MEGAFIXX Home Services LLC shall not be liable for:",
+      "• Direct or indirect damages",
+      "• Loss of profits",
+      "• Property damage beyond contract scope",
+      "• Delays caused by weather, supply chain, or third parties",
+      "• Consequential or incidental damages",
+      "Your use of this Website is at your own risk."
+    ]
   },
   {
-    id: "warranty",
-    title: "Workmanship Warranty",
-    content: `We stand behind our work and provide a warranty on workmanship for a period of 90 days from completion, unless otherwise specified in writing. This warranty covers defects in workmanship but does not cover normal wear and tear, damage from misuse, or damage from external factors.`
+    id: "warranties",
+    title: "Disclaimer of Warranties",
+    content: [
+      "The Website and its content are provided without warranties of any kind, either express or implied, including but not limited to:",
+      "• Merchantability",
+      "• Fitness for a particular purpose",
+      "• Non-infringement",
+      "We do not guarantee uninterrupted, error-free, or secure Website access."
+    ]
   },
   {
-    id: "cancellation",
-    title: "Cancellation Policy",
-    content: `Clients may cancel scheduled services with at least 24 hours notice without penalty. Cancellations with less than 24 hours notice may be subject to a cancellation fee. Emergency services may have different cancellation terms as specified in the service agreement.`
+    id: "indemnification",
+    title: "Indemnification",
+    content: [
+      "You agree to indemnify and hold harmless MEGAFIXX Home Services LLC, its owners, employees, contractors, and affiliates from any claims, damages, or legal expenses arising from your misuse of the Website or violation of these Terms."
+    ]
   },
   {
-    id: "property",
-    title: "Property Access",
-    content: `Clients are responsible for providing safe and accessible property access. We reserve the right to refuse service if conditions are unsafe or if access is not provided as agreed. Clients must secure pets and remove personal belongings from work areas.`
+    id: "governing-law",
+    title: "Governing Law",
+    content: [
+      "These Terms shall be governed by the laws of the State of Texas. Any disputes shall be resolved in courts located in Collin County, Texas."
+    ]
   },
   {
-    id: "disputes",
-    title: "Dispute Resolution",
-    content: `Any disputes arising from services provided will be resolved through good faith negotiation. If a resolution cannot be reached, disputes will be resolved through binding arbitration in Collin County, Texas, in accordance with Texas state law.`
+    id: "copyright",
+    title: "Copyright & Contact",
+    content: [
+      "If you believe any material on this Website infringes your intellectual property rights, please contact:"
+    ],
+    contactInfo: true
   },
   {
-    id: "modifications",
-    title: "Modifications to Terms",
-    content: `MEGAFIXX Home Services LLC reserves the right to modify these terms and conditions at any time. Clients will be notified of significant changes. Continued use of our services after changes constitutes acceptance of the modified terms.`
-  },
-  {
-    id: "contact",
-    title: "Contact Information",
-    content: `For questions about these terms and conditions, please contact us at info@megafixxhomeservices.com or (469) 378-9262.`
+    id: "miscellaneous",
+    title: "Miscellaneous",
+    content: [
+      "If any provision of these Terms is deemed invalid or unenforceable, the remaining provisions shall remain in full force.",
+      "Failure to enforce any provision shall not constitute a waiver of rights."
+    ]
   }
 ];
 
@@ -92,13 +172,13 @@ export default function TermsPage() {
             <div className="sticky top-24">
               <h2 className="font-display text-xl font-bold text-white mb-4">Table of Contents</h2>
               <nav className="space-y-2">
-                {termsContent.map((term) => (
+                {termsContent.map((term, index) => (
                   <a
                     key={term.id}
                     href={`#${term.id}`}
                     className="block font-body text-sm text-muted hover:text-gold transition-colors duration-300 py-1"
                   >
-                    {term.title}
+                    {index + 1}. {term.title}
                   </a>
                 ))}
               </nav>
@@ -113,9 +193,54 @@ export default function TermsPage() {
                   <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-4">
                     {index + 1}. {term.title}
                   </h2>
-                  <p className="font-body text-muted leading-relaxed">
-                    {term.content}
-                  </p>
+                  <div className="font-body text-muted leading-relaxed space-y-3">
+                    {term.content.map((paragraph, pIndex) => {
+                      if (paragraph.startsWith("•")) {
+                        return (
+                          <ul key={pIndex} className="list-disc list-inside ml-4 space-y-1">
+                            <li>{paragraph.substring(1).trim()}</li>
+                          </ul>
+                        );
+                      }
+                      return (
+                        <p key={pIndex}>{paragraph}</p>
+                      );
+                    })}
+                    {term.contactInfo && (
+                      <div className="mt-4 bg-navy-950 border border-navy-700 rounded-lg p-6">
+                        <table className="w-full">
+                          <tbody className="space-y-2">
+                            <tr>
+                              <td className="font-body text-muted font-medium pr-4 py-2">Email</td>
+                              <td className="font-body text-white py-2">
+                                <a
+                                  href="mailto:info@megafixxhomeservices.com"
+                                  className="text-gold hover:text-orange transition-colors duration-300"
+                                >
+                                  info@megafixxhomeservices.com
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="font-body text-muted font-medium pr-4 py-2">Phone</td>
+                              <td className="font-body text-white py-2">
+                                <a
+                                  href="tel:4693789262"
+                                  className="text-gold hover:text-orange transition-colors duration-300"
+                                >
+                                  (469) 378-9262
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="font-body text-muted font-medium pr-4 py-2">Location</td>
+                              <td className="font-body text-white py-2">Collin County, Texas</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </div>
                 </section>
               ))}
             </div>

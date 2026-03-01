@@ -9,22 +9,22 @@ const features = [
   {
     icon: Clock,
     title: "Reliability",
-    description: "We respond quickly, meet deadlines, and keep projects moving forward. Your properties are our priority."
+    description: "We understand that time is critical. Our team responds quickly, meets deadlines, and ensures projects move forward without delays."
   },
   {
     icon: Award,
     title: "Quality Workmanship",
-    description: "Every service completed with attention to detail and professional standards that exceed expectations."
+    description: "Every service is completed with attention to detail and durability in mind. We focus on long-term solutions — not temporary fixes."
   },
   {
     icon: BarChart,
     title: "Scalable Solutions",
-    description: "One-time repairs or ongoing contracts, tailored to your needs. We scale with your portfolio."
+    description: "Whether you need one-time repairs or ongoing maintenance contracts, we tailor our services to fit your operational needs."
   },
   {
     icon: MessageSquare,
     title: "Professional Communication",
-    description: "Clear updates before, during, and after every project. You always know what's happening and when."
+    description: "We maintain clear communication before, during, and after each project. Our clients stay informed at every stage."
   }
 ];
 

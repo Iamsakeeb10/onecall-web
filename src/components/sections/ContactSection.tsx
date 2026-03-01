@@ -15,8 +15,11 @@ export function ContactSection() {
             {/* Left Content */}
             <div className="text-center md:text-left">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to get started?
+                Ready to Get Started?
               </h2>
+              <p className="font-body text-muted mb-4">
+                Contact us today for a free, no-obligation estimate.
+              </p>
               <div className="flex flex-col sm:flex-row items-center md:items-start gap-4 text-muted">
                 <a
                   href="tel:4693789262"

@@ -72,7 +72,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-navy-950 pt-20">
+      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-navy-950 pt-16 sm:pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -88,12 +88,12 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-navy-950/75 z-10" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
           <div className="text-center">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               About MEGAFIXX Home Services LLC
             </h1>
-            <p className="font-body text-xl text-muted max-w-3xl mx-auto">
+            <p className="font-body text-base sm:text-lg lg:text-xl text-muted max-w-2xl mx-auto">
               Texas-based. Statewide reach. Built for serious property operators.
             </p>
           </div>
@@ -106,17 +106,17 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <AnimatedSection variant="fadeLeft" className="lg:col-span-3">
               <div>
-                <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
                   Our Mission
                 </h2>
-                <p className="font-body text-lg text-muted mb-4">
+                <p className="font-body text-base sm:text-lg text-muted mb-4">
                   MEGAFIXX Home Services LLC is a Texas-based statewide property maintenance partner built for property managers, investors, financial institutions, and real estate professionals. We provide reliable, affordable, and professional maintenance services throughout Texas — designed to protect, preserve, and enhance property value.
                 </p>
-                <p className="font-body text-lg text-muted mb-6">
+                <p className="font-body text-base sm:text-lg text-muted mb-6">
                   Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
                 </p>
-                <div className="bg-navy-800 border-l-4 border-gold rounded-lg p-6 mb-8">
-                  <p className="font-body text-lg text-gold italic font-medium">
+                <div className="bg-navy-800 border-l-4 border-gold rounded-lg p-4 sm:p-6 mb-8">
+                  <p className="font-body text-base sm:text-lg text-gold italic font-medium">
                     &quot;We understand that every property represents an investment — and we treat it accordingly.&quot;
                   </p>
                 </div>
@@ -143,11 +143,11 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                 What We Do
               </h2>
               <div className="w-20 h-1 bg-gold rounded-full mx-auto mb-4" />
-              <p className="font-body text-lg text-muted max-w-3xl mx-auto">
+              <p className="font-body text-base sm:text-lg text-muted max-w-3xl mx-auto">
                 Comprehensive property maintenance solutions across Texas — from routine upkeep to full property cleanouts.
               </p>
             </div>
@@ -194,21 +194,21 @@ export default function AboutPage() {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                 Serving Clients Across Texas
               </h2>
               <div className="w-20 h-1 bg-gold rounded-full mx-auto mb-4" />
-              <p className="font-body text-lg text-muted max-w-2xl mx-auto mb-6">
+              <p className="font-body text-base sm:text-lg text-muted max-w-2xl mx-auto mb-6">
                 No matter where your property is located in Texas, MEGAFIXX Home Services LLC delivers dependable maintenance solutions.
               </p>
-              <p className="font-body text-lg text-muted max-w-2xl mx-auto">
+              <p className="font-body text-base sm:text-lg text-muted max-w-2xl mx-auto">
                 Major cities: Dallas, Houston, Austin, San Antonio
               </p>
             </div>
           </AnimatedSection>
 
           <AnimatedSection variant="fadeUp" delay={0.2}>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
               {regions.map((region) => (
                 <div
                   key={region}
@@ -227,7 +227,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                 Our Values
               </h2>
               <div className="w-20 h-1 bg-gold rounded-full mx-auto" />

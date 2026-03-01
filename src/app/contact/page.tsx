@@ -26,7 +26,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-navy-950 pt-20">
+      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-navy-950 pt-16 sm:pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -42,12 +42,12 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-navy-950/75 z-10" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
           {/* H1 */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Contact MEGAFIXX
           </h1>
-          <p className="font-body text-xl text-muted max-w-3xl">
+          <p className="font-body text-base sm:text-lg lg:text-xl text-muted max-w-2xl">
             Let&apos;s talk about your property needs
           </p>
         </div>
@@ -60,10 +60,10 @@ export default function ContactPage() {
             {/* Left: Quote Form (60%) */}
             <div className="lg:col-span-3">
               <AnimatedSection variant="fadeLeft">
-                <h2 className="font-display text-3xl font-bold text-white mb-2">
+                <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-2">
                   Request a Free Quote
                 </h2>
-                <p className="font-body text-muted mb-6">
+                <p className="font-body text-base sm:text-lg text-muted mb-6">
                   Fill out the form below and we&apos;ll get back to you within 24 hours.
                 </p>
                 <QuoteForm />

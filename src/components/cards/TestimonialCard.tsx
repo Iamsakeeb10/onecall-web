@@ -22,7 +22,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const initials = getInitials(testimonial.name);
 
   return (
-    <div className="bg-navy-800 border border-navy-700 rounded-xl p-6 h-full hover:border-gold transition-all duration-300 flex flex-col">
+    <div className="bg-navy-800 border border-navy-700 rounded-xl p-4 sm:p-6 h-full hover:border-gold transition-all duration-300 flex flex-col">
       {/* Stars */}
       <div className="flex gap-1 mb-4">
         {Array.from({ length: 5 }).map((_, i) => (
@@ -35,7 +35,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
       </div>
 
       {/* Quote */}
-      <p className="font-body text-muted italic mb-6 flex-grow">
+      <p className="font-body text-sm sm:text-base text-muted italic mb-6 flex-grow">
         &quot;{testimonial.content}&quot;
       </p>
 

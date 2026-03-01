@@ -24,10 +24,13 @@
   --animate-float:   float 3s ease-in-out infinite;
 }
 
-/* Prevent flash of unstyled content */
+/* Prevent flash of unstyled content and horizontal overflow */
 html,
 body {
   background-color: #0A0F1E;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 @keyframes fadeUp {

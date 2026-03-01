@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import { Button } from "@/components/ui/Button";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { useScrollPosition } from "@/hooks/useScrollPosition";
-import { Button } from "@/components/ui/Button";
+import { useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -26,16 +26,16 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full overflow-x-hidden ${
         isScrolled
           ? "bg-navy-950/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="flex items-center justify-between h-20 w-full">
           {/* Logo */}
-          <Link href="/" className="flex flex-col">
+          <Link href="/" className="flex flex-col flex-shrink-0">
             <span className="font-display text-2xl md:text-3xl font-bold text-white">
               MEGAFIXX
             </span>
@@ -72,7 +72,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-white hover:text-gold transition-colors duration-300 p-2"
+            className="lg:hidden text-white hover:text-gold transition-colors duration-300 p-2 flex-shrink-0 ml-2"
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
           >

@@ -53,7 +53,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen pt-16 sm:pt-20 flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         {!heroImgError ? (
@@ -101,7 +101,7 @@ export function Hero() {
             {/* Main Headline */}
             <motion.h1
               variants={itemVariants}
-              className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-4"
+              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4"
             >
               Professional Property Maintenance
             </motion.h1>
@@ -109,7 +109,7 @@ export function Hero() {
             {/* Sub Headline */}
             <motion.p
               variants={itemVariants}
-              className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gold mb-6"
+              className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gold mb-6"
             >
               Across Texas
             </motion.p>

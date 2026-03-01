@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion, useReducedMotion, AnimatePresence } from "framer-motion";
-import { testimonials } from "@/lib/data/testimonials";
 import { TestimonialCard } from "@/components/cards/TestimonialCard";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { testimonials } from "@/lib/data/testimonials";
+import { motion, useReducedMotion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -73,12 +73,14 @@ export function Testimonials() {
         {/* Mobile: Carousel */}
         <div className="lg:hidden relative">
           <div
-            className="overflow-hidden"
+            className="overflow-hidden w-full"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
+            onTouchStart={() => setIsPaused(true)}
+            onTouchEnd={() => setIsPaused(false)}
           >
             <motion.div
-              className="flex"
+              className="flex transition-transform duration-300 ease-in-out"
               drag="x"
               dragConstraints={{
                 left: -(testimonials.length - 1) * 100,
@@ -87,10 +89,10 @@ export function Testimonials() {
               dragElastic={0.2}
               onDragEnd={(_, info) => {
                 const threshold = 50;
-                if (info.offset.x > threshold && currentIndex > 0) {
-                  goToPrevious();
-                } else if (info.offset.x < -threshold && currentIndex < testimonials.length - 1) {
+                if (info.offset.x < -threshold && currentIndex < testimonials.length - 1) {
                   goToNext();
+                } else if (info.offset.x > threshold && currentIndex > 0) {
+                  goToPrevious();
                 }
               }}
               animate={{
@@ -107,7 +109,7 @@ export function Testimonials() {
                 <div
                   key={testimonial.id}
                   className="w-full flex-shrink-0 px-2"
-                  style={{ width: `${100 / testimonials.length}%` }}
+                  style={{ width: `${100 / testimonials.length}%`, minWidth: `${100 / testimonials.length}%` }}
                 >
                   <TestimonialCard testimonial={testimonial} />
                 </div>
@@ -115,32 +117,36 @@ export function Testimonials() {
             </motion.div>
           </div>
 
-          {/* Navigation Arrows */}
-          <button
-            onClick={goToPrevious}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-navy-800 hover:bg-navy-700 border border-navy-700 rounded-full p-2 text-gold hover:text-orange transition-colors duration-300 z-10"
-            aria-label="Previous testimonial"
-          >
-            <ChevronLeft className="w-6 h-6" aria-hidden="true" />
-          </button>
-          <button
-            onClick={goToNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-navy-800 hover:bg-navy-700 border border-navy-700 rounded-full p-2 text-gold hover:text-orange transition-colors duration-300 z-10"
-            aria-label="Next testimonial"
-          >
-            <ChevronRight className="w-6 h-6" aria-hidden="true" />
-          </button>
+          {/* Navigation Arrows - Positioned below card */}
+          <div className="flex justify-between items-center mt-4">
+            <button
+              onClick={goToPrevious}
+              disabled={currentIndex === 0}
+              className="w-10 h-10 rounded-full bg-navy-800 hover:bg-navy-700 border border-navy-700 flex items-center justify-center text-gold hover:text-orange transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft className="w-5 h-5" aria-hidden="true" />
+            </button>
+            <button
+              onClick={goToNext}
+              disabled={currentIndex === testimonials.length - 1}
+              className="w-10 h-10 rounded-full bg-navy-800 hover:bg-navy-700 border border-navy-700 flex items-center justify-center text-gold hover:text-orange transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight className="w-5 h-5" aria-hidden="true" />
+            </button>
+          </div>
 
           {/* Indicator Dots */}
-          <div className="flex justify-center gap-2 mt-6">
+          <div className="flex justify-center gap-2 mt-4">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                className={`rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-gold w-8"
-                    : "bg-navy-700 hover:bg-navy-600"
+                    ? "bg-gold w-3 h-3"
+                    : "bg-navy-700 w-2 h-2 hover:bg-navy-600"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

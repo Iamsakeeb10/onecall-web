@@ -19,7 +19,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative min-h-[45vh] flex items-center justify-center bg-navy-950 pt-20">
+      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-navy-950 pt-16 sm:pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -35,14 +35,14 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-navy-950/75 z-10" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
           {/* H1 */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
             Our Services
           </h1>
 
           {/* Intro Paragraph */}
-          <p className="font-body text-lg text-muted max-w-3xl">
+          <p className="font-body text-base sm:text-lg lg:text-xl text-muted max-w-2xl">
             MEGAFIXX Home Services LLC provides reliable, affordable, and professional property maintenance services throughout Texas. We serve homeowners, landlords, property managers, real estate investors, and commercial clients across the state with solutions designed to protect, preserve, and enhance property value.
           </p>
         </div>

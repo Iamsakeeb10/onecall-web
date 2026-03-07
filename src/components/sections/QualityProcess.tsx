@@ -50,7 +50,7 @@ export function QualityProcess() {
             >
               <div className="relative bg-surface-50 border border-surface-200 rounded-xl p-8 text-center h-full flex flex-col hover:border-orange/30 hover:shadow-card transition-all duration-300">
                 {/* Step Number Badge */}
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange text-white font-display text-2xl font-bold mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-charcoal text-white font-display text-2xl font-bold mb-6 ring-2 ring-charcoal/20 shadow-md">
                   {step.number}
                 </div>
 

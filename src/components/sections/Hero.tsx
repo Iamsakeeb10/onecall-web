@@ -79,8 +79,8 @@ export function Hero() {
                   className="object-cover"
                   sizes="360px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 px-4 py-3">
+                <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent" />
+                <div className="absolute top-0 left-0 right-0 px-4 py-3">
                   <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">Plumbing</span>
                   <p className="text-white/80 text-xs font-body mt-0.5">Leak detection, pipe repair & installation</p>
                 </div>
@@ -98,8 +98,8 @@ export function Hero() {
                   className="object-cover"
                   sizes="360px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 px-4 py-3">
+                <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent" />
+                <div className="absolute top-0 left-0 right-0 px-4 py-3">
                   <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">Electrical</span>
                   <p className="text-white/80 text-xs font-body mt-0.5">Wiring, panel upgrades & fixture installs</p>
                 </div>
@@ -117,8 +117,8 @@ export function Hero() {
                   className="object-cover"
                   sizes="360px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 px-4 py-3">
+                <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent" />
+                <div className="absolute top-0 left-0 right-0 px-4 py-3">
                   <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">General Repairs</span>
                   <p className="text-white/80 text-xs font-body mt-0.5">Drywall, doors, flooring & handyman services</p>
                 </div>

@@ -1,12 +1,12 @@
 import { QuoteForm } from "@/components/forms/QuoteForm";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import {
-  Clock,
-  Mail,
-  Map,
-  MapPin,
-  Phone,
-  Tag
+    Clock,
+    Mail,
+    Map,
+    MapPin,
+    Phone,
+    Tag
 } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";

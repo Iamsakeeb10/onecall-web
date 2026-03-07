@@ -1,11 +1,11 @@
+import { ServiceCard } from "@/components/cards/ServiceCard";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { Button } from "@/components/ui/Button";
+import { services } from "@/lib/data/services";
+import { generatePageMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { services } from "@/lib/data/services";
-import { ServiceCard } from "@/components/cards/ServiceCard";
-import { Button } from "@/components/ui/Button";
-import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Our Services | MEGAFIXX Home Services LLC",

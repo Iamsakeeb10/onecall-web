@@ -1,22 +1,22 @@
+import { ClientImage } from "@/components/cards/ClientImage";
+import { ClientTypeCard } from "@/components/cards/ClientTypeCard";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { Button } from "@/components/ui/Button";
+import { clients } from "@/lib/data/clients";
+import {
+    Award,
+    BarChart,
+    Bell,
+    Camera,
+    Clock,
+    Mail,
+    MessageSquare,
+    Phone,
+    ShieldCheck
+} from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { clients } from "@/lib/data/clients";
-import { ClientTypeCard } from "@/components/cards/ClientTypeCard";
-import { ClientImage } from "@/components/cards/ClientImage";
-import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { Button } from "@/components/ui/Button";
-import {
-  Clock,
-  Award,
-  BarChart,
-  MessageSquare,
-  Camera,
-  ShieldCheck,
-  Bell,
-  Phone,
-  Mail
-} from "lucide-react";
 
 import { generatePageMetadata } from "@/lib/metadata";
 

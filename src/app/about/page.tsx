@@ -185,18 +185,17 @@ export default function AboutPage() {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-charcoal/72 z-10" />
 
-        {/* Content */}
+        {/* Content — same design and font colors as CTABanner dark variant */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                 Serving Clients Across Texas
               </h2>
-              <div className="w-20 h-1 bg-orange rounded-full mx-auto mb-4" />
-              <p className="font-body text-base sm:text-lg text-text-muted max-w-2xl mx-auto mb-6">
+              <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-6">
                 No matter where your property is located in Texas, MEGAFIXX Home Services LLC delivers dependable maintenance solutions.
               </p>
-              <p className="font-body text-base sm:text-lg text-text-muted max-w-2xl mx-auto">
+              <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
                 Major cities: Dallas, Houston, Austin, San Antonio
               </p>
             </div>
@@ -207,9 +206,9 @@ export default function AboutPage() {
               {regions.map((region) => (
                 <div
                   key={region}
-                  className="bg-surface-100/90 border border-surface-200 rounded-full px-4 py-3 text-center hover:border-orange transition-colors duration-300"
+                  className="bg-white/10 border border-white/20 rounded-full px-4 py-3 text-center hover:bg-white/20 transition-colors duration-300"
                 >
-                  <span className="font-accent text-sm text-charcoal">{region}</span>
+                  <span className="font-accent text-sm text-white">{region}</span>
                 </div>
               ))}
             </div>

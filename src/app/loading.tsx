@@ -10,7 +10,7 @@ export default function Loading() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2, ease: "easeInOut" }}
-      className="fixed inset-0 bg-navy-950 z-50 flex items-center justify-center"
+      className="fixed inset-0 bg-cream-50 z-50 flex items-center justify-center"
       style={{ minHeight: "100dvh" }}
     >
       <div className="text-center">

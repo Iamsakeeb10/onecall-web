@@ -29,7 +29,7 @@ export function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full overflow-x-hidden ${
         isScrolled
-          ? "bg-navy-950/95 backdrop-blur-md shadow-lg"
+          ? "bg-cream-50/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -40,7 +40,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center relative inline-block">
             {/* Background layer - matches logo size exactly */}
             <motion.div 
-              className="absolute inset-0 bg-white/80 backdrop-blur-md rounded-lg -z-10"
+              className="absolute inset-0 bg-cream-50/80 backdrop-blur-md rounded-lg -z-10"
               style={{ 
                 width: '100%', 
                 height: '100%',
@@ -77,7 +77,7 @@ export function Navbar() {
                 className={`font-accent text-base transition-colors duration-300 relative group ${
                   pathname === link.href
                     ? "text-gold"
-                    : "text-white hover:text-gold"
+                    : "text-stone-900 hover:text-gold"
                 }`}
               >
                 {link.label}
@@ -96,7 +96,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-white hover:text-gold transition-colors duration-300 p-2 flex-shrink-0 ml-2"
+            className="lg:hidden text-stone-900 hover:text-gold transition-colors duration-300 p-2 flex-shrink-0 ml-2"
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -117,7 +117,7 @@ export function Navbar() {
             animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, height: "auto" }}
             exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-navy-950 border-t border-navy-700"
+            className="lg:hidden bg-cream-50 border-t border-cream-300"
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) => (
@@ -128,7 +128,7 @@ export function Navbar() {
                   className={`block font-accent text-lg py-2 transition-colors duration-300 ${
                     pathname === link.href
                       ? "text-gold"
-                      : "text-white hover:text-gold"
+                      : "text-stone-900 hover:text-gold"
                   }`}
                 >
                   {link.label}

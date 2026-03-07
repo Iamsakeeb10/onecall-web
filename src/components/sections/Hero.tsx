@@ -66,17 +66,17 @@ export function Hero() {
             onError={() => setHeroImgError(true)}
           />
         ) : (
-          <div className="w-full h-full bg-navy-800 flex items-center justify-center">
+          <div className="w-full h-full bg-cream-200 flex items-center justify-center">
             <span className="text-gold text-sm">Professional Property Maintenance</span>
           </div>
         )}
       </div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-navy-950/75 z-10" />
+      <div className="absolute inset-0 bg-cream-50/75 z-10" />
 
       {/* Gold Accent Diagonal Line (Right Side) */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-1 bg-gradient-to-l from-gold/50 to-transparent z-20 hidden lg:block" />
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-1 bg-gradient-to-l from-gold/40 to-transparent z-20 hidden lg:block" />
 
       {/* Content */}
       <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -101,7 +101,7 @@ export function Hero() {
             {/* Main Headline */}
             <motion.h1
               variants={itemVariants}
-              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4"
+              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-stone-900 mb-4"
             >
               Professional Property Maintenance
             </motion.h1>
@@ -180,7 +180,7 @@ export function Hero() {
                   onError={() => setCardImgError(true)}
                 />
               ) : (
-                <div className="bg-navy-800 rounded-2xl shadow-2xl aspect-[4/3] flex items-center justify-center">
+                <div className="bg-cream-200 rounded-2xl shadow-2xl aspect-[4/3] flex items-center justify-center">
                   <Wrench className="w-16 h-16 text-gold" aria-hidden="true" />
                 </div>
               )}

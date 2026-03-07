@@ -24,7 +24,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-navy-950 pt-16 sm:pt-20">
+      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-cream-50 pt-16 sm:pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -37,12 +37,12 @@ export default function ContactPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-navy-950/75 z-10" />
+        <div className="absolute inset-0 bg-cream-50/75 z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
           {/* H1 */}
-          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mb-4">
             Contact MEGAFIXX
           </h1>
           <p className="font-body text-base sm:text-lg lg:text-xl text-muted max-w-2xl">
@@ -52,13 +52,13 @@ export default function ContactPage() {
       </section>
 
       {/* Split Layout: Form + Contact Info */}
-      <section className="py-20 lg:py-28 bg-navy-950">
+      <section className="py-20 lg:py-28 bg-cream-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             {/* Left: Quote Form (60%) */}
             <div className="lg:col-span-3">
               <AnimatedSection variant="fadeLeft">
-                <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-2">
+                <h2 className="font-display text-2xl sm:text-3xl font-bold text-stone-900 mb-2">
                   Request a Free Quote
                 </h2>
                 <p className="font-body text-base sm:text-lg text-muted mb-6">
@@ -71,8 +71,8 @@ export default function ContactPage() {
             {/* Right: Contact Info Panel (40%) */}
             <div className="lg:col-span-2">
               <AnimatedSection variant="fadeRight">
-                <div className="bg-navy-800 border-l-4 border-gold rounded-lg p-8 h-full">
-                  <h3 className="font-display text-2xl font-bold text-white mb-6">
+                <div className="bg-cream-200 border-l-4 border-gold rounded-lg p-8 h-full">
+                  <h3 className="font-display text-2xl font-bold text-stone-900 mb-6">
                     Get in Touch
                   </h3>
 
@@ -81,7 +81,7 @@ export default function ContactPage() {
                     <div>
                       <a
                         href="tel:4693789262"
-                        className="flex items-center gap-3 font-body text-white hover:text-gold transition-colors duration-300"
+                        className="flex items-center gap-3 font-body text-stone-900 hover:text-gold transition-colors duration-300"
                       >
                         <Phone className="w-5 h-5 text-gold flex-shrink-0" aria-hidden="true" />
                         <span>(469) 378-9262</span>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                     <div>
                       <a
                         href="mailto:info@megafixxhomeservices.com"
-                        className="flex items-center gap-3 font-body text-white hover:text-gold transition-colors duration-300"
+                        className="flex items-center gap-3 font-body text-stone-900 hover:text-gold transition-colors duration-300"
                       >
                         <Mail className="w-5 h-5 text-gold flex-shrink-0" aria-hidden="true" />
                         <span>info@megafixxhomeservices.com</span>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                       <div className="flex items-start gap-3">
                         <MapPin className="w-5 h-5 text-gold mt-1 flex-shrink-0" aria-hidden="true" />
                         <div>
-                          <p className="font-body text-white">Collin County, Texas</p>
+                          <p className="font-body text-stone-900">Collin County, Texas</p>
                         </div>
                       </div>
                     </div>
@@ -114,7 +114,7 @@ export default function ContactPage() {
                       <div className="flex items-start gap-3">
                         <Map className="w-5 h-5 text-gold mt-1 flex-shrink-0" aria-hidden="true" />
                         <div>
-                          <p className="font-body text-white">All of Texas Statewide</p>
+                          <p className="font-body text-stone-900">All of Texas Statewide</p>
                         </div>
                       </div>
                     </div>
@@ -124,20 +124,20 @@ export default function ContactPage() {
                       <div className="flex items-start gap-3">
                         <Clock className="w-5 h-5 text-gold mt-1 flex-shrink-0" aria-hidden="true" />
                         <div>
-                          <p className="font-body text-white mb-1">Monday – Friday: 8:00 AM – 6:00 PM</p>
-                          <p className="font-body text-white mb-1">Saturday: 9:00 AM – 4:00 PM</p>
-                          <p className="font-body text-white">Sunday: Closed</p>
+                          <p className="font-body text-stone-900 mb-1">Monday – Friday: 8:00 AM – 6:00 PM</p>
+                          <p className="font-body text-stone-900 mb-1">Saturday: 9:00 AM – 4:00 PM</p>
+                          <p className="font-body text-stone-900">Sunday: Closed</p>
                         </div>
                       </div>
                     </div>
 
                     {/* Badges */}
-                    <div className="pt-4 border-t border-navy-700">
+                    <div className="pt-4 border-t border-cream-300">
                       <div className="flex flex-wrap gap-3">
-                        <span className="inline-flex items-center px-3 py-1 bg-navy-700 rounded-full text-xs font-accent text-gold">
+                        <span className="inline-flex items-center px-3 py-1 bg-cream-300 rounded-full text-xs font-accent text-gold">
                           Fully Insured
                         </span>
-                        <span className="inline-flex items-center px-3 py-1 bg-navy-700 rounded-full text-xs font-accent text-gold">
+                        <span className="inline-flex items-center px-3 py-1 bg-cream-300 rounded-full text-xs font-accent text-gold">
                           Licensed Professionals
                         </span>
                       </div>
@@ -151,7 +151,7 @@ export default function ContactPage() {
       </section>
 
       {/* Bottom Info Cards */}
-      <section className="py-20 lg:py-28 bg-navy-800">
+      <section className="py-20 lg:py-28 bg-cream-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -176,9 +176,9 @@ export default function ContactPage() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-navy-950 border border-navy-700 rounded-xl p-8 text-center h-full">
+                <div className="bg-cream-50 border border-cream-300 rounded-xl p-8 text-center h-full">
                   <card.icon className="w-10 h-10 text-gold mx-auto mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-white mb-2">
+                  <h3 className="font-display text-xl font-bold text-stone-900 mb-2">
                     {card.title}
                   </h3>
                   <p className="font-body text-muted">

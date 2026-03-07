@@ -72,7 +72,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-navy-950 pt-16 sm:pt-20">
+      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-cream-50 pt-16 sm:pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -85,12 +85,12 @@ export default function AboutPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-navy-950/75 z-10" />
+        <div className="absolute inset-0 bg-cream-50/75 z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
           <div className="text-center">
-            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mb-4">
               About MEGAFIXX Home Services LLC
             </h1>
             <p className="font-body text-base sm:text-lg lg:text-xl text-muted max-w-2xl mx-auto">
@@ -101,12 +101,12 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Statement Section */}
-      <section className="py-20 lg:py-28 bg-navy-950">
+      <section className="py-20 lg:py-28 bg-cream-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <AnimatedSection variant="fadeLeft" className="lg:col-span-3">
               <div>
-                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-stone-900 mb-6">
                   Our Mission
                 </h2>
                 <p className="font-body text-base sm:text-lg text-muted mb-4">
@@ -115,7 +115,7 @@ export default function AboutPage() {
                 <p className="font-body text-base sm:text-lg text-muted mb-6">
                   Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
                 </p>
-                <div className="bg-navy-800 border-l-4 border-gold rounded-lg p-4 sm:p-6 mb-8">
+                <div className="bg-cream-200 border-l-4 border-gold rounded-lg p-4 sm:p-6 mb-8">
                   <p className="font-body text-base sm:text-lg text-gold italic font-medium">
                     &quot;We understand that every property represents an investment — and we treat it accordingly.&quot;
                   </p>
@@ -139,11 +139,11 @@ export default function AboutPage() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-20 lg:py-28 bg-navy-800">
+      <section className="py-20 lg:py-28 bg-cream-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 mb-4">
                 What We Do
               </h2>
               <div className="w-20 h-1 bg-gold rounded-full mx-auto mb-4" />
@@ -160,9 +160,9 @@ export default function AboutPage() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-navy-950 border border-navy-700 rounded-xl p-8 text-center h-full">
+                <div className="bg-cream-50 border border-cream-300 rounded-xl p-8 text-center h-full">
                   <category.icon className="w-12 h-12 text-gold mx-auto mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-white mb-3">
+                  <h3 className="font-display text-xl font-bold text-stone-900 mb-3">
                     {category.title}
                   </h3>
                   <p className="font-body text-muted">
@@ -188,13 +188,13 @@ export default function AboutPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-navy-950/80 z-10" />
+        <div className="absolute inset-0 bg-cream-50/80 z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 mb-4">
                 Serving Clients Across Texas
               </h2>
               <div className="w-20 h-1 bg-gold rounded-full mx-auto mb-4" />
@@ -212,9 +212,9 @@ export default function AboutPage() {
               {regions.map((region) => (
                 <div
                   key={region}
-                  className="bg-navy-800/90 border border-navy-700 rounded-full px-4 py-3 text-center hover:border-gold transition-colors duration-300"
+                  className="bg-cream-200/90 border border-cream-300 rounded-full px-4 py-3 text-center hover:border-gold transition-colors duration-300"
                 >
-                  <span className="font-accent text-sm text-white">{region}</span>
+                  <span className="font-accent text-sm text-stone-900">{region}</span>
                 </div>
               ))}
             </div>
@@ -223,11 +223,11 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 lg:py-28 bg-navy-950">
+      <section className="py-20 lg:py-28 bg-cream-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900 mb-4">
                 Our Values
               </h2>
               <div className="w-20 h-1 bg-gold rounded-full mx-auto" />
@@ -241,9 +241,9 @@ export default function AboutPage() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-navy-800 border border-navy-700 rounded-xl p-8 text-center h-full">
+                <div className="bg-cream-200 border border-cream-300 rounded-xl p-8 text-center h-full">
                   <value.icon className="w-12 h-12 text-gold mx-auto mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-2xl font-bold text-white mb-3">
+                  <h3 className="font-display text-2xl font-bold text-stone-900 mb-3">
                     {value.title}
                   </h3>
                   <p className="font-body text-muted">
@@ -257,11 +257,11 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 lg:py-28 bg-navy-900 border-t-2 border-gold/20">
+      <section className="py-20 lg:py-28 bg-cream-100 border-t-2 border-gold/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
-            <div className="bg-navy-800 border border-gold/30 rounded-2xl p-8 md:p-12 text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
+            <div className="bg-cream-200 border border-gold/30 rounded-2xl p-8 md:p-12 text-center">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-stone-900 mb-4">
                 Ready to Protect Your Properties?
               </h2>
               <p className="font-body text-lg text-muted mb-8 max-w-2xl mx-auto">

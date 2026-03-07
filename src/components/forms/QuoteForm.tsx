@@ -119,7 +119,7 @@ export function QuoteForm() {
 
       {/* Full Name */}
       <div>
-        <label htmlFor="fullName" className="block font-body text-sm font-medium text-white mb-2">
+        <label htmlFor="fullName" className="block font-body text-sm font-medium text-stone-900 mb-2">
           Full Name <span className="text-gold">*</span>
         </label>
         <input
@@ -128,9 +128,9 @@ export function QuoteForm() {
           name="fullName"
           value={formData.fullName}
           onChange={handleChange}
-          className={`w-full px-4 py-3 bg-navy-800 border ${
-            errors.fullName ? "border-red-500" : "border-navy-700"
-          } rounded-lg text-white placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300`}
+          className={`w-full px-4 py-3 bg-cream-200 border ${
+            errors.fullName ? "border-red-500" : "border-cream-300"
+          } rounded-lg text-stone-900 placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300`}
           placeholder="John Doe"
           aria-describedby={errors.fullName ? "fullName-error" : undefined}
           aria-invalid={errors.fullName ? "true" : "false"}
@@ -144,7 +144,7 @@ export function QuoteForm() {
 
       {/* Company Name */}
       <div>
-        <label htmlFor="companyName" className="block font-body text-sm font-medium text-white mb-2">
+        <label htmlFor="companyName" className="block font-body text-sm font-medium text-stone-900 mb-2">
           Company Name (Optional)
         </label>
         <input
@@ -153,14 +153,14 @@ export function QuoteForm() {
           name="companyName"
           value={formData.companyName}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-navy-800 border border-navy-700 rounded-lg text-white placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300"
+          className="w-full px-4 py-3 bg-cream-200 border border-cream-300 rounded-lg text-stone-900 placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300"
           placeholder="ABC Property Management"
         />
       </div>
 
       {/* Email */}
       <div>
-        <label htmlFor="email" className="block font-body text-sm font-medium text-white mb-2">
+        <label htmlFor="email" className="block font-body text-sm font-medium text-stone-900 mb-2">
           Email Address <span className="text-gold">*</span>
         </label>
         <input
@@ -169,9 +169,9 @@ export function QuoteForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`w-full px-4 py-3 bg-navy-800 border ${
-            errors.email ? "border-red-500" : "border-navy-700"
-          } rounded-lg text-white placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300`}
+          className={`w-full px-4 py-3 bg-cream-200 border ${
+            errors.email ? "border-red-500" : "border-cream-300"
+          } rounded-lg text-stone-900 placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300`}
           placeholder="john@example.com"
           aria-describedby={errors.email ? "email-error" : undefined}
           aria-invalid={errors.email ? "true" : "false"}
@@ -185,7 +185,7 @@ export function QuoteForm() {
 
       {/* Phone */}
       <div>
-        <label htmlFor="phone" className="block font-body text-sm font-medium text-white mb-2">
+        <label htmlFor="phone" className="block font-body text-sm font-medium text-stone-900 mb-2">
           Phone Number <span className="text-gold">*</span>
         </label>
         <input
@@ -194,9 +194,9 @@ export function QuoteForm() {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          className={`w-full px-4 py-3 bg-navy-800 border ${
-            errors.phone ? "border-red-500" : "border-navy-700"
-          } rounded-lg text-white placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300`}
+          className={`w-full px-4 py-3 bg-cream-200 border ${
+            errors.phone ? "border-red-500" : "border-cream-300"
+          } rounded-lg text-stone-900 placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300`}
           placeholder="(469) 555-1234"
           aria-describedby={errors.phone ? "phone-error" : undefined}
           aria-invalid={errors.phone ? "true" : "false"}
@@ -210,7 +210,7 @@ export function QuoteForm() {
 
       {/* Property Type */}
       <div>
-        <label htmlFor="propertyType" className="block font-body text-sm font-medium text-white mb-2">
+        <label htmlFor="propertyType" className="block font-body text-sm font-medium text-stone-900 mb-2">
           Property Type <span className="text-gold">*</span>
         </label>
         <div className="relative">
@@ -219,15 +219,15 @@ export function QuoteForm() {
             name="propertyType"
             value={formData.propertyType}
             onChange={handleChange}
-            className={`w-full px-4 py-3 pr-10 bg-navy-800 border ${
-              errors.propertyType ? "border-red-500" : "border-navy-700"
-            } rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300 appearance-none cursor-pointer`}
+            className={`w-full px-4 py-3 pr-10 bg-cream-200 border ${
+              errors.propertyType ? "border-red-500" : "border-cream-300"
+            } rounded-lg text-stone-900 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300 appearance-none cursor-pointer`}
             aria-describedby={errors.propertyType ? "propertyType-error" : undefined}
             aria-invalid={errors.propertyType ? "true" : "false"}
           >
             <option value="" disabled>Select Property Type</option>
             {propertyTypes.map((type) => (
-              <option key={type} value={type} className="bg-navy-800">
+              <option key={type} value={type} className="bg-cream-200">
                 {type}
               </option>
             ))}
@@ -246,7 +246,7 @@ export function QuoteForm() {
 
       {/* Service Needed */}
       <div>
-        <label htmlFor="serviceNeeded" className="block font-body text-sm font-medium text-white mb-2">
+        <label htmlFor="serviceNeeded" className="block font-body text-sm font-medium text-stone-900 mb-2">
           Service Needed <span className="text-gold">*</span>
         </label>
         <div className="relative">
@@ -255,19 +255,19 @@ export function QuoteForm() {
             name="serviceNeeded"
             value={formData.serviceNeeded}
             onChange={handleChange}
-            className={`w-full px-4 py-3 pr-10 bg-navy-800 border ${
-              errors.serviceNeeded ? "border-red-500" : "border-navy-700"
-            } rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300 appearance-none cursor-pointer`}
+            className={`w-full px-4 py-3 pr-10 bg-cream-200 border ${
+              errors.serviceNeeded ? "border-red-500" : "border-cream-300"
+            } rounded-lg text-stone-900 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300 appearance-none cursor-pointer`}
             aria-describedby={errors.serviceNeeded ? "serviceNeeded-error" : undefined}
             aria-invalid={errors.serviceNeeded ? "true" : "false"}
           >
             <option value="" disabled>Select a Service</option>
             {services.map((service) => (
-              <option key={service.id} value={service.title} className="bg-navy-800">
+              <option key={service.id} value={service.title} className="bg-cream-200">
                 {service.title}
               </option>
             ))}
-            <option value="Multiple Services" className="bg-navy-800">
+            <option value="Multiple Services" className="bg-cream-200">
               Multiple Services
             </option>
           </select>
@@ -285,7 +285,7 @@ export function QuoteForm() {
 
       {/* Location */}
       <div>
-        <label htmlFor="location" className="block font-body text-sm font-medium text-white mb-2">
+        <label htmlFor="location" className="block font-body text-sm font-medium text-stone-900 mb-2">
           Property Location / City, TX <span className="text-gold">*</span>
         </label>
         <input
@@ -294,9 +294,9 @@ export function QuoteForm() {
           name="location"
           value={formData.location}
           onChange={handleChange}
-          className={`w-full px-4 py-3 bg-navy-800 border ${
-            errors.location ? "border-red-500" : "border-navy-700"
-          } rounded-lg text-white placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300`}
+          className={`w-full px-4 py-3 bg-cream-200 border ${
+            errors.location ? "border-red-500" : "border-cream-300"
+          } rounded-lg text-stone-900 placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300`}
           placeholder="Dallas, TX"
           aria-describedby={errors.location ? "location-error" : undefined}
           aria-invalid={errors.location ? "true" : "false"}
@@ -310,7 +310,7 @@ export function QuoteForm() {
 
       {/* Message */}
       <div>
-        <label htmlFor="message" className="block font-body text-sm font-medium text-white mb-2">
+        <label htmlFor="message" className="block font-body text-sm font-medium text-stone-900 mb-2">
           Message / Project Details <span className="text-gold">*</span>
         </label>
         <textarea
@@ -319,9 +319,9 @@ export function QuoteForm() {
           value={formData.message}
           onChange={handleChange}
           rows={5}
-          className={`w-full px-4 py-3 bg-navy-800 border ${
-            errors.message ? "border-red-500" : "border-navy-700"
-          } rounded-lg text-white placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300 resize-none`}
+          className={`w-full px-4 py-3 bg-cream-200 border ${
+            errors.message ? "border-red-500" : "border-cream-300"
+          } rounded-lg text-stone-900 placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300 resize-none`}
           placeholder="Tell us about your property maintenance needs..."
           aria-describedby={errors.message ? "message-error" : undefined}
           aria-invalid={errors.message ? "true" : "false"}

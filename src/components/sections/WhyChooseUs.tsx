@@ -37,7 +37,7 @@ const stats = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-20 lg:py-28 bg-navy-950">
+    <section id="why-us" className="py-20 lg:py-28 bg-cream-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
@@ -55,9 +55,9 @@ export function WhyChooseUs() {
               variant="fadeUp"
               delay={index * 0.1}
             >
-              <div className="bg-navy-800 border border-navy-700 rounded-xl p-6 h-full">
+              <div className="bg-cream-200 border border-cream-300 rounded-xl p-6 h-full">
                 <feature.icon className="w-10 h-10 text-gold mb-4" aria-hidden="true" />
-                <h3 className="font-display text-xl font-bold text-white mb-3">
+                <h3 className="font-display text-xl font-bold text-stone-900 mb-3">
                   {feature.title}
                 </h3>
                 <p className="font-body text-muted">
@@ -70,7 +70,7 @@ export function WhyChooseUs() {
 
         {/* Stats Row */}
         <AnimatedSection variant="fadeUp" delay={0.5}>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 pt-8 border-t border-navy-700">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 pt-8 border-t border-cream-300">
             {stats.map((stat, index) => (
               <React.Fragment key={stat.value}>
                 <div className="text-center">
@@ -82,7 +82,7 @@ export function WhyChooseUs() {
                   </div>
                 </div>
                 {index < stats.length - 1 && (
-                  <div className="hidden md:block w-px h-12 bg-navy-700" />
+                  <div className="hidden md:block w-px h-12 bg-cream-300" />
                 )}
               </React.Fragment>
             ))}

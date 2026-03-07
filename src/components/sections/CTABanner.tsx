@@ -16,14 +16,14 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
 
   if (variant === "gold") {
     return (
-      <section className="py-20 lg:py-28 bg-gradient-to-r from-gold to-orange">
+      <section className="py-20 lg:py-28 bg-gradient-to-r from-gold to-gold-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-navy-950 mb-4">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-stone-900 mb-4">
                 Looking for a Trusted Maintenance Partner?
               </h2>
-              <p className="font-body text-lg text-navy-950/80 mb-8 max-w-2xl mx-auto">
+              <p className="font-body text-lg text-stone-900/80 mb-8 max-w-2xl mx-auto">
                 MEGAFIXX Home Services LLC is ready to serve your properties across Texas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -52,12 +52,12 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
             onError={() => setImgError(true)}
           />
         ) : (
-          <div className="w-full h-full bg-navy-950" />
+          <div className="w-full h-full bg-cream-50" />
         )}
       </div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-navy-950/85 z-10" />
+      <div className="absolute inset-0 bg-cream-50/85 z-10" />
 
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,7 +65,7 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             {/* Left Content */}
             <div className="text-center lg:text-left">
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-stone-900 mb-4">
                 Ready to Protect Your Properties?
               </h2>
               <p className="font-body text-lg text-muted max-w-2xl">

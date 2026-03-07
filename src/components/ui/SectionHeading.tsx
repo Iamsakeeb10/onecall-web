@@ -17,7 +17,7 @@ export function SectionHeading({
 
   return (
     <div className={`flex flex-col gap-3 mb-12 ${alignmentClasses} ${className}`}>
-      <h2 className="font-display text-4xl md:text-5xl font-bold text-white">
+      <h2 className="font-display text-4xl md:text-5xl font-bold text-stone-900">
         {title}
       </h2>
       {subtitle && (

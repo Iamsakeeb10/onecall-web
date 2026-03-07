@@ -33,7 +33,7 @@ export function ClientTypeCard({ client, variant = "compact" }: ClientTypeCardPr
       <motion.div
         whileHover={shouldReduceMotion ? undefined : { y: -4 }}
         transition={{ duration: 0.3 }}
-        className="bg-navy-800 border border-navy-700 rounded-xl p-6 flex flex-col h-full hover:border-gold transition-all duration-300"
+        className="bg-cream-200 border border-cream-300 rounded-xl p-6 flex flex-col h-full hover:border-gold transition-all duration-300"
       >
         {/* Icon */}
         <div className="mb-4">
@@ -41,7 +41,7 @@ export function ClientTypeCard({ client, variant = "compact" }: ClientTypeCardPr
         </div>
 
         {/* Title */}
-        <h3 className="font-display text-xl font-bold text-white mb-3">
+        <h3 className="font-display text-xl font-bold text-stone-900 mb-3">
           {client.title}
         </h3>
 
@@ -72,7 +72,7 @@ export function ClientTypeCard({ client, variant = "compact" }: ClientTypeCardPr
       </div>
 
       {/* Title */}
-      <h3 className="font-display text-2xl md:text-3xl font-bold text-white mb-4">
+      <h3 className="font-display text-2xl md:text-3xl font-bold text-stone-900 mb-4">
         {client.title}
       </h3>
 

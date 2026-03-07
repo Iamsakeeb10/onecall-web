@@ -27,7 +27,7 @@ const steps = [
 
 export function QualityProcess() {
   return (
-    <section className="py-20 lg:py-28 bg-navy-800">
+    <section className="py-20 lg:py-28 bg-cream-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
@@ -48,9 +48,9 @@ export function QualityProcess() {
               delay={index * 0.2}
               className="h-full"
             >
-              <div className="relative bg-navy-950 border border-navy-700 rounded-xl p-8 text-center h-full flex flex-col">
+              <div className="relative bg-cream-50 border border-cream-300 rounded-xl p-8 text-center h-full flex flex-col">
                 {/* Step Number Badge */}
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold text-navy-950 font-display text-2xl font-bold mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold text-cream-50 font-display text-2xl font-bold mb-6">
                   {step.number}
                 </div>
 
@@ -58,7 +58,7 @@ export function QualityProcess() {
                 <step.icon className="w-10 h-10 text-gold mx-auto mb-4" aria-hidden="true" />
 
                 {/* Title */}
-                <h3 className="font-display text-xl font-bold text-white mb-3">
+                <h3 className="font-display text-xl font-bold text-stone-900 mb-3">
                   {step.title}
                 </h3>
 

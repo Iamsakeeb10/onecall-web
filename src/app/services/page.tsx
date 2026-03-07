@@ -19,7 +19,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page Hero */}
-      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-navy-950 pt-16 sm:pt-20">
+      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-cream-50 pt-16 sm:pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -32,12 +32,12 @@ export default function ServicesPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-navy-950/75 z-10" />
+        <div className="absolute inset-0 bg-cream-50/75 z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
           {/* H1 */}
-          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mb-4 sm:mb-6">
             Our Services
           </h1>
 
@@ -49,7 +49,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 lg:py-28 bg-navy-950">
+      <section className="py-20 lg:py-28 bg-cream-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {services.map((service, index) => (
@@ -65,8 +65,8 @@ export default function ServicesPage() {
 
           {/* Bottom CTA */}
           <AnimatedSection variant="fadeUp" delay={0.8}>
-            <div className="text-center bg-navy-800 rounded-xl p-8 border border-navy-700">
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-4">
+            <div className="text-center bg-cream-200 rounded-xl p-8 border border-cream-300">
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-stone-900 mb-4">
                 Looking for a Professional Property Maintenance Company in Texas?
               </h2>
               <p className="font-body text-muted mb-6 max-w-2xl mx-auto">

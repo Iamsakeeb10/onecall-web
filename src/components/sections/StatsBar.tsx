@@ -60,7 +60,7 @@ function CountUpNumber({ value, label }: StatItem) {
         {value.includes("+") && !displayValue.includes("+") && "+"}
         {value.includes("%") && !displayValue.includes("%") && "%"}
       </div>
-      <div className="font-body text-white text-sm md:text-base">{label}</div>
+      <div className="font-body text-stone-900 text-sm md:text-base">{label}</div>
     </div>
   );
 }
@@ -69,7 +69,7 @@ export function StatsBar() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="w-full bg-navy-800 py-12 md:py-16">
+    <section className="w-full bg-cream-200 py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (

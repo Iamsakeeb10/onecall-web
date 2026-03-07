@@ -5,13 +5,13 @@ import Link from "next/link";
 export function Footer() {
 
   return (
-    <footer className="bg-navy-950 text-white border-t-2 border-gold/20">
+    <footer className="bg-cream-100 text-stone-900 border-t-2 border-gold/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Column 1: Company Info */}
           <div>
-            <div className="inline-flex items-center rounded-lg bg-white border border-white/30 mb-4">
+            <div className="inline-flex items-center rounded-lg bg-cream-50 border border-stone-900/20 mb-4">
               <Image
                 src="/images/logo.png"
                 alt="MEGAFIXX Home Services LLC"
@@ -174,7 +174,7 @@ export function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="border-t border-navy-700 pt-8 mb-8">
+        <div className="border-t border-cream-300 pt-8 mb-8">
           <div className="flex justify-center gap-6">
             <a
               href="https://facebook.com"
@@ -216,7 +216,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-navy-700 pt-6">
+        <div className="border-t border-cream-300 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-body text-muted text-sm text-center md:text-left">
               &copy; 2026 MEGAFIXX Home Services LLC. All rights reserved.

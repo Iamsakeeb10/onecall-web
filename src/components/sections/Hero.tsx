@@ -64,9 +64,9 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Hero Cards Collage — full-image cards, pushed down, visible only at min-[1131px] */}
-          <div className="hidden min-[1131px]:flex items-center justify-end pt-16">
-            <div className="relative w-[480px] xl:w-[520px] h-[480px] xl:h-[520px]">
+          {/* Hero Cards Collage — full-image cards, pushed down slightly */}
+          <div className="hidden min-[1131px]:flex items-center justify-end pt-[38px]">
+            <div className="relative w-[480px] xl:w-[520px] h-[440px] xl:h-[460px]">
               {/* Card 1 — back, top-right (full image) */}
               <div
                 className="absolute top-0 right-0 w-[340px] xl:w-[360px] h-[200px] xl:h-[220px] rounded-2xl border border-white/10 shadow-2xl z-10 overflow-hidden animate-float"

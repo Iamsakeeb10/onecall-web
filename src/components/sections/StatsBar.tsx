@@ -69,7 +69,7 @@ export function StatsBar() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="w-full bg-surface-50 py-12 md:py-16 border-y border-surface-200">
+    <section className="w-full bg-white pt-0 py-12 md:py-16 border-b border-surface-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (

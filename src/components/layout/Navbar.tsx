@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -25,59 +24,63 @@ export function Navbar() {
 
   const isScrolled = scrollPosition > 50;
 
+  const linkClass = isScrolled
+    ? "font-accent text-base text-navy hover:text-teal transition-colors duration-300 relative group"
+    : "font-accent text-base text-white hover:text-teal transition-colors duration-300 relative group";
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full overflow-x-hidden ${
         isScrolled
           ? "bg-white/98 backdrop-blur-md shadow-navbar border-b border-surface-200"
-          : "bg-white/90 backdrop-blur-md border-b border-transparent"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between h-20 w-full">
-          {/* Logo — no background pill */}
           <Link href="/" className="flex items-center relative inline-block">
             <Image
               src="/images/logo.png"
               alt="MEGAFIXX Home Services LLC"
               width={220}
               height={66}
-              className={`relative z-10 w-auto object-contain brightness-110 contrast-110 transition-all duration-300 ${
-                isScrolled ? "h-16 sm:h-[88px]" : "h-12 sm:h-16"
+              className={`relative z-10 w-auto object-contain transition-all duration-300 ${
+                isScrolled
+                  ? "h-16 sm:h-[88px] brightness-110 contrast-110"
+                  : "h-12 sm:h-16 brightness-0 invert"
               }`}
               priority
             />
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-accent text-base transition-colors duration-300 relative group ${
-                  pathname === link.href
-                    ? "text-blue"
-                    : "text-navy hover:text-blue"
-                }`}
+                className={linkClass}
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-blue transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-teal transition-all duration-300 ${
                     pathname === link.href ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
               </Link>
             ))}
-            <Button variant="primary" size="sm" asChild>
-              <Link href="/contact">Get a Quote</Link>
-            </Button>
+            <Link
+              href="/contact"
+              className="bg-teal text-white hover:bg-teal-dark px-6 py-2 rounded-full font-accent font-medium text-sm transition-all duration-300 hover:scale-105"
+            >
+              Get Started
+            </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-navy hover:text-blue transition-colors duration-300 p-2 flex-shrink-0 ml-2"
+            className={`lg:hidden transition-colors duration-300 p-2 flex-shrink-0 ml-2 ${
+              isScrolled ? "text-navy hover:text-teal" : "text-white hover:text-teal"
+            }`}
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -90,7 +93,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -107,24 +109,19 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block font-accent text-lg py-2 transition-colors duration-300 ${
-                    pathname === link.href
-                      ? "text-blue"
-                      : "text-navy hover:text-blue"
+                    pathname === link.href ? "text-teal" : "text-navy hover:text-teal"
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Button
-                variant="primary"
-                size="md"
-                className="w-full"
-                asChild
+              <Link
+                href="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center w-full bg-teal text-white hover:bg-teal-dark px-6 py-3 rounded-full font-accent font-medium transition-all duration-300"
               >
-                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                  Get a Quote
-                </Link>
-              </Button>
+                Get Started
+              </Link>
             </div>
           </motion.div>
         )}

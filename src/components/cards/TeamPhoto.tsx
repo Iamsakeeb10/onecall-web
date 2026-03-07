@@ -19,8 +19,8 @@ export function TeamPhoto() {
         />
       ) : (
         <div className="w-full h-full bg-surface-100 flex items-center justify-center">
-          <div className="w-24 h-24 rounded-full bg-blue/20 flex items-center justify-center">
-            <span className="font-display text-5xl font-bold text-blue">M</span>
+          <div className="w-24 h-24 rounded-full bg-orange/20 flex items-center justify-center">
+            <span className="font-display text-5xl font-bold text-orange">M</span>
           </div>
         </div>
       )}

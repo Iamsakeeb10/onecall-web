@@ -4,15 +4,15 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-navy text-white border-t-0 relative">
+    <footer className="bg-charcoal text-white border-t-0 relative">
       {/* Optional accent strip */}
-      <div className="h-0.5 bg-gradient-to-r from-transparent via-blue to-transparent opacity-40" aria-hidden="true" />
+      <div className="h-0.5 bg-gradient-to-r from-transparent via-orange to-transparent opacity-40" aria-hidden="true" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Column 1: Company Info */}
           <div>
-            <div className="inline-flex items-center rounded-xl bg-navy-light border border-white/10 p-2 mb-4">
+            <div className="inline-flex items-center rounded-xl bg-charcoal-light border border-white/10 p-2 mb-4">
               <Image
                 src="/images/logo.png"
                 alt="MEGAFIXX Home Services LLC"
@@ -114,7 +114,7 @@ export function Footer() {
                   href="tel:4693789262"
                   className="font-body text-surface-300 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
-                  <Phone className="w-4 h-4 text-blue" aria-hidden="true" />
+                  <Phone className="w-4 h-4 text-orange" aria-hidden="true" />
                   (469) 378-9262
                 </a>
               </li>
@@ -123,15 +123,15 @@ export function Footer() {
                   href="mailto:info@megafixxhomeservices.com"
                   className="font-body text-surface-300 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
-                  <Mail className="w-4 h-4 text-blue" aria-hidden="true" />
+                  <Mail className="w-4 h-4 text-orange" aria-hidden="true" />
                   info@megafixxhomeservices.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-blue mt-1 flex-shrink-0" aria-hidden="true" />
+                <MapPin className="w-4 h-4 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
                 <span className="font-body text-surface-300 text-sm">
                   Collin County, TX<br />
-                  <span className="text-blue">Serving All of Texas</span>
+                  <span className="text-orange">Serving All of Texas</span>
                 </span>
               </li>
             </ul>

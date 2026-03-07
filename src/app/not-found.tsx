@@ -34,7 +34,7 @@ export default function NotFound() {
         <h1 className="font-display text-9xl font-bold text-surface-100 mb-4">
           404
         </h1>
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-4">
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
           Page Not Found
         </h2>
         <p className="font-body text-text-muted text-lg mb-8 max-w-md mx-auto">

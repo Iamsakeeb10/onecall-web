@@ -48,17 +48,17 @@ export function QualityProcess() {
               delay={index * 0.2}
               className="h-full"
             >
-              <div className="relative bg-surface-50 border border-surface-200 rounded-xl p-8 text-center h-full flex flex-col hover:border-blue/30 hover:shadow-card transition-all duration-300">
+              <div className="relative bg-surface-50 border border-surface-200 rounded-xl p-8 text-center h-full flex flex-col hover:border-orange/30 hover:shadow-card transition-all duration-300">
                 {/* Step Number Badge */}
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-navy text-white font-display text-2xl font-bold mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange text-white font-display text-2xl font-bold mb-6">
                   {step.number}
                 </div>
 
                 {/* Icon */}
-                <step.icon className="w-10 h-10 text-blue mx-auto mb-4" aria-hidden="true" />
+                <step.icon className="w-10 h-10 text-orange mx-auto mb-4" aria-hidden="true" />
 
                 {/* Title */}
-                <h3 className="font-display text-xl font-bold text-navy mb-3">
+                <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                   {step.title}
                 </h3>
 

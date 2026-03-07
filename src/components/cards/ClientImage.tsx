@@ -38,7 +38,7 @@ export function ClientImage({ client }: ClientImageProps) {
         />
       ) : (
         <div className="w-full h-full bg-surface-100 flex items-center justify-center">
-          <IconComponent className="w-16 h-16 text-blue" aria-hidden="true" />
+          <IconComponent className="w-16 h-16 text-orange" aria-hidden="true" />
         </div>
       )}
     </div>

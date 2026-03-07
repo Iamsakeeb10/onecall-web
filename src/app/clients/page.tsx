@@ -45,11 +45,11 @@ export default function ClientsPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-navy/70 z-10" />
+        <div className="absolute inset-0 bg-charcoal/72 z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20 text-center">
-          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
             Our Clients
           </h1>
           <p className="font-body text-base sm:text-lg lg:text-xl text-text-muted max-w-2xl mx-auto">
@@ -64,7 +64,7 @@ export default function ClientsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection variant="fadeLeft">
               <div>
-                <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-6">
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
                   Building Long-Term Partnerships
                 </h2>
                 <p className="font-body text-lg text-text-muted mb-4">
@@ -73,7 +73,7 @@ export default function ClientsPage() {
                 <p className="font-body text-lg text-text-muted mb-4">
                   We understand that every property represents an investment — and we treat it accordingly. Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
                 </p>
-                <p className="font-body text-lg text-blue italic font-medium">
+                <p className="font-body text-lg text-orange italic font-medium">
                   &quot;We build relationships based on performance, accountability, and trust.&quot;
                 </p>
               </div>
@@ -81,22 +81,22 @@ export default function ClientsPage() {
 
             <AnimatedSection variant="fadeRight">
               <div className="bg-surface-100 border border-surface-200 rounded-xl p-8">
-                <h3 className="font-display text-2xl font-bold text-navy mb-6">By The Numbers</h3>
+                <h3 className="font-display text-2xl font-bold text-charcoal mb-6">By The Numbers</h3>
                 <div className="space-y-6">
                   <div>
-                    <div className="text-4xl font-display font-bold text-blue mb-2">500+</div>
+                    <div className="text-4xl font-display font-bold text-orange mb-2">500+</div>
                     <div className="font-body text-text-muted">Properties Maintained</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-blue mb-2">Texas</div>
+                    <div className="text-4xl font-display font-bold text-orange mb-2">Texas</div>
                     <div className="font-body text-text-muted">Statewide Coverage</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-blue mb-2">100%</div>
+                    <div className="text-4xl font-display font-bold text-orange mb-2">100%</div>
                     <div className="font-body text-text-muted">Fully Insured</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-blue mb-2">10+</div>
+                    <div className="text-4xl font-display font-bold text-orange mb-2">10+</div>
                     <div className="font-body text-text-muted">Years Experience</div>
                   </div>
                 </div>
@@ -144,10 +144,10 @@ export default function ClientsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 Why Clients Choose MEGAFIXX
               </h2>
-              <div className="w-20 h-1 bg-blue rounded-full mx-auto" />
+              <div className="w-20 h-1 bg-orange rounded-full mx-auto" />
             </div>
           </AnimatedSection>
 
@@ -180,8 +180,8 @@ export default function ClientsPage() {
                 delay={index * 0.1}
               >
                 <div className="bg-surface-100 border border-surface-200 rounded-xl p-6 h-full">
-                  <feature.icon className="w-10 h-10 text-blue mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-navy mb-3">
+                  <feature.icon className="w-10 h-10 text-orange mb-4" aria-hidden="true" />
+                  <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                     {feature.title}
                   </h3>
                   <p className="font-body text-text-muted">
@@ -199,16 +199,16 @@ export default function ClientsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 Quality Assurance Process
               </h2>
-              <div className="w-20 h-1 bg-blue rounded-full mx-auto" />
+              <div className="w-20 h-1 bg-orange rounded-full mx-auto" />
             </div>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
             {/* Connecting Line (Desktop Only) */}
-            <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 border-t border-blue/30" />
+            <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 border-t border-orange/30" />
 
             {[
               {
@@ -238,15 +238,15 @@ export default function ClientsPage() {
               >
                 <div className="relative bg-white border border-surface-200 rounded-xl p-8 text-center h-full flex flex-col">
                   {/* Step Number Badge */}
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue text-white font-display text-2xl font-bold mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange text-white font-display text-2xl font-bold mb-6">
                     {step.number}
                   </div>
 
                   {/* Icon */}
-                  <step.icon className="w-10 h-10 text-blue mx-auto mb-4" aria-hidden="true" />
+                  <step.icon className="w-10 h-10 text-orange mx-auto mb-4" aria-hidden="true" />
 
                   {/* Title */}
-                  <h3 className="font-display text-xl font-bold text-navy mb-3">
+                  <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                     {step.title}
                   </h3>
 
@@ -262,11 +262,11 @@ export default function ClientsPage() {
       </section>
 
       {/* Ready to Partner CTA Banner */}
-      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-blue/20">
+      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-orange/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
-            <div className="bg-surface-100 border border-blue/30 rounded-2xl p-8 md:p-12 text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-6">
+            <div className="bg-surface-100 border border-orange/30 rounded-2xl p-8 md:p-12 text-center">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
                 Ready to Partner with MEGAFIXX?
               </h2>
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
@@ -275,16 +275,16 @@ export default function ClientsPage() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
                 <a
                   href="tel:4693789262"
-                  className="flex items-center gap-2 font-body text-navy hover:text-blue transition-colors duration-300"
+                  className="flex items-center gap-2 font-body text-charcoal hover:text-orange transition-colors duration-300"
                 >
-                  <Phone className="w-5 h-5 text-blue" aria-hidden="true" />
+                  <Phone className="w-5 h-5 text-orange" aria-hidden="true" />
                   (469) 378-9262
                 </a>
                 <a
                   href="mailto:info@megafixxhomeservices.com"
-                  className="flex items-center gap-2 font-body text-navy hover:text-blue transition-colors duration-300"
+                  className="flex items-center gap-2 font-body text-charcoal hover:text-orange transition-colors duration-300"
                 >
-                  <Mail className="w-5 h-5 text-blue" aria-hidden="true" />
+                  <Mail className="w-5 h-5 text-orange" aria-hidden="true" />
                   info@megafixxhomeservices.com
                 </a>
               </div>

@@ -25,8 +25,8 @@ export function Navbar() {
   const isScrolled = scrollPosition > 50;
 
   const linkClass = isScrolled
-    ? "font-accent text-base text-navy hover:text-teal transition-colors duration-300 relative group"
-    : "font-accent text-base text-white hover:text-teal transition-colors duration-300 relative group";
+    ? "font-accent text-base text-charcoal hover:text-orange transition-colors duration-300 relative group"
+    : "font-accent text-base text-white hover:text-orange transition-colors duration-300 relative group";
 
   return (
     <nav
@@ -62,7 +62,7 @@ export function Navbar() {
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-teal transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-orange transition-all duration-300 ${
                     pathname === link.href ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
@@ -70,7 +70,7 @@ export function Navbar() {
             ))}
             <Link
               href="/contact"
-              className="bg-teal text-white hover:bg-teal-dark px-6 py-2 rounded-full font-accent font-medium text-sm transition-all duration-300 hover:scale-105"
+              className="bg-orange text-white hover:bg-orange-dark px-6 py-2 rounded-full font-accent font-medium text-sm transition-all duration-300 hover:scale-105"
             >
               Get Started
             </Link>
@@ -79,7 +79,7 @@ export function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`lg:hidden transition-colors duration-300 p-2 flex-shrink-0 ml-2 ${
-              isScrolled ? "text-navy hover:text-teal" : "text-white hover:text-teal"
+              isScrolled ? "text-charcoal hover:text-orange" : "text-white hover:text-orange"
             }`}
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
@@ -109,7 +109,7 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block font-accent text-lg py-2 transition-colors duration-300 ${
-                    pathname === link.href ? "text-teal" : "text-navy hover:text-teal"
+                    pathname === link.href ? "text-orange" : "text-charcoal hover:text-orange"
                   }`}
                 >
                   {link.label}
@@ -118,7 +118,7 @@ export function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center w-full bg-teal text-white hover:bg-teal-dark px-6 py-3 rounded-full font-accent font-medium transition-all duration-300"
+                className="flex items-center justify-center w-full bg-orange text-white hover:bg-orange-dark px-6 py-3 rounded-full font-accent font-medium transition-all duration-300"
               >
                 Get Started
               </Link>

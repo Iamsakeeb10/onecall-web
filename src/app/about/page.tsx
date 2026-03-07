@@ -85,12 +85,12 @@ export default function AboutPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-navy/70 z-10" />
+        <div className="absolute inset-0 bg-charcoal/72 z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
           <div className="text-center">
-            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
               About MEGAFIXX Home Services LLC
             </h1>
             <p className="font-body text-base sm:text-lg lg:text-xl text-text-muted max-w-2xl mx-auto">
@@ -106,7 +106,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <AnimatedSection variant="fadeLeft" className="lg:col-span-3">
               <div>
-                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-navy mb-6">
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-6">
                   Our Mission
                 </h2>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-4">
@@ -115,8 +115,8 @@ export default function AboutPage() {
                 <p className="font-body text-base sm:text-lg text-text-muted mb-6">
                   Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
                 </p>
-                <div className="bg-surface-100 border-l-4 border-blue rounded-lg p-4 sm:p-6 mb-8">
-                  <p className="font-body text-base sm:text-lg text-blue italic font-medium">
+                <div className="bg-surface-100 border-l-4 border-orange rounded-lg p-4 sm:p-6 mb-8">
+                  <p className="font-body text-base sm:text-lg text-orange italic font-medium">
                     &quot;We understand that every property represents an investment — and we treat it accordingly.&quot;
                   </p>
                 </div>
@@ -143,10 +143,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 What We Do
               </h2>
-              <div className="w-20 h-1 bg-blue rounded-full mx-auto mb-4" />
+              <div className="w-20 h-1 bg-orange rounded-full mx-auto mb-4" />
               <p className="font-body text-base sm:text-lg text-text-muted max-w-3xl mx-auto">
                 Comprehensive property maintenance solutions across Texas — from routine upkeep to full property cleanouts.
               </p>
@@ -161,8 +161,8 @@ export default function AboutPage() {
                 delay={index * 0.1}
               >
                 <div className="bg-white border border-surface-200 rounded-xl p-8 text-center h-full">
-                  <category.icon className="w-12 h-12 text-blue mx-auto mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-navy mb-3">
+                  <category.icon className="w-12 h-12 text-orange mx-auto mb-4" aria-hidden="true" />
+                  <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                     {category.title}
                   </h3>
                   <p className="font-body text-text-muted">
@@ -188,16 +188,16 @@ export default function AboutPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-navy/70 z-10" />
+        <div className="absolute inset-0 bg-charcoal/72 z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 Serving Clients Across Texas
               </h2>
-              <div className="w-20 h-1 bg-blue rounded-full mx-auto mb-4" />
+              <div className="w-20 h-1 bg-orange rounded-full mx-auto mb-4" />
               <p className="font-body text-base sm:text-lg text-text-muted max-w-2xl mx-auto mb-6">
                 No matter where your property is located in Texas, MEGAFIXX Home Services LLC delivers dependable maintenance solutions.
               </p>
@@ -212,9 +212,9 @@ export default function AboutPage() {
               {regions.map((region) => (
                 <div
                   key={region}
-                  className="bg-surface-100/90 border border-surface-200 rounded-full px-4 py-3 text-center hover:border-blue transition-colors duration-300"
+                  className="bg-surface-100/90 border border-surface-200 rounded-full px-4 py-3 text-center hover:border-orange transition-colors duration-300"
                 >
-                  <span className="font-accent text-sm text-navy">{region}</span>
+                  <span className="font-accent text-sm text-charcoal">{region}</span>
                 </div>
               ))}
             </div>
@@ -227,10 +227,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 Our Values
               </h2>
-              <div className="w-20 h-1 bg-blue rounded-full mx-auto" />
+              <div className="w-20 h-1 bg-orange rounded-full mx-auto" />
             </div>
           </AnimatedSection>
 
@@ -242,8 +242,8 @@ export default function AboutPage() {
                 delay={index * 0.1}
               >
                 <div className="bg-surface-100 border border-surface-200 rounded-xl p-8 text-center h-full">
-                  <value.icon className="w-12 h-12 text-blue mx-auto mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-2xl font-bold text-navy mb-3">
+                  <value.icon className="w-12 h-12 text-orange mx-auto mb-4" aria-hidden="true" />
+                  <h3 className="font-display text-2xl font-bold text-charcoal mb-3">
                     {value.title}
                   </h3>
                   <p className="font-body text-text-muted">
@@ -257,11 +257,11 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-blue/20">
+      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-orange/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
-            <div className="bg-surface-100 border border-blue/30 rounded-2xl p-8 md:p-12 text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-4">
+            <div className="bg-surface-100 border border-orange/30 rounded-2xl p-8 md:p-12 text-center">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 Ready to Protect Your Properties?
               </h2>
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">

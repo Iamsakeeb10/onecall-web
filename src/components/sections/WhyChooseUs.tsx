@@ -56,8 +56,8 @@ export function WhyChooseUs() {
               delay={index * 0.1}
             >
               <div className="bg-white border border-surface-200 rounded-xl p-6 h-full shadow-card">
-                <feature.icon className="w-10 h-10 text-blue mb-4" aria-hidden="true" />
-                <h3 className="font-display text-xl font-bold text-navy mb-3">
+                <feature.icon className="w-10 h-10 text-orange mb-4" aria-hidden="true" />
+                <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                   {feature.title}
                 </h3>
                 <p className="font-body text-text-body">
@@ -74,7 +74,7 @@ export function WhyChooseUs() {
             {stats.map((stat, index) => (
               <React.Fragment key={stat.value}>
                 <div className="text-center">
-                  <div className="font-display text-2xl md:text-3xl font-bold text-navy mb-1">
+                  <div className="font-display text-2xl md:text-3xl font-bold text-charcoal mb-1">
                     {stat.value}
                   </div>
                   <div className="font-body text-text-muted text-sm">

@@ -3,44 +3,42 @@
 @theme {
   /* === PRIMARY SURFACES === */
   --color-white:        #FFFFFF;
-  --color-surface-50:   #F8F9FB;
-  --color-surface-100:  #EFF2F7;
-  --color-surface-200:  #E2E8F2;
-  --color-surface-300:  #C8D3E6;
+  --color-surface-50:   #FAFAFA;
+  --color-surface-100:  #F4F4F5;
+  --color-surface-200:  #E4E4E7;
+  --color-surface-300:  #D4D4D8;
 
-  /* === NAVY (Primary Brand Dark) === */
-  --color-navy:         #0F1F3D;
-  --color-navy-light:   #1A3260;
-  --color-navy-muted:   #3D557A;
+  /* === CHARCOAL (Primary Dark) === */
+  --color-charcoal:       #1C1C1E;
+  --color-charcoal-light: #2C2C2E;
+  --color-charcoal-muted: #52525B;
 
-  /* === STEEL BLUE (Interactive / Action Color) === */
-  --color-blue:         #2563EB;
-  --color-blue-dark:    #1D4ED8;
-  --color-blue-light:   #EFF6FF;
+  /* === BURNT ORANGE (Primary Accent) === */
+  --color-orange:         #E8621A;
+  --color-orange-dark:    #C94E0D;
+  --color-orange-light:   #FFF1E8;
+  --color-orange-muted:   rgba(232,98,26,0.12);
 
-  /* === GOLD (Prestige Accent — use sparingly) === */
-  --color-gold:         #C89B3C;
-  --color-gold-light:   #FEF3C7;
+  /* === AMBER (Prestige Accent — stars only) === */
+  --color-amber:          #F59E0B;
+  --color-amber-light:    #FFFBEB;
 
   /* === TEXT === */
-  --color-text-primary: #0F1F3D;
-  --color-text-body:    #374151;
-  --color-text-muted:   #6B7280;
-  --color-text-inverse: #FFFFFF;
+  --color-text-primary:   #1C1C1E;
+  --color-text-body:     #3F3F46;
+  --color-text-muted:     #71717A;
+  --color-text-inverse:   #FFFFFF;
 
-  /* === HERO + NAVBAR (99 Repairs style) === */
+  /* === HERO (preserved — do not change hero background) === */
   --color-hero-bg:        #3E3E3E;
   --color-hero-bg-dark:   #2E2E2E;
   --color-hero-text:      #FFFFFF;
   --color-hero-muted:     #C8C8C8;
-  --color-teal:           #2ECC8F;
-  --color-teal-dark:      #25A873;
-  --color-teal-light:     rgba(46,204,143,0.15);
 
   /* === UTILITY === */
   --color-error:        #DC2626;
   --color-success:      #16A34A;
-  --color-divider:      #E2E8F2;
+  --color-divider:      #E4E4E7;
 
   /* Fonts */
   --font-display: 'Outfit', sans-serif;
@@ -48,20 +46,20 @@
   --font-accent:  'Outfit', sans-serif;
 
   /* Box shadows */
-  --shadow-card:        0 1px 3px rgba(15,31,61,0.06), 0 4px 12px rgba(15,31,61,0.06);
-  --shadow-card-hover:  0 4px 16px rgba(15,31,61,0.12), 0 12px 32px rgba(15,31,61,0.08);
-  --shadow-blue-glow:   0 0 0 3px rgba(37,99,235,0.20);
-  --shadow-navbar:      0 1px 0 rgba(15,31,61,0.06), 0 4px 16px rgba(15,31,61,0.08);
+  --shadow-card:        0 1px 3px rgba(28,28,30,0.06), 0 4px 12px rgba(28,28,30,0.05);
+  --shadow-card-hover:  0 4px 16px rgba(232,98,26,0.12), 0 12px 32px rgba(28,28,30,0.10);
+  --shadow-orange-glow:  0 0 0 3px rgba(232,98,26,0.22);
+  --shadow-navbar:      0 1px 0 rgba(28,28,30,0.06), 0 4px 16px rgba(28,28,30,0.08);
 
   /* Keyframe animations */
   --animate-fade-up: fadeUp 0.6s ease forwards;
-  --animate-float:   float 3s ease-in-out infinite;
+  --animate-float:   float 4s ease-in-out infinite;
 }
 
 /* Prevent flash of unstyled content and horizontal overflow */
 html,
 body {
-  background-color: var(--color-white);
+  background-color: #FFFFFF;
   color: var(--color-text-body);
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -70,28 +68,28 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Thin top accent line — brand signature */
+/* Top accent line — orange brand signature */
 body::before {
   content: '';
   display: block;
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-navy) 0%, var(--color-blue) 60%, var(--color-navy) 100%);
+  background: linear-gradient(90deg, var(--color-charcoal) 0%, var(--color-orange) 50%, var(--color-charcoal) 100%);
   z-index: 100;
 }
 
 /* Focus ring global update */
 :focus-visible {
-  outline: 2px solid var(--color-blue);
+  outline: 2px solid var(--color-orange);
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 /* Selection color */
 ::selection {
-  background-color: var(--color-blue-light);
-  color: var(--color-navy);
+  background-color: var(--color-orange-light);
+  color: var(--color-charcoal);
 }
 
 @keyframes fadeUp {

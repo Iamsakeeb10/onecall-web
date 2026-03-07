@@ -55,7 +55,7 @@ function CountUpNumber({ value, label }: StatItem) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-3xl md:text-4xl font-display font-bold text-navy mb-2">
+      <div className="text-3xl md:text-4xl font-display font-bold text-charcoal mb-2">
         {displayValue}
         {value.includes("+") && !displayValue.includes("+") && "+"}
         {value.includes("%") && !displayValue.includes("%") && "%"}

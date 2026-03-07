@@ -22,9 +22,9 @@ export function Button({
   const baseStyles = "inline-flex items-center justify-center gap-2 font-accent font-medium rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed";
   
   const variantStyles = {
-    primary: "bg-blue text-white hover:bg-blue-dark hover:scale-105 shadow-sm hover:shadow-blue-glow",
-    secondary: "border-2 border-navy text-navy hover:bg-navy hover:text-white hover:scale-105",
-    ghost: "text-blue hover:text-blue-dark hover:underline underline-offset-4"
+    primary: "bg-orange text-white hover:bg-orange-dark hover:scale-105 shadow-sm hover:shadow-orange-glow",
+    secondary: "border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white hover:scale-105 rounded-lg",
+    ghost: "text-orange hover:text-orange-dark hover:underline underline-offset-4"
   };
   
   const sizeStyles = {

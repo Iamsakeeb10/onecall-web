@@ -32,12 +32,12 @@ export default function ServicesPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-navy/70 z-10" />
+        <div className="absolute inset-0 bg-charcoal/72 z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
           {/* H1 */}
-          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4 sm:mb-6">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4 sm:mb-6">
             Our Services
           </h1>
 
@@ -66,7 +66,7 @@ export default function ServicesPage() {
           {/* Bottom CTA */}
           <AnimatedSection variant="fadeUp" delay={0.8}>
             <div className="text-center bg-surface-50 rounded-xl p-8 border border-surface-200">
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-4">
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-charcoal mb-4">
                 Looking for a Professional Property Maintenance Company in Texas?
               </h2>
               <p className="font-body text-text-muted mb-6 max-w-2xl mx-auto">

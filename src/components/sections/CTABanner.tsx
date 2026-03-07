@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/Button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 interface CTABannerProps {
-  variant?: "navy" | "light";
+  variant?: "dark" | "light";
 }
 
-export function CTABanner({ variant = "navy" }: CTABannerProps) {
+export function CTABanner({ variant = "dark" }: CTABannerProps) {
   const [imgError, setImgError] = useState(false);
   const backgroundImageUrl = "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1920&q=80";
 
@@ -20,7 +20,7 @@ export function CTABanner({ variant = "navy" }: CTABannerProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-4">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 Looking for a Trusted Maintenance Partner?
               </h2>
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
@@ -41,7 +41,7 @@ export function CTABanner({ variant = "navy" }: CTABannerProps) {
     );
   }
 
-  // Navy variant (default) — image with navy overlay
+  // Dark variant (default) — image with charcoal overlay
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -54,11 +54,11 @@ export function CTABanner({ variant = "navy" }: CTABannerProps) {
             onError={() => setImgError(true)}
           />
         ) : (
-          <div className="w-full h-full bg-navy" />
+          <div className="w-full h-full bg-charcoal" />
         )}
       </div>
 
-      <div className="absolute inset-0 bg-navy/70 z-10" />
+      <div className="absolute inset-0 bg-charcoal/72 z-10" />
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
@@ -78,7 +78,7 @@ export function CTABanner({ variant = "navy" }: CTABannerProps) {
               </Button>
               <a
                 href="tel:4693789262"
-                className="inline-flex items-center justify-center gap-2 font-accent font-medium rounded-lg transition-all duration-300 border-2 border-white/40 text-white hover:bg-white hover:text-navy px-8 py-4 text-lg"
+                className="inline-flex items-center justify-center gap-2 font-accent font-medium rounded-lg transition-all duration-300 border-2 border-white/40 text-white hover:bg-white hover:text-charcoal px-8 py-4 text-lg"
               >
                 Call Now: (469) 378-9262
               </a>

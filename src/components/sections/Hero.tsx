@@ -31,9 +31,9 @@ export function Hero() {
               Maintenance has never
               <br />
               been so{" "}
-              <span className="relative inline-block text-teal">
+              <span className="relative inline-block text-orange">
                 Simple
-                <span className="absolute -bottom-1 left-0 right-0 h-[3px] bg-teal rounded-full" />
+                <span className="absolute -bottom-1 left-0 right-0 h-[3px] bg-orange rounded-full" />
               </span>
             </h1>
 
@@ -44,19 +44,19 @@ export function Hero() {
             <div className="flex flex-row flex-wrap gap-4 justify-center lg:justify-start">
               <Link
                 href="/contact"
-                className="bg-teal text-white px-8 py-3 rounded-full font-accent font-medium text-base hover:bg-teal-dark hover:scale-105 transition-all duration-300 shadow-md"
+                className="bg-orange text-white px-8 py-3 rounded-full font-accent font-medium text-base hover:bg-orange-dark hover:scale-105 transition-all duration-300 shadow-md"
               >
                 Get a Free Quote
               </Link>
               <Link
                 href="/services"
-                className="bg-teal text-white px-8 py-3 rounded-full font-accent font-medium text-base hover:bg-teal-dark hover:scale-105 transition-all duration-300 shadow-md"
+                className="bg-orange text-white px-8 py-3 rounded-full font-accent font-medium text-base hover:bg-orange-dark hover:scale-105 transition-all duration-300 shadow-md"
               >
                 View Our Services
               </Link>
               <Link
                 href="/about"
-                className="bg-teal text-white px-8 py-3 rounded-full font-accent font-medium text-base hover:bg-teal-dark hover:scale-105 transition-all duration-300 shadow-md"
+                className="bg-orange text-white px-8 py-3 rounded-full font-accent font-medium text-base hover:bg-orange-dark hover:scale-105 transition-all duration-300 shadow-md"
               >
                 Learn More
               </Link>

@@ -43,7 +43,7 @@ export function ClientsSection() {
           <div className="text-center">
             <Link
               href="/clients"
-              className="inline-flex items-center gap-2 font-accent text-blue hover:text-blue-dark hover:underline transition-colors duration-300 text-lg"
+              className="inline-flex items-center gap-2 font-accent text-orange hover:text-orange-dark hover:underline transition-colors duration-300 text-lg"
             >
               Learn More About Our Clients
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />

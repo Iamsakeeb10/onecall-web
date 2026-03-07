@@ -1,6 +1,5 @@
 "use client";
 
-import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -18,24 +17,11 @@ const navLinks = [
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const scrollPosition = useScrollPosition();
   const pathname = usePathname();
   const shouldReduceMotion = useReducedMotion();
 
-  const isScrolled = scrollPosition > 50;
-
-  const linkClass = isScrolled
-    ? "font-accent text-base text-charcoal hover:text-orange transition-colors duration-300 relative group"
-    : "font-accent text-base text-white hover:text-orange transition-colors duration-300 relative group";
-
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full overflow-x-hidden ${
-        isScrolled
-          ? "bg-white/98 backdrop-blur-md shadow-navbar border-b border-surface-200"
-          : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 w-full overflow-x-hidden bg-white/98 backdrop-blur-md shadow-navbar border-b border-surface-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between h-20 w-full">
           <Link href="/" className="flex items-center relative inline-block">
@@ -44,11 +30,7 @@ export function Navbar() {
               alt="MEGAFIXX Home Services LLC"
               width={220}
               height={66}
-              className={`relative z-10 w-auto object-contain transition-all duration-300 ${
-                isScrolled
-                  ? "h-16 sm:h-[88px] brightness-110 contrast-110"
-                  : "h-12 sm:h-16 brightness-0 invert"
-              }`}
+              className="relative z-10 w-auto h-14 sm:h-20 object-contain"
               priority
             />
           </Link>
@@ -58,7 +40,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={linkClass}
+                className="font-accent text-base text-charcoal hover:text-orange transition-colors duration-300 relative group"
               >
                 {link.label}
                 <span
@@ -78,9 +60,7 @@ export function Navbar() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`lg:hidden transition-colors duration-300 p-2 flex-shrink-0 ml-2 ${
-              isScrolled ? "text-charcoal hover:text-orange" : "text-white hover:text-orange"
-            }`}
+            className="lg:hidden transition-colors duration-300 p-2 flex-shrink-0 ml-2 text-charcoal hover:text-orange"
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
           >

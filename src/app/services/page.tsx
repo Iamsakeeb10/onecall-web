@@ -18,9 +18,8 @@ export default function ServicesPage() {
 
   return (
     <>
-      {/* Page Hero */}
-      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-white pt-16 sm:pt-20">
-        {/* Background Image */}
+      {/* Page Hero — same overlay and font styles as CTABanner */}
+      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32">
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImageUrl}
@@ -30,19 +29,12 @@ export default function ServicesPage() {
             className="object-cover"
           />
         </div>
-
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-charcoal/72 z-10" />
-
-        {/* Content */}
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
-          {/* H1 */}
-          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4 sm:mb-6">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Our Services
           </h1>
-
-          {/* Intro Paragraph */}
-          <p className="font-body text-base sm:text-lg lg:text-xl text-text-muted max-w-2xl">
+          <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
             MEGAFIXX Home Services LLC provides reliable, affordable, and professional property maintenance services throughout Texas. We serve homeowners, landlords, property managers, real estate investors, and commercial clients across the state with solutions designed to protect, preserve, and enhance property value.
           </p>
         </div>

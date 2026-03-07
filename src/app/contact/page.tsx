@@ -23,9 +23,8 @@ export default function ContactPage() {
   const heroImageUrl = "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1920&q=80";
   return (
     <>
-      {/* Page Hero */}
-      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center bg-white pt-16 sm:pt-20">
-        {/* Background Image */}
+      {/* Page Hero — same overlay and font styles as CTABanner */}
+      <section className="relative min-h-[40vh] md:min-h-[50vh] lg:min-h-[55vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32">
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImageUrl}
@@ -35,17 +34,12 @@ export default function ContactPage() {
             className="object-cover"
           />
         </div>
-
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-charcoal/72 z-10" />
-
-        {/* Content */}
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 lg:py-20">
-          {/* H1 */}
-          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Contact MEGAFIXX
           </h1>
-          <p className="font-body text-base sm:text-lg lg:text-xl text-text-muted max-w-2xl">
+          <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
             Let&apos;s talk about your property needs
           </p>
         </div>

@@ -12,15 +12,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Column 1: Company Info */}
           <div>
-            <div className="inline-flex items-center rounded-xl bg-charcoal-light border border-white/10 p-2 mb-4">
-              <Image
-                src="/images/logo.png"
-                alt="MEGAFIXX Home Services LLC"
-                width={220}
-                height={66}
-                className="h-16 w-auto object-contain"
-              />
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="MEGAFIXX Home Services LLC"
+              width={220}
+              height={66}
+              className="h-16 w-auto object-contain mb-4"
+            />
             <p className="font-body text-surface-300 text-sm mb-4">
               Texas-based statewide property maintenance company. Serving property managers, investors, and financial institutions across Texas.
             </p>

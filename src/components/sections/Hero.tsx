@@ -21,11 +21,11 @@ export function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Text */}
-          <div className="flex flex-col items-start text-center lg:text-left">
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-hero-text leading-tight mb-6">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-32 sm:pt-32 sm:pb-36">
+        <div className="grid grid-cols-1 min-[1131px]:grid-cols-2 gap-12 items-center">
+          {/* Left: Text — centered below 1130px */}
+          <div className="flex flex-col items-center min-[1131px]:items-start text-center min-[1131px]:text-left">
+            <h1 className="font-display text-4xl sm:text-5xl min-[1131px]:text-6xl font-bold text-hero-text leading-tight mb-6">
               Professional Property
               <br />
               Maintenance has never
@@ -37,11 +37,11 @@ export function Hero() {
               </span>
             </h1>
 
-            <p className="font-body text-lg text-hero-muted mb-10 max-w-md leading-relaxed mx-auto lg:mx-0">
+            <p className="font-body text-lg text-hero-muted mb-10 max-w-md leading-relaxed mx-auto min-[1131px]:mx-0">
               We are a team of talented professionals supporting your residential and commercial property management across Texas.
             </p>
 
-            <div className="flex flex-row flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="flex flex-row flex-wrap gap-4 justify-center min-[1131px]:justify-start">
               <Link
                 href="/contact"
                 className="bg-orange text-white px-8 py-3 rounded-full font-accent font-medium text-base hover:bg-orange-dark hover:scale-105 transition-all duration-300 shadow-md"
@@ -63,8 +63,8 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right: Illustration */}
-          <div className="hidden lg:flex items-center justify-center">
+          {/* Right: Illustration — visible from 1131px up */}
+          <div className="hidden min-[1131px]:flex items-center justify-center">
             <div className="relative drop-shadow-2xl">
               {!imgError ? (
                 <Image

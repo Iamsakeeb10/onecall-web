@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
-import { Clock, Award, BarChart, MessageSquare } from "lucide-react";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Award, BarChart, Clock, MessageSquare } from "lucide-react";
+import React from "react";
 
 const features = [
   {
@@ -37,7 +37,7 @@ const stats = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-20 lg:py-28 bg-surface-50">
+    <section id="why-us" className="pt-0 pb-20 lg:pb-28 bg-surface-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading

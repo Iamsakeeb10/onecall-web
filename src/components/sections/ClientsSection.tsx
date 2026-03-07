@@ -1,19 +1,18 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
-import { clients } from "@/lib/data/clients";
 import { ClientTypeCard } from "@/components/cards/ClientTypeCard";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { clients } from "@/lib/data/clients";
+import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function ClientsSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section id="clients" className="py-20 lg:py-28 bg-surface-50">
+    <section id="clients" className="pt-12 pb-20 lg:pt-16 lg:pb-28 bg-surface-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading

@@ -98,15 +98,25 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
+    const toAddress = process.env.CONTACT_EMAIL ?? process.env.EMAIL_USER;
+    if (!toAddress || !process.env.EMAIL_USER) {
+      console.error("[/api/vendor] Missing env: CONTACT_EMAIL or EMAIL_USER");
+      return NextResponse.json(
+        { error: "Server email configuration is missing." },
+        { status: 500 }
+      );
+    }
+
     await transporter.sendMail({
       from: `"MEGAFIXX Vendor Portal" <${process.env.EMAIL_USER}>`,
-      to: process.env.CONTACT_EMAIL ?? process.env.EMAIL_USER,
+      to: toAddress,
       replyTo: email,
       subject: `New Vendor Application — ${companyName}`,
       html,
       attachments,
     });
 
+    console.log(`[/api/vendor] Vendor application email sent to ${toAddress} (${companyName})`);
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
     console.error("[/api/vendor] Error:", error);

@@ -51,11 +51,13 @@ src/
 │   ├── services/page.tsx       # Services: hero, featured service grid, CTA
 │   ├── clients/page.tsx        # Clients: hero, intro, client types, process, CTA
 │   ├── contact/page.tsx        # Contact: hero, QuoteForm + contact info cards
+│   ├── vendors/page.tsx       # Vendors: hero, why partner, onboarding, requirements, services, 4-step application form, FAQ, CTA
 │   ├── terms/page.tsx          # Terms & Conditions
 │   ├── not-found.tsx           # 404 page
 │   ├── loading.tsx             # Global loading spinner
 │   ├── api/
-│   │   └── contact/route.ts    # POST handler for contact/quote form
+│   │   ├── contact/route.ts    # POST handler for contact/quote form
+│   │   └── vendor/route.ts    # POST handler for vendor application (FormData, file attachments, Nodemailer)
 │   ├── sitemap.ts              # Dynamic sitemap
 │   └── robots.ts               # Robots.txt
 ├── components/
@@ -79,7 +81,14 @@ src/
 │   │   ├── CTABanner.tsx       # Dark (image + overlay) or light variant; heading, CTA buttons
 │   │   ├── ContactSection.tsx  # SectionHeading + contact info + QuoteForm
 │   │   ├── ServicesPageHero.tsx # Optional hero wrapper for services page (image + overlay)
-│   │   └── TestimonialsLazy.tsx # Lazy placeholder for testimonials
+│   │   ├── TestimonialsLazy.tsx # Lazy placeholder for testimonials
+│   │   ├── VendorHero.tsx      # Vendors page hero: bg-hero-bg, Apply Now / Vendor Login → #vendor-application
+│   │   ├── VendorWhyPartner.tsx # Subtext strip (charcoal) + 4 benefit cards with CheckCircle2
+│   │   ├── VendorOnboarding.tsx # 3-step process cards (01 Submit, 02 Review, 03 Work Orders) with connector line
+│   │   ├── VendorRequirements.tsx # Required vs Preferred two-column lists (orange/amber bars)
+│   │   ├── VendorServices.tsx  # 6 service category icon cards (equal height); scaleIn animation
+│   │   ├── VendorFAQ.tsx       # Accordion FAQ (4 items); "use client"
+│   │   └── VendorCTABanner.tsx # Dark charcoal CTA: "Ready to Join...", Apply Now → #vendor-application
 │   ├── cards/
 │   │   ├── ServiceCard.tsx     # Service card: image, icon, title, description, features; variants grid | list | featured
 │   │   ├── ClientTypeCard.tsx  # Client type: icon, title, description, benefits; variants compact | full
@@ -87,7 +96,8 @@ src/
 │   │   ├── ClientImage.tsx     # Client image with fallback
 │   │   └── TeamPhoto.tsx       # Team/avatar placeholder
 │   ├── forms/
-│   │   └── QuoteForm.tsx       # Full quote/contact form: fullName, companyName, email, phone, propertyType, serviceNeeded, location, message
+│   │   ├── QuoteForm.tsx       # Full quote/contact form: fullName, companyName, email, phone, propertyType, serviceNeeded, location, message
+│   │   └── VendorApplicationForm.tsx # 4-step vendor form: Company Info, Services Offered, Compliance & Docs, Review & Submit; file uploads; POST /api/vendor
 │   └── shared/
 │       └── ScrollToTop.tsx     # Fixed bottom-right button; visible after 400px scroll; smooth scroll to top
 ├── hooks/
@@ -102,7 +112,8 @@ src/
 │       ├── formValidation.ts  # validateForm(ContactFormData), validateEmail, validatePhone, validateRequired
 │       └── mailer.ts          # Email sending utility for contact API
 └── types/
-    └── index.ts                # Service, ClientType, NavLink, Testimonial, ContactFormData
+    ├── index.ts                # Service, ClientType, NavLink, Testimonial, ContactFormData
+    └── vendor.ts               # VendorFormData, VendorFormErrors, VendorFormStep (vendor application)
 ```
 
 ---
@@ -116,10 +127,11 @@ src/
 | **/clients** | Who we serve | Solid `bg-hero-bg`, h1 "Our Clients", tagline | Intro, client type cards, process steps, "Ready to Partner" CTA | Learn more link; CTA section with phone/email + Get Started |
 | **/about** | About company | Solid `bg-hero-bg`, h1 "About MEGAFIXX...", tagline | Mission, service categories, coverage map (image + overlay), regions, values, CTA block | Buttons in CTA block |
 | **/contact** | Contact & quote | Solid `bg-hero-bg`, h1 "Contact MEGAFIXX", tagline | QuoteForm + contact info cards (phone, email, location, hours) | Form submit; contact links |
+| **/vendors** | Vendor partners | Solid `bg-hero-bg`, h1 "Join the MEGAFIXX Property Maintenance Network", Apply Now / Vendor Login | Subtext strip, Why Partner (4 cards), 3-step Onboarding, Requirements (required/preferred), Services We Assign (6 icons), **Vendor Application** (4-step form in `#vendor-application`), FAQ accordion, dark CTA banner | Hero + CTA banner → #vendor-application; form Submit on Step 4 |
 | **/terms** | Terms & Conditions | Text hero | TOC + content | — |
 | **404** | Not found | — | Message + Home / Contact buttons | — |
 
-**Inner-page hero pattern (About, Services, Clients, Contact):**  
+**Inner-page hero pattern (About, Services, Clients, Contact, Vendors):**  
 `section` with `h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh]`, `bg-hero-bg`, `pt-28 sm:pt-32`. Content: `text-white` heading, `text-surface-200` subtitle, centered. No background image; solid color only.
 
 ---
@@ -132,7 +144,7 @@ src/
 
 - Fixed, full width; `z-50`. Background: `bg-white/98 backdrop-blur-md shadow-navbar border-b border-surface-200`.
 - Logo: `/images/logo.png`, `h-14 sm:h-20`, link to `/`.
-- Links: Home, Services, Our Clients, About, Contact — `text-charcoal hover:text-orange`; active route: `h-0.5 bg-orange` underline.
+- Links: Home, Services, Our Clients, Vendors, About, Contact — `text-charcoal hover:text-orange`; active route: `h-0.5 bg-orange` underline.
 - CTA: "Get Started" → `/contact`, `bg-orange text-white hover:bg-orange-dark`, rounded-full, `px-6 py-2`.
 - Mobile: Hamburger (Menu/X); drawer with same links + CTA; `lg:hidden` / `hidden lg:flex`.
 - Uses `usePathname()`; no scroll state in current implementation (navbar always solid).
@@ -140,7 +152,7 @@ src/
 **Footer** (`src/components/layout/Footer.tsx`)
 
 - `bg-charcoal text-white`; top accent: `h-0.5 bg-gradient-to-r from-transparent via-orange to-transparent opacity-40`.
-- Grid: 4 columns (1 on mobile, 2 md, 4 lg): (1) Logo + tagline + Fully Insured/Licensed, (2) Quick Links, (3) Services list, (4) Contact (phone, email, location). Links: `text-surface-300 hover:text-white`. Contact icons: `text-orange`.
+- Grid: 4 columns (1 on mobile, 2 md, 4 lg): (1) Logo + tagline + Fully Insured/Licensed, (2) Quick Links (includes Vendors), (3) Services list, (4) Contact (phone, email, location). Links: `text-surface-300 hover:text-white`. Contact icons: `text-orange`.
 - Social row: Facebook, Twitter, LinkedIn, Instagram — `text-surface-300 hover:text-white hover:scale-110`.
 - Bottom: copyright, Terms & Conditions link; `border-t border-white/10`.
 
@@ -196,6 +208,40 @@ src/
 - **Props:** `testimonial: Testimonial`.
 - **Content:** 5 amber stars (`text-amber fill-amber`), quote (`text-text-muted italic`), avatar (image or initials fallback) with `ring-2 ring-orange/25`, name (`text-charcoal font-semibold`).
 - Card: `bg-white border border-surface-200 rounded-xl shadow-card`; `hover:border-orange/40 hover:shadow-card-hover`.
+
+### 4.4 Vendor Page Sections & Form
+
+**VendorHero** (`src/components/sections/VendorHero.tsx`)
+
+- Inner-page hero: `bg-hero-bg`, `hero-texture` overlay, h1 "Join the MEGAFIXX Property Maintenance Network", two CTAs (Apply Now, Vendor Login) linking to `#vendor-application`.
+
+**VendorWhyPartner** (`src/components/sections/VendorWhyPartner.tsx`)
+
+- Charcoal subtext strip; then section "Why Partner With MEGAFIXX?" with 4 benefit cards (CheckCircle2, title, description). Cards: standard border/shadow and hover lift.
+
+**VendorOnboarding** (`src/components/sections/VendorOnboarding.tsx`)
+
+- Section "A Structured Path to Getting Work Orders"; 3 numbered step cards (01 Submit Application, 02 Review & Approval, 03 Start Receiving Work Orders) with desktop connector line; orange circular step numbers.
+
+**VendorRequirements** (`src/components/sections/VendorRequirements.tsx`)
+
+- Two columns: Requirements (orange bar, CheckCircle2, 5 items) and Preferred (amber bar, Star, 3 items). AnimatedSection fadeLeft/fadeRight.
+
+**VendorServices** (`src/components/sections/VendorServices.tsx`)
+
+- Grid of 6 service categories (Wrench, RefreshCcw, Leaf, Droplets, Trash2, Shield); each card has icon in `bg-orange-muted`, label; equal height (`h-full`), scaleIn animation.
+
+**VendorFAQ** (`src/components/sections/VendorFAQ.tsx`)
+
+- "use client"; 4 accordion items (openIndex state); ChevronDown rotate when open; SectionHeading "Frequently Asked Questions".
+
+**VendorCTABanner** (`src/components/sections/VendorCTABanner.tsx`)
+
+- Dark section `bg-charcoal`, orange diagonal overlay, top orange rule; heading "Ready to Join the MEGAFIXX Vendor Network?", Apply Now → `#vendor-application`.
+
+**VendorApplicationForm** (`src/components/forms/VendorApplicationForm.tsx`)
+
+- **"use client"**; 4-step form: (1) Company Information — companyName, contactPerson, phone, email, website, yearsInBusiness; (2) Services Offered — service categories (multi-select), coverageAreas, serviceRadius; (3) Compliance & Docs — file uploads (Certificate of Insurance required; License, W9, Background Check optional); (4) Review & Submit — ReviewRow summary with Edit links per section, confirmation notice, Submit. Step indicator (circles + labels); Back / Continue / "Review Application" (step 3) / "Submit Application" (step 4). Validates each step before advancing; submits via `FormData` POST to `/api/vendor`. Success state: CheckCircle2 + thank-you message. Custom dropdown arrows (ChevronDown) for selects; `suppressHydrationWarning` on wrapper for extension-tampered inputs.
 
 ---
 
@@ -324,6 +370,13 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 - **Submit:** POST `/api/contact`; success shows orange-muted success block; errors per field + optional submit error message.
 - **Labels:** `text-charcoal font-medium`; required asterisk `text-orange`. Inputs: `border-surface-200 focus:ring-orange focus:border-orange`; error: `border-error text-error`.
 
+### 7.5 Vendor Application
+
+- **Types:** `src/types/vendor.ts` — `VendorFormData` (companyName, contactPerson, phone, email, website, yearsInBusiness, serviceCategories, coverageAreas, serviceRadius, insuranceCertificate, license, w9Form, backgroundCheckAuth), `VendorFormErrors`, `VendorFormStep`.
+- **Form steps:** (1) Company Information, (2) Services Offered (categories match VendorServices labels), (3) Compliance & Documentation (PDF/JPG/PNG, max 10MB per file), (4) Review & Submit. In-form validation via `validateStep(step, data)`; Step 3 requires Certificate of Insurance.
+- **Submit:** POST `/api/vendor` with `multipart/form-data`; text fields + optional file attachments. API uses `transporter` from `@/lib/utils/mailer`; sends to `CONTACT_EMAIL` (fallback `EMAIL_USER`). Env: `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_USER`, `EMAIL_PASS`, `CONTACT_EMAIL` (same as contact form).
+- **Email:** HTML body with company info, services & coverage, attachment list; attachments sent as Nodemailer attachments. Success log: `[/api/vendor] Vendor application email sent to <address>`.
+
 ---
 
 ## 8. Hooks & Utilities
@@ -415,7 +468,14 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 1. Open `src/lib/data/testimonials.ts`.
 2. Add to `testimonials` array: `id`, `name`, `role`, `company`, `content`, `rating` (1–5), `clientType`, `avatar` (URL). Use existing `clientType` values for consistency.
 
-### 12.6 Following the Design System
+### 12.6 Vendor Page
+
+- **Route:** `/vendors`; page in `src/app/vendors/page.tsx`; metadata via `generatePageMetadata({ title: "Vendor Partners", description: "...", path: "/vendors" })`.
+- **Sections order:** VendorHero → VendorWhyPartner → VendorOnboarding → VendorRequirements → VendorServices → application section (`id="vendor-application"`) → VendorFAQ → VendorCTABanner. Navbar and Footer include "Vendors" link; sitemap includes `/vendors`.
+- **To add a vendor FAQ:** Edit `faqs` array in `src/components/sections/VendorFAQ.tsx` (question/answer objects).
+- **To change application steps or fields:** Edit `STEPS`, `SERVICE_CATEGORIES`, and step JSX in `src/components/forms/VendorApplicationForm.tsx`; update `VendorFormData` / `VendorFormErrors` in `src/types/vendor.ts` and `validateStep()`; ensure `/api/vendor` route reads and validates the same fields and sends them in the email.
+
+### 12.7 Following the Design System
 
 - Use only theme colors (no arbitrary hex in class names except where theme does not define a token).
 - Use `font-display` for headings, `font-body` for body, `font-accent` for buttons and nav.
@@ -423,14 +483,14 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 - Keep spacing consistent: section padding `py-20 lg:py-28` (or reduced top where used); container `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`.
 - Ensure focus and selection styles remain (orange outline, orange-light selection). Do not remove `body::before` top accent.
 
-### 12.7 Handling Images
+### 12.8 Handling Images
 
 - Use Next.js `Image` with `fill` + `object-cover` in a sized wrapper, or explicit `width`/`height` for fixed dimensions.
 - Add new remote hostnames to `next.config.ts` `images.remotePatterns` if using external URLs.
 - Provide alt text for all meaningful images; use `alt=""` for decorative.
 - Handle errors with `onError` and local state to show placeholder or hide image.
 
-### 12.8 Responsive Layouts
+### 12.9 Responsive Layouts
 
 - Mobile-first: base styles for small screens; override with `sm:`, `md:`, `lg:`, `xl:`.
 - Hero two-column: use `min-[1131px]:grid-cols-2` (and related classes) so layout switches at 1131px. Below that, single column, centered text.
@@ -502,12 +562,25 @@ import { QuoteForm } from "@/components/forms/QuoteForm";
 </AnimatedSection>
 ```
 
+### 13.7 Vendor page application section
+
+```tsx
+// In vendors/page.tsx the form is mounted inside an anchor-targeted section:
+<section id="vendor-application" className="py-20 lg:py-28 bg-surface-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <VendorApplicationForm />
+  </div>
+</section>
+// Hero and CTA use <Link href="#vendor-application">Apply Now</Link>
+```
+
 ---
 
 ## 14. Optional Reference
 
 ### 14.1 Page / Component Hierarchy (ASCII)
 
+**Home:**
 ```
 layout (Navbar + PageWrapper(main) + Footer + ScrollToTop)
   └── main#main-content
@@ -520,6 +593,19 @@ layout (Navbar + PageWrapper(main) + Footer + ScrollToTop)
               ├── Testimonials (SectionHeading + carousel/grid TestimonialCard)
               ├── CTABanner (dark or light)
               └── ContactSection (SectionHeading + info + QuoteForm)
+```
+
+**Vendors (`/vendors`):**
+```
+  └── vendors/page.tsx
+        ├── VendorHero (Apply Now / Vendor Login → #vendor-application)
+        ├── VendorWhyPartner (subtext strip + 4 benefit cards)
+        ├── VendorOnboarding (3-step cards)
+        ├── VendorRequirements (required + preferred columns)
+        ├── VendorServices (6 icon cards)
+        ├── section#vendor-application (VendorApplicationForm: 4 steps, file uploads)
+        ├── VendorFAQ (accordion)
+        └── VendorCTABanner (Apply Now)
 ```
 
 ### 14.2 Color Utility Mapping (Tailwind class → theme)

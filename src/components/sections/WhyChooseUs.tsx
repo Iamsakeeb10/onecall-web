@@ -2,29 +2,24 @@
 
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Award, BarChart, Clock, MessageSquare } from "lucide-react";
+import { Award, BarChart, Zap } from "lucide-react";
 import React from "react";
 
 const features = [
   {
-    icon: Clock,
-    title: "Reliability",
-    description: "We understand that time is critical. Our team responds quickly, meets deadlines, and ensures projects move forward without delays."
+    icon: Zap,
+    title: "Fast Response",
+    description: "Quick scheduling and efficient communication."
   },
   {
     icon: Award,
-    title: "Quality Workmanship",
-    description: "Every service is completed with attention to detail and durability in mind. We focus on long-term solutions — not temporary fixes."
+    title: "Reliable Quality",
+    description: "Work completed with care, consistency, and attention to detail."
   },
   {
     icon: BarChart,
-    title: "Scalable Solutions",
-    description: "Whether you need one-time repairs or ongoing maintenance contracts, we tailor our services to fit your operational needs."
-  },
-  {
-    icon: MessageSquare,
-    title: "Professional Communication",
-    description: "We maintain clear communication before, during, and after each project. Our clients stay informed at every stage."
+    title: "Scalable Support",
+    description: "Flexible solutions for one property or an entire portfolio."
   }
 ];
 
@@ -42,30 +37,33 @@ export function WhyChooseUs() {
         <AnimatedSection variant="fadeUp">
           <SectionHeading
             title="Why Choose MEGAFIXX"
-            subtitle="Built on reliability, quality, and long-term partnerships"
+            subtitle="Responsive property maintenance backed by dependable service and professional support."
             align="center"
           />
         </AnimatedSection>
 
-        {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {features.map((feature, index) => (
-            <AnimatedSection
-              key={feature.title}
-              variant="fadeUp"
-              delay={index * 0.1}
-            >
-              <div className="bg-white border border-surface-200 rounded-xl p-6 h-full shadow-card">
-                <feature.icon className="w-10 h-10 text-orange mb-4" aria-hidden="true" />
-                <h3 className="font-display text-xl font-bold text-charcoal mb-3">
-                  {feature.title}
-                </h3>
-                <p className="font-body text-text-body">
-                  {feature.description}
-                </p>
-              </div>
-            </AnimatedSection>
-          ))}
+        {/* Feature Cards Grid — 3 items */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <AnimatedSection
+                key={feature.title}
+                variant="fadeUp"
+                delay={index * 0.1}
+              >
+                <div className="bg-white border border-surface-200 rounded-xl p-6 h-full shadow-card hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
+                  <Icon className="w-10 h-10 text-orange mb-4" aria-hidden="true" />
+                  <h3 className="font-display text-xl font-bold text-charcoal mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="font-body text-text-body">
+                    {feature.description}
+                  </p>
+                </div>
+              </AnimatedSection>
+            );
+          })}
         </div>
 
         {/* Stats Row */}

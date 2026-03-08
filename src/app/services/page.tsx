@@ -65,7 +65,7 @@ export default function ServicesPage() {
                 If you&apos;re searching for property maintenance services in Texas — residential, commercial, rental, or investment properties — MEGAFIXX Home Services LLC is your trusted statewide partner.
               </p>
               <Button variant="primary" size="lg" asChild>
-                <Link href="/contact">Get a Free Quote</Link>
+                <Link href="/quote">Get a Free Quote</Link>
               </Button>
               <p className="font-body text-text-muted mt-6 text-sm">
                 📞 (469) 378-9262  |  📧 info@megafixxhomeservices.com

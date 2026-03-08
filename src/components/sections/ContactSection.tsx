@@ -40,7 +40,7 @@ export function ContactSection() {
 
             {/* Right CTA */}
             <Button variant="primary" size="lg" asChild>
-              <Link href="/contact">Get a Free Quote</Link>
+              <Link href="/quote">Get a Free Quote</Link>
             </Button>
           </div>
         </AnimatedSection>

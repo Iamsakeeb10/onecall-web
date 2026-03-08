@@ -31,7 +31,7 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
                   <Link href="/contact">Contact Us Today</Link>
                 </Button>
                 <Button variant="secondary" size="lg" asChild>
-                  <Link href="/contact">Get a Quote</Link>
+                  <Link href="/quote">Get a Quote</Link>
                 </Button>
               </div>
             </div>
@@ -74,7 +74,7 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="primary" size="lg" asChild>
-                <Link href="/contact">Get a Free Quote</Link>
+                <Link href="/quote">Get a Free Quote</Link>
               </Button>
               <a
                 href="tel:4693789262"

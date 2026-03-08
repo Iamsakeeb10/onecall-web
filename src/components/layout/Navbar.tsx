@@ -10,11 +10,13 @@ import { useState } from "react";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Client", href: "/clients" },
+  { label: "Our Clients", href: "/clients" },
   { label: "Vendor", href: "/vendors" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" }
+  { label: "Contact", href: "/contact" },
 ];
+
+const ctaLink = { label: "Get a Quote", href: "/quote" };
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -52,10 +54,14 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
-              className="bg-orange text-white hover:bg-orange-dark px-6 py-2 rounded-full font-accent font-medium text-sm transition-all duration-300 hover:scale-105"
+              href={ctaLink.href}
+              className={`px-6 py-2 rounded-full font-accent font-medium text-sm transition-all duration-300 hover:scale-105 ${
+                pathname === ctaLink.href
+                  ? "bg-charcoal text-white hover:bg-charcoal-light"
+                  : "bg-orange text-white hover:bg-orange-dark"
+              }`}
             >
-              Get Started
+              {ctaLink.label}
             </Link>
           </div>
 
@@ -97,11 +103,11 @@ export function Navbar() {
                 </Link>
               ))}
               <Link
-                href="/contact"
+                href={ctaLink.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center w-full bg-orange text-white hover:bg-orange-dark px-6 py-3 rounded-full font-accent font-medium transition-all duration-300"
               >
-                Get Started
+                {ctaLink.label}
               </Link>
             </div>
           </motion.div>

@@ -1,33 +1,46 @@
-import { QuoteForm } from "@/components/forms/QuoteForm";
+import { ContactForm } from "@/components/forms/ContactForm";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import {
-    Clock,
-    Mail,
-    Map,
-    MapPin,
-    Phone,
-    Tag
+  Building2,
+  CheckCircle2,
+  ChevronRight,
+  ClipboardList,
+  Clock,
+  Mail,
+  MapPin,
+  Phone,
+  Wrench,
 } from "lucide-react";
-import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Contact Us | MEGAFIXX Home Services LLC",
-  description: "Contact MEGAFIXX Home Services LLC for a free estimate. Call (469) 378-9262 or email info@megafixxhomeservices.com.",
-  path: "/contact"
+  description:
+    "Contact MEGAFIXX Home Services. Reach us by phone, email, or send a message. Property maintenance, client partnerships, and vendor inquiries across Texas.",
+  path: "/contact",
 });
 
+const CONTACT_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80";
+
+const TRUST_ITEMS = [
+  "Reliable Property Maintenance",
+  "Fast Response Times",
+  "Serving Residential & Investment Properties",
+];
+
 export default function ContactPage() {
-  const heroImageUrl = "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1920&q=80";
   return (
     <>
-      {/* Page Hero — same overlay and font styles as CTABanner */}
+      {/* Page Hero — same overlay and font styles as Services, About */}
       <section className="relative h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32">
         <div className="absolute inset-0 z-0">
           <Image
-            src={heroImageUrl}
+            src={CONTACT_HERO_IMAGE}
             alt="Contact MEGAFIXX Home Services"
             fill
             priority
@@ -40,149 +53,183 @@ export default function ContactPage() {
             Contact MEGAFIXX
           </h1>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
-            Let&apos;s talk about your property needs
+            Have a question about property maintenance, partnerships, or vendor opportunities? Send
+            us a message and our team will respond shortly.
           </p>
         </div>
       </section>
 
-      {/* Split Layout: Form + Contact Info */}
+      {/* Two-column: Contact Info (left) + Form (right) */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-            {/* Left: Quote Form (60%) */}
-            <div className="lg:col-span-3">
-              <AnimatedSection variant="fadeLeft">
-                <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2">
-                  Request a Free Quote
-                </h2>
-                <p className="font-body text-base sm:text-lg text-text-muted mb-6">
-                  Fill out the form below and we&apos;ll get back to you within 24 hours.
-                </p>
-                <QuoteForm />
-              </AnimatedSection>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Left — Contact Information */}
+            <AnimatedSection variant="fadeLeft">
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2">
+                Contact Information
+              </h2>
+              <div className="h-0.5 w-12 bg-orange rounded-full mb-8" />
 
-            {/* Right: Contact Info Panel (40%) */}
-            <div className="lg:col-span-2">
-              <AnimatedSection variant="fadeRight">
-                <div className="bg-surface-100 border-l-4 border-orange rounded-lg p-8 h-full">
-                  <h3 className="font-display text-2xl font-bold text-charcoal mb-6">
-                    Get in Touch
-                  </h3>
-
-                  <div className="space-y-6">
-                    {/* Phone */}
-                    <div>
-                      <a
-                        href="tel:4693789262"
-                        className="flex items-center gap-3 font-body text-charcoal hover:text-orange transition-colors duration-300"
-                      >
-                        <Phone className="w-5 h-5 text-orange flex-shrink-0" aria-hidden="true" />
-                        <span>(469) 378-9262</span>
-                      </a>
-                    </div>
-
-                    {/* Email */}
-                    <div>
-                      <a
-                        href="mailto:info@megafixxhomeservices.com"
-                        className="flex items-center gap-3 font-body text-charcoal hover:text-orange transition-colors duration-300"
-                      >
-                        <Mail className="w-5 h-5 text-orange flex-shrink-0" aria-hidden="true" />
-                        <span>info@megafixxhomeservices.com</span>
-                      </a>
-                    </div>
-
-                    {/* Location */}
-                    <div>
-                      <div className="flex items-start gap-3">
-                        <MapPin className="w-5 h-5 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
-                        <div>
-                          <p className="font-body text-charcoal">815 Table Rock ST, Princeton, TX 75407</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Serving */}
-                    <div>
-                      <div className="flex items-start gap-3">
-                        <Map className="w-5 h-5 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
-                        <div>
-                          <p className="font-body text-charcoal">All of Texas Statewide</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Hours */}
-                    <div>
-                      <div className="flex items-start gap-3">
-                        <Clock className="w-5 h-5 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
-                        <div>
-                          <p className="font-body text-charcoal mb-1">Monday – Friday: 8:00 AM – 6:00 PM</p>
-                          <p className="font-body text-charcoal mb-1">Saturday: closed</p>
-                          <p className="font-body text-charcoal">Sunday: Closed</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Badges */}
-                    <div className="pt-4 border-t border-surface-200">
-                      <div className="flex flex-wrap gap-3">
-                        <span className="inline-flex items-center px-3 py-1 bg-surface-200 rounded-full text-xs font-accent text-orange">
-                          Fully Insured
-                        </span>
-                        <span className="inline-flex items-center px-3 py-1 bg-surface-200 rounded-full text-xs font-accent text-orange">
-                          Licensed Professionals
-                        </span>
-                      </div>
-                    </div>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-orange-muted flex items-center justify-center flex-shrink-0">
+                    <Phone className="text-orange" size={20} aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
+                      Phone
+                    </p>
+                    <a
+                      href="tel:+14693789262"
+                      className="font-body text-charcoal font-medium hover:text-orange transition-colors"
+                    >
+                      (469) 378-9262
+                    </a>
                   </div>
                 </div>
-              </AnimatedSection>
-            </div>
+
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-orange-muted flex items-center justify-center flex-shrink-0">
+                    <Mail className="text-orange" size={20} aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
+                      Email
+                    </p>
+                    <a
+                      href="mailto:info@megafixxhomeservices.com"
+                      className="font-body text-charcoal font-medium hover:text-orange transition-colors"
+                    >
+                      info@megafixxhomeservices.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-orange-muted flex items-center justify-center flex-shrink-0">
+                    <MapPin className="text-orange" size={20} aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
+                      Service Coverage
+                    </p>
+                    <p className="font-body text-charcoal font-medium">
+                      Serving Residential & Investment Properties
+                    </p>
+                    <p className="font-body text-text-muted text-sm mt-0.5">Statewide — Texas</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-orange-muted flex items-center justify-center flex-shrink-0">
+                    <Clock className="text-orange" size={20} aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
+                      Business Hours
+                    </p>
+                    <p className="font-body text-charcoal font-medium">Monday – Friday</p>
+                    <p className="font-body text-text-muted text-sm">8:00 AM – 5:00 PM</p>
+                    <p className="font-body text-charcoal font-medium mt-2">Saturday – Sunday</p>
+                    <p className="font-body text-text-muted text-sm">Closed</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 pt-8 border-t border-surface-200">
+                <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-4">
+                  Looking for something specific?
+                </p>
+                <div className="flex flex-col gap-3">
+                  <Link
+                    href="/clients"
+                    className="flex items-center gap-3 group font-body text-charcoal hover:text-orange transition-colors duration-200"
+                  >
+                    <Building2 className="text-orange" size={18} aria-hidden="true" />
+                    <span className="font-medium">Become a Client</span>
+                    <ChevronRight
+                      size={16}
+                      className="text-text-muted group-hover:text-orange group-hover:translate-x-1 transition-all duration-200 ml-auto"
+                      aria-hidden="true"
+                    />
+                  </Link>
+                  <Link
+                    href="/vendors"
+                    className="flex items-center gap-3 group font-body text-charcoal hover:text-orange transition-colors duration-200"
+                  >
+                    <Wrench className="text-orange" size={18} aria-hidden="true" />
+                    <span className="font-medium">Become a Vendor</span>
+                    <ChevronRight
+                      size={16}
+                      className="text-text-muted group-hover:text-orange group-hover:translate-x-1 transition-all duration-200 ml-auto"
+                      aria-hidden="true"
+                    />
+                  </Link>
+                  <Link
+                    href="#contact-form"
+                    className="flex items-center gap-3 group font-body text-charcoal hover:text-orange transition-colors duration-200"
+                  >
+                    <ClipboardList className="text-orange" size={18} aria-hidden="true" />
+                    <span className="font-medium">Request Service</span>
+                    <ChevronRight
+                      size={16}
+                      className="text-text-muted group-hover:text-orange group-hover:translate-x-1 transition-all duration-200 ml-auto"
+                      aria-hidden="true"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Right — Form card with id for anchor */}
+            <AnimatedSection variant="fadeRight" delay={0.1}>
+              <div id="contact-form" className="bg-white rounded-2xl border border-surface-200 shadow-card p-8 sm:p-10">
+                <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2">
+                  Send Us a Message
+                </h2>
+                <div className="h-0.5 w-12 bg-orange rounded-full mb-8" />
+                <ContactForm />
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
 
-      {/* Bottom Info Cards */}
-      <section className="py-20 lg:py-28 bg-surface-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Clock,
-                title: "Fast Response",
-                description: "We respond to all inquiries within 24 hours"
-              },
-              {
-                icon: Tag,
-                title: "Free Estimates",
-                description: "Get a no-obligation project estimate"
-              },
-              {
-                icon: Map,
-                title: "Statewide Coverage",
-                description: "We serve all major regions across Texas"
-              }
-            ].map((card, index) => (
-              <AnimatedSection
-                key={card.title}
-                variant="fadeUp"
-                delay={index * 0.1}
-              >
-                <div className="bg-white border border-surface-200 rounded-xl p-8 text-center h-full">
-                  <card.icon className="w-10 h-10 text-orange mx-auto mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-charcoal mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="font-body text-text-muted">
-                    {card.description}
-                  </p>
+      {/* Trust strip */}
+      <section className="py-12 bg-surface-50 border-t border-surface-200">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            {TRUST_ITEMS.map((label, index) => (
+              <AnimatedSection key={label} variant="fadeUp" delay={index * 0.05}>
+                <div className="flex flex-col items-center gap-2">
+                  <CheckCircle2 className="text-orange" size={24} aria-hidden="true" />
+                  <span className="font-body font-medium text-charcoal text-sm">{label}</span>
                 </div>
               </AnimatedSection>
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Final CTA strip */}
+      <section className="py-12 bg-charcoal">
+        <AnimatedSection variant="fadeUp">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="font-body text-surface-300 mb-1 text-sm uppercase tracking-wider font-accent">
+              Prefer to talk?
+            </p>
+            <a
+              href="tel:+14693789262"
+              className="font-display text-2xl sm:text-3xl font-bold text-white hover:text-orange transition-colors duration-200 flex items-center justify-center gap-3"
+            >
+              <Phone className="text-orange" size={28} aria-hidden="true" />
+              (469) 378-9262
+            </a>
+            <p className="font-body text-surface-300 mt-2 text-sm">
+              Monday – Friday &nbsp;·&nbsp; 8:00 AM – 5:00 PM
+            </p>
+          </div>
+        </AnimatedSection>
       </section>
     </>
   );

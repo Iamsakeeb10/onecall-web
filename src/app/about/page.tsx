@@ -263,7 +263,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="primary" size="lg" asChild>
-                  <Link href="/contact">Get a Free Quote</Link>
+                  <Link href="/quote">Get a Free Quote</Link>
                 </Button>
                 <Button variant="secondary" size="lg" asChild>
                   <a href="tel:4693789262">Call Now: (469) 378-9262</a>

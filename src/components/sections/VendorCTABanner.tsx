@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 
 export default function VendorCTABanner() {
@@ -25,7 +24,7 @@ export default function VendorCTABanner() {
           Partner with a structured, professional property maintenance operator.
         </p>
         <Button variant="primary" size="lg" asChild>
-          <Link href="#vendor-application">Apply Now</Link>
+          <a href="#vendor-application">Apply Now</a>
         </Button>
       </div>
     </section>

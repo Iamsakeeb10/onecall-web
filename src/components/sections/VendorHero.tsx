@@ -1,13 +1,23 @@
-import Link from "next/link";
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+
+const VENDOR_HERO_IMAGE =
+  "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1920&q=80";
 
 export default function VendorHero() {
   return (
-    <section className="relative h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh] flex items-center justify-center overflow-hidden bg-hero-bg pt-28 sm:pt-32">
-      {/* Optional subtle texture overlay — matches home hero */}
-      <div className="hero-texture absolute inset-0 z-0" aria-hidden="true" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
+    <section className="relative h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={VENDOR_HERO_IMAGE}
+          alt="Professional property maintenance and vendor network"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 bg-charcoal/72 z-10" />
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
         <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
           Join the MEGAFIXX Property Maintenance Network
         </h1>
@@ -17,15 +27,15 @@ export default function VendorHero() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button variant="primary" size="lg" asChild>
-            <Link href="#vendor-application">Apply Now</Link>
+            <a href="#vendor-application">Apply Now</a>
           </Button>
           <Button
             variant="secondary"
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-charcoal"
+            className="border-2 border-white !bg-transparent text-white hover:!bg-white hover:!text-charcoal"
             asChild
           >
-            <Link href="#vendor-application">Vendor Login</Link>
+            <a href="#vendor-application">Vendor Login</a>
           </Button>
         </div>
       </div>

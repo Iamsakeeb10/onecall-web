@@ -44,7 +44,7 @@ export function Hero() {
 
             <div className="flex flex-row flex-wrap gap-4 justify-center min-[1131px]:justify-start">
               <Link
-                href="/contact"
+                href="/quote"
                 className="bg-orange text-white px-8 py-3 rounded-full font-accent font-medium text-base hover:bg-orange-dark hover:scale-105 transition-all duration-300 shadow-md"
               >
                 Get a Free Quote

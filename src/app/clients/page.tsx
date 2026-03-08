@@ -284,7 +284,7 @@ export default function ClientsPage() {
                 </a>
               </div>
               <Button variant="primary" size="lg" asChild>
-                <Link href="/contact">Get Started</Link>
+                <Link href="/quote">Get a Quote</Link>
               </Button>
             </div>
           </AnimatedSection>

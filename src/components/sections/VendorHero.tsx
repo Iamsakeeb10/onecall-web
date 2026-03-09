@@ -21,23 +21,18 @@ export default function VendorHero() {
         <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
           Join the MEGAFIXX Property Maintenance Network
         </h1>
-        <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-8">
+        <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-10">
           Become part of a structured, performance-driven property maintenance
           team supporting residential portfolios and managed assets across Texas.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="primary" size="lg" asChild>
-            <a href="#vendor-application">Apply Now</a>
-          </Button>
-          <Button
-            variant="secondary"
-            size="lg"
-            className="border-2 border-white !bg-transparent text-white hover:!bg-white hover:!text-charcoal"
-            asChild
-          >
-            <a href="#vendor-application">Vendor Login</a>
-          </Button>
-        </div>
+        <Button
+          variant="primary"
+          size="lg"
+          asChild
+          className="inline-flex items-center justify-center px-10 py-4 rounded-full text-base sm:text-lg shadow-orange-glow hover:shadow-card-hover"
+        >
+          <a href="#vendor-application">Apply Now</a>
+        </Button>
       </div>
     </section>
   );

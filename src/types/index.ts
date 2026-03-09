@@ -43,4 +43,5 @@ export interface ContactFormData {
   location: string;
   message: string;
   agreeToTerms: boolean;
+  formSource?: "quote" | "contact";
 }

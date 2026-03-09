@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/Button";
 import { CheckCircle2, ChevronDown, Loader2, Send } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const INQUIRY_OPTIONS: { value: string; label: string; disabled?: boolean }[] = [
@@ -21,6 +22,7 @@ interface FormState {
   phone: string;
   inquiryType: InquiryValue;
   message: string;
+  agreeToTerms: boolean;
 }
 
 interface FormErrors {
@@ -28,6 +30,7 @@ interface FormErrors {
   email?: string;
   inquiryType?: string;
   message?: string;
+  agreeToTerms?: string;
 }
 
 const inputBase =
@@ -47,6 +50,7 @@ export function ContactForm() {
     phone: "",
     inquiryType: "",
     message: "",
+    agreeToTerms: false,
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [isLoading, setIsLoading] = useState(false);
@@ -56,8 +60,9 @@ export function ContactForm() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+    const { name, value, type } = e.target;
+    const checked = type === "checkbox" ? (e.target as HTMLInputElement).checked : undefined;
+    setForm((prev) => ({ ...prev, [name]: type === "checkbox" ? checked : value }));
     if (errors[name as keyof FormErrors]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
@@ -74,6 +79,7 @@ export function ContactForm() {
     if (!form.message.trim()) e.message = "Message is required.";
     else if (form.message.trim().length < 10)
       e.message = "Message must be at least 10 characters.";
+    if (!form.agreeToTerms) e.agreeToTerms = "You must agree to the Terms and Conditions to submit.";
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -94,7 +100,8 @@ export function ContactForm() {
         serviceNeeded: getServiceNeededLabel(form.inquiryType),
         location: "",
         message: form.message.trim(),
-        agreeToTerms: true,
+        agreeToTerms: form.agreeToTerms,
+        formSource: "contact" as const,
       };
 
       const res = await fetch("/api/contact", {
@@ -242,6 +249,41 @@ export function ContactForm() {
         {errors.message && (
           <p id="contact-message-error" className="mt-1.5 text-sm text-error font-body" role="alert">
             {errors.message}
+          </p>
+        )}
+      </div>
+
+      <div>
+        <div className="flex items-start gap-3">
+          <input
+            type="checkbox"
+            id="contact-agreeToTerms"
+            name="agreeToTerms"
+            checked={form.agreeToTerms}
+            onChange={handleChange}
+            className="mt-1 h-4 w-4 rounded border-surface-300 text-orange focus:ring-orange focus:ring-offset-0 cursor-pointer"
+            aria-describedby={errors.agreeToTerms ? "contact-agreeToTerms-error" : undefined}
+            aria-invalid={errors.agreeToTerms ? "true" : "false"}
+          />
+          <label htmlFor="contact-agreeToTerms" className="font-body text-sm text-charcoal cursor-pointer">
+            I agree to the{" "}
+            <Link
+              href="/terms"
+              className="text-orange hover:text-orange-dark underline underline-offset-2"
+            >
+              Terms and Conditions
+            </Link>{" "}
+            provided by the company. By providing my phone number, I agree to receive text messages from
+            MEGAFIXX Home Services LLC.
+          </label>
+        </div>
+        {errors.agreeToTerms && (
+          <p
+            id="contact-agreeToTerms-error"
+            className="mt-1.5 text-sm text-error font-body"
+            role="alert"
+          >
+            {errors.agreeToTerms}
           </p>
         )}
       </div>

@@ -26,7 +26,8 @@ export function QuoteForm() {
     serviceNeeded: "",
     location: "",
     message: "",
-    agreeToTerms: false
+    agreeToTerms: false,
+    formSource: "quote",
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -69,7 +70,7 @@ export function QuoteForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, formSource: "quote" }),
       })
 
       const data = await res.json()
@@ -86,6 +87,7 @@ export function QuoteForm() {
           location: '',
           message: '',
           agreeToTerms: false,
+          formSource: "quote",
         })
         setErrors({})
       } else {

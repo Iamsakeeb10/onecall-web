@@ -6,18 +6,36 @@ export async function POST(req: Request) {
   try {
     const body: ContactFormData = await req.json()
 
-    const { fullName, companyName, email, phone, propertyType, serviceNeeded, location, message } = body
+    const {
+      fullName,
+      companyName,
+      email,
+      phone,
+      propertyType,
+      serviceNeeded,
+      location,
+      message,
+      formSource,
+    } = body
+
+    const isContactForm = formSource === 'contact'
+    const ownerSubject = isContactForm
+      ? `New Contact Message from ${fullName}`
+      : `New Quote Request from ${fullName}`
+    const clientSubject = isContactForm
+      ? 'We received your message — MEGAFIXX Home Services LLC'
+      : 'We received your request — MEGAFIXX Home Services LLC'
 
     // 1. Notification email to MEGAFIXX owner
     await transporter.sendMail({
       from: `"MEGAFIXX Website" <${process.env.EMAIL_USER}>`,
       to: process.env.CONTACT_EMAIL,
-      subject: `New Quote Request from ${fullName}`,
+      subject: ownerSubject,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #F5EFE0; padding: 24px; text-align: center;">
             <h1 style="color: #C89B3C; margin: 0; font-size: 24px;">MEGAFIXX Home Services LLC</h1>
-            <p style="color: #7A6A52; margin: 8px 0 0;">New Quote Request Received</p>
+            <p style="color: #7A6A52; margin: 8px 0 0;">${isContactForm ? 'New Contact Message Received' : 'New Quote Request Received'}</p>
           </div>
           <div style="background: #EDE3CC; padding: 32px;">
             <table style="width: 100%; border-collapse: collapse;">
@@ -45,7 +63,7 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: `"MEGAFIXX Home Services LLC" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: 'We received your request — MEGAFIXX Home Services LLC',
+      subject: clientSubject,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #F5EFE0; padding: 24px; text-align: center;">
@@ -54,7 +72,7 @@ export async function POST(req: Request) {
           </div>
           <div style="background: #EDE3CC; padding: 32px;">
             <h2 style="color: #1C1410; margin: 0 0 16px;">Hi ${fullName},</h2>
-            <p style="color: #7A6A52; line-height: 1.7;">Thank you for reaching out to <strong style="color: #C89B3C;">MEGAFIXX Home Services LLC</strong>. We've received your quote request and a member of our team will be in touch within <strong style="color: #1C1410;">24 hours</strong>.</p>
+            <p style="color: #7A6A52; line-height: 1.7;">Thank you for reaching out to <strong style="color: #C89B3C;">MEGAFIXX Home Services LLC</strong>. We've received your ${isContactForm ? 'message' : 'quote request'} and a member of our team will be in touch within <strong style="color: #1C1410;">24 hours</strong>.</p>
             <div style="margin: 24px 0; padding: 20px; background: #F5EFE0; border-left: 4px solid #C89B3C; border-radius: 4px;">
               <p style="color: #7A6A52; margin: 0 0 12px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Your Request Summary</p>
               <p style="color: #1C1410; margin: 4px 0;"><strong style="color: #7A6A52;">Service:</strong> ${serviceNeeded}</p>

@@ -18,13 +18,27 @@ export async function POST(req: Request) {
       formSource,
     } = body
 
-    const isContactForm = formSource === 'contact'
-    const ownerSubject = isContactForm
+    const source = formSource ?? 'quote'
+    const isContactForm = source === 'contact'
+    const isClientOnboarding = source === 'client-onboarding'
+
+    const ownerSubject = isClientOnboarding
+      ? `New Client Application from ${fullName} — ${companyName || 'Unknown Company'}`
+      : isContactForm
       ? `New Contact Message from ${fullName}`
       : `New Quote Request from ${fullName}`
-    const clientSubject = isContactForm
+
+    const clientSubject = isClientOnboarding
+      ? 'We received your MEGAFIXX client application'
+      : isContactForm
       ? 'We received your message — MEGAFIXX Home Services LLC'
       : 'We received your request — MEGAFIXX Home Services LLC'
+
+    const headerLine = isClientOnboarding
+      ? 'New Client Application Received'
+      : isContactForm
+      ? 'New Contact Message Received'
+      : 'New Quote Request Received'
 
     // 1. Notification email to MEGAFIXX owner
     await transporter.sendMail({
@@ -35,7 +49,7 @@ export async function POST(req: Request) {
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #F5EFE0; padding: 24px; text-align: center;">
             <h1 style="color: #C89B3C; margin: 0; font-size: 24px;">MEGAFIXX Home Services LLC</h1>
-            <p style="color: #7A6A52; margin: 8px 0 0;">${isContactForm ? 'New Contact Message Received' : 'New Quote Request Received'}</p>
+            <p style="color: #7A6A52; margin: 8px 0 0;">${headerLine}</p>
           </div>
           <div style="background: #EDE3CC; padding: 32px;">
             <table style="width: 100%; border-collapse: collapse;">
@@ -43,12 +57,14 @@ export async function POST(req: Request) {
               <tr><td style="padding: 10px 0; color: #7A6A52;">Company</td><td style="padding: 10px 0; color: #1C1410;">${companyName || 'N/A'}</td></tr>
               <tr><td style="padding: 10px 0; color: #7A6A52;">Email</td><td style="padding: 10px 0; color: #C89B3C;">${email}</td></tr>
               <tr><td style="padding: 10px 0; color: #7A6A52;">Phone</td><td style="padding: 10px 0; color: #1C1410;">${phone}</td></tr>
-              <tr><td style="padding: 10px 0; color: #7A6A52;">Property Type</td><td style="padding: 10px 0; color: #1C1410;">${propertyType}</td></tr>
+              <tr><td style="padding: 10px 0; color: #7A6A52;">${isClientOnboarding ? 'Company Type' : 'Property Type'}</td><td style="padding: 10px 0; color: #1C1410;">${propertyType}</td></tr>
               <tr><td style="padding: 10px 0; color: #7A6A52;">Service Needed</td><td style="padding: 10px 0; color: #1C1410;">${serviceNeeded}</td></tr>
-              <tr><td style="padding: 10px 0; color: #7A6A52;">Location</td><td style="padding: 10px 0; color: #1C1410;">${location}</td></tr>
+              <tr><td style="padding: 10px 0; color: #7A6A52;">${isClientOnboarding ? 'Property Locations' : 'Location'}</td><td style="padding: 10px 0; color: #1C1410;">${location}</td></tr>
             </table>
             <div style="margin-top: 24px; padding: 16px; background: #F5EFE0; border-left: 4px solid #C89B3C; border-radius: 4px;">
-              <p style="color: #7A6A52; margin: 0 0 8px; font-size: 13px;">Message / Project Details</p>
+              <p style="color: #7A6A52; margin: 0 0 8px; font-size: 13px;">${
+                isClientOnboarding ? 'Additional Notes / Portfolio Details' : 'Message / Project Details'
+              }</p>
               <p style="color: #1C1410; margin: 0;">${message}</p>
             </div>
           </div>
@@ -72,12 +88,20 @@ export async function POST(req: Request) {
           </div>
           <div style="background: #EDE3CC; padding: 32px;">
             <h2 style="color: #1C1410; margin: 0 0 16px;">Hi ${fullName},</h2>
-            <p style="color: #7A6A52; line-height: 1.7;">Thank you for reaching out to <strong style="color: #C89B3C;">MEGAFIXX Home Services LLC</strong>. We've received your ${isContactForm ? 'message' : 'quote request'} and a member of our team will be in touch within <strong style="color: #1C1410;">24 hours</strong>.</p>
+            <p style="color: #7A6A52; line-height: 1.7;">Thank you for reaching out to <strong style="color: #C89B3C;">MEGAFIXX Home Services LLC</strong>. We've received your ${
+              isClientOnboarding ? 'client application' : isContactForm ? 'message' : 'quote request'
+            } and a member of our team will be in touch within <strong style="color: #1C1410;">24 hours</strong>.</p>
             <div style="margin: 24px 0; padding: 20px; background: #F5EFE0; border-left: 4px solid #C89B3C; border-radius: 4px;">
-              <p style="color: #7A6A52; margin: 0 0 12px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Your Request Summary</p>
+              <p style="color: #7A6A52; margin: 0 0 12px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">${
+                isClientOnboarding ? 'Your Application Summary' : 'Your Request Summary'
+              }</p>
               <p style="color: #1C1410; margin: 4px 0;"><strong style="color: #7A6A52;">Service:</strong> ${serviceNeeded}</p>
-              <p style="color: #1C1410; margin: 4px 0;"><strong style="color: #7A6A52;">Property Type:</strong> ${propertyType}</p>
-              <p style="color: #1C1410; margin: 4px 0;"><strong style="color: #7A6A52;">Location:</strong> ${location}</p>
+              <p style="color: #1C1410; margin: 4px 0;"><strong style="color: #7A6A52;">${
+                isClientOnboarding ? 'Company Type' : 'Property Type'
+              }:</strong> ${propertyType}</p>
+              <p style="color: #1C1410; margin: 4px 0;"><strong style="color: #7A6A52;">${
+                isClientOnboarding ? 'Property Locations' : 'Location'
+              }:</strong> ${location}</p>
             </div>
             <p style="color: #7A6A52; line-height: 1.7;">If you need to reach us sooner, don't hesitate to call or email directly:</p>
             <p style="margin: 8px 0;"><a href="tel:4693789262" style="color: #C89B3C; text-decoration: none; font-weight: bold;">📞 (469) 378-9262</a></p>

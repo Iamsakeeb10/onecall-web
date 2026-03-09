@@ -2,17 +2,20 @@ import { ClientImage } from "@/components/cards/ClientImage";
 import { ClientTypeCard } from "@/components/cards/ClientTypeCard";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ClientOnboardingForm } from "@/components/forms/ClientOnboardingForm";
 import { clients } from "@/lib/data/clients";
 import {
-    Award,
-    BarChart,
-    Bell,
-    Camera,
-    Clock,
-    Mail,
-    MessageSquare,
-    Phone,
-    ShieldCheck
+  Award,
+  BarChart,
+  Bell,
+  Camera,
+  CheckCircle2,
+  Clock,
+  Mail,
+  MessageSquare,
+  Phone,
+  ShieldCheck,
 } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -284,8 +287,59 @@ export default function ClientsPage() {
                 </a>
               </div>
               <Button variant="primary" size="lg" asChild>
-                <Link href="/quote">Get a Quote</Link>
+                <Link href="#client-onboarding">Get Started</Link>
               </Button>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Client Onboarding Form Section */}
+      <section id="client-onboarding" className="bg-surface-50 py-20 lg:py-28 scroll-mt-24">
+        {/* Why Partner Strip */}
+        <div className="bg-charcoal">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
+            <AnimatedSection variant="fadeUp">
+              <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-6 text-white">
+                {[
+                  "Reliable Vendor Network",
+                  "Fast Response Times",
+                  "Work Order Transparency",
+                  "Photo Documentation",
+                  "Scalable Property Maintenance Solutions",
+                ].map((label, index) => (
+                  <div
+                    key={label}
+                    className="flex items-center gap-2 text-sm font-body font-medium"
+                  >
+                    <CheckCircle2 className="w-5 h-5 text-orange" aria-hidden="true" />
+                    <span>{label}</span>
+                    {index < 4 && (
+                      <span className="hidden lg:inline-block h-4 border-r border-white/20 ml-3" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+
+        {/* Form Container */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+          <AnimatedSection variant="fadeUp">
+            <SectionHeading
+              title="Become a MEGAFIXX Client"
+              subtitle="Partner with MEGAFIXX for reliable property maintenance and field service support. Our team supports property managers, investors, asset managers, and organizations across residential and commercial portfolios."
+              align="center"
+            />
+          </AnimatedSection>
+
+          <AnimatedSection variant="fadeUp" delay={0.15}>
+            <div
+              className="mt-10 bg-white rounded-2xl shadow-card border border-surface-200 p-8 sm:p-10"
+              suppressHydrationWarning
+            >
+              <ClientOnboardingForm />
             </div>
           </AnimatedSection>
         </div>

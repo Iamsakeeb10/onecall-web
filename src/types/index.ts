@@ -43,5 +43,32 @@ export interface ContactFormData {
   location: string;
   message: string;
   agreeToTerms: boolean;
-  formSource?: "quote" | "contact";
+  formSource?: "quote" | "contact" | "client-onboarding";
+}
+
+export interface ClientOnboardingFormData {
+  companyName: string;
+  contactPerson: string;
+  email: string;
+  phone: string;
+  companyType: string;
+  companyWebsite: string;
+  services: string[];
+  portfolioSize: string;
+  propertyLocations: string;
+  additionalNotes: string;
+  agreeToTerms: boolean;
+}
+
+export interface ClientOnboardingFormErrors {
+  companyName?: string;
+  contactPerson?: string;
+  email?: string;
+  phone?: string;
+  companyType?: string;
+  services?: string;
+  portfolioSize?: string;
+  propertyLocations?: string;
+  additionalNotes?: string;
+  agreeToTerms?: string;
 }

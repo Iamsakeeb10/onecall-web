@@ -6,15 +6,15 @@ import Link from "next/link";
 const HERO_CARD_IMAGES = [
   {
     src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=720&q=80",
-    alt: "Plumbing and pipe repair"
+    alt: "General property maintenance and minor plumbing"
   },
   {
     src: "https://images.unsplash.com/photo-1628348070889-cb656235b4eb?auto=format&fit=crop&w=720&q=80",
-    alt: "Electrical work"
+    alt: "Gutter cleaning and preventative maintenance"
   },
   {
     src: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=720&q=80",
-    alt: "General repairs and handyman"
+    alt: "Drywall repair and interior painting"
   }
 ];
 
@@ -81,8 +81,12 @@ export function Hero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 px-4 py-3">
-                  <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">Plumbing</span>
-                  <p className="text-white/80 text-xs font-body mt-0.5">Leak detection, pipe repair & installation</p>
+                  <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">
+                    General Property Maintenance
+                  </span>
+                  <p className="text-white/80 text-xs font-body mt-0.5">
+                    Prevent costly repairs with routine, responsive maintenance...
+                  </p>
                 </div>
               </div>
 
@@ -100,8 +104,12 @@ export function Hero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 px-4 py-3">
-                  <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">Electrical</span>
-                  <p className="text-white/80 text-xs font-body mt-0.5">Wiring, panel upgrades & fixture installs</p>
+                  <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">
+                    Gutter Cleaning
+                  </span>
+                  <p className="text-white/80 text-xs font-body mt-0.5">
+                    Protect against water damage and foundation issues...
+                  </p>
                 </div>
               </div>
 
@@ -119,8 +127,12 @@ export function Hero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 px-4 py-3">
-                  <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">General Repairs</span>
-                  <p className="text-white/80 text-xs font-body mt-0.5">Drywall, doors, flooring & handyman services</p>
+                  <span className="font-accent font-bold text-white text-sm tracking-wide uppercase">
+                    Drywall & Interior Painting
+                  </span>
+                  <p className="text-white/80 text-xs font-body mt-0.5">
+                    Maintain a clean, professional interior for rentals...
+                  </p>
                 </div>
               </div>
             </div>

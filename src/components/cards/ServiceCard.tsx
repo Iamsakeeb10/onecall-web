@@ -1,22 +1,22 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Button } from "@/components/ui/Button";
+import { Service } from "@/types";
 import { motion, useReducedMotion } from "framer-motion";
 import {
-  Wrench,
+  ArrowRight,
+  CheckCircle,
   Droplets,
+  Home,
+  Leaf,
   Paintbrush,
   Sparkles,
-  Leaf,
-  Home,
   Trash2,
-  CheckCircle,
-  ArrowRight
+  Wrench
 } from "lucide-react";
-import { Service } from "@/types";
-import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
 
 // Icon mapping for dynamic icon loading
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {

@@ -36,7 +36,7 @@ export const services: Service[] = [
     title: "Drywall Repair & Interior Painting",
     description: "Maintain a clean, professional interior. Ideal for rental turnovers and investment properties.",
     icon: "Paintbrush",
-    image: "/images/hero/hero-card-painting.jpg",
+    image: "/images/hero/hero-card-wall-painting.jpg",
     slug: "drywall-painting",
     features: [
       "Drywall patching",

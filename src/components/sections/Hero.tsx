@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HERO_CARD_IMAGES = [
   {
-    src: "/images/hero/hero-card-maintenance.jpg",
+    src: "/images/hero/hero-card-maintenance-2.jpg",
     alt: "General property maintenance and minor plumbing"
   },
   {
@@ -13,7 +13,7 @@ const HERO_CARD_IMAGES = [
     alt: "Gutter cleaning and preventative maintenance"
   },
   {
-    src: "/images/hero/hero-card-painting.jpg",
+    src: "/images/hero/hero-card-wall-painting.jpg",
     alt: "Drywall repair and interior painting"
   }
 ];

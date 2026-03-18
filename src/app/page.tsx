@@ -28,7 +28,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent" aria-hidden="true" />
       <QualityProcess />
       <Testimonials />
-      <CTABanner variant="dark" />
+      {/* <CTABanner variant="dark" /> */}
       <ContactSection />
     </>
   );

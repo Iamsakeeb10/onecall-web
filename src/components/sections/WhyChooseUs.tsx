@@ -9,30 +9,31 @@ const features = [
   {
     icon: Zap,
     title: "Fast Response",
-    description: "Quick scheduling and efficient communication."
+    description: "Quick scheduling and efficient communication.",
   },
   {
     icon: Award,
     title: "Reliable Quality",
-    description: "Work completed with care, consistency, and attention to detail."
+    description:
+      "Work completed with care, consistency, and attention to detail.",
   },
   {
     icon: BarChart,
     title: "Scalable Support",
-    description: "Flexible solutions for one property or an entire portfolio."
-  }
+    description: "Flexible solutions for one property or an entire portfolio.",
+  },
 ];
 
 const stats = [
   { value: "10+ Years", label: "Experience" },
   { value: "500+ Properties", label: "Maintained" },
   { value: "Statewide", label: "Coverage" },
-  { value: "Fully Insured", label: "Protection" }
+  { value: "Fully Insured", label: "Protection" },
 ];
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" className="pt-0 pb-20 lg:pb-28 bg-surface-50">
+    <section id="why-us" className="pt-12 pb-20 lg:pb-28 bg-surface-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
@@ -53,7 +54,10 @@ export function WhyChooseUs() {
                 delay={index * 0.1}
               >
                 <div className="bg-white border border-surface-200 rounded-xl p-6 h-full shadow-card hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
-                  <Icon className="w-10 h-10 text-orange mb-4" aria-hidden="true" />
+                  <Icon
+                    className="w-10 h-10 text-orange mb-4"
+                    aria-hidden="true"
+                  />
                   <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                     {feature.title}
                   </h3>

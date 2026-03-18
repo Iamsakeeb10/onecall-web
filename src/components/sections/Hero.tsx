@@ -6,16 +6,16 @@ import Link from "next/link";
 const HERO_CARD_IMAGES = [
   {
     src: "/images/hero/hero-card-maintenance-2.jpg",
-    alt: "General property maintenance and minor plumbing"
+    alt: "General property maintenance and minor plumbing",
   },
   {
-    src: "/images/hero/hero-card-gutter.jpg",
-    alt: "Gutter cleaning and preventative maintenance"
+    src: "/images/hero/gutter-cleaning.jpg",
+    alt: "Gutter cleaning and preventative maintenance",
   },
   {
-    src: "/images/hero/hero-card-wall-painting.jpg",
-    alt: "Drywall repair and interior painting"
-  }
+    src: "/images/hero/hero-card-wall-painting-2.jpg",
+    alt: "Drywall repair and interior painting",
+  },
 ];
 
 export function Hero() {
@@ -39,7 +39,8 @@ export function Hero() {
             </h1>
 
             <p className="font-body text-lg text-hero-muted mb-10 max-w-md leading-relaxed mx-auto min-[1131px]:mx-0">
-              We are a team of talented professionals supporting your residential and commercial property management across Texas.
+              We are a team of talented professionals supporting your
+              residential and commercial property management across Texas.
             </p>
 
             <div className="flex flex-row flex-wrap gap-4 justify-center min-[1131px]:justify-start">
@@ -85,7 +86,8 @@ export function Hero() {
                     General Property Maintenance
                   </span>
                   <p className="text-white/80 text-xs font-body mt-0.5">
-                    Prevent costly repairs with routine, responsive maintenance...
+                    Prevent costly repairs with routine, responsive
+                    maintenance...
                   </p>
                 </div>
               </div>
@@ -141,7 +143,10 @@ export function Hero() {
       </div>
 
       {/* Bottom wave — transitions into white section below */}
-      <div className="absolute bottom-0 left-0 right-0 leading-none z-10" aria-hidden="true">
+      <div
+        className="absolute bottom-0 left-0 right-0 leading-none z-10"
+        aria-hidden="true"
+      >
         <svg
           viewBox="0 0 1440 80"
           xmlns="http://www.w3.org/2000/svg"

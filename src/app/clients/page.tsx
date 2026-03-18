@@ -1,9 +1,10 @@
 import { ClientImage } from "@/components/cards/ClientImage";
 import { ClientTypeCard } from "@/components/cards/ClientTypeCard";
 import ClientsPageInteractive from "@/components/sections/ClientsPageInteractive";
+import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { clients } from "@/lib/data/clients";
-import { Award, BarChart, Bell, Camera, Clock, MessageSquare, ShieldCheck } from "lucide-react";
+import { Bell, Camera, ShieldCheck } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -11,8 +12,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Our Clients | MEGAFIXX Home Services LLC",
-  description: "Trusted property maintenance partner for property managers, financial institutions, real estate professionals, and investors across Texas.",
-  path: "/clients"
+  description:
+    "Trusted property maintenance partner for property managers, financial institutions, real estate professionals, and investors across Texas.",
+  path: "/clients",
 });
 
 export default function ClientsPage() {
@@ -52,36 +54,63 @@ export default function ClientsPage() {
                   Building Long-Term Partnerships
                 </h2>
                 <p className="font-body text-lg text-text-muted mb-4">
-                  At MEGAFIXX Home Services LLC, we take pride in building long-term partnerships with clients across Texas. Our reputation is built on reliability, professional execution, and consistent performance across residential and commercial properties.
+                  At MEGAFIXX Home Services LLC, we take pride in building
+                  long-term partnerships with clients across Texas. Our
+                  reputation is built on reliability, professional execution,
+                  and consistent performance across residential and commercial
+                  properties.
                 </p>
                 <p className="font-body text-lg text-text-muted mb-4">
-                  We understand that every property represents an investment — and we treat it accordingly. Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
+                  We understand that every property represents an investment —
+                  and we treat it accordingly. Many of our clients rely on us to
+                  manage routine property maintenance, emergency service calls,
+                  turnover repairs, preservation services, and compliance
+                  inspections.
                 </p>
                 <p className="font-body text-lg text-orange italic font-medium">
-                  &quot;We build relationships based on performance, accountability, and trust.&quot;
+                  &quot;We build relationships based on performance,
+                  accountability, and trust.&quot;
                 </p>
               </div>
             </AnimatedSection>
 
             <AnimatedSection variant="fadeRight">
               <div className="bg-surface-100 border border-surface-200 rounded-xl p-8">
-                <h3 className="font-display text-2xl font-bold text-charcoal mb-6">By The Numbers</h3>
+                <h3 className="font-display text-2xl font-bold text-charcoal mb-6">
+                  By The Numbers
+                </h3>
                 <div className="space-y-6">
                   <div>
-                    <div className="text-4xl font-display font-bold text-orange mb-2">500+</div>
-                    <div className="font-body text-text-muted">Properties Maintained</div>
+                    <div className="text-4xl font-display font-bold text-orange mb-2">
+                      500+
+                    </div>
+                    <div className="font-body text-text-muted">
+                      Properties Maintained
+                    </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-orange mb-2">Texas</div>
-                    <div className="font-body text-text-muted">Statewide Coverage</div>
+                    <div className="text-4xl font-display font-bold text-orange mb-2">
+                      Texas
+                    </div>
+                    <div className="font-body text-text-muted">
+                      Statewide Coverage
+                    </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-orange mb-2">100%</div>
-                    <div className="font-body text-text-muted">Fully Insured</div>
+                    <div className="text-4xl font-display font-bold text-orange mb-2">
+                      100%
+                    </div>
+                    <div className="font-body text-text-muted">
+                      Fully Insured
+                    </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-orange mb-2">10+</div>
-                    <div className="font-body text-text-muted">Years Experience</div>
+                    <div className="text-4xl font-display font-bold text-orange mb-2">
+                      10+
+                    </div>
+                    <div className="font-body text-text-muted">
+                      Years Experience
+                    </div>
                   </div>
                 </div>
               </div>
@@ -89,6 +118,12 @@ export default function ClientsPage() {
           </div>
         </div>
       </section>
+
+      {/* Divider */}
+      <div
+        className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent"
+        aria-hidden="true"
+      />
 
       {/* Client Type Sections - Alternating Layout */}
       {clients.map((client, index) => {
@@ -101,9 +136,11 @@ export default function ClientsPage() {
             className={`py-20 lg:py-28 ${index % 2 === 0 ? "bg-surface-100" : "bg-white"}`}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                isEven ? "" : "lg:grid-flow-dense"
-              }`}>
+              <div
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                  isEven ? "" : "lg:grid-flow-dense"
+                }`}
+              >
                 {/* Text Content */}
                 <div className={isEven ? "" : "lg:col-start-2"}>
                   <AnimatedSection variant={animationVariant}>
@@ -123,60 +160,18 @@ export default function ClientsPage() {
         );
       })}
 
-      {/* Why Clients Choose MEGAFIXX Section */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection variant="fadeUp">
-            <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
-                Why Clients Choose MEGAFIXX
-              </h2>
-              <div className="w-20 h-1 bg-orange rounded-full mx-auto" />
-            </div>
-          </AnimatedSection>
+      {/* Why Choose MEGAFIXX Section */}
+      <div
+        className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent"
+        aria-hidden="true"
+      />
+      <WhyChooseUs />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: Clock,
-                title: "Reliability",
-                description: "We understand that time is critical. Our team responds quickly, meets deadlines, and ensures projects move forward without delays."
-              },
-              {
-                icon: Award,
-                title: "Quality Workmanship",
-                description: "Every service is completed with attention to detail and durability in mind. We focus on long-term solutions — not temporary fixes."
-              },
-              {
-                icon: BarChart,
-                title: "Scalable Solutions",
-                description: "Whether you need one-time repairs or ongoing maintenance contracts, we tailor our services to fit your operational needs."
-              },
-              {
-                icon: MessageSquare,
-                title: "Professional Communication",
-                description: "We maintain clear communication before, during, and after each project. Our clients stay informed at every stage."
-              }
-            ].map((feature, index) => (
-              <AnimatedSection
-                key={feature.title}
-                variant="fadeUp"
-                delay={index * 0.1}
-              >
-                <div className="bg-surface-100 border border-surface-200 rounded-xl p-6 h-full">
-                  <feature.icon className="w-10 h-10 text-orange mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-charcoal mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="font-body text-text-muted">
-                    {feature.description}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Divider */}
+      <div
+        className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent"
+        aria-hidden="true"
+      />
 
       {/* Quality Assurance Process Section */}
       <section className="py-20 lg:py-28 bg-surface-100">
@@ -199,20 +194,23 @@ export default function ClientsPage() {
                 number: "01",
                 icon: Camera,
                 title: "Detailed Documentation",
-                description: "We provide before photos, progress documentation, and completion photos. This ensures transparency, accountability, and verifiable results."
+                description:
+                  "We provide before photos, progress documentation, and completion photos. This ensures transparency, accountability, and verifiable results.",
               },
               {
                 number: "02",
                 icon: ShieldCheck,
                 title: "Vendor & Team Screening",
-                description: "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent MEGAFIXX on your property."
+                description:
+                  "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent MEGAFIXX on your property.",
               },
               {
                 number: "03",
                 icon: Bell,
                 title: "Proactive Communication",
-                description: "We notify stakeholders before service visits and provide status updates throughout the job lifecycle. Upon completion, we follow up to confirm satisfaction."
-              }
+                description:
+                  "We notify stakeholders before service visits and provide status updates throughout the job lifecycle. Upon completion, we follow up to confirm satisfaction.",
+              },
             ].map((step, index) => (
               <AnimatedSection
                 key={step.number}
@@ -227,7 +225,10 @@ export default function ClientsPage() {
                   </div>
 
                   {/* Icon */}
-                  <step.icon className="w-10 h-10 text-orange mx-auto mb-4" aria-hidden="true" />
+                  <step.icon
+                    className="w-10 h-10 text-orange mx-auto mb-4"
+                    aria-hidden="true"
+                  />
 
                   {/* Title */}
                   <h3 className="font-display text-xl font-bold text-charcoal mb-3">

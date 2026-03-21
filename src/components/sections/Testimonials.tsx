@@ -59,9 +59,14 @@ export function Testimonials() {
   }, [emblaApi]);
 
   return (
-    <section className="pt-0 pb-20 lg:pb-28 bg-white">
+    <section className="py-24 lg:py-32 bg-surface-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
+          <div className="text-center mb-2">
+            <span className="font-display text-8xl font-bold text-teal/15 leading-none select-none">
+              "
+            </span>
+          </div>
           <SectionHeading
             title="What Our Clients Say"
             subtitle="Trusted by property professionals across Texas"
@@ -104,8 +109,8 @@ export function Testimonials() {
                   aria-label={`Go to testimonial ${index + 1}`}
                   className={`rounded-full transition-all duration-300 ${
                     index === selectedIndex
-                      ? "bg-teal w-4 h-3"
-                      : "bg-surface-200 w-2 h-2"
+                      ? "bg-teal w-2 h-2"
+                      : "bg-surface-300 w-2 h-2"
                   }`}
                 />
               ))}
@@ -122,7 +127,7 @@ export function Testimonials() {
         </div>
 
         {/* Desktop: 3-column grid */}
-        <div className="hidden lg:grid lg:grid-cols-3 gap-8">
+        <div className="hidden lg:grid lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <AnimatedSection
               key={testimonial.id}

@@ -38,14 +38,18 @@ export default function ClientsPage() {
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Our Clients
           </h1>
+          <div className="flex justify-center my-3">
+            <div className="h-px w-16 bg-teal/50" />
+          </div>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
             Trusted Property Maintenance Partner Across Texas
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection variant="fadeLeft">
@@ -116,32 +120,45 @@ export default function ClientsPage() {
         aria-hidden="true"
       />
 
-      {/* Client Type Sections - Alternating Layout */}
+      {/* Client Types - New Stacked + Featured Layout */}
       {clients.map((client, index) => {
-        const isEven = index % 2 === 0;
-        const animationVariant = isEven ? "fadeLeft" : "fadeRight";
-
         return (
           <section
             key={client.id}
-            className={`py-20 lg:py-28 ${index % 2 === 0 ? "bg-surface-100" : "bg-white"}`}
+            className={`py-24 lg:py-32 ${index % 2 === 0 ? "bg-white" : "bg-surface-50"}`}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                  isEven ? "" : "lg:grid-flow-dense"
-                }`}
-              >
-                {/* Text Content */}
-                <div className={isEven ? "" : "lg:col-start-2"}>
-                  <AnimatedSection variant={animationVariant}>
-                    <ClientTypeCard client={client} variant="full" />
+              {/* Section number badge */}
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-teal/10 border border-teal/30 mb-6">
+                <span className="font-display text-lg font-bold text-teal">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+                {/* Left: Title + Description */}
+                <div className="lg:col-span-2">
+                  <AnimatedSection variant="fadeLeft">
+                    <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
+                      {client.title}
+                    </h2>
+                    <p className="font-body text-lg text-text-muted mb-6">
+                      {client.description}
+                    </p>
+                    <div className="space-y-3">
+                      {client.benefits.map((benefit, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <span className="text-teal font-bold text-lg mt-0.5">→</span>
+                          <span className="font-body text-text-muted">{benefit}</span>
+                        </div>
+                      ))}
+                    </div>
                   </AnimatedSection>
                 </div>
 
-                {/* Image */}
-                <div className={isEven ? "" : "lg:col-start-1 lg:row-start-1"}>
-                  <AnimatedSection variant={isEven ? "fadeRight" : "fadeLeft"}>
+                {/* Right: Card + Image */}
+                <div className="lg:col-span-3">
+                  <AnimatedSection variant="fadeRight" className="space-y-6">
                     <ClientImage client={client} />
                   </AnimatedSection>
                 </div>
@@ -164,22 +181,22 @@ export default function ClientsPage() {
         aria-hidden="true"
       />
 
-      {/* Quality Assurance Process Section */}
-      <section className="py-20 lg:py-28 bg-surface-100">
+      {/* Quality Assurance Process Section - Redesigned */}
+      <section className="py-24 lg:py-32 bg-surface-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
-            <div className="text-center mb-12">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mb-4">
-                Quality Assurance Process
+            <div className="max-w-3xl mx-auto mb-16">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6 text-center">
+                How We Ensure Quality
               </h2>
-              <div className="w-20 h-1 bg-teal rounded-full mx-auto" />
+              <p className="font-body text-lg text-text-muted text-center">
+                Every HomeProX engagement follows a rigorous three-step quality protocol designed to protect your investment and ensure professional outcomes.
+              </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-            {/* Connecting Line (Desktop Only) */}
-            <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 border-t border-teal/30" />
-
+          {/* Process Steps - Vertical Timeline */}
+          <div className="max-w-2xl mx-auto">
             {[
               {
                 number: "01",
@@ -206,30 +223,29 @@ export default function ClientsPage() {
               <AnimatedSection
                 key={step.number}
                 variant="fadeUp"
-                delay={index * 0.2}
-                className="h-full"
+                delay={index * 0.15}
+                className="mb-8 last:mb-0"
               >
-                <div className="relative bg-surface-50 border border-surface-200 rounded-xl p-8 text-center h-full flex flex-col hover:border-teal/30 hover:shadow-card transition-all duration-300">
-                  {/* Step Number Badge */}
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-charcoal text-white font-display text-2xl font-bold mb-6 ring-2 ring-charcoal/20 shadow-md">
-                    {step.number}
+                <div className="flex gap-6">
+                  {/* Number + Line */}
+                  <div className="flex flex-col items-center">
+                    <div className="w-12 h-12 rounded-full bg-teal text-white flex items-center justify-center font-display font-bold text-lg mb-4">
+                      {step.number}
+                    </div>
+                    {index < 2 && (
+                      <div className="w-1 h-24 bg-teal/20" />
+                    )}
                   </div>
 
-                  {/* Icon */}
-                  <step.icon
-                    className="w-10 h-10 text-teal mx-auto mb-4"
-                    aria-hidden="true"
-                  />
-
-                  {/* Title */}
-                  <h3 className="font-display text-xl font-bold text-charcoal mb-3">
-                    {step.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="font-body text-text-muted flex-grow">
-                    {step.description}
-                  </p>
+                  {/* Content */}
+                  <div className="pb-4 flex-grow">
+                    <h3 className="font-display text-2xl font-bold text-charcoal mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="font-body text-text-muted">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
               </AnimatedSection>
             ))}

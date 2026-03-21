@@ -88,15 +88,19 @@ export default function AboutPage() {
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               About HomeProX Services LLC
             </h1>
+            <div className="flex justify-center my-3">
+              <div className="h-px w-16 bg-teal/50" />
+            </div>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
             Texas-rooted. Statewide reach. Engineered for professional operations.
           </p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
       </section>
 
       {/* Mission Statement Section */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <AnimatedSection variant="fadeLeft" className="lg:col-span-3">
@@ -134,7 +138,7 @@ export default function AboutPage() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-20 lg:py-28 bg-surface-100">
+      <section className="py-24 lg:py-32 bg-surface-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
@@ -148,14 +152,14 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {serviceCategories.map((category, index) => (
               <AnimatedSection
                 key={category.title}
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-white border border-surface-200 rounded-xl p-8 text-center h-full">
+                <div className="bg-white border border-surface-200 rounded-2xl p-8 text-center h-full hover:border-teal/40 hover:shadow-card transition-all duration-300">
                   <category.icon className="w-12 h-12 text-teal mx-auto mb-4" aria-hidden="true" />
                   <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                     {category.title}
@@ -171,7 +175,7 @@ export default function AboutPage() {
       </section>
 
       {/* Coverage Section */}
-      <section className="relative py-20 lg:py-28 overflow-hidden">
+      <section className="relative py-24 lg:py-32 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -217,7 +221,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
@@ -228,21 +232,16 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {values.map((value, index) => (
               <AnimatedSection
                 key={value.title}
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-surface-100 border border-surface-200 rounded-xl p-8 text-center h-full">
-                  <value.icon className="w-12 h-12 text-teal mx-auto mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-2xl font-bold text-charcoal mb-3">
-                    {value.title}
-                  </h3>
-                  <p className="font-body text-text-muted">
-                    {value.description}
-                  </p>
+                <div className="pl-4 border-l-2 border-teal/40">
+                  <h3 className="font-display font-semibold text-charcoal mb-2 text-xl">{value.title}</h3>
+                  <p className="font-body text-text-muted">{value.description}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -251,23 +250,27 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-teal/20">
+      <section className="py-24 lg:py-32 bg-charcoal text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
-            <div className="bg-surface-100 border border-teal/30 rounded-2xl p-8 md:p-12 text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
-                Ready to Protect Your Properties?
+            <div className="text-center">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Ready to Get Started?
               </h2>
-              <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
-                Partner with Texas&apos;s trusted property maintenance team.
+              <p className="font-body text-lg text-surface-300 mb-10 max-w-2xl mx-auto">
+                Join hundreds of satisfied property managers and investors across Texas who trust HomeProX for their maintenance needs.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button variant="primary" size="lg" asChild>
                   <Link href="/quote">Get a Free Quote</Link>
                 </Button>
-                <Button variant="secondary" size="lg" asChild>
-                  <a href="tel:4693789262">Call Now: (469) 378-9262</a>
-                </Button>
+                <span className="text-surface-300">or</span>
+                <a
+                  href="tel:4693789262"
+                  className="font-body text-teal hover:text-teal-light transition-colors"
+                >
+                  Call: (469) 378-9262
+                </a>
               </div>
             </div>
           </AnimatedSection>

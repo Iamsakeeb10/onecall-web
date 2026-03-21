@@ -40,7 +40,7 @@ export default function VendorWhyPartner() {
       </div>
 
       {/* Why partner section */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <SectionHeading
@@ -50,14 +50,14 @@ export default function VendorWhyPartner() {
             />
           </AnimatedSection>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             {benefits.map((benefit, index) => (
               <AnimatedSection
                 key={benefit.title}
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-white border border-surface-200 rounded-xl shadow-card p-6 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex gap-4">
+                <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-5 lg:p-6 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex gap-4">
                   <span className="mt-1 flex-shrink-0">
                     <CheckCircle2 className="w-6 h-6 text-teal" />
                   </span>

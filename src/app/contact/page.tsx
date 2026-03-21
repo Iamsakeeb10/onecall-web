@@ -51,150 +51,129 @@ export default function ContactPage() {
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Contact HomeProX
           </h1>
+          <div className="flex justify-center my-3">
+            <div className="h-px w-16 bg-teal/50" />
+          </div>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
             Questions about services, business opportunities, or partnership possibilities? Connect with our team—we're ready to discuss your property maintenance needs.
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
       </section>
 
-      {/* Two-column: Contact Info (left) + Form (right) */}
-      <section className="py-20 lg:py-28 bg-white">
+      {/* Contact Layout - Card Grid + Form */}
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            {/* Left — Contact Information */}
-            <AnimatedSection variant="fadeLeft">
-              <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2">
-                Contact Information
-              </h2>
-              <div className="h-0.5 w-12 bg-teal rounded-full mb-8" />
-
-              <div className="space-y-4">
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center flex-shrink-0">
-                    <Phone className="text-teal" size={20} aria-hidden="true" />
-                  </div>
-                  <div>
-                    <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
-                      Phone
-                    </p>
-                    <a
-                      href="tel:+14693789262"
-                      className="font-body text-charcoal font-medium hover:text-teal transition-colors"
-                    >
-                      (469) 378-9262
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center flex-shrink-0">
-                    <Mail className="text-teal" size={20} aria-hidden="true" />
-                  </div>
-                  <div>
-                    <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
-                      Email
-                    </p>
-                    <a
-                      href="mailto:info@homeproxsvcs.com"
-                      className="font-body text-charcoal font-medium hover:text-teal transition-colors"
-                    >
-                      info@homeproxsvcs.com
-                    </a>
+          {/* Quick Contact Cards - 2x2 Grid */}
+          <div className="mb-16">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-10 text-center">
+              Get in Touch
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+              {/* Phone */}
+              <AnimatedSection variant="fadeUp">
+                <div className="bg-gradient-to-br from-teal/5 to-transparent rounded-2xl p-8 border border-teal/20 hover:border-teal/40 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-teal" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                        Phone
+                      </h3>
+                      <a
+                        href="tel:4693789262"
+                        className="font-body text-lg text-teal hover:text-teal-dark transition-colors"
+                      >
+                        (469) 378-9262
+                      </a>
+                      <p className="font-body text-sm text-text-muted mt-1">Available during business hours</p>
+                    </div>
                   </div>
                 </div>
+              </AnimatedSection>
 
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center flex-shrink-0">
-                    <MapPin className="text-teal" size={20} aria-hidden="true" />
-                  </div>
-                  <div>
-                    <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
-                      Service Coverage
-                    </p>
-                    <p className="font-body text-charcoal font-medium">
-                      Serving Residential & Investment Properties
-                    </p>
-                    <p className="font-body text-text-muted text-sm mt-0.5">Statewide — Texas</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center flex-shrink-0">
-                    <Clock className="text-teal" size={20} aria-hidden="true" />
-                  </div>
-                  <div>
-                    <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
-                      Business Hours
-                    </p>
-                    <p className="font-body text-charcoal font-medium">
-                      Monday – Friday: 8:00 AM – 6:00 PM
-                    </p>
-                    <p className="font-body text-charcoal font-medium mt-2">Saturday: closed</p>
-                    <p className="font-body text-charcoal font-medium">Sunday: Closed</p>
+              {/* Email */}
+              <AnimatedSection variant="fadeUp" delay={0.1}>
+                <div className="bg-gradient-to-br from-teal/5 to-transparent rounded-2xl p-8 border border-teal/20 hover:border-teal/40 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-teal" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                        Email
+                      </h3>
+                      <a
+                        href="mailto:info@homeproxsvcs.com"
+                        className="font-body text-lg text-teal hover:text-teal-dark transition-colors"
+                      >
+                        info@homeproxsvcs.com
+                      </a>
+                      <p className="font-body text-sm text-text-muted mt-1">Responded within 24 hours</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </AnimatedSection>
 
-              <div className="mt-10 pt-8 border-t border-surface-200">
-                <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-4">
-                  Looking for something specific?
-                </p>
-                <div className="flex flex-col gap-3">
-                  <Link
-                    href="/clients"
-                    className="flex items-center gap-3 group font-body text-charcoal hover:text-teal transition-colors duration-200"
-                  >
-                    <Building2 className="text-teal" size={18} aria-hidden="true" />
-                    <span className="font-medium">Become a Client</span>
-                    <ChevronRight
-                      size={16}
-                      className="text-text-muted group-hover:text-teal group-hover:translate-x-1 transition-all duration-200 ml-auto"
-                      aria-hidden="true"
-                    />
-                  </Link>
-                  <Link
-                    href="/vendors"
-                    className="flex items-center gap-3 group font-body text-charcoal hover:text-teal transition-colors duration-200"
-                  >
-                    <Wrench className="text-teal" size={18} aria-hidden="true" />
-                    <span className="font-medium">Become a Vendor</span>
-                    <ChevronRight
-                      size={16}
-                      className="text-text-muted group-hover:text-teal group-hover:translate-x-1 transition-all duration-200 ml-auto"
-                      aria-hidden="true"
-                    />
-                  </Link>
-                  <Link
-                    href="#contact-form"
-                    className="flex items-center gap-3 group font-body text-charcoal hover:text-teal transition-colors duration-200"
-                  >
-                    <ClipboardList className="text-teal" size={18} aria-hidden="true" />
-                    <span className="font-medium">Request Service</span>
-                    <ChevronRight
-                      size={16}
-                      className="text-text-muted group-hover:text-teal group-hover:translate-x-1 transition-all duration-200 ml-auto"
-                      aria-hidden="true"
-                    />
-                  </Link>
+              {/* Service Area */}
+              <AnimatedSection variant="fadeUp" delay={0.2}>
+                <div className="bg-gradient-to-br from-teal/5 to-transparent rounded-2xl p-8 border border-teal/20 hover:border-teal/40 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-teal" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                        Service Area
+                      </h3>
+                      <p className="font-body text-lg text-charcoal">
+                        All of Texas Statewide
+                      </p>
+                      <p className="font-body text-sm text-text-muted mt-1">Comprehensive coverage everywhere</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
 
-            {/* Right — Form card with id for anchor */}
-            <AnimatedSection variant="fadeRight" delay={0.1}>
-              <div id="contact-form" className="bg-white rounded-2xl border border-surface-200 shadow-card p-8 sm:p-10">
-                <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2">
-                  Send Us a Message
+              {/* Hours */}
+              <AnimatedSection variant="fadeUp" delay={0.3}>
+                <div className="bg-gradient-to-br from-teal/5 to-transparent rounded-2xl p-8 border border-teal/20 hover:border-teal/40 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-teal" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                        Hours
+                      </h3>
+                      <p className="font-body text-charcoal">Mon–Fri: 8am–6pm</p>
+                      <p className="font-body text-text-muted text-sm mt-1">Closed weekends</p>
+                    </div>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <AnimatedSection variant="fadeUp">
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-surface-50 rounded-2xl p-10 md:p-14 border border-surface-200">
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-charcoal mb-2 text-center">
+                  Send us a Message
                 </h2>
-                <div className="h-0.5 w-12 bg-teal rounded-full mb-8" />
+                <p className="font-body text-text-muted text-center mb-10">
+                  Have questions? Fill out the form below and we'll get back to you shortly.
+                </p>
                 <ContactForm />
               </div>
-            </AnimatedSection>
-          </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
-      {/* Trust strip */}
+      {/* Trust Indicators Strip */}
       <section className="py-12 bg-surface-50 border-t border-surface-200">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">

@@ -33,8 +33,11 @@ export function ClientTypeCard({ client, variant = "compact" }: ClientTypeCardPr
       <motion.div
         whileHover={shouldReduceMotion ? undefined : { y: -4 }}
         transition={{ duration: 0.3 }}
-        className="bg-white border border-surface-200 rounded-xl shadow-card p-6 flex flex-col h-full hover:border-teal/40 hover:shadow-card-hover transition-all duration-300"
+        className="bg-white border border-surface-200 rounded-2xl shadow-card p-5 lg:p-6 flex flex-col h-full hover:border-teal/40 hover:shadow-card-hover transition-all duration-300"
       >
+        {/* Teal Top Stripe */}
+        <div className="h-1 w-full bg-gradient-to-r from-teal to-teal/20 rounded-t-2xl -mx-5 lg:-mx-6 -mt-5 lg:-mt-6 mb-4" />
+
         {/* Icon */}
         <div className="mb-4">
           <IconComponent className="w-10 h-10 text-teal" aria-hidden="true" />

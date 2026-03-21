@@ -20,6 +20,9 @@ export default function VendorHero() {
         <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
           Join the HomeProX Property Maintenance Network
         </h1>
+        <div className="flex justify-center my-3">
+          <div className="h-px w-16 bg-teal/50" />
+        </div>
         <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-10">
           Connect with a professional network built on consistent demand, reliable partnerships, and clear advancement opportunities across Texas property management.
         </p>
@@ -32,6 +35,7 @@ export default function VendorHero() {
           <a href="#vendor-application">Apply Now</a>
         </Button>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
     </section>
   );
 }

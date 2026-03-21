@@ -2,15 +2,22 @@
 
 import React from "react";
 import Link from "next/link";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
 
 export function ContactSection() {
+  const contactItems = [
+    { icon: Phone, label: "Phone", value: "(469) 378-9262", href: "tel:4693789262" },
+    { icon: Mail, label: "Email", value: "info@homeproxsvcs.com", href: "mailto:info@homeproxsvcs.com" },
+    { icon: MapPin, label: "Location", value: "Serving Texas Statewide", href: null },
+    { icon: Clock, label: "Hours", value: "Available 7 days a week", href: null },
+  ];
+
   return (
     <section
       id="contact"
-      className="relative py-20 lg:py-28 bg-surface-50 border-t-2 border-teal/20"
+      className="relative py-24 lg:py-32 bg-white"
     >
       {/* Subtle diagonal accent overlay (matches vendor CTA pattern, but on light bg) */}
       <div
@@ -25,40 +32,47 @@ export function ContactSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-8 sm:p-10 text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
+            <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-8 sm:p-10">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4 text-center">
                 Let's Discuss Your Property Needs
               </h2>
-              <p className="font-body text-text-muted mb-6">
+              <p className="font-body text-text-muted mb-8 text-center">
                 Reach out with questions, requirements, or partnership inquiries. Our team responds promptly and works within your timeline.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-text-muted mb-8">
-                <a
-                  href="tel:4693789262"
-                  className="flex items-center gap-2 font-body hover:text-teal transition-colors duration-300"
-                >
-                  <Phone className="w-5 h-5 text-teal" aria-hidden="true" />
-                  (469) 378-9262
-                </a>
-                <a
-                  href="mailto:info@homeproxsvcs.com"
-                  className="flex items-center gap-2 font-body hover:text-teal transition-colors duration-300"
-                >
-                  <Mail className="w-5 h-5 text-teal" aria-hidden="true" />
-                  info@homeproxsvcs.com
-                </a>
+              
+              {/* Contact Info with Left Border Accents */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                {contactItems.map((item, index) => {
+                  const Icon = item.icon;
+                  const content = (
+                    <div className="flex items-start gap-3 pl-3 border-l-2 border-teal/40">
+                      <Icon className="text-teal mt-0.5 w-5 h-5 flex-shrink-0" aria-hidden="true" />
+                      <div>
+                        <div className="font-body text-sm text-text-muted">{item.label}</div>
+                        <div className="font-body font-medium text-charcoal">{item.value}</div>
+                      </div>
+                    </div>
+                  );
+
+                  return item.href ? (
+                    <a key={index} href={item.href} className="hover:opacity-80 transition-opacity duration-300">
+                      {content}
+                    </a>
+                  ) : (
+                    <div key={index}>
+                      {content}
+                    </div>
+                  );
+                })}
               </div>
-              <Button variant="primary" size="lg" asChild>
+
+              <Button variant="primary" size="lg" className="w-full" asChild>
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>
         </AnimatedSection>
       </div>
-      <div
-        className="mt-10 h-0.5 bg-gradient-to-r from-transparent via-teal to-transparent opacity-40"
-        aria-hidden="true"
-      />
     </section>
   );
 }

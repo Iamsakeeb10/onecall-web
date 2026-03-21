@@ -22,25 +22,9 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const initials = getInitials(testimonial.name);
 
   return (
-    <div className="bg-white border border-surface-200 rounded-xl shadow-card p-4 sm:p-6 h-full hover:border-teal/40 hover:shadow-card-hover transition-all duration-300 flex flex-col">
-      {/* Stars — skyblue for prestige accent */}
-      <div className="flex gap-1 mb-4">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <Star
-            key={i}
-            className="w-5 h-5 text-skyblue fill-skyblue"
-            aria-hidden="true"
-          />
-        ))}
-      </div>
-
-      {/* Quote */}
-      <p className="font-body text-sm sm:text-base text-text-muted italic mb-6 flex-grow">
-        &quot;{testimonial.content}&quot;
-      </p>
-
-      {/* Author Info */}
-      <div className="flex items-center gap-3 mt-auto">
+    <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-4 sm:p-6 h-full hover:border-teal/40 hover:shadow-card-hover transition-all duration-300 flex flex-col">
+      {/* Author Info — moved to top */}
+      <div className="flex items-center gap-3 mb-4">
         {/* Avatar */}
         <div className="flex-shrink-0 w-12 h-12 relative">
           {!imgError ? (
@@ -73,6 +57,22 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
           </p>
         </div>
       </div>
+
+      {/* Stars — skyblue for prestige accent */}
+      <div className="flex gap-1 mb-4">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <Star
+            key={i}
+            className="w-5 h-5 text-skyblue fill-skyblue"
+            aria-hidden="true"
+          />
+        ))}
+      </div>
+
+      {/* Quote with left border accent */}
+      <p className="font-body text-sm sm:text-base text-text-muted italic border-l-2 border-teal/30 pl-3 flex-grow">
+        &quot;{testimonial.content}&quot;
+      </p>
     </div>
   );
 }

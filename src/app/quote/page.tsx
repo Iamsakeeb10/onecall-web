@@ -1,6 +1,6 @@
 import { QuoteForm } from "@/components/forms/QuoteForm";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { Clock, Mail, Map, MapPin, Phone, Tag } from "lucide-react";
+import { CheckCircle2, Clock, Mail, Map, MapPin, Phone, Tag } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -41,94 +41,88 @@ export default function QuotePage() {
         </div>
       </section>
 
-      {/* Split Layout: Quote Form + Contact Info */}
-      <section className="py-20 lg:py-28 bg-white">
+      {/* Split Layout: Quote Form (Full Width) + Floating Info */}
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-            {/* Left: Quote Form (60%) */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+            {/* Form - Takes 3 columns */}
             <div className="lg:col-span-3">
               <AnimatedSection variant="fadeLeft">
-                <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2">
-                  Request a Free Quote
+                <h2 className="font-display text-3xl sm:text-4xl font-bold text-charcoal mb-3">
+                  Request Your Quote
                 </h2>
-                <p className="font-body text-base sm:text-lg text-text-muted mb-6">
-                  Fill out the form below and we&apos;ll get back to you within 24 hours.
+                <p className="font-body text-base sm:text-lg text-text-muted mb-10">
+                  Tell us about your property needs and we'll provide a customized quote within 24 hours. No hidden fees—just transparent, professional pricing.
                 </p>
                 <QuoteForm />
               </AnimatedSection>
             </div>
 
-            {/* Right: Contact Info Panel (40%) */}
-            <div className="lg:col-span-2">
-              <AnimatedSection variant="fadeRight">
-                <div className="bg-surface-100 border-l-4 border-teal rounded-lg p-8 h-full">
-                  <h3 className="font-display text-2xl font-bold text-charcoal mb-6">
-                    Get in Touch
+            {/* Right: Stacked Info Boxes */}
+            <div className="lg:col-span-1">
+              <AnimatedSection variant="fadeRight" className="space-y-6">
+                {/* Quick Contact */}
+                <div className="bg-surface-50 rounded-2xl p-6 border border-surface-200">
+                  <h3 className="font-display text-lg font-bold text-charcoal mb-4">
+                    Quick Contact
                   </h3>
+                  <div className="space-y-3">
+                    <a
+                      href="tel:4693789262"
+                      className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
+                    >
+                      <Phone className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
+                      <span className="text-sm">(469) 378-9262</span>
+                    </a>
 
-                  <div className="space-y-6">
-                    <div>
-                      <a
-                        href="tel:4693789262"
-                        className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
-                      >
-                        <Phone className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
-                        <span>(469) 378-9262</span>
-                      </a>
+                    <a
+                      href="mailto:info@homeproxsvcs.com"
+                      className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
+                    >
+                      <Mail className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
+                      <span className="text-sm">info@homeproxsvcs.com</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Service Coverage */}
+                <div className="bg-teal/5 rounded-2xl p-6 border border-teal/20">
+                  <h3 className="font-display text-lg font-bold text-charcoal mb-4">
+                    Service Area
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <MapPin className="w-4 h-4 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
+                      <span className="font-body text-sm text-text-muted">
+                        All of Texas Statewide
+                      </span>
                     </div>
-
-                    <div>
-                      <a
-                        href="mailto:info@homeproxsvcs.com"
-                        className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
-                      >
-                        <Mail className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
-                        <span>info@homeproxsvcs.com</span>
-                      </a>
+                    <div className="flex items-start gap-2">
+                      <Clock className="w-4 h-4 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
+                      <span className="font-body text-sm text-text-muted">
+                        M-F: 8am–6pm
+                      </span>
                     </div>
+                  </div>
+                </div>
 
-                    <div>
-                      <div className="flex items-start gap-3">
-                        <MapPin className="w-5 h-5 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
-                        <div>
-                          <p className="font-body text-charcoal">
-                            517 WATERVIEW DR, COPPELL, TX 75019
-                          </p>
-                        </div>
-                      </div>
+                {/* Trust Badges */}
+                <div className="bg-surface-50 rounded-2xl p-6 border border-surface-200">
+                  <h3 className="font-display text-sm font-bold text-charcoal uppercase tracking-wider mb-4">
+                    Why HomeProX
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <span className="text-teal font-bold">✓</span>
+                      <span className="font-body text-sm text-charcoal">Fully Insured</span>
                     </div>
-
-                    <div>
-                      <div className="flex items-start gap-3">
-                        <Map className="w-5 h-5 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
-                        <div>
-                          <p className="font-body text-charcoal">All of Texas Statewide</p>
-                        </div>
-                      </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-teal font-bold">✓</span>
+                      <span className="font-body text-sm text-charcoal">Licensed</span>
                     </div>
-
-                    <div>
-                      <div className="flex items-start gap-3">
-                        <Clock className="w-5 h-5 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
-                        <div>
-                          <p className="font-body text-charcoal mb-1">
-                            Monday – Friday: 8:00 AM – 6:00 PM
-                          </p>
-                          <p className="font-body text-charcoal mb-1">Saturday: closed</p>
-                          <p className="font-body text-charcoal">Sunday: Closed</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="pt-4 border-t border-surface-200">
-                      <div className="flex flex-wrap gap-3">
-                        <span className="inline-flex items-center px-3 py-1 bg-surface-200 rounded-full text-xs font-accent text-teal">
-                          Fully Insured
-                        </span>
-                        <span className="inline-flex items-center px-3 py-1 bg-surface-200 rounded-full text-xs font-accent text-teal">
-                          Licensed Professionals
-                        </span>
-                      </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-teal font-bold">✓</span>
+                      <span className="font-body text-sm text-charcoal">10+ Years</span>
                     </div>
                   </div>
                 </div>
@@ -138,10 +132,13 @@ export default function QuotePage() {
         </div>
       </section>
 
-      {/* Bottom Info Cards */}
-      <section className="py-20 lg:py-28 bg-surface-100">
+      {/* Bottom Info Cards - Redesigned */}
+      <section className="py-24 lg:py-32 bg-surface-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h2 className="font-display text-3xl font-bold text-charcoal mb-12 text-center">
+            What to Expect
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 icon: Clock,
@@ -150,28 +147,36 @@ export default function QuotePage() {
               },
               {
                 icon: Tag,
-                title: "Free Estimates",
-                description: "Get a no-obligation project estimate",
+                title: "Transparent Pricing",
+                description: "No hidden fees. What you see is what you pay",
               },
               {
-                icon: Map,
-                title: "Statewide Coverage",
-                description: "We serve all major regions across Texas",
+                icon: CheckCircle2,
+                title: "Professional Service",
+                description: "Licensed, insured, and fully trained teams",
               },
-            ].map((card, index) => (
-              <AnimatedSection key={card.title} variant="fadeUp" delay={index * 0.1}>
-                <div className="bg-white border border-surface-200 rounded-xl p-8 text-center h-full">
-                  <card.icon
-                    className="w-10 h-10 text-teal mx-auto mb-4"
-                    aria-hidden="true"
-                  />
-                  <h3 className="font-display text-xl font-bold text-charcoal mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="font-body text-text-muted">{card.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+            ].map((card, index) => {
+              const Icon = card.icon;
+              return (
+                <AnimatedSection
+                  key={card.title}
+                  variant="fadeUp"
+                  delay={index * 0.1}
+                >
+                  <div className="bg-white rounded-2xl p-8 border border-surface-200 text-center hover:border-teal/40 hover:shadow-card transition-all duration-300">
+                    <div className="w-14 h-14 rounded-full bg-teal/10 flex items-center justify-center mx-auto mb-4">
+                      <Icon className="w-7 h-7 text-teal" aria-hidden="true" />
+                    </div>
+                    <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                      {card.title}
+                    </h3>
+                    <p className="font-body text-text-muted">
+                      {card.description}
+                    </p>
+                  </div>
+                </AnimatedSection>
+              );
+            })}
           </div>
         </div>
       </section>

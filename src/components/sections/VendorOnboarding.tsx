@@ -24,7 +24,7 @@ const steps = [
 
 export default function VendorOnboarding() {
   return (
-    <section className="py-20 lg:py-28 bg-surface-50">
+    <section className="py-24 lg:py-32 bg-surface-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
@@ -34,18 +34,24 @@ export default function VendorOnboarding() {
           />
         </AnimatedSection>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 relative">
           {/* Connector line — desktop only */}
           <div
-            className="hidden md:block absolute top-10 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-0.5 bg-surface-200"
+            className="hidden md:block absolute top-12 left-1/6 right-1/6 h-px bg-gradient-to-r from-teal/20 via-teal/60 to-teal/20"
             aria-hidden="true"
           />
 
           {steps.map((step, index) => (
             <AnimatedSection key={step.number} variant="fadeUp" delay={index * 0.15}>
-              <div className="relative bg-white border border-surface-200 rounded-xl shadow-card p-8 text-center hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-teal text-white font-display text-xl font-bold mb-5 shadow-teal-glow">
-                  {step.number}
+              <div className="relative bg-white border border-surface-200 rounded-2xl shadow-card p-5 lg:p-6 text-center hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
+                {/* Step Number with Ping Effect */}
+                <div className="relative w-14 h-14 mx-auto mb-6">
+                  <div className="absolute inset-0 rounded-full bg-teal/10 animate-ping opacity-30" />
+                  <div className="relative w-14 h-14 rounded-full bg-teal/15 border border-teal/30 flex items-center justify-center">
+                    <span className="font-display text-lg font-bold text-teal">
+                      {step.number}
+                    </span>
+                  </div>
                 </div>
                 <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                   {step.title}

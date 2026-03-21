@@ -18,7 +18,7 @@ const preferred = [
 
 export default function VendorRequirements() {
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
@@ -28,12 +28,12 @@ export default function VendorRequirements() {
           />
         </AnimatedSection>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Required */}
           <AnimatedSection variant="fadeLeft" delay={0.1}>
-            <div className="bg-white border border-surface-200 rounded-xl shadow-card p-8 h-full">
-              <h3 className="font-display text-xl font-bold text-charcoal mb-6 flex items-center gap-2">
-                <span className="w-2 h-6 rounded-full bg-teal inline-block" />
+            <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-5 lg:p-6 h-full">
+              <div className="h-1 w-full bg-gradient-to-r from-teal to-teal/20 rounded-t-2xl -mx-5 lg:-mx-6 -mt-5 lg:-mt-6 mb-6" />
+              <h3 className="font-display text-xl font-bold text-charcoal mb-6">
                 Requirements
               </h3>
               <ul className="space-y-4">
@@ -49,9 +49,9 @@ export default function VendorRequirements() {
 
           {/* Preferred */}
           <AnimatedSection variant="fadeRight" delay={0.2}>
-            <div className="bg-surface-50 border border-surface-200 rounded-xl shadow-card p-8 h-full">
-              <h3 className="font-display text-xl font-bold text-charcoal mb-6 flex items-center gap-2">
-                <span className="w-2 h-6 rounded-full bg-skyblue inline-block" />
+            <div className="bg-surface-50 border border-surface-200 rounded-2xl shadow-card p-5 lg:p-6 h-full">
+              <div className="h-1 w-full bg-gradient-to-r from-skyblue to-skyblue/20 rounded-t-2xl -mx-5 lg:-mx-6 -mt-5 lg:-mt-6 mb-6" />
+              <h3 className="font-display text-xl font-bold text-charcoal mb-6">
                 Preferred
               </h3>
               <ul className="space-y-4">

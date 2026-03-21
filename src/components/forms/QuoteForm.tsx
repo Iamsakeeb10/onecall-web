@@ -142,6 +142,7 @@ export function QuoteForm() {
           placeholder="John Doe"
           aria-describedby={errors.fullName ? "fullName-error" : undefined}
           aria-invalid={errors.fullName ? "true" : "false"}
+          suppressHydrationWarning
         />
         {errors.fullName && (
           <p id="fullName-error" className="mt-1 text-sm text-error" role="alert">
@@ -163,6 +164,7 @@ export function QuoteForm() {
           onChange={handleChange}
           className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300"
           placeholder="ABC Property Management"
+          suppressHydrationWarning
         />
       </div>
 
@@ -183,6 +185,7 @@ export function QuoteForm() {
           placeholder="john@example.com"
           aria-describedby={errors.email ? "email-error" : undefined}
           aria-invalid={errors.email ? "true" : "false"}
+          suppressHydrationWarning
         />
         {errors.email && (
           <p id="email-error" className="mt-1 text-sm text-error" role="alert">
@@ -208,6 +211,7 @@ export function QuoteForm() {
           placeholder="(469) 555-1234"
           aria-describedby={errors.phone ? "phone-error" : undefined}
           aria-invalid={errors.phone ? "true" : "false"}
+          suppressHydrationWarning
         />
         {errors.phone && (
           <p id="phone-error" className="mt-1 text-sm text-error" role="alert">

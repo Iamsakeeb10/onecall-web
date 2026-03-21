@@ -34,42 +34,78 @@ export default function ServicesPage() {
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Complete Maintenance Solutions
           </h1>
+          <div className="flex justify-center my-3">
+            <div className="h-px w-16 bg-teal/50" />
+          </div>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
             Seven specialized service categories addressing every property maintenance need across Texas. From routine upkeep to emergency repairs, we deliver professional results for residential, commercial, and investment properties.
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
       </section>
 
-      {/* Services Grid */}
-      <section className="py-20 lg:py-28 bg-white">
+      {/* Services: Featured Introduction Section */}
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {services.map((service, index) => (
-              <AnimatedSection
-                key={service.id}
-                variant="fadeUp"
-                delay={index * 0.1}
-              >
-                <ServiceCard service={service} variant="featured" />
-              </AnimatedSection>
-            ))}
+          {/* Introduction */}
+          <AnimatedSection variant="fadeUp" className="mb-20">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6">
+                Seven Service Categories
+              </h2>
+              <p className="font-body text-lg text-text-muted mb-8">
+                HomeProX delivers specialized expertise across every property maintenance need. From routine upkeep to emergency repairs, we have the right solution for your portfolio.
+              </p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <span className="inline-flex items-center px-4 py-2 bg-teal/10 border border-teal/20 rounded-full text-sm font-body text-teal">
+                  ✓ Statewide Coverage
+                </span>
+                <span className="inline-flex items-center px-4 py-2 bg-teal/10 border border-teal/20 rounded-full text-sm font-body text-teal">
+                  ✓ Licensed & Insured
+                </span>
+                <span className="inline-flex items-center px-4 py-2 bg-teal/10 border border-teal/20 rounded-full text-sm font-body text-teal">
+                  ✓ 24-Hour Response
+                </span>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Services Gallery Grid - All 7 services */}
+          <div className="mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              {services.map((service, index) => (
+                <AnimatedSection
+                  key={service.id}
+                  variant="fadeUp"
+                  delay={index * 0.08}
+                >
+                  <ServiceCard service={service} variant="featured" />
+                </AnimatedSection>
+              ))}
+            </div>
           </div>
 
-          {/* Bottom CTA */}
-          <AnimatedSection variant="fadeUp" delay={0.8}>
-            <div className="text-center bg-surface-50 rounded-xl p-8 border border-surface-200">
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-charcoal mb-4">
-                Find the Right Service for Your Property
+          {/* Bottom CTA - Redesigned */}
+          <AnimatedSection variant="fadeUp">
+            <div className="bg-charcoal text-white rounded-2xl p-10 md:p-14 text-center">
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+                Ready to Get Started?
               </h2>
-              <p className="font-body text-text-muted mb-6 max-w-2xl mx-auto">
-                Whether managing single units or large portfolios, HomeProX combines comprehensive service coverage with detailed documentation and transparent pricing—all backed by Texas experience and statewide expertise.
+              <p className="font-body text-surface-200 mb-8 max-w-2xl mx-auto">
+                Request a customized quote for your specific property maintenance needs. Our team will respond within 24 hours.
               </p>
-              <Button variant="primary" size="lg" asChild>
-                <Link href="/quote">Get a Free Quote</Link>
-              </Button>
-              <p className="font-body text-text-muted mt-6 text-sm">
-                📞 (469) 378-9262  |  📧 info@homeproxsvcs.com
-              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button variant="primary" size="lg" asChild>
+                  <Link href="/quote">Get a Free Quote</Link>
+                </Button>
+                <span className="text-surface-300">or</span>
+                <a
+                  href="tel:4693789262"
+                  className="font-body text-teal hover:text-teal-light transition-colors"
+                >
+                  (469) 378-9262
+                </a>
+              </div>
             </div>
           </AnimatedSection>
         </div>

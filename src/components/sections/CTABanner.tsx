@@ -16,7 +16,7 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
 
   if (variant === "light") {
     return (
-      <section className="py-20 lg:py-28 bg-surface-50 border-y border-surface-200">
+      <section className="py-24 lg:py-32 bg-white border-y border-surface-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center">
@@ -26,10 +26,11 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
                 Discover how HomeProX transforms property management across the Lone Star State.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button variant="primary" size="lg" asChild>
                   <Link href="/contact">Contact Us Today</Link>
                 </Button>
+                <span className="hidden sm:block text-text-muted/30 text-sm">or</span>
                 <Button variant="secondary" size="lg" asChild>
                   <Link href="/quote">Get a Quote</Link>
                 </Button>
@@ -43,7 +44,7 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
 
   // Dark variant (default) — image with charcoal overlay
   return (
-    <section className="relative py-20 lg:py-28 overflow-hidden">
+    <section className="relative py-24 lg:py-32 overflow-hidden border-t border-teal/20">
       <div className="absolute inset-0 z-0">
         {!imgError ? (
           <Image
@@ -62,26 +63,24 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="text-center lg:text-left">
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                Ready to Protect Your Properties?
-              </h2>
-              <p className="font-body text-lg text-surface-200 max-w-2xl">
-                Partner with Texas&apos;s trusted property maintenance team.
-              </p>
-            </div>
+          <div className="text-center">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Ready to Protect Your Properties?
+            </h2>
+            <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-8">
+              Partner with Texas&apos;s trusted property maintenance team.
+            </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="primary" size="lg" asChild>
                 <Link href="/quote">Get a Free Quote</Link>
               </Button>
-              <a
-                href="tel:4693789262"
-                className="inline-flex items-center justify-center gap-2 font-accent font-medium rounded-lg transition-all duration-300 border-2 border-white/40 text-white hover:bg-white hover:text-charcoal px-8 py-4 text-lg"
-              >
-                Call Now: (469) 378-9262
-              </a>
+              <span className="hidden sm:block text-white/30 text-sm">or</span>
+              <Button variant="secondary" size="lg" asChild>
+                <a href="tel:4693789262">
+                  Call Now: (469) 378-9262
+                </a>
+              </Button>
             </div>
           </div>
         </AnimatedSection>

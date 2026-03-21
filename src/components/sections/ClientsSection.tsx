@@ -15,15 +15,24 @@ export function ClientsSection() {
     <section id="clients" className="pt-12 pb-20 lg:pt-16 lg:pb-28 bg-surface-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
-          <SectionHeading
-            title="Industry Expertise"
-            subtitle="Solutions tailored for property managers, financiers, real estate professionals, and investors"
-            align="center"
-          />
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+            <SectionHeading
+              title="Industry Expertise"
+              subtitle="Solutions tailored for property managers, financiers, real estate professionals, and investors"
+              align="left"
+            />
+            <Link
+              href="/clients"
+              className="inline-flex items-center gap-1 text-teal font-medium text-sm hover:gap-2 transition-all duration-300 whitespace-nowrap"
+            >
+              Our Clients
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </AnimatedSection>
 
         {/* Client Types Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {clients.map((client, index) => (
             <motion.div
               key={client.id}
@@ -36,19 +45,6 @@ export function ClientsSection() {
             </motion.div>
           ))}
         </div>
-
-        {/* Learn More Link */}
-        <AnimatedSection variant="fadeUp" delay={0.5}>
-          <div className="text-center">
-            <Link
-              href="/clients"
-              className="inline-flex items-center gap-2 font-accent text-teal hover:text-teal-dark hover:underline transition-colors duration-300 text-lg"
-            >
-              Learn More About Our Clients
-              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
-            </Link>
-          </div>
-        </AnimatedSection>
       </div>
     </section>
   );

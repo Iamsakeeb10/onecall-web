@@ -27,7 +27,7 @@ const steps = [
 
 export function QualityProcess() {
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
@@ -37,9 +37,9 @@ export function QualityProcess() {
           />
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
           {/* Connecting Line (Desktop Only) */}
-          <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 border-t border-surface-200" />
+          <div className="hidden md:block absolute top-12 left-1/6 right-1/6 h-px bg-gradient-to-r from-teal/20 via-teal/60 to-teal/20" />
 
           {steps.map((step, index) => (
             <AnimatedSection
@@ -48,10 +48,15 @@ export function QualityProcess() {
               delay={index * 0.2}
               className="h-full"
             >
-              <div className="relative bg-surface-50 border border-surface-200 rounded-xl p-8 text-center h-full flex flex-col hover:border-teal/30 hover:shadow-card transition-all duration-300">
-                {/* Step Number Badge */}
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-charcoal text-white font-display text-2xl font-bold mb-6 ring-2 ring-charcoal/20 shadow-md">
-                  {step.number}
+              <div className="relative bg-surface-50 border border-surface-200 rounded-2xl p-5 lg:p-6 text-center h-full flex flex-col hover:border-teal/30 hover:shadow-card transition-all duration-300">
+                {/* Step Number Badge with Ping Effect */}
+                <div className="relative w-14 h-14 mx-auto mb-6">
+                  <div className="absolute inset-0 rounded-full bg-teal/10 animate-ping opacity-30" />
+                  <div className="relative w-14 h-14 rounded-full bg-teal/15 border border-teal/30 flex items-center justify-center">
+                    <span className="font-display text-lg font-bold text-teal">
+                      {step.number}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Icon */}

@@ -2,6 +2,7 @@
 
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { Clock, Building2, MapPin, ShieldCheck } from "lucide-react";
 
 interface StatItem {
   value: string;
@@ -20,6 +21,22 @@ function CountUpNumber({ value, label }: StatItem) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const shouldReduceMotion = useReducedMotion();
+
+  const getIcon = (label: string) => {
+    const iconProps = "w-4 h-4 text-teal";
+    switch (label) {
+      case "Years Experience":
+        return <Clock className={iconProps} />;
+      case "Properties":
+        return <Building2 className={iconProps} />;
+      case "Coverage":
+        return <MapPin className={iconProps} />;
+      case "Insured":
+        return <ShieldCheck className={iconProps} />;
+      default:
+        return null;
+    }
+  };
 
   useEffect(() => {
     if (!isInView || shouldReduceMotion) {
@@ -54,8 +71,11 @@ function CountUpNumber({ value, label }: StatItem) {
   }, [isInView, value, shouldReduceMotion]);
 
   return (
-    <div ref={ref} className="text-center">
-      <div className="text-3xl md:text-4xl font-display font-bold text-charcoal mb-2">
+    <div ref={ref} className="flex flex-col items-center gap-1">
+      <div className="w-8 h-8 rounded-full bg-teal-muted flex items-center justify-center">
+        {getIcon(label)}
+      </div>
+      <div className="text-3xl md:text-4xl font-display font-bold text-charcoal">
         {displayValue}
         {value.includes("+") && !displayValue.includes("+") && "+"}
         {value.includes("%") && !displayValue.includes("%") && "%"}
@@ -69,7 +89,7 @@ export function StatsBar() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="w-full bg-white pt-0 py-12 md:py-16 border-b border-surface-200">
+    <section className="w-full bg-surface-100 pt-0 py-12 md:py-16 border-t-2 border-teal">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -83,7 +103,7 @@ export function StatsBar() {
               }
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="border-t-2 border-surface-200 pt-4"
+              className="md:border-l md:border-surface-200 md:pl-8"
             >
               <CountUpNumber value={stat.value} label={stat.label} />
             </motion.div>

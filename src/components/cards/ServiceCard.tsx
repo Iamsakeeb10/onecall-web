@@ -44,7 +44,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
       <motion.div
         whileHover={shouldReduceMotion ? undefined : { y: -4 }}
         transition={{ duration: 0.3 }}
-        className="group bg-white border border-surface-200 rounded-xl overflow-hidden flex flex-col h-full shadow-card hover:border-teal/40 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 focus-within:ring-2 focus-within:ring-teal focus-within:outline-none"
+        className="group bg-white border border-surface-200 rounded-2xl overflow-hidden flex flex-col h-full shadow-card hover:border-teal/40 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 focus-within:ring-2 focus-within:ring-teal focus-within:outline-none"
       >
         {/* Image */}
         <div className="relative w-full h-48 overflow-hidden">
@@ -53,7 +53,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
               src={service.image}
               alt={service.title}
               fill
-              className="object-cover rounded-t-xl"
+              className="object-cover rounded-t-2xl"
               onError={() => setImgError(true)}
             />
           ) : (
@@ -64,10 +64,10 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
         </div>
 
         {/* Content */}
-        <div className="p-6 flex flex-col flex-grow">
+        <div className="p-5 lg:p-6 flex flex-col flex-grow">
           {/* Icon */}
-          <div className="mb-4">
-            <IconComponent className="w-8 h-8 text-teal" aria-hidden="true" />
+          <div className="w-10 h-10 rounded-xl bg-teal-muted flex items-center justify-center mb-3">
+            <IconComponent className="w-5 h-5 text-teal" aria-hidden="true" />
           </div>
 
           {/* Title */}
@@ -108,7 +108,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
       <motion.div
         whileHover={shouldReduceMotion ? undefined : { y: -4 }}
         transition={{ duration: 0.3 }}
-        className="group bg-white border border-surface-200 rounded-xl overflow-hidden flex flex-col h-full shadow-card hover:border-teal/40 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 focus-within:ring-2 focus-within:ring-teal focus-within:outline-none"
+        className="group bg-white border border-surface-200 rounded-2xl overflow-hidden flex flex-col h-full shadow-card hover:border-teal/40 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 focus-within:ring-2 focus-within:ring-teal focus-within:outline-none"
       >
         {/* Image */}
         <div className="relative w-full h-64 overflow-hidden">
@@ -117,7 +117,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
               src={service.image}
               alt={service.title}
               fill
-              className="object-cover rounded-t-xl"
+              className="object-cover rounded-t-2xl"
               onError={() => setImgError(true)}
             />
           ) : (
@@ -130,8 +130,8 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
         {/* Content */}
         <div className="p-6 flex flex-col flex-grow">
           {/* Icon */}
-          <div className="mb-4">
-            <IconComponent className="w-10 h-10 text-teal" aria-hidden="true" />
+          <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center mb-4">
+            <IconComponent className="w-6 h-6 text-teal" aria-hidden="true" />
           </div>
 
           {/* Title */}

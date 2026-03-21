@@ -6,7 +6,7 @@ export const testimonials: Testimonial[] = [
     name: "Sarah M.",
     role: "Property Operations Manager",
     company: "Premier Property Management",
-    content: "MEGAFIXX has been an outstanding maintenance partner. They reduced our vacancy turnaround by 40% and the quality is consistently excellent across all our properties.",
+    content: "HomeProX has been an outstanding maintenance partner. They reduced our vacancy turnaround by 40% and the quality is consistently excellent across all our properties.",
     rating: 5,
     clientType: "property-manager",
     avatar: "/images/testimonials/avatar-1.jpg"
@@ -16,7 +16,7 @@ export const testimonials: Testimonial[] = [
     name: "David K.",
     role: "REO Asset Manager",
     company: "Regional Bank",
-    content: "Handling REO properties requires a vendor we can trust completely. MEGAFIXX delivers detailed documentation and reliable work every single time.",
+    content: "Handling REO properties requires a vendor we can trust completely. HomeProX delivers detailed documentation and reliable work every single time.",
     rating: 5,
     clientType: "financial",
     avatar: "/images/testimonials/avatar-2.jpg"
@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
     name: "Jennifer L.",
     role: "Real Estate Broker",
     company: "Texas Realty Group",
-    content: "Pre-listing prep has never been easier. MEGAFIXX gets properties show-ready fast and the results speak for themselves at closing.",
+    content: "Pre-listing prep has never been easier. HomeProX gets properties show-ready fast and the results speak for themselves at closing.",
     rating: 5,
     clientType: "real-estate",
     avatar: "/images/testimonials/avatar-3.jpg"
@@ -36,7 +36,7 @@ export const testimonials: Testimonial[] = [
     name: "Marcus T.",
     role: "Portfolio Investor",
     company: "Texas Investment Partners",
-    content: "Managing a portfolio across Texas used to mean juggling multiple vendors. MEGAFIXX handles everything with one point of contact and consistent results.",
+    content: "Managing a portfolio across Texas used to mean juggling multiple vendors. HomeProX handles everything with one point of contact and consistent results.",
     rating: 5,
     clientType: "investor",
     avatar: "/images/testimonials/avatar-4.jpg"
@@ -56,7 +56,7 @@ export const testimonials: Testimonial[] = [
     name: "Brian W.",
     role: "Real Estate Agent",
     company: "Lone Star Realty",
-    content: "I refer MEGAFIXX to every investor client I work with. Fast, reliable, and they make properties look great for the market.",
+    content: "I refer HomeProX to every investor client I work with. Fast, reliable, and they make properties look great for the market.",
     rating: 5,
     clientType: "real-estate",
     avatar: "/images/testimonials/avatar-6.jpg"

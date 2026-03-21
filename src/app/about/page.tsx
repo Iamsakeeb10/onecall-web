@@ -16,7 +16,7 @@ import Link from "next/link";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "About Us | MEGAFIXX Home Services LLC",
+  title: "About Us | HomeProX Services LLC",
   description: "Texas-based statewide property maintenance company serving property managers, investors, banks, and real estate professionals across Texas.",
   path: "/about"
 });
@@ -76,7 +76,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImageUrl}
-            alt="MEGAFIXX professional team at work"
+            alt="HomeProX professional team at work"
             fill
             priority
             className="object-cover"
@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24">
           <div className="text-center">
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              About MEGAFIXX Home Services LLC
+              About HomeProX Services LLC
             </h1>
             <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
               Texas-based. Statewide reach. Built for serious property operators.
@@ -105,7 +105,7 @@ export default function AboutPage() {
                   Our Mission
                 </h2>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-4">
-                  MEGAFIXX Home Services LLC is a Texas-based statewide property maintenance partner built for property managers, investors, financial institutions, and real estate professionals. We provide reliable, affordable, and professional maintenance services throughout Texas — designed to protect, preserve, and enhance property value.
+                  HomeProX Services LLC is a Texas-based statewide property maintenance partner built for property managers, investors, financial institutions, and real estate professionals. We provide reliable, affordable, and professional maintenance services throughout Texas — designed to protect, preserve, and enhance property value.
                 </p>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-6">
                   Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
@@ -193,7 +193,7 @@ export default function AboutPage() {
                 Serving Clients Across Texas
               </h2>
               <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-6">
-                No matter where your property is located in Texas, MEGAFIXX Home Services LLC delivers dependable maintenance solutions.
+                No matter where your property is located in Texas, HomeProX Services LLC delivers dependable maintenance solutions.
               </p>
               <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
                 Major cities: Dallas, Houston, Austin, San Antonio

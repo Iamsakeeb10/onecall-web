@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Our Services | MEGAFIXX Home Services LLC",
+  title: "Our Services | HomeProX Services LLC",
   description: "Professional property maintenance services across Texas including plumbing, gutter cleaning, drywall repair, landscaping, and more.",
   path: "/services"
 });
@@ -35,7 +35,7 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
-            MEGAFIXX Home Services LLC provides reliable, affordable, and professional property maintenance services throughout Texas. We serve homeowners, landlords, property managers, real estate investors, and commercial clients across the state with solutions designed to protect, preserve, and enhance property value.
+            HomeProX Services LLC provides reliable, affordable, and professional property maintenance services throughout Texas. We serve homeowners, landlords, property managers, real estate investors, and commercial clients across the state with solutions designed to protect, preserve, and enhance property value.
           </p>
         </div>
       </section>
@@ -62,13 +62,13 @@ export default function ServicesPage() {
                 Looking for a Professional Property Maintenance Company in Texas?
               </h2>
               <p className="font-body text-text-muted mb-6 max-w-2xl mx-auto">
-                If you&apos;re searching for property maintenance services in Texas — residential, commercial, rental, or investment properties — MEGAFIXX Home Services LLC is your trusted statewide partner.
+                If you&apos;re searching for property maintenance services in Texas — residential, commercial, rental, or investment properties — HomeProX Services LLC is your trusted statewide partner.
               </p>
               <Button variant="primary" size="lg" asChild>
                 <Link href="/quote">Get a Free Quote</Link>
               </Button>
               <p className="font-body text-text-muted mt-6 text-sm">
-                📞 (469) 378-9262  |  📧 info@megafixxx.com
+                📞 (469) 378-9262  |  📧 info@homeproxsvcs.com
               </p>
             </div>
           </AnimatedSection>

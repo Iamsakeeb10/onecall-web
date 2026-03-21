@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://megafixxhomeservices.com";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://homeproxsvcs.com";
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    template: "%s | MEGAFIXX Home Services LLC",
-    default: "MEGAFIXX Home Services LLC | Texas Statewide Property Maintenance"
+    template: "%s | HomeProX Services LLC",
+    default: "HomeProX Services LLC | Texas Statewide Property Maintenance"
   },
   description: "Professional property maintenance services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
   keywords: [
@@ -21,28 +21,28 @@ export const defaultMetadata: Metadata = {
     "drywall repair",
     "landscaping services"
   ],
-  authors: [{ name: "MEGAFIXX Home Services LLC" }],
-  creator: "MEGAFIXX Home Services LLC",
-  publisher: "MEGAFIXX Home Services LLC",
+  authors: [{ name: "HomeProX Services LLC" }],
+  creator: "HomeProX Services LLC",
+  publisher: "HomeProX Services LLC",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "MEGAFIXX Home Services LLC",
-    title: "MEGAFIXX Home Services LLC | Texas Statewide Property Maintenance",
+    siteName: "HomeProX Services LLC",
+    title: "HomeProX Services LLC | Texas Statewide Property Maintenance",
     description: "Professional property maintenance services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "MEGAFIXX Home Services LLC"
+        alt: "HomeProX Services LLC"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "MEGAFIXX Home Services LLC | Texas Statewide Property Maintenance",
+    title: "HomeProX Services LLC | Texas Statewide Property Maintenance",
     description: "Professional property maintenance services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
     images: [`${SITE_URL}/og-image.jpg`]
   },

@@ -22,7 +22,7 @@ export default function Loading() {
         >
           <Image
             src="/images/logo.png"
-            alt="MEGAFIXX Home Services LLC"
+            alt="HomeProX Services LLC"
             width={240}
             height={72}
             className="h-20 w-auto object-contain mx-auto"

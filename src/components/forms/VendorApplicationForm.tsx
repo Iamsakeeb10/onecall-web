@@ -239,7 +239,7 @@ export default function VendorApplicationForm() {
           Application Submitted!
         </h2>
         <p className="font-body text-text-muted text-lg">
-          Thank you for applying to the MEGAFIXX Vendor Network. Our team will
+          Thank you for applying to the HomeProX Vendor Network. Our team will
           review your application and respond within 5–10 business days.
         </p>
       </div>
@@ -675,7 +675,7 @@ export default function VendorApplicationForm() {
                     >
                       Terms and Conditions
                     </Link>{" "}
-                    provided by the company. By providing my phone number, I agree to receive text messages from MEGAFIXX Home Services LLC.
+                    provided by the company. By providing my phone number, I agree to receive text messages from HomeProX Services LLC.
                   </label>
                 </div>
                 {errors.agreeToTerms && (
@@ -690,7 +690,7 @@ export default function VendorApplicationForm() {
                 <CheckCircle2 className="w-5 h-5 text-orange mt-0.5 flex-shrink-0" />
                 <p className="font-body text-sm text-charcoal">
                   By submitting this application you confirm that all information provided
-                  is accurate and that you meet MEGAFIXX&apos;s vendor requirements.
+                  is accurate and that you meet HomeProX&apos;s vendor requirements.
                 </p>
               </div>
 

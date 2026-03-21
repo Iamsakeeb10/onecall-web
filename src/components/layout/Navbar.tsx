@@ -30,7 +30,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center relative inline-block">
             <Image
               src="/images/logo.png"
-              alt="MEGAFIXX Home Services LLC"
+              alt="HomeProX Services LLC"
               width={220}
               height={66}
               className="relative z-10 w-auto h-14 sm:h-20 object-contain"

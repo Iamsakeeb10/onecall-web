@@ -24,7 +24,7 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
                 Looking for a Trusted Maintenance Partner?
               </h2>
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
-                MEGAFIXX Home Services LLC is ready to serve your properties across Texas.
+                HomeProX Services LLC is ready to serve your properties across Texas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="primary" size="lg" asChild>

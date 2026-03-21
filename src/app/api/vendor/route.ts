@@ -1,6 +1,6 @@
+import { transporter } from "@/lib/utils/mailer";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import { transporter } from "@/lib/utils/mailer";
 
 // File size guard (10 MB per file)
 const MAX_FILE_BYTES = 10 * 1024 * 1024;
@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
     if (!companyName || !contactPerson || !email || !phone) {
       return NextResponse.json(
         { error: "Required fields are missing." },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
         if (file.size > MAX_FILE_BYTES) {
           return NextResponse.json(
             { error: `File "${file.name}" exceeds the 10 MB size limit.` },
-            { status: 400 }
+            { status: 400 },
           );
         }
         const buffer = Buffer.from(await file.arrayBuffer());
@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
       <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #1C1C1E;">
         <div style="background: #1C1C1E; padding: 24px 32px; border-radius: 8px 8px 0 0;">
           <h1 style="color: #ffffff; margin: 0; font-size: 22px;">New Vendor Application</h1>
-          <p style="color: #E8621A; margin: 6px 0 0; font-size: 14px;">MEGAFIXX Property Maintenance Network</p>
+          <p style="color: #E8621A; margin: 6px 0 0; font-size: 14px;">HomeProX Property Maintenance Network</p>
         </div>
         <div style="background: #f9f9f9; padding: 32px; border: 1px solid #e4e4e7; border-top: none; border-radius: 0 0 8px 8px;">
 
@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
 
         </div>
         <p style="text-align: center; color: #a1a1aa; font-size: 12px; margin-top: 16px;">
-          MEGAFIXX Home Services LLC &nbsp;•&nbsp; Vendor Network Application
+          HomeProX Services LLC &nbsp;•&nbsp; Vendor Network Application
         </p>
       </div>
     `;
@@ -95,12 +95,12 @@ export async function POST(request: NextRequest) {
       console.error("[/api/vendor] Missing env: CONTACT_EMAIL or EMAIL_USER");
       return NextResponse.json(
         { error: "Server email configuration is missing." },
-        { status: 500 }
+        { status: 500 },
       );
     }
 
     await transporter.sendMail({
-      from: `"MEGAFIXX Vendor Portal" <${process.env.EMAIL_USER}>`,
+      from: `"HomeProX Vendor Portal" <${process.env.EMAIL_USER}>`,
       to: toAddress,
       replyTo: email,
       subject: `New Vendor Application — ${companyName}`,
@@ -108,13 +108,15 @@ export async function POST(request: NextRequest) {
       attachments,
     });
 
-    console.log(`[/api/vendor] Vendor application email sent to ${toAddress} (${companyName})`);
+    console.log(
+      `[/api/vendor] Vendor application email sent to ${toAddress} (${companyName})`,
+    );
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
     console.error("[/api/vendor] Error:", error);
     return NextResponse.json(
       { error: "Internal server error. Please try again later." },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

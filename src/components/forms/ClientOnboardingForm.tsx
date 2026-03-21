@@ -253,12 +253,12 @@ export default function ClientOnboardingForm({
       } else {
         setSubmitError(
           data?.error ??
-            "Something went wrong. Please try again or contact us directly at info@megafixxx.com",
+            "Something went wrong. Please try again or contact us directly at info@homeproxsvcs.com",
         );
       }
     } catch {
       setSubmitError(
-        "Something went wrong. Please try again or contact us directly at info@megafixxx.com",
+        "Something went wrong. Please try again or contact us directly at info@homeproxsvcs.com",
       );
     } finally {
       setIsSubmitting(false);
@@ -276,7 +276,7 @@ export default function ClientOnboardingForm({
             Application Received!
           </h3>
           <p className="font-body text-text-muted text-base max-w-xl mx-auto">
-            Thank you for your interest in partnering with MEGAFIXX. Our team will
+            Thank you for your interest in partnering with HomeProX. Our team will
             review your request and contact you within 1 business day.
           </p>
         </div>
@@ -638,7 +638,7 @@ export default function ClientOnboardingForm({
               >
                 Terms &amp; Conditions
               </Link>{" "}
-              and consent to being contacted by MEGAFIXX regarding my application.
+              and consent to being contacted by HomeProX regarding my application.
             </label>
           </div>
           {errors.agreeToTerms && (

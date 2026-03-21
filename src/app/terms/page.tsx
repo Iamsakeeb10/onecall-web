@@ -3,8 +3,8 @@ import Link from "next/link";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Terms & Conditions | MEGAFIXX Home Services LLC",
-  description: "Terms and Conditions for MEGAFIXX Home Services LLC. Governing use of our website and services. 815 Table Rock ST, Princeton, TX,75407.",
+  title: "Terms & Conditions | HomeProX Services LLC",
+  description: "Terms and Conditions for HomeProX Services LLC. Governing use of our website and services. 517 WATERVIEW DR, COPPELL, TX 75019.",
   path: "/terms"
 });
 
@@ -13,7 +13,7 @@ const termsContent = [
     id: "acceptance",
     title: "Acceptance of Terms",
     content: [
-      "By accessing or using the MEGAFIXX Home Services LLC website (\"Website\"), you agree to be bound by these Terms & Conditions and our Privacy Policy. If you do not agree with any part of these terms, please do not use this Website.",
+      "By accessing or using the HomeProX Services LLC website (\"Website\"), you agree to be bound by these Terms & Conditions and our Privacy Policy. If you do not agree with any part of these terms, please do not use this Website.",
       "We reserve the right to update or modify these Terms at any time without prior notice. Continued use of the Website constitutes acceptance of any changes."
     ]
   },
@@ -21,7 +21,7 @@ const termsContent = [
     id: "website-services",
     title: "Website Services",
     content: [
-      "This Website is provided for informational purposes regarding handyman, renovation, maintenance, and related home services offered by MEGAFIXX Home Services LLC.",
+      "This Website is provided for informational purposes regarding handyman, renovation, maintenance, and related home services offered by HomeProX Services LLC.",
       "All content and services are provided on an \"AS IS\" basis. We reserve the right to modify, suspend, or discontinue any portion of the Website at any time without notice.",
       "We are not responsible for:",
       "• Temporary unavailability of the Website",
@@ -75,21 +75,21 @@ const termsContent = [
     id: "third-party",
     title: "Third-Party Services",
     content: [
-      "This Website may reference third-party products, materials, or services. MEGAFIXX Home Services LLC is not responsible for third-party representations, warranties, or performance."
+      "This Website may reference third-party products, materials, or services. HomeProX Services LLC is not responsible for third-party representations, warranties, or performance."
     ]
   },
   {
     id: "ip",
     title: "Intellectual Property",
     content: [
-      "All content on this Website — including logos, text, images, service descriptions, and branding — is the property of MEGAFIXX Home Services LLC and may not be reproduced without written permission."
+      "All content on this Website — including logos, text, images, service descriptions, and branding — is the property of HomeProX Services LLC and may not be reproduced without written permission."
     ]
   },
   {
     id: "liability",
     title: "Limitation of Liability",
     content: [
-      "To the fullest extent permitted by Texas law, MEGAFIXX Home Services LLC shall not be liable for:",
+      "To the fullest extent permitted by Texas law, HomeProX Services LLC shall not be liable for:",
       "• Direct or indirect damages",
       "• Loss of profits",
       "• Property damage beyond contract scope",
@@ -113,7 +113,7 @@ const termsContent = [
     id: "indemnification",
     title: "Indemnification",
     content: [
-      "You agree to indemnify and hold harmless MEGAFIXX Home Services LLC, its owners, employees, contractors, and affiliates from any claims, damages, or legal expenses arising from your misuse of the Website or violation of these Terms."
+      "You agree to indemnify and hold harmless HomeProX Services LLC, its owners, employees, contractors, and affiliates from any claims, damages, or legal expenses arising from your misuse of the Website or violation of these Terms."
     ]
   },
   {
@@ -203,10 +203,10 @@ export default function TermsPage() {
                               <td className="font-body text-text-muted font-medium pr-4 py-2">Email</td>
                               <td className="font-body text-charcoal py-2">
                                 <a
-                                  href="mailto:info@megafixxx.com"
+                                  href="mailto:info@homeproxsvcs.com"
                                   className="text-orange hover:text-orange-dark transition-colors duration-300"
                                 >
-                                  info@megafixxx.com
+                                  info@homeproxsvcs.com
                                 </a>
                               </td>
                             </tr>
@@ -223,7 +223,7 @@ export default function TermsPage() {
                             </tr>
                             <tr>
                               <td className="font-body text-text-muted font-medium pr-4 py-2">Location</td>
-                              <td className="font-body text-charcoal py-2">815 Table Rock ST, Princeton, TX,75407</td>
+                              <td className="font-body text-charcoal py-2">517 WATERVIEW DR, COPPELL, TX 75019</td>
                             </tr>
                           </tbody>
                         </table>

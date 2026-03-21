@@ -37,7 +37,7 @@ export function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
-            title="Why Choose MEGAFIXX"
+            title="Why Choose HomeProX"
             subtitle="Responsive property maintenance backed by dependable service and professional support."
             align="center"
           />

@@ -1,6 +1,6 @@
-# MEGAFIXX Home Services LLC Website
+# HomeProX Services LLC Website
 
-A production-grade, fully responsive Next.js website for MEGAFIXX Home Services LLC, a Texas statewide property maintenance company serving property managers, investors, banks, and REO departments.
+A production-grade, fully responsive Next.js website for HomeProX Services LLC, a Texas statewide property maintenance company serving property managers, investors, banks, and REO departments.
 
 ## Tech Stack
 
@@ -35,7 +35,7 @@ cp .env.local.example .env.local
 4. Update `.env.local` with your site URL and (for the contact form) email settings:
 
 ```
-NEXT_PUBLIC_SITE_URL=https://megafixxhomeservices.com
+NEXT_PUBLIC_SITE_URL=https://homeproxsvcs.com
 
 # Contact form (Nodemailer)
 EMAIL_HOST=smtp.gmail.com
@@ -143,4 +143,4 @@ Or deploy to platforms like Vercel, Netlify, or any Node.js hosting service.
 
 ## License
 
-© 2024 MEGAFIXX Home Services LLC. All rights reserved.
+© 2024 HomeProX Services LLC. All rights reserved.

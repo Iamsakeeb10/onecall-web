@@ -11,7 +11,7 @@ import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Our Clients | MEGAFIXX Home Services LLC",
+  title: "Our Clients | HomeProX Services LLC",
   description:
     "Trusted property maintenance partner for property managers, financial institutions, real estate professionals, and investors across Texas.",
   path: "/clients",
@@ -54,7 +54,7 @@ export default function ClientsPage() {
                   Building Long-Term Partnerships
                 </h2>
                 <p className="font-body text-lg text-text-muted mb-4">
-                  At MEGAFIXX Home Services LLC, we take pride in building
+                  At HomeProX Services LLC, we take pride in building
                   long-term partnerships with clients across Texas. Our
                   reputation is built on reliability, professional execution,
                   and consistent performance across residential and commercial
@@ -160,7 +160,7 @@ export default function ClientsPage() {
         );
       })}
 
-      {/* Why Choose MEGAFIXX Section */}
+      {/* Why Choose HomeProX Section */}
       <div
         className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent"
         aria-hidden="true"
@@ -202,7 +202,7 @@ export default function ClientsPage() {
                 icon: ShieldCheck,
                 title: "Vendor & Team Screening",
                 description:
-                  "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent MEGAFIXX on your property.",
+                  "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent HomeProX on your property.",
               },
               {
                 number: "03",

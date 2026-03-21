@@ -18,7 +18,7 @@ export default function VendorCTABanner() {
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-          Ready to Join the MEGAFIXX Vendor Network?
+          Ready to Join the HomeProX Vendor Network?
         </h2>
         <p className="font-body text-lg text-surface-300 mb-8">
           Partner with a structured, professional property maintenance operator.

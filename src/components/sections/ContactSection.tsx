@@ -42,11 +42,11 @@ export function ContactSection() {
                   (469) 378-9262
                 </a>
                 <a
-                  href="mailto:info@megafixxx.com"
+                  href="mailto:info@homeproxsvcs.com"
                   className="flex items-center gap-2 font-body hover:text-orange transition-colors duration-300"
                 >
                   <Mail className="w-5 h-5 text-orange" aria-hidden="true" />
-                  info@megafixxx.com
+                  info@homeproxsvcs.com
                 </a>
               </div>
               <Button variant="primary" size="lg" asChild>

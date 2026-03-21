@@ -14,7 +14,7 @@ export function Footer() {
           <div>
             <Image
               src="/images/logo.png"
-              alt="MEGAFIXX Home Services LLC"
+              alt="HomeProX Services LLC"
               width={220}
               height={66}
               className="h-16 w-auto object-contain mb-4"
@@ -128,17 +128,17 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@megafixxx.com"
+                  href="mailto:info@homeproxsvcs.com"
                   className="font-body text-surface-300 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
                   <Mail className="w-4 h-4 text-orange" aria-hidden="true" />
-                  info@megafixxx.com
+                  info@homeproxsvcs.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
                 <span className="font-body text-surface-300 text-sm">
-                  815 Table Rock ST, Princeton, TX,75407<br />
+                  517 WATERVIEW DR, COPPELL, TX 75019<br />
                   <span className="text-orange">Serving All of Texas</span>
                 </span>
               </li>
@@ -168,7 +168,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-body text-surface-300 text-sm text-center md:text-left">
-              &copy; 2026 MEGAFIXX Home Services LLC. All rights reserved.
+              &copy; 2026 HomeProX Services LLC. All rights reserved.
             </p>
             <Link
               href="/terms"

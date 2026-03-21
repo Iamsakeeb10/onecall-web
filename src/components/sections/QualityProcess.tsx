@@ -15,7 +15,7 @@ const steps = [
     number: "02",
     icon: ShieldCheck,
     title: "Vendor & Team Screening",
-    description: "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent MEGAFIXX on your property."
+    description: "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent HomeProX on your property."
   },
   {
     number: "03",

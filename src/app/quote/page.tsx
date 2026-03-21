@@ -7,7 +7,7 @@ import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Get a Quote | MEGAFIXX Home Services LLC",
+  title: "Get a Quote | HomeProX Services LLC",
   description:
     "Request a free quote for property maintenance across Texas. Fill out the form and we'll get back to you within 24 hours.",
   path: "/quote",
@@ -23,7 +23,7 @@ export default function QuotePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImageUrl}
-            alt="Get a quote from MEGAFIXX Home Services"
+            alt="Get a quote from HomeProX Services"
             fill
             priority
             className="object-cover"
@@ -79,11 +79,11 @@ export default function QuotePage() {
 
                     <div>
                       <a
-                        href="mailto:info@megafixxx.com"
+                        href="mailto:info@homeproxsvcs.com"
                         className="flex items-center gap-3 font-body text-charcoal hover:text-orange transition-colors duration-300"
                       >
                         <Mail className="w-5 h-5 text-orange flex-shrink-0" aria-hidden="true" />
-                        <span>info@megafixxx.com</span>
+                        <span>info@homeproxsvcs.com</span>
                       </a>
                     </div>
 
@@ -92,7 +92,7 @@ export default function QuotePage() {
                         <MapPin className="w-5 h-5 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
                         <div>
                           <p className="font-body text-charcoal">
-                            815 Table Rock ST, Princeton, TX,75407
+                            517 WATERVIEW DR, COPPELL, TX 75019
                           </p>
                         </div>
                       </div>

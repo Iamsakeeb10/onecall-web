@@ -18,9 +18,9 @@ import Link from "next/link";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Contact Us | MEGAFIXX Home Services LLC",
+  title: "Contact Us | HomeProX Services LLC",
   description:
-    "Contact MEGAFIXX Home Services. Reach us by phone, email, or send a message. Property maintenance, client partnerships, and vendor inquiries across Texas.",
+    "Contact HomeProX Services LLC. Reach us by phone, email, or send a message. Property maintenance, client partnerships, and vendor inquiries across Texas.",
   path: "/contact",
 });
 
@@ -40,7 +40,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={CONTACT_HERO_IMAGE}
-            alt="Contact MEGAFIXX Home Services"
+            alt="Contact HomeProX Services"
             fill
             priority
             className="object-cover"
@@ -49,7 +49,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-charcoal/72 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Contact MEGAFIXX
+            Contact HomeProX
           </h1>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
             Have a question about property maintenance, partnerships, or vendor opportunities? Send
@@ -96,10 +96,10 @@ export default function ContactPage() {
                       Email
                     </p>
                     <a
-                      href="mailto:info@megafixxx.com"
+                      href="mailto:info@homeproxsvcs.com"
                       className="font-body text-charcoal font-medium hover:text-orange transition-colors"
                     >
-                      info@megafixxx.com
+                      info@homeproxsvcs.com
                     </a>
                   </div>
                 </div>

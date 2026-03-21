@@ -72,10 +72,10 @@ export default function ClientsPageInteractive() {
               className="bg-surface-100 border border-orange/30 rounded-2xl p-8 md:p-12 text-center"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
-                Ready to Partner with MEGAFIXX?
+                Ready to Partner with HomeProX?
               </h2>
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
-                At MEGAFIXX Home Services LLC, our clients are at the center of
+                At HomeProX Services LLC, our clients are at the center of
                 everything we do. We are committed to exceeding expectations and
                 delivering consistent, professional property maintenance services
                 across Texas.
@@ -89,11 +89,11 @@ export default function ClientsPageInteractive() {
                   (469) 378-9262
                 </a>
                 <a
-                  href="mailto:info@megafixxx.com"
+                  href="mailto:info@homeproxsvcs.com"
                   className="flex items-center gap-2 font-body text-charcoal hover:text-orange transition-colors duration-300"
                 >
                   <Mail className="w-5 h-5 text-orange" aria-hidden="true" />
-                  info@megafixxx.com
+                  info@homeproxsvcs.com
                 </a>
               </div>
               <Button variant="primary" size="lg" onClick={handleGetStarted}>
@@ -179,8 +179,8 @@ export default function ClientsPageInteractive() {
                   transition={{ delay: 0.3, duration: 0.5 }}
                 >
                   <SectionHeading
-                    title="Become a MEGAFIXX Client"
-                    subtitle="Partner with MEGAFIXX for reliable property maintenance and field service support. Our team supports property managers, investors, asset managers, and organizations across residential and commercial portfolios."
+                    title="Become a HomeProX Client"
+                    subtitle="Partner with HomeProX for reliable property maintenance and field service support. Our team supports property managers, investors, asset managers, and organizations across residential and commercial portfolios."
                     align="center"
                   />
                 </motion.div>

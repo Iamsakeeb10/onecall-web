@@ -112,7 +112,7 @@ export function QuoteForm() {
           <div>
             <h3 className="font-display text-lg font-bold mb-2">Thank you!</h3>
             <p className="font-body">
-              We&apos;ll be in touch within 24 hours. Our team at MEGAFIXX Home Services LLC will review your request and contact you shortly.
+              We&apos;ll be in touch within 24 hours. Our team at HomeProX Services LLC will review your request and contact you shortly.
             </p>
           </div>
         </div>
@@ -362,7 +362,7 @@ export function QuoteForm() {
             >
               Terms and Conditions
             </Link>{" "}
-            provided by the company. By providing my phone number, I agree to receive text messages from MEGAFIXX Home Services LLC.
+            provided by the company. By providing my phone number, I agree to receive text messages from HomeProX Services LLC.
           </label>
         </div>
         {errors.agreeToTerms && (

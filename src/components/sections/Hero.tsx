@@ -47,15 +47,13 @@ export function Hero() {
 
               {/* H1 */}
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Professional Property Care,{" "}
-                <span className="text-teal">Across All of Texas</span>
+                Property Maintenance Excellence{" "}
+                <span className="text-teal">From North to South Texas</span>
               </h1>
 
               {/* Body copy */}
               <p className="font-body text-lg text-hero-muted max-w-xl mx-auto min-[1131px]:mx-0 leading-relaxed">
-                HomeProX delivers reliable maintenance, fast turnarounds, and full
-                documentation for property managers, banks, investors, and real
-                estate professionals — statewide.
+                Expert property care backed by transparency, accountability, and proven results. We support investors, landlords, financial institutions, and property managers with comprehensive maintenance solutions.
               </p>
 
               {/* CTA Buttons */}
@@ -141,10 +139,10 @@ export function Hero() {
             </span>
             <span className="hidden sm:block w-px h-4 bg-white/20" />
             {[
-              "Statewide Texas Coverage",
-              "Residential & Commercial",
-              "REO & Bank-Owned Properties",
-              "Property Manager Preferred",
+              "Complete Texas Service Area",
+              "Residential & Commercial Solutions",
+              "Investment Property Specialists",
+              "Institutional-Grade Standards",
             ].map((item, i) => (
               <React.Fragment key={item}>
                 {i > 0 && (

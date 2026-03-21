@@ -51,25 +51,16 @@ export default function ClientsPage() {
             <AnimatedSection variant="fadeLeft">
               <div>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
-                  Building Long-Term Partnerships
+                  Partnerships Built on Results
                 </h2>
                 <p className="font-body text-lg text-text-muted mb-4">
-                  At HomeProX Services LLC, we take pride in building
-                  long-term partnerships with clients across Texas. Our
-                  reputation is built on reliability, professional execution,
-                  and consistent performance across residential and commercial
-                  properties.
+                  HomeProX Home Services LLC collaborates with Texas operators and institutions who demand reliable maintenance, measurable outcomes, and predictable service performance. Our reputation stems from consistent execution, accountability, and transparent operations across hundreds of properties.
                 </p>
                 <p className="font-body text-lg text-text-muted mb-4">
-                  We understand that every property represents an investment —
-                  and we treat it accordingly. Many of our clients rely on us to
-                  manage routine property maintenance, emergency service calls,
-                  turnover repairs, preservation services, and compliance
-                  inspections.
+                  Property managers, financial entities, real estate professionals, and portfolio investors trust us for everything from routine upkeep to emergency interventions, asset preservation, and compliance certifications.
                 </p>
                 <p className="font-body text-lg text-teal italic font-medium">
-                  &quot;We build relationships based on performance,
-                  accountability, and trust.&quot;
+                  &quot;Success is measured in dependability, precision, and lasting partnerships.&quot;
                 </p>
               </div>
             </AnimatedSection>

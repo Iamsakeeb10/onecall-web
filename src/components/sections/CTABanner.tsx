@@ -21,10 +21,10 @@ export function CTABanner({ variant = "dark" }: CTABannerProps) {
           <AnimatedSection variant="fadeUp">
             <div className="text-center">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
-                Looking for a Trusted Maintenance Partner?
+                Expert Maintenance, Proven Service
               </h2>
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
-                HomeProX Services LLC is ready to serve your properties across Texas.
+                Discover how HomeProX transforms property management across the Lone Star State.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="primary" size="lg" asChild>

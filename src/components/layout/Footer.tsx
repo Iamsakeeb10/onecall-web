@@ -20,7 +20,7 @@ export function Footer() {
               className="h-16 w-auto object-contain mb-4"
             />
             <p className="font-body text-surface-300 text-sm mb-4">
-              Texas-based statewide property maintenance company. Serving property managers, investors, and financial institutions across Texas.
+              Statewide property maintenance company supporting managers, operators, and institutions across Texas with professional service delivery.
             </p>
             <div className="flex items-center gap-2 text-surface-300">
               <span className="text-xs font-accent uppercase">Fully Insured</span>

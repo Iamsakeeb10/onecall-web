@@ -21,8 +21,7 @@ export default function VendorHero() {
           Join the HomeProX Property Maintenance Network
         </h1>
         <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-10">
-          Become part of a structured, performance-driven property maintenance
-          team supporting residential portfolios and managed assets across Texas.
+          Connect with a professional network built on consistent demand, reliable partnerships, and clear advancement opportunities across Texas property management.
         </p>
         <Button
           variant="primary"

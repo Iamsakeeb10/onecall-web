@@ -52,8 +52,7 @@ export default function ContactPage() {
             Contact HomeProX
           </h1>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
-            Have a question about property maintenance, partnerships, or vendor opportunities? Send
-            us a message and our team will respond shortly.
+            Questions about services, business opportunities, or partnership possibilities? Connect with our team—we're ready to discuss your property maintenance needs.
           </p>
         </div>
       </section>

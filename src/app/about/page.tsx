@@ -88,9 +88,9 @@ export default function AboutPage() {
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               About HomeProX Services LLC
             </h1>
-            <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
-              Texas-based. Statewide reach. Built for serious property operators.
-            </p>
+          <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
+            Texas-rooted. Statewide reach. Engineered for professional operations.
+          </p>
           </div>
         </div>
       </section>
@@ -143,7 +143,7 @@ export default function AboutPage() {
               </h2>
               <div className="w-20 h-1 bg-teal rounded-full mx-auto mb-4" />
               <p className="font-body text-base sm:text-lg text-text-muted max-w-3xl mx-auto">
-                Comprehensive property maintenance solutions across Texas — from routine upkeep to full property cleanouts.
+                Integrated property care across Texas—delivering specialized expertise in interior work, exterior solutions, and property cleanout services.
               </p>
             </div>
           </AnimatedSection>
@@ -190,13 +190,13 @@ export default function AboutPage() {
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                Serving Clients Across Texas
+                Throughout the Lone Star State
               </h2>
               <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-6">
-                No matter where your property is located in Texas, HomeProX Services LLC delivers dependable maintenance solutions.
+                From tip to top, HomeProX Services LLC is positioned to support properties anywhere in Texas. Regional expertise. Local understanding. Statewide availability.
               </p>
               <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
-                Major cities: Dallas, Houston, Austin, San Antonio
+                Serving Dallas, Houston, Austin, San Antonio, and beyond
               </p>
             </div>
           </AnimatedSection>

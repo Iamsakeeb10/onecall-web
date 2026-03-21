@@ -4,24 +4,24 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const benefits = [
   {
-    title: "Consistent Work Opportunities",
+    title: "Steady Workflow",
     description:
-      "We provide steady work orders across property maintenance, turnovers, preservation, and exterior services.",
+      "Regular assignments spanning maintenance, turnover projects, preservation work, and landscaping services.",
   },
   {
-    title: "Fast & Transparent Payments",
+    title: "Transparent Compensation",
     description:
-      "Clear scope approvals, structured invoicing, and timely payments.",
+      "Straightforward scope documentation, clear invoicing procedures, and prompt payment schedules.",
   },
   {
-    title: "Professional Work Environment",
+    title: "Structured Operations",
     description:
-      "Work within a system that values documentation, communication, and accountability.",
+      "Partner within a system emphasizing detailed records, responsive communication, and mutual accountability.",
   },
   {
-    title: "Statewide Coverage Opportunities",
+    title: "Geographic Flexibility",
     description:
-      "Serve properties in your preferred service areas with scalable growth potential.",
+      "Choose service territories aligned with your capabilities and expand opportunities across markets.",
   },
 ];
 
@@ -44,8 +44,8 @@ export default function VendorWhyPartner() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <SectionHeading
-              title="Why Partner With HomeProX?"
-              subtitle="Built for Professionals. Designed for Growth."
+              title="Benefits of Joining HomeProX"
+              subtitle="Designed for contractors and service providers committed to quality."
               align="center"
             />
           </AnimatedSection>

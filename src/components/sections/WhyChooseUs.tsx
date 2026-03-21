@@ -8,19 +8,19 @@ import React from "react";
 const features = [
   {
     icon: Zap,
-    title: "Fast Response",
-    description: "Quick scheduling and efficient communication.",
+    title: "Swift Action",
+    description: "Rapid scheduling and seamless communication throughout each project.",
   },
   {
     icon: Award,
-    title: "Reliable Quality",
+    title: "Exceptional Craftsmanship",
     description:
-      "Work completed with care, consistency, and attention to detail.",
+      "Precision work executed with meticulous attention and lasting durability.",
   },
   {
     icon: BarChart,
-    title: "Scalable Support",
-    description: "Flexible solutions for one property or an entire portfolio.",
+    title: "Adaptable Solutions",
+    description: "Customized services scaled to fit single properties or large portfolios.",
   },
 ];
 
@@ -37,8 +37,8 @@ export function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
-            title="Why Choose HomeProX"
-            subtitle="Responsive property maintenance backed by dependable service and professional support."
+            title="What Sets HomeProX Apart"
+            subtitle="Premier property maintenance with responsive service, proven quality, and unwavering professionalism."
             align="center"
           />
         </AnimatedSection>

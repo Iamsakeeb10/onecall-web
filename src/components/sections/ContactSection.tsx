@@ -27,11 +27,10 @@ export function ContactSection() {
           <div className="max-w-3xl mx-auto">
             <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-8 sm:p-10 text-center">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
-                Ready to Get Started?
+                Let's Discuss Your Property Needs
               </h2>
               <p className="font-body text-text-muted mb-6">
-                Contact us today for a free, no-obligation estimate. Our team will respond
-                within 1 business day.
+                Reach out with questions, requirements, or partnership inquiries. Our team responds promptly and works within your timeline.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-text-muted mb-8">
                 <a

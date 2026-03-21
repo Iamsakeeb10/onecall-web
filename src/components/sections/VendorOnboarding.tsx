@@ -4,21 +4,21 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 const steps = [
   {
     number: "01",
-    title: "Submit Application",
+    title: "Application Submission",
     description:
-      "Provide your company details, service types, coverage areas, and compliance documents.",
+      "Tell us about your business, capabilities, service regions, and regulatory compliance status.",
   },
   {
     number: "02",
-    title: "Review & Approval",
+    title: "Qualification Evaluation",
     description:
-      "Our team reviews your qualifications, insurance, experience, and service capabilities.",
+      "We assess your credentials, insurance coverage, background, and technical proficiency.",
   },
   {
     number: "03",
-    title: "Start Receiving Work Orders",
+    title: "Begin Receiving Assignments",
     description:
-      "Once approved, you'll begin receiving structured work assignments within your coverage area.",
+      "Upon approval, jobs arrive in your selected territories aligned with your expertise.",
   },
 ];
 
@@ -28,8 +28,8 @@ export default function VendorOnboarding() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
-            title="A Structured Path to Getting Work Orders"
-            subtitle="Simple 3-step onboarding process"
+            title="Quick Start: Three Simple Steps"
+            subtitle="From application to first assignment—streamlined and transparent"
             align="center"
           />
         </AnimatedSection>

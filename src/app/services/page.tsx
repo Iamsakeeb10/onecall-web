@@ -32,10 +32,10 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-charcoal/72 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Our Services
+            Complete Maintenance Solutions
           </h1>
           <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
-            HomeProX Services LLC provides reliable, affordable, and professional property maintenance services throughout Texas. We serve homeowners, landlords, property managers, real estate investors, and commercial clients across the state with solutions designed to protect, preserve, and enhance property value.
+            Seven specialized service categories addressing every property maintenance need across Texas. From routine upkeep to emergency repairs, we deliver professional results for residential, commercial, and investment properties.
           </p>
         </div>
       </section>
@@ -59,10 +59,10 @@ export default function ServicesPage() {
           <AnimatedSection variant="fadeUp" delay={0.8}>
             <div className="text-center bg-surface-50 rounded-xl p-8 border border-surface-200">
               <h2 className="font-display text-2xl md:text-3xl font-bold text-charcoal mb-4">
-                Looking for a Professional Property Maintenance Company in Texas?
+                Find the Right Service for Your Property
               </h2>
               <p className="font-body text-text-muted mb-6 max-w-2xl mx-auto">
-                If you&apos;re searching for property maintenance services in Texas — residential, commercial, rental, or investment properties — HomeProX Services LLC is your trusted statewide partner.
+                Whether managing single units or large portfolios, HomeProX combines comprehensive service coverage with detailed documentation and transparent pricing—all backed by Texas experience and statewide expertise.
               </p>
               <Button variant="primary" size="lg" asChild>
                 <Link href="/quote">Get a Free Quote</Link>

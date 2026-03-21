@@ -17,8 +17,8 @@ export function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
-            title="Our Services"
-            subtitle="Comprehensive property maintenance solutions across Texas"
+            title="Core Services"
+            subtitle="Seven specialized maintenance categories designed to address every property need statewide"
             align="center"
           />
         </AnimatedSection>

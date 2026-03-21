@@ -47,13 +47,13 @@ export function Hero() {
 
               {/* H1 */}
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Reliable Maintenance Solutions{" "}
-                <span className="text-teal">Across the Entire State</span>
+                Expert Property Maintenance{" "}
+                <span className="text-teal">Across Texas</span>
               </h1>
 
               {/* Body copy */}
               <p className="font-body text-lg text-hero-muted max-w-xl mx-auto min-[1131px]:mx-0 leading-relaxed">
-                Comprehensive property care with dedication to excellence, customer satisfaction, and dependable service. Partnering with property owners, asset managers, institutional investors, and commercial operators throughout Texas.
+                Keeping your properties in top condition, anywhere in Texas. Trusted by property managers, investors, and institutions for fast, reliable, and high-quality service.
               </p>
 
               {/* CTA Buttons */}

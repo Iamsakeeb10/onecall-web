@@ -1,17 +1,17 @@
-# HomeProX Services LLC — Cool White-Based Palette
+# HomeProX Services LLC — Teal & Charcoal Palette
 
-**Professional, readable, and cool-toned color palette for your website.** Clear hierarchy, clean visuals, and accessible contrasts.
+**Professional, clean, and contemporary color palette for B2B property maintenance services.** Clear hierarchy, premium feel, and accessible contrasts.
 
 ---
 
 ## Overview
 
-The palette keeps a **white/light base**, with **cool grays**, **icy blues**, and **soft teal accents**.
+The palette combines **white/light surfaces** with **deep charcoal**, **vibrant teal accents**, and **sky blue** for prestige elements.
 
 * **Primary Surfaces** (white & cool grays) — backgrounds, cards
-* **Cool Charcoal** — headings, dark elements
-* **Teal Accent** — CTAs, links, highlights
-* **Sky Blue** — secondary accent (subtle highlights, badges)
+* **Charcoal** — headings, footer, dark elements, authority
+* **Teal Accent** — primary CTAs, links, highlights, focus states
+* **Sky Blue** — secondary accent (badges, prestige elements)
 * **Text Colors** — hierarchy and clarity
 * **Hero Colors** — consistent inner page hero backgrounds
 * **Utility Colors** — errors, success, dividers
@@ -30,7 +30,7 @@ The palette keeps a **white/light base**, with **cool grays**, **icy blues**, an
 
 ---
 
-## 2. Cool Charcoal — Primary Dark Accent
+## 2. Charcoal — Primary Dark Accent
 
 | Color              | Hex       | RGB               | CSS Variable             | Tailwind Class                 | Usage                                  |
 | ------------------ | --------- | ----------------- | ------------------------ | ------------------------------ | -------------------------------------- |
@@ -51,12 +51,12 @@ The palette keeps a **white/light base**, with **cool grays**, **icy blues**, an
 
 ---
 
-## 4. Sky Blue — Prestige Accent (Stars & Badges)
+## 4. Sky Blue — Prestige Accent (Badges & Secondary Elements)
 
 | Color              | Hex       | RGB                | CSS Variable            | Tailwind Class                 | Usage                            |
 | ------------------ | --------- | ------------------ | ----------------------- | ------------------------------ | -------------------------------- |
-| **Sky Blue**       | `#0EA5E9` | rgb(14, 165, 233)  | `--color-skyblue`       | `text-skyblue`, `fill-skyblue` | Stars, badges, subtle highlights |
-| **Sky Blue Light** | `#EFF8FF` | rgb(239, 248, 255) | `--color-skyblue-light` | `bg-skyblue-light`             | Background for stars/badges      |
+| **Sky Blue**       | `#0EA5E9` | rgb(14, 165, 233)  | `--color-skyblue`       | `text-skyblue`, `fill-skyblue` | Badges, secondary highlights     |
+| **Sky Blue Light** | `#EFF8FF` | rgb(239, 248, 255) | `--color-skyblue-light` | `bg-skyblue-light`             | Background for badges            |
 
 ---
 
@@ -161,8 +161,8 @@ The palette keeps a **white/light base**, with **cool grays**, **icy blues**, an
 
 ✅ **Design Principles:**
 
-1. Cool, professional, readable whites and grays
-2. Teal accent for primary CTAs, hover states, and focus
-3. Sky blue reserved for prestige elements (stars, badges)
+1. Professional white/light surfaces with deep charcoal for hierarchy
+2. Teal accent for primary CTAs, links, icons, and focus states
+3. Sky blue reserved for secondary accents and badges
 4. Alternating surface shades maintain visual rhythm
 5. All text contrasts meet WCAG AA/AAA standards

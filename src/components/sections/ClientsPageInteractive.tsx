@@ -60,7 +60,7 @@ export default function ClientsPageInteractive() {
   return (
     <>
       {/* Ready to Partner CTA Banner */}
-      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-orange/20">
+      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-teal/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={shouldReduceMotion ? {} : { opacity: 0, y: 20 }}
@@ -69,7 +69,7 @@ export default function ClientsPageInteractive() {
           >
             <div
               ref={ctaSectionRef}
-              className="bg-surface-100 border border-orange/30 rounded-2xl p-8 md:p-12 text-center"
+              className="bg-surface-100 border border-teal/30 rounded-2xl p-8 md:p-12 text-center"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
                 Ready to Partner with HomeProX?
@@ -83,16 +83,16 @@ export default function ClientsPageInteractive() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
                 <a
                   href="tel:4693789262"
-                  className="flex items-center gap-2 font-body text-charcoal hover:text-orange transition-colors duration-300"
+                  className="flex items-center gap-2 font-body text-charcoal hover:text-teal transition-colors duration-300"
                 >
-                  <Phone className="w-5 h-5 text-orange" aria-hidden="true" />
+                  <Phone className="w-5 h-5 text-teal" aria-hidden="true" />
                   (469) 378-9262
                 </a>
                 <a
                   href="mailto:info@homeproxsvcs.com"
-                  className="flex items-center gap-2 font-body text-charcoal hover:text-orange transition-colors duration-300"
+                  className="flex items-center gap-2 font-body text-charcoal hover:text-teal transition-colors duration-300"
                 >
-                  <Mail className="w-5 h-5 text-orange" aria-hidden="true" />
+                  <Mail className="w-5 h-5 text-teal" aria-hidden="true" />
                   info@homeproxsvcs.com
                 </a>
               </div>
@@ -149,7 +149,7 @@ export default function ClientsPageInteractive() {
                       }}
                     >
                       <CheckCircle2
-                        className="w-5 h-5 text-orange flex-shrink-0"
+                        className="w-5 h-5 text-teal flex-shrink-0"
                         aria-hidden="true"
                       />
                       <span className="font-body text-sm text-white font-medium">

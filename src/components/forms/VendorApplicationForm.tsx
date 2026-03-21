@@ -92,7 +92,7 @@ function ReviewRow({
           <button
             type="button"
             onClick={onEdit}
-            className="font-accent text-xs text-orange hover:text-orange-dark hover:underline transition-colors shrink-0"
+            className="font-accent text-xs text-teal hover:text-teal-dark hover:underline transition-colors shrink-0"
           >
             Edit
           </button>
@@ -232,8 +232,8 @@ export default function VendorApplicationForm() {
   if (isSuccess) {
     return (
       <div className="max-w-2xl mx-auto text-center py-16">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-orange-muted mb-6">
-          <CheckCircle2 className="w-10 h-10 text-orange" />
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-teal-muted mb-6">
+          <CheckCircle2 className="w-10 h-10 text-teal" />
         </div>
         <h2 className="font-display text-3xl font-bold text-charcoal mb-4">
           Application Submitted!
@@ -254,7 +254,7 @@ export default function VendorApplicationForm() {
           <div
             className={`flex items-center justify-center w-9 h-9 rounded-full font-accent text-sm font-semibold transition-colors duration-300 ${
               currentStep === step.id
-                ? "bg-orange text-white shadow-orange-glow"
+                ? "bg-teal text-white shadow-teal-glow"
                 : currentStep > step.id
                 ? "bg-charcoal text-white"
                 : "bg-surface-100 text-text-muted border border-surface-200"
@@ -283,7 +283,7 @@ export default function VendorApplicationForm() {
 
   // ── Input class helper ──
   const inputClass = (field: keyof VendorFormErrors) =>
-    `w-full font-body text-sm px-4 py-3 border rounded-lg bg-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange focus:border-orange placeholder:text-text-muted ${
+    `w-full font-body text-sm px-4 py-3 border rounded-lg bg-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-teal focus:border-teal placeholder:text-text-muted ${
       errors[field]
         ? "border-error text-error"
         : "border-surface-200 text-text-body"
@@ -302,7 +302,7 @@ export default function VendorApplicationForm() {
 
         <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-8 sm:p-10">
           {/* Step label */}
-          <p className="font-accent text-xs uppercase tracking-widest text-orange mb-1">
+          <p className="font-accent text-xs uppercase tracking-widest text-teal mb-1">
             Step {currentStep} of {STEPS.length}
           </p>
           <h3 className="font-display text-2xl font-bold text-charcoal mb-1">
@@ -318,7 +318,7 @@ export default function VendorApplicationForm() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Company Name <span className="text-orange">*</span>
+                    Company Name <span className="text-teal">*</span>
                   </label>
                   <input
                     type="text"
@@ -333,7 +333,7 @@ export default function VendorApplicationForm() {
                 </div>
                 <div>
                   <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Contact Person <span className="text-orange">*</span>
+                    Contact Person <span className="text-teal">*</span>
                   </label>
                   <input
                     type="text"
@@ -351,7 +351,7 @@ export default function VendorApplicationForm() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Phone Number <span className="text-orange">*</span>
+                    Phone Number <span className="text-teal">*</span>
                   </label>
                   <input
                     type="tel"
@@ -366,7 +366,7 @@ export default function VendorApplicationForm() {
                 </div>
                 <div>
                   <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Email Address <span className="text-orange">*</span>
+                    Email Address <span className="text-teal">*</span>
                   </label>
                   <input
                     type="email"
@@ -398,7 +398,7 @@ export default function VendorApplicationForm() {
                 </div>
                 <div>
                   <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Years in Business <span className="text-orange">*</span>
+                    Years in Business <span className="text-teal">*</span>
                   </label>
                   <div className="relative">
                     <select
@@ -428,7 +428,7 @@ export default function VendorApplicationForm() {
             <div className="space-y-6">
               <div>
                 <label className="block font-body text-sm font-medium text-charcoal mb-3">
-                  Service Categories <span className="text-orange">*</span>{" "}
+                  Service Categories <span className="text-teal">*</span>{" "}
                   <span className="text-text-muted font-normal">(Select all that apply)</span>
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -441,13 +441,13 @@ export default function VendorApplicationForm() {
                         onClick={() => toggleServiceCategory(cat)}
                         className={`flex items-center gap-3 px-4 py-3 rounded-lg border text-left font-body text-sm transition-all duration-200 ${
                           selected
-                            ? "border-orange bg-orange-muted text-charcoal font-medium"
-                            : "border-surface-200 text-text-muted hover:border-orange/50 hover:bg-surface-50"
+                            ? "border-teal bg-teal-muted text-charcoal font-medium"
+                            : "border-surface-200 text-text-muted hover:border-teal/50 hover:bg-surface-50"
                         }`}
                       >
                         <span
                           className={`w-4 h-4 rounded border flex-shrink-0 flex items-center justify-center transition-colors ${
-                            selected ? "bg-orange border-orange" : "border-surface-300"
+                            selected ? "bg-teal border-teal" : "border-surface-300"
                           }`}
                         >
                           {selected && <CheckCircle2 className="w-3 h-3 text-white" />}
@@ -464,7 +464,7 @@ export default function VendorApplicationForm() {
 
               <div>
                 <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                  Coverage Areas <span className="text-orange">*</span>{" "}
+                  Coverage Areas <span className="text-teal">*</span>{" "}
                   <span className="text-text-muted font-normal">(City / County / Region)</span>
                 </label>
                 <textarea
@@ -481,7 +481,7 @@ export default function VendorApplicationForm() {
 
               <div>
                 <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                  Service Radius <span className="text-orange">*</span>
+                  Service Radius <span className="text-teal">*</span>
                 </label>
                 <div className="relative">
                   <select
@@ -510,7 +510,7 @@ export default function VendorApplicationForm() {
               <div
                 role="button"
                 tabIndex={0}
-                className="border-2 border-dashed border-surface-300 rounded-xl p-8 text-center hover:border-orange/50 transition-colors cursor-pointer"
+                className="border-2 border-dashed border-surface-300 rounded-xl p-8 text-center hover:border-teal/50 transition-colors cursor-pointer"
                 onClick={() => fileInputRef.current?.click()}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
@@ -530,8 +530,8 @@ export default function VendorApplicationForm() {
                   onChange={handleFileChange}
                 />
                 <div className="flex flex-col items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-orange-muted flex items-center justify-center">
-                    <Upload className="w-6 h-6 text-orange" />
+                  <div className="w-12 h-12 rounded-full bg-teal-muted flex items-center justify-center">
+                    <Upload className="w-6 h-6 text-teal" />
                   </div>
                   <div>
                     <p className="font-body font-medium text-charcoal">
@@ -555,7 +555,7 @@ export default function VendorApplicationForm() {
                       className="flex items-center justify-between bg-surface-50 border border-surface-200 rounded-lg px-4 py-3"
                     >
                       <div className="flex items-center gap-3 min-w-0">
-                        <FileText className="w-4 h-4 text-orange shrink-0" />
+                        <FileText className="w-4 h-4 text-teal shrink-0" />
                         <span className="font-body text-sm text-charcoal truncate">
                           {file.name}
                         </span>
@@ -589,7 +589,7 @@ export default function VendorApplicationForm() {
               {/* Company Information */}
               <div>
                 <h4 className="font-display text-base font-bold text-charcoal mb-1 flex items-center gap-2">
-                  <span className="w-1.5 h-5 rounded-full bg-orange inline-block" />
+                  <span className="w-1.5 h-5 rounded-full bg-teal inline-block" />
                   Company Information
                 </h4>
                 <div className="bg-surface-50 rounded-xl border border-surface-200 px-5 py-1 mt-3">
@@ -603,7 +603,7 @@ export default function VendorApplicationForm() {
                 <button
                   type="button"
                   onClick={() => { setErrors({}); setCurrentStep(1); }}
-                  className="mt-2 font-accent text-xs text-orange hover:text-orange-dark hover:underline transition-colors"
+                  className="mt-2 font-accent text-xs text-teal hover:text-teal-dark hover:underline transition-colors"
                 >
                   Edit
                 </button>
@@ -612,7 +612,7 @@ export default function VendorApplicationForm() {
               {/* Services Offered */}
               <div>
                 <h4 className="font-display text-base font-bold text-charcoal mb-1 flex items-center gap-2">
-                  <span className="w-1.5 h-5 rounded-full bg-orange inline-block" />
+                  <span className="w-1.5 h-5 rounded-full bg-teal inline-block" />
                   Services Offered
                 </h4>
                 <div className="bg-surface-50 rounded-xl border border-surface-200 px-5 py-1 mt-3">
@@ -630,7 +630,7 @@ export default function VendorApplicationForm() {
                 <button
                   type="button"
                   onClick={() => { setErrors({}); setCurrentStep(2); }}
-                  className="mt-2 font-accent text-xs text-orange hover:text-orange-dark hover:underline transition-colors"
+                  className="mt-2 font-accent text-xs text-teal hover:text-teal-dark hover:underline transition-colors"
                 >
                   Edit
                 </button>
@@ -639,7 +639,7 @@ export default function VendorApplicationForm() {
               {/* Documents & Attachments */}
               <div>
                 <h4 className="font-display text-base font-bold text-charcoal mb-1 flex items-center gap-2">
-                  <span className="w-1.5 h-5 rounded-full bg-orange inline-block" />
+                  <span className="w-1.5 h-5 rounded-full bg-teal inline-block" />
                   Documents & Attachments
                 </h4>
                 <div className="bg-surface-50 rounded-xl border border-surface-200 px-5 py-1 mt-3">
@@ -663,7 +663,7 @@ export default function VendorApplicationForm() {
                     id="vendor-agreeToTerms"
                     checked={formData.agreeToTerms}
                     onChange={(e) => handleChange("agreeToTerms", e.target.checked)}
-                    className="mt-1 h-4 w-4 rounded border-surface-300 text-orange focus:ring-orange focus:ring-offset-0 cursor-pointer"
+                    className="mt-1 h-4 w-4 rounded border-surface-300 text-teal focus:ring-teal focus:ring-offset-0 cursor-pointer"
                     aria-describedby={errors.agreeToTerms ? "vendor-agreeToTerms-error" : undefined}
                     aria-invalid={errors.agreeToTerms ? "true" : "false"}
                   />
@@ -671,7 +671,7 @@ export default function VendorApplicationForm() {
                     I agree to the{" "}
                     <Link
                       href="/terms"
-                      className="text-orange hover:text-orange-dark underline underline-offset-2"
+                      className="text-teal hover:text-teal-dark underline underline-offset-2"
                     >
                       Terms and Conditions
                     </Link>{" "}
@@ -686,8 +686,8 @@ export default function VendorApplicationForm() {
               </div>
 
               {/* Confirmation notice */}
-              <div className="flex items-start gap-3 p-4 bg-orange-muted border border-orange/20 rounded-xl">
-                <CheckCircle2 className="w-5 h-5 text-orange mt-0.5 flex-shrink-0" />
+              <div className="flex items-start gap-3 p-4 bg-teal-muted border border-teal/20 rounded-xl">
+                <CheckCircle2 className="w-5 h-5 text-teal mt-0.5 flex-shrink-0" />
                 <p className="font-body text-sm text-charcoal">
                   By submitting this application you confirm that all information provided
                   is accurate and that you meet HomeProX&apos;s vendor requirements.

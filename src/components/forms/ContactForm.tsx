@@ -34,7 +34,7 @@ interface FormErrors {
 }
 
 const inputBase =
-  "bg-surface-50 border border-surface-200 rounded-lg px-4 py-3 font-body text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange/30 focus:border-orange transition-colors duration-200 w-full";
+  "bg-surface-50 border border-surface-200 rounded-lg px-4 py-3 font-body text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors duration-200 w-full";
 const inputError = "border-error focus:ring-error/30";
 const labelBase = "block font-accent text-sm font-semibold text-charcoal mb-1.5";
 
@@ -126,8 +126,8 @@ export function ContactForm() {
   if (success) {
     return (
       <div className="text-center py-8">
-        <div className="w-16 h-16 rounded-full bg-orange-muted flex items-center justify-center mx-auto mb-4">
-          <CheckCircle2 className="text-orange" size={32} />
+        <div className="w-16 h-16 rounded-full bg-teal-muted flex items-center justify-center mx-auto mb-4">
+          <CheckCircle2 className="text-teal" size={32} />
         </div>
         <h3 className="font-display text-2xl font-bold text-charcoal mb-2">Message Sent!</h3>
         <p className="font-body text-text-muted max-w-sm mx-auto">
@@ -141,7 +141,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6" noValidate>
       <div>
         <label htmlFor="contact-name" className={labelBase}>
-          Name<span className="text-orange ml-0.5" aria-hidden="true">*</span>
+          Name<span className="text-teal ml-0.5" aria-hidden="true">*</span>
         </label>
         <input
           id="contact-name"
@@ -163,7 +163,7 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="contact-email" className={labelBase}>
-          Email<span className="text-orange ml-0.5" aria-hidden="true">*</span>
+          Email<span className="text-teal ml-0.5" aria-hidden="true">*</span>
         </label>
         <input
           id="contact-email"
@@ -200,7 +200,7 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="contact-inquiryType" className={labelBase}>
-          What can we help you with?<span className="text-orange ml-0.5" aria-hidden="true">*</span>
+          What can we help you with?<span className="text-teal ml-0.5" aria-hidden="true">*</span>
         </label>
         <div className="relative">
           <select
@@ -233,7 +233,7 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="contact-message" className={labelBase}>
-          Message<span className="text-orange ml-0.5" aria-hidden="true">*</span>
+          Message<span className="text-teal ml-0.5" aria-hidden="true">*</span>
         </label>
         <textarea
           id="contact-message"
@@ -261,7 +261,7 @@ export function ContactForm() {
             name="agreeToTerms"
             checked={form.agreeToTerms}
             onChange={handleChange}
-            className="mt-1 h-4 w-4 rounded border-surface-300 text-orange focus:ring-orange focus:ring-offset-0 cursor-pointer"
+            className="mt-1 h-4 w-4 rounded border-surface-300 text-teal focus:ring-teal focus:ring-offset-0 cursor-pointer"
             aria-describedby={errors.agreeToTerms ? "contact-agreeToTerms-error" : undefined}
             aria-invalid={errors.agreeToTerms ? "true" : "false"}
           />
@@ -269,7 +269,7 @@ export function ContactForm() {
             I agree to the{" "}
             <Link
               href="/terms"
-              className="text-orange hover:text-orange-dark underline underline-offset-2"
+              className="text-teal hover:text-teal-dark underline underline-offset-2"
             >
               Terms and Conditions
             </Link>{" "}

@@ -44,7 +44,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
       <motion.div
         whileHover={shouldReduceMotion ? undefined : { y: -4 }}
         transition={{ duration: 0.3 }}
-        className="group bg-white border border-surface-200 rounded-xl overflow-hidden flex flex-col h-full shadow-card hover:border-orange/40 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 focus-within:ring-2 focus-within:ring-orange focus-within:outline-none"
+        className="group bg-white border border-surface-200 rounded-xl overflow-hidden flex flex-col h-full shadow-card hover:border-teal/40 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 focus-within:ring-2 focus-within:ring-teal focus-within:outline-none"
       >
         {/* Image */}
         <div className="relative w-full h-48 overflow-hidden">
@@ -58,7 +58,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
             />
           ) : (
             <div className="w-full h-full bg-surface-200 flex items-center justify-center">
-              <IconComponent className="w-12 h-12 text-orange" aria-hidden="true" />
+              <IconComponent className="w-12 h-12 text-teal" aria-hidden="true" />
             </div>
           )}
         </div>
@@ -67,7 +67,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
         <div className="p-6 flex flex-col flex-grow">
           {/* Icon */}
           <div className="mb-4">
-            <IconComponent className="w-8 h-8 text-orange" aria-hidden="true" />
+            <IconComponent className="w-8 h-8 text-teal" aria-hidden="true" />
           </div>
 
           {/* Title */}
@@ -84,7 +84,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
           <ul className="space-y-2 mb-4 flex-grow">
             {service.features.slice(0, 3).map((feature, index) => (
               <li key={index} className="flex items-start gap-2">
-                <CheckCircle className="w-4 h-4 text-orange mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <CheckCircle className="w-4 h-4 text-teal mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span className="font-body text-text-muted text-sm">{feature}</span>
               </li>
             ))}
@@ -93,10 +93,10 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
           {/* Learn More Link */}
           <Link
             href={`/services#${service.slug}`}
-            className="mt-auto font-accent text-orange hover:text-orange-dark font-medium hover:underline transition-colors duration-300 flex items-center gap-1 group/link focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 focus:ring-offset-surface-100 rounded"
+            className="mt-auto font-accent text-teal hover:text-teal-dark font-medium hover:underline transition-colors duration-300 flex items-center gap-1 group/link focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2 focus:ring-offset-surface-100 rounded"
           >
             Learn More
-            <ArrowRight className="w-4 h-4 text-orange transition-transform duration-300 group-hover/link:translate-x-1" aria-hidden="true" />
+            <ArrowRight className="w-4 h-4 text-teal transition-transform duration-300 group-hover/link:translate-x-1" aria-hidden="true" />
           </Link>
         </div>
       </motion.div>
@@ -108,7 +108,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
       <motion.div
         whileHover={shouldReduceMotion ? undefined : { y: -4 }}
         transition={{ duration: 0.3 }}
-        className="group bg-white border border-surface-200 rounded-xl overflow-hidden flex flex-col h-full shadow-card hover:border-orange/40 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 focus-within:ring-2 focus-within:ring-orange focus-within:outline-none"
+        className="group bg-white border border-surface-200 rounded-xl overflow-hidden flex flex-col h-full shadow-card hover:border-teal/40 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 focus-within:ring-2 focus-within:ring-teal focus-within:outline-none"
       >
         {/* Image */}
         <div className="relative w-full h-64 overflow-hidden">
@@ -122,7 +122,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
             />
           ) : (
             <div className="w-full h-full bg-surface-200 flex items-center justify-center">
-              <IconComponent className="w-16 h-16 text-orange" aria-hidden="true" />
+              <IconComponent className="w-16 h-16 text-teal" aria-hidden="true" />
             </div>
           )}
         </div>
@@ -131,7 +131,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
         <div className="p-6 flex flex-col flex-grow">
           {/* Icon */}
           <div className="mb-4">
-            <IconComponent className="w-10 h-10 text-orange" aria-hidden="true" />
+            <IconComponent className="w-10 h-10 text-teal" aria-hidden="true" />
           </div>
 
           {/* Title */}
@@ -146,7 +146,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
 
           {/* Coverage Note — prestige badge */}
           <div className="mb-4">
-            <span className="inline-flex items-center px-3 py-1 bg-amber-light rounded-full text-xs font-accent text-amber">
+            <span className="inline-flex items-center px-3 py-1 bg-skyblue-light rounded-full text-xs font-accent text-skyblue">
               Available Statewide Across Texas
             </span>
           </div>
@@ -155,7 +155,7 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
           <ul className="space-y-2 mb-6 flex-grow">
             {service.features.map((feature, index) => (
               <li key={index} className="flex items-start gap-2">
-                <CheckCircle className="w-5 h-5 text-orange mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <CheckCircle className="w-5 h-5 text-teal mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span className="font-body text-text-muted">{feature}</span>
               </li>
             ))}
@@ -184,13 +184,13 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
           />
         ) : (
           <div className="w-full h-full bg-surface-200 flex items-center justify-center rounded-xl">
-            <IconComponent className="w-12 h-12 text-orange" aria-hidden="true" />
+            <IconComponent className="w-12 h-12 text-teal" aria-hidden="true" />
           </div>
         )}
       </div>
       <div className="flex flex-col flex-grow">
         <div className="flex items-start gap-4 mb-4">
-          <IconComponent className="w-8 h-8 text-orange flex-shrink-0" aria-hidden="true" />
+          <IconComponent className="w-8 h-8 text-teal flex-shrink-0" aria-hidden="true" />
           <h3 className="font-display text-2xl font-bold text-charcoal">
             {service.title}
           </h3>
@@ -199,17 +199,17 @@ export function ServiceCard({ service, variant = "grid" }: ServiceCardProps) {
         <ul className="space-y-2 mb-4">
           {service.features.map((feature, index) => (
             <li key={index} className="flex items-start gap-2">
-              <CheckCircle className="w-4 h-4 text-orange mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <CheckCircle className="w-4 h-4 text-teal mt-0.5 flex-shrink-0" aria-hidden="true" />
               <span className="font-body text-text-muted text-sm">{feature}</span>
             </li>
           ))}
         </ul>
         <Link
           href={`/services#${service.slug}`}
-          className="mt-auto font-accent text-orange hover:text-orange-dark font-medium hover:underline transition-colors duration-300 flex items-center gap-1"
+          className="mt-auto font-accent text-teal hover:text-teal-dark font-medium hover:underline transition-colors duration-300 flex items-center gap-1"
         >
           Learn More
-          <ArrowRight className="w-4 h-4 text-orange" aria-hidden="true" />
+          <ArrowRight className="w-4 h-4 text-teal" aria-hidden="true" />
         </Link>
       </div>
     </div>

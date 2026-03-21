@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-charcoal text-white border-t-0 relative">
       {/* Optional accent strip */}
-      <div className="h-0.5 bg-gradient-to-r from-transparent via-orange to-transparent opacity-40" aria-hidden="true" />
+      <div className="h-0.5 bg-gradient-to-r from-transparent via-teal to-transparent opacity-40" aria-hidden="true" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -122,7 +122,7 @@ export function Footer() {
                   href="tel:4693789262"
                   className="font-body text-surface-300 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
-                  <Phone className="w-4 h-4 text-orange" aria-hidden="true" />
+                  <Phone className="w-4 h-4 text-teal" aria-hidden="true" />
                   (469) 378-9262
                 </a>
               </li>
@@ -131,15 +131,15 @@ export function Footer() {
                   href="mailto:info@homeproxsvcs.com"
                   className="font-body text-surface-300 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
-                  <Mail className="w-4 h-4 text-orange" aria-hidden="true" />
+                  <Mail className="w-4 h-4 text-teal" aria-hidden="true" />
                   info@homeproxsvcs.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
+                <MapPin className="w-4 h-4 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
                 <span className="font-body text-surface-300 text-sm">
                   517 WATERVIEW DR, COPPELL, TX 75019<br />
-                  <span className="text-orange">Serving All of Texas</span>
+                  <span className="text-teal">Serving All of Texas</span>
                 </span>
               </li>
             </ul>

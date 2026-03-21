@@ -105,7 +105,7 @@ export function QuoteForm() {
       {/* Success Message */}
       {isSuccess && (
         <div
-          className="bg-orange-muted border border-orange/30 rounded-lg p-4 text-orange"
+          className="bg-teal-muted border border-teal/30 rounded-lg p-4 text-teal"
           role="alert"
           aria-live="polite"
         >
@@ -128,7 +128,7 @@ export function QuoteForm() {
       {/* Full Name */}
       <div>
         <label htmlFor="fullName" className="block font-body text-sm font-medium text-charcoal mb-2">
-          Full Name <span className="text-orange">*</span>
+          Full Name <span className="text-teal">*</span>
         </label>
         <input
           type="text"
@@ -138,7 +138,7 @@ export function QuoteForm() {
           onChange={handleChange}
           className={`w-full px-4 py-3 bg-white border ${
             errors.fullName ? "border-error" : "border-surface-200"
-          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-300`}
+          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300`}
           placeholder="John Doe"
           aria-describedby={errors.fullName ? "fullName-error" : undefined}
           aria-invalid={errors.fullName ? "true" : "false"}
@@ -161,7 +161,7 @@ export function QuoteForm() {
           name="companyName"
           value={formData.companyName}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-300"
+          className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300"
           placeholder="ABC Property Management"
         />
       </div>
@@ -169,7 +169,7 @@ export function QuoteForm() {
       {/* Email */}
       <div>
         <label htmlFor="email" className="block font-body text-sm font-medium text-charcoal mb-2">
-          Email Address <span className="text-orange">*</span>
+          Email Address <span className="text-teal">*</span>
         </label>
         <input
           type="email"
@@ -179,7 +179,7 @@ export function QuoteForm() {
           onChange={handleChange}
           className={`w-full px-4 py-3 bg-white border ${
             errors.email ? "border-error" : "border-surface-200"
-          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-300`}
+          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300`}
           placeholder="john@example.com"
           aria-describedby={errors.email ? "email-error" : undefined}
           aria-invalid={errors.email ? "true" : "false"}
@@ -194,7 +194,7 @@ export function QuoteForm() {
       {/* Phone */}
       <div>
         <label htmlFor="phone" className="block font-body text-sm font-medium text-charcoal mb-2">
-          Phone Number <span className="text-orange">*</span>
+          Phone Number <span className="text-teal">*</span>
         </label>
         <input
           type="tel"
@@ -204,7 +204,7 @@ export function QuoteForm() {
           onChange={handleChange}
           className={`w-full px-4 py-3 bg-white border ${
             errors.phone ? "border-error" : "border-surface-200"
-          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-300`}
+          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300`}
           placeholder="(469) 555-1234"
           aria-describedby={errors.phone ? "phone-error" : undefined}
           aria-invalid={errors.phone ? "true" : "false"}
@@ -219,7 +219,7 @@ export function QuoteForm() {
       {/* Property Type */}
       <div>
         <label htmlFor="propertyType" className="block font-body text-sm font-medium text-charcoal mb-2">
-          Property Type <span className="text-orange">*</span>
+          Property Type <span className="text-teal">*</span>
         </label>
         <div className="relative">
           <select
@@ -229,7 +229,7 @@ export function QuoteForm() {
             onChange={handleChange}
             className={`w-full px-4 py-3 pr-10 bg-white border ${
               errors.propertyType ? "border-error" : "border-surface-200"
-            } rounded-lg text-charcoal focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-300 appearance-none cursor-pointer`}
+            } rounded-lg text-charcoal focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300 appearance-none cursor-pointer`}
             aria-describedby={errors.propertyType ? "propertyType-error" : undefined}
             aria-invalid={errors.propertyType ? "true" : "false"}
           >
@@ -255,7 +255,7 @@ export function QuoteForm() {
       {/* Service Needed */}
       <div>
         <label htmlFor="serviceNeeded" className="block font-body text-sm font-medium text-charcoal mb-2">
-          Service Needed <span className="text-orange">*</span>
+          Service Needed <span className="text-teal">*</span>
         </label>
         <div className="relative">
           <select
@@ -265,7 +265,7 @@ export function QuoteForm() {
             onChange={handleChange}
             className={`w-full px-4 py-3 pr-10 bg-white border ${
               errors.serviceNeeded ? "border-error" : "border-surface-200"
-            } rounded-lg text-charcoal focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-300 appearance-none cursor-pointer`}
+            } rounded-lg text-charcoal focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300 appearance-none cursor-pointer`}
             aria-describedby={errors.serviceNeeded ? "serviceNeeded-error" : undefined}
             aria-invalid={errors.serviceNeeded ? "true" : "false"}
           >
@@ -294,7 +294,7 @@ export function QuoteForm() {
       {/* Location */}
       <div>
         <label htmlFor="location" className="block font-body text-sm font-medium text-charcoal mb-2">
-          Property Location / City, TX <span className="text-orange">*</span>
+          Property Location / City, TX <span className="text-teal">*</span>
         </label>
         <input
           type="text"
@@ -304,7 +304,7 @@ export function QuoteForm() {
           onChange={handleChange}
           className={`w-full px-4 py-3 bg-white border ${
             errors.location ? "border-error" : "border-surface-200"
-          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-300`}
+          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300`}
           placeholder="Dallas, TX"
           aria-describedby={errors.location ? "location-error" : undefined}
           aria-invalid={errors.location ? "true" : "false"}
@@ -319,7 +319,7 @@ export function QuoteForm() {
       {/* Message */}
       <div>
         <label htmlFor="message" className="block font-body text-sm font-medium text-charcoal mb-2">
-          Message / Project Details <span className="text-orange">*</span>
+          Message / Project Details <span className="text-teal">*</span>
         </label>
         <textarea
           id="message"
@@ -329,7 +329,7 @@ export function QuoteForm() {
           rows={5}
           className={`w-full px-4 py-3 bg-white border ${
             errors.message ? "border-error" : "border-surface-200"
-          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-300 resize-none`}
+          } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition-all duration-300 resize-none`}
           placeholder="Tell us about your property maintenance needs..."
           aria-describedby={errors.message ? "message-error" : undefined}
           aria-invalid={errors.message ? "true" : "false"}
@@ -350,7 +350,7 @@ export function QuoteForm() {
             name="agreeToTerms"
             checked={formData.agreeToTerms}
             onChange={handleChange}
-            className="mt-1 h-4 w-4 rounded border-surface-300 text-orange focus:ring-orange focus:ring-offset-0 cursor-pointer"
+            className="mt-1 h-4 w-4 rounded border-surface-300 text-teal focus:ring-teal focus:ring-offset-0 cursor-pointer"
             aria-describedby={errors.agreeToTerms ? "agreeToTerms-error" : undefined}
             aria-invalid={errors.agreeToTerms ? "true" : "false"}
           />
@@ -358,7 +358,7 @@ export function QuoteForm() {
             I agree to the{" "}
             <Link
               href="/terms"
-              className="text-orange hover:text-orange-dark underline underline-offset-2"
+              className="text-teal hover:text-teal-dark underline underline-offset-2"
             >
               Terms and Conditions
             </Link>{" "}

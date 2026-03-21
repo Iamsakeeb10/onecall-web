@@ -33,13 +33,13 @@ export default function VendorRequirements() {
           <AnimatedSection variant="fadeLeft" delay={0.1}>
             <div className="bg-white border border-surface-200 rounded-xl shadow-card p-8 h-full">
               <h3 className="font-display text-xl font-bold text-charcoal mb-6 flex items-center gap-2">
-                <span className="w-2 h-6 rounded-full bg-orange inline-block" />
+                <span className="w-2 h-6 rounded-full bg-teal inline-block" />
                 Requirements
               </h3>
               <ul className="space-y-4">
                 {required.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-orange mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-teal mt-0.5 flex-shrink-0" />
                     <span className="font-body text-text-body">{item}</span>
                   </li>
                 ))}
@@ -51,13 +51,13 @@ export default function VendorRequirements() {
           <AnimatedSection variant="fadeRight" delay={0.2}>
             <div className="bg-surface-50 border border-surface-200 rounded-xl shadow-card p-8 h-full">
               <h3 className="font-display text-xl font-bold text-charcoal mb-6 flex items-center gap-2">
-                <span className="w-2 h-6 rounded-full bg-amber inline-block" />
+                <span className="w-2 h-6 rounded-full bg-skyblue inline-block" />
                 Preferred
               </h3>
               <ul className="space-y-4">
                 {preferred.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <Star className="w-5 h-5 text-amber fill-amber mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-skyblue fill-skyblue mt-0.5 flex-shrink-0" />
                     <span className="font-body text-text-body">{item}</span>
                   </li>
                 ))}

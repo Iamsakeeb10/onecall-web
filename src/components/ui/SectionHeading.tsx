@@ -26,7 +26,7 @@ export function SectionHeading({
         </p>
       )}
       <div className="mt-4 flex items-center gap-3">
-        <span className="block h-0.5 w-12 bg-orange rounded-full" />
+        <span className="block h-0.5 w-12 bg-teal rounded-full" />
         <span className="block h-0.5 w-4 bg-surface-300 rounded-full" />
       </div>
     </div>

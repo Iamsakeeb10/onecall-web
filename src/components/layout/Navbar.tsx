@@ -43,11 +43,11 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-accent text-base text-charcoal hover:text-orange transition-colors duration-300 relative group"
+                className="font-accent text-base text-charcoal hover:text-teal transition-colors duration-300 relative group"
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-orange transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-teal transition-all duration-300 ${
                     pathname === link.href ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
@@ -58,7 +58,7 @@ export function Navbar() {
               className={`px-6 py-2 rounded-full font-accent font-medium text-sm transition-all duration-300 hover:scale-105 ${
                 pathname === ctaLink.href
                   ? "bg-charcoal text-white hover:bg-charcoal-light"
-                  : "bg-orange text-white hover:bg-orange-dark"
+                  : "bg-teal text-white hover:bg-teal-dark"
               }`}
             >
               {ctaLink.label}
@@ -67,7 +67,7 @@ export function Navbar() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden transition-colors duration-300 p-2 flex-shrink-0 ml-2 text-charcoal hover:text-orange"
+            className="lg:hidden transition-colors duration-300 p-2 flex-shrink-0 ml-2 text-charcoal hover:text-teal"
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -96,7 +96,7 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block font-accent text-lg py-2 transition-colors duration-300 ${
-                    pathname === link.href ? "text-orange" : "text-charcoal hover:text-orange"
+                    pathname === link.href ? "text-teal" : "text-charcoal hover:text-teal"
                   }`}
                 >
                   {link.label}
@@ -105,7 +105,7 @@ export function Navbar() {
               <Link
                 href={ctaLink.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center w-full bg-orange text-white hover:bg-orange-dark px-6 py-3 rounded-full font-accent font-medium transition-all duration-300"
+                className="flex items-center justify-center w-full bg-teal text-white hover:bg-teal-dark px-6 py-3 rounded-full font-accent font-medium transition-all duration-300"
               >
                 {ctaLink.label}
               </Link>

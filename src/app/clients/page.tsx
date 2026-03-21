@@ -67,7 +67,7 @@ export default function ClientsPage() {
                   turnover repairs, preservation services, and compliance
                   inspections.
                 </p>
-                <p className="font-body text-lg text-orange italic font-medium">
+                <p className="font-body text-lg text-teal italic font-medium">
                   &quot;We build relationships based on performance,
                   accountability, and trust.&quot;
                 </p>
@@ -81,7 +81,7 @@ export default function ClientsPage() {
                 </h3>
                 <div className="space-y-6">
                   <div>
-                    <div className="text-4xl font-display font-bold text-orange mb-2">
+                    <div className="text-4xl font-display font-bold text-teal mb-2">
                       500+
                     </div>
                     <div className="font-body text-text-muted">
@@ -89,7 +89,7 @@ export default function ClientsPage() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-orange mb-2">
+                    <div className="text-4xl font-display font-bold text-teal mb-2">
                       Texas
                     </div>
                     <div className="font-body text-text-muted">
@@ -97,7 +97,7 @@ export default function ClientsPage() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-orange mb-2">
+                    <div className="text-4xl font-display font-bold text-teal mb-2">
                       100%
                     </div>
                     <div className="font-body text-text-muted">
@@ -105,7 +105,7 @@ export default function ClientsPage() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-orange mb-2">
+                    <div className="text-4xl font-display font-bold text-teal mb-2">
                       10+
                     </div>
                     <div className="font-body text-text-muted">
@@ -181,13 +181,13 @@ export default function ClientsPage() {
               <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 Quality Assurance Process
               </h2>
-              <div className="w-20 h-1 bg-orange rounded-full mx-auto" />
+              <div className="w-20 h-1 bg-teal rounded-full mx-auto" />
             </div>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
             {/* Connecting Line (Desktop Only) */}
-            <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 border-t border-orange/30" />
+            <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 border-t border-teal/30" />
 
             {[
               {
@@ -218,7 +218,7 @@ export default function ClientsPage() {
                 delay={index * 0.2}
                 className="h-full"
               >
-                <div className="relative bg-surface-50 border border-surface-200 rounded-xl p-8 text-center h-full flex flex-col hover:border-orange/30 hover:shadow-card transition-all duration-300">
+                <div className="relative bg-surface-50 border border-surface-200 rounded-xl p-8 text-center h-full flex flex-col hover:border-teal/30 hover:shadow-card transition-all duration-300">
                   {/* Step Number Badge */}
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-charcoal text-white font-display text-2xl font-bold mb-6 ring-2 ring-charcoal/20 shadow-md">
                     {step.number}
@@ -226,7 +226,7 @@ export default function ClientsPage() {
 
                   {/* Icon */}
                   <step.icon
-                    className="w-10 h-10 text-orange mx-auto mb-4"
+                    className="w-10 h-10 text-teal mx-auto mb-4"
                     aria-hidden="true"
                   />
 

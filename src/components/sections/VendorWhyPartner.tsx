@@ -57,9 +57,9 @@ export default function VendorWhyPartner() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-white border border-surface-200 rounded-xl shadow-card p-6 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex gap-4">
+                <div className="bg-white border border-surface-200 rounded-xl shadow-card p-6 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex gap-4">
                   <span className="mt-1 flex-shrink-0">
-                    <CheckCircle2 className="w-6 h-6 text-orange" />
+                    <CheckCircle2 className="w-6 h-6 text-teal" />
                   </span>
                   <div>
                     <h3 className="font-display text-lg font-bold text-charcoal mb-2">

@@ -3,42 +3,42 @@
 @theme {
   /* === PRIMARY SURFACES === */
   --color-white:        #FFFFFF;
-  --color-surface-50:   #FAFAFA;
-  --color-surface-100:  #F4F4F5;
-  --color-surface-200:  #E4E4E7;
-  --color-surface-300:  #D4D4D8;
+  --color-surface-50:   #F7F9FA;
+  --color-surface-100:  #E9EDF0;
+  --color-surface-200:  #CBD2D8;
+  --color-surface-300:  #AFC2CC;
 
-  /* === CHARCOAL (Primary Dark) === */
-  --color-charcoal:       #1C1C1E;
-  --color-charcoal-light: #2C2C2E;
-  --color-charcoal-muted: #52525B;
+  /* === COOL CHARCOAL (Primary Dark) === */
+  --color-charcoal:       #1F2A33;
+  --color-charcoal-light: #323F4B;
+  --color-charcoal-muted: #637381;
 
-  /* === BURNT ORANGE (Primary Accent) === */
-  --color-orange:         #E8621A;
-  --color-orange-dark:    #C94E0D;
-  --color-orange-light:   #FFF1E8;
-  --color-orange-muted:   rgba(232,98,26,0.12);
+  /* === TEAL (Primary Accent) === */
+  --color-teal:         #14B8A6;
+  --color-teal-dark:    #0D9488;
+  --color-teal-light:   #E6FFFA;
+  --color-teal-muted:   rgba(20,184,166,0.12);
 
-  /* === AMBER (Prestige Accent — stars only) === */
-  --color-amber:          #F59E0B;
-  --color-amber-light:    #FFFBEB;
+  /* === SKY BLUE (Prestige Accent — stars & badges) === */
+  --color-skyblue:      #0EA5E9;
+  --color-skyblue-light: #EFF8FF;
 
   /* === TEXT === */
-  --color-text-primary:   #1C1C1E;
-  --color-text-body:     #3F3F46;
-  --color-text-muted:     #71717A;
+  --color-text-primary:   #1F2A33;
+  --color-text-body:     #3E4C59;
+  --color-text-muted:     #64748B;
   --color-text-inverse:   #FFFFFF;
 
   /* === HERO (preserved — do not change hero background) === */
-  --color-hero-bg:        #3E3E3E;
-  --color-hero-bg-dark:   #2E2E2E;
+  --color-hero-bg:        #374151;
+  --color-hero-bg-dark:   #1F2937;
   --color-hero-text:      #FFFFFF;
-  --color-hero-muted:     #C8C8C8;
+  --color-hero-muted:     #CBD5E1;
 
   /* === UTILITY === */
-  --color-error:        #DC2626;
-  --color-success:      #16A34A;
-  --color-divider:      #E4E4E7;
+  --color-error:        #EF4444;
+  --color-success:      #22C55E;
+  --color-divider:      #CBD2D8;
 
   /* Fonts */
   --font-display: 'Outfit', sans-serif;
@@ -46,10 +46,10 @@
   --font-accent:  'Outfit', sans-serif;
 
   /* Box shadows */
-  --shadow-card:        0 1px 3px rgba(28,28,30,0.06), 0 4px 12px rgba(28,28,30,0.05);
-  --shadow-card-hover:  0 4px 16px rgba(232,98,26,0.12), 0 12px 32px rgba(28,28,30,0.10);
-  --shadow-orange-glow:  0 0 0 3px rgba(232,98,26,0.22);
-  --shadow-navbar:      0 1px 0 rgba(28,28,30,0.06), 0 4px 16px rgba(28,28,30,0.08);
+  --shadow-card:        0 1px 3px rgba(31,42,51,0.06), 0 4px 12px rgba(31,42,51,0.05);
+  --shadow-card-hover:  0 4px 16px rgba(20,184,166,0.12), 0 12px 32px rgba(31,42,51,0.10);
+  --shadow-teal-glow:   0 0 0 3px rgba(20,184,166,0.22);
+  --shadow-navbar:      0 1px 0 rgba(31,42,51,0.06), 0 4px 16px rgba(31,42,51,0.08);
 
   /* Keyframe animations */
   --animate-fade-up: fadeUp 0.6s ease forwards;

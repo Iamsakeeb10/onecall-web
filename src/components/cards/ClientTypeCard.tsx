@@ -33,11 +33,11 @@ export function ClientTypeCard({ client, variant = "compact" }: ClientTypeCardPr
       <motion.div
         whileHover={shouldReduceMotion ? undefined : { y: -4 }}
         transition={{ duration: 0.3 }}
-        className="bg-white border border-surface-200 rounded-xl shadow-card p-6 flex flex-col h-full hover:border-orange/40 hover:shadow-card-hover transition-all duration-300"
+        className="bg-white border border-surface-200 rounded-xl shadow-card p-6 flex flex-col h-full hover:border-teal/40 hover:shadow-card-hover transition-all duration-300"
       >
         {/* Icon */}
         <div className="mb-4">
-          <IconComponent className="w-10 h-10 text-orange" aria-hidden="true" />
+          <IconComponent className="w-10 h-10 text-teal" aria-hidden="true" />
         </div>
 
         {/* Title */}
@@ -54,7 +54,7 @@ export function ClientTypeCard({ client, variant = "compact" }: ClientTypeCardPr
         <ul className="space-y-2 mt-auto">
           {client.benefits.slice(0, 3).map((benefit, index) => (
             <li key={index} className="flex items-start gap-2">
-              <CheckCircle className="w-4 h-4 text-orange mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <CheckCircle className="w-4 h-4 text-teal mt-0.5 flex-shrink-0" aria-hidden="true" />
               <span className="font-body text-text-muted text-sm">{benefit}</span>
             </li>
           ))}
@@ -68,7 +68,7 @@ export function ClientTypeCard({ client, variant = "compact" }: ClientTypeCardPr
     <div className="flex flex-col">
       {/* Icon */}
       <div className="mb-4">
-        <IconComponent className="w-12 h-12 text-orange" aria-hidden="true" />
+        <IconComponent className="w-12 h-12 text-teal" aria-hidden="true" />
       </div>
 
       {/* Title */}
@@ -85,7 +85,7 @@ export function ClientTypeCard({ client, variant = "compact" }: ClientTypeCardPr
       <ul className="space-y-3">
         {client.benefits.map((benefit, index) => (
           <li key={index} className="flex items-start gap-3">
-            <CheckCircle className="w-5 h-5 text-orange mt-0.5 flex-shrink-0" aria-hidden="true" />
+            <CheckCircle className="w-5 h-5 text-teal mt-0.5 flex-shrink-0" aria-hidden="true" />
             <span className="font-body text-text-muted">{benefit}</span>
           </li>
         ))}

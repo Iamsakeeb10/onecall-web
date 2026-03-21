@@ -52,32 +52,32 @@ export async function POST(request: NextRequest) {
 
     // ── Build email HTML ─────────────────────────────────────
     const html = `
-      <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #1C1C1E;">
-        <div style="background: #1C1C1E; padding: 24px 32px; border-radius: 8px 8px 0 0;">
+      <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #1F2A33;">
+        <div style="background: #1F2A33; padding: 24px 32px; border-radius: 8px 8px 0 0;">
           <h1 style="color: #ffffff; margin: 0; font-size: 22px;">New Vendor Application</h1>
-          <p style="color: #E8621A; margin: 6px 0 0; font-size: 14px;">HomeProX Property Maintenance Network</p>
+          <p style="color: #14B8A6; margin: 6px 0 0; font-size: 14px;">HomeProX Property Maintenance Network</p>
         </div>
         <div style="background: #f9f9f9; padding: 32px; border: 1px solid #e4e4e7; border-top: none; border-radius: 0 0 8px 8px;">
 
-          <h2 style="font-size: 16px; color: #E8621A; margin: 0 0 12px;">Company Information</h2>
+          <h2 style="font-size: 16px; color: #14B8A6; margin: 0 0 12px;">Company Information</h2>
           <table style="width:100%; border-collapse: collapse; margin-bottom: 24px;">
-            <tr><td style="padding: 6px 0; color: #71717a; width: 180px;">Company Name</td><td style="padding: 6px 0; font-weight: 600;">${companyName}</td></tr>
-            <tr><td style="padding: 6px 0; color: #71717a;">Contact Person</td><td style="padding: 6px 0; font-weight: 600;">${contactPerson}</td></tr>
-            <tr><td style="padding: 6px 0; color: #71717a;">Phone</td><td style="padding: 6px 0;">${phone}</td></tr>
-            <tr><td style="padding: 6px 0; color: #71717a;">Email</td><td style="padding: 6px 0;"><a href="mailto:${email}" style="color: #E8621A;">${email}</a></td></tr>
-            <tr><td style="padding: 6px 0; color: #71717a;">Website</td><td style="padding: 6px 0;">${website || "—"}</td></tr>
-            <tr><td style="padding: 6px 0; color: #71717a;">Years in Business</td><td style="padding: 6px 0;">${yearsInBusiness}</td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B; width: 180px;">Company Name</td><td style="padding: 6px 0; font-weight: 600;">${companyName}</td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B;">Contact Person</td><td style="padding: 6px 0; font-weight: 600;">${contactPerson}</td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B;">Phone</td><td style="padding: 6px 0;">${phone}</td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B;">Email</td><td style="padding: 6px 0;"><a href="mailto:${email}" style="color: #14B8A6;">${email}</a></td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B;">Website</td><td style="padding: 6px 0;">${website || "—"}</td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B;">Years in Business</td><td style="padding: 6px 0;">${yearsInBusiness}</td></tr>
           </table>
 
-          <h2 style="font-size: 16px; color: #E8621A; margin: 0 0 12px;">Services & Coverage</h2>
+          <h2 style="font-size: 16px; color: #14B8A6; margin: 0 0 12px;">Services & Coverage</h2>
           <table style="width:100%; border-collapse: collapse; margin-bottom: 24px;">
-            <tr><td style="padding: 6px 0; color: #71717a; width: 180px;">Service Categories</td><td style="padding: 6px 0;">${serviceCategories}</td></tr>
-            <tr><td style="padding: 6px 0; color: #71717a;">Coverage Areas</td><td style="padding: 6px 0;">${coverageAreas}</td></tr>
-            <tr><td style="padding: 6px 0; color: #71717a;">Service Radius</td><td style="padding: 6px 0;">${serviceRadius}</td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B; width: 180px;">Service Categories</td><td style="padding: 6px 0;">${serviceCategories}</td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B;">Coverage Areas</td><td style="padding: 6px 0;">${coverageAreas}</td></tr>
+            <tr><td style="padding: 6px 0; color: #64748B;">Service Radius</td><td style="padding: 6px 0;">${serviceRadius}</td></tr>
           </table>
 
-          <h2 style="font-size: 16px; color: #E8621A; margin: 0 0 12px;">Attachments</h2>
-          <p style="color: #71717a; font-size: 14px;">${
+          <h2 style="font-size: 16px; color: #14B8A6; margin: 0 0 12px;">Attachments</h2>
+          <p style="color: #64748B; font-size: 14px;">${
             attachments.length > 0
               ? `${attachments.length} file(s) attached: ${attachments.map((a) => a.filename).join(", ")}`
               : "No files uploaded."

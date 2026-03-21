@@ -268,9 +268,9 @@ export default function ClientOnboardingForm({
   if (isSuccess) {
     return (
       <AnimatedSection variant="scaleIn">
-        <div className="bg-orange-muted rounded-xl p-8 text-center">
+        <div className="bg-teal-muted rounded-xl p-8 text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/80 mb-4">
-            <CheckCircle2 className="w-10 h-10 text-orange" aria-hidden="true" />
+            <CheckCircle2 className="w-10 h-10 text-teal" aria-hidden="true" />
           </div>
           <h3 className="font-display text-2xl font-bold text-charcoal mb-3">
             Application Received!
@@ -300,7 +300,7 @@ export default function ClientOnboardingForm({
               htmlFor="companyName"
               className="block font-body text-sm font-medium text-charcoal mb-1"
             >
-              Company Name <span className="text-orange">*</span>
+              Company Name <span className="text-teal">*</span>
             </label>
             <input
               id="companyName"
@@ -310,7 +310,7 @@ export default function ClientOnboardingForm({
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
                 errors.companyName ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange/40 focus:border-orange transition-colors duration-200`}
+              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
               placeholder="ABC Property Management"
               aria-invalid={!!errors.companyName}
               aria-describedby={errors.companyName ? "companyName-error" : undefined}
@@ -327,7 +327,7 @@ export default function ClientOnboardingForm({
               htmlFor="contactPerson"
               className="block font-body text-sm font-medium text-charcoal mb-1"
             >
-              Contact Person <span className="text-orange">*</span>
+              Contact Person <span className="text-teal">*</span>
             </label>
             <input
               id="contactPerson"
@@ -337,7 +337,7 @@ export default function ClientOnboardingForm({
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
                 errors.contactPerson ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange/40 focus:border-orange transition-colors duration-200`}
+              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
               placeholder="Jane Doe"
               aria-invalid={!!errors.contactPerson}
               aria-describedby={errors.contactPerson ? "contactPerson-error" : undefined}
@@ -358,7 +358,7 @@ export default function ClientOnboardingForm({
               htmlFor="email"
               className="block font-body text-sm font-medium text-charcoal mb-1"
             >
-              Email Address <span className="text-orange">*</span>
+              Email Address <span className="text-teal">*</span>
             </label>
             <input
               id="email"
@@ -368,7 +368,7 @@ export default function ClientOnboardingForm({
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
                 errors.email ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange/40 focus:border-orange transition-colors duration-200`}
+              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
               placeholder="you@example.com"
               aria-invalid={!!errors.email}
               aria-describedby={errors.email ? "email-error" : undefined}
@@ -385,7 +385,7 @@ export default function ClientOnboardingForm({
               htmlFor="phone"
               className="block font-body text-sm font-medium text-charcoal mb-1"
             >
-              Phone Number <span className="text-orange">*</span>
+              Phone Number <span className="text-teal">*</span>
             </label>
             <input
               id="phone"
@@ -395,7 +395,7 @@ export default function ClientOnboardingForm({
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
                 errors.phone ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange/40 focus:border-orange transition-colors duration-200`}
+              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
               placeholder="(469) 555-1234"
               aria-invalid={!!errors.phone}
               aria-describedby={errors.phone ? "phone-error" : undefined}
@@ -417,7 +417,7 @@ export default function ClientOnboardingForm({
               htmlFor="companyType"
               className="block font-body text-sm font-medium text-charcoal mb-1"
             >
-              Company Type <span className="text-orange">*</span>
+              Company Type <span className="text-teal">*</span>
             </label>
             <div className="relative">
               <select
@@ -427,7 +427,7 @@ export default function ClientOnboardingForm({
                 onChange={handleFieldChange}
                 className={`w-full px-4 py-3 pr-10 bg-white border ${
                   errors.companyType ? "border-error" : "border-surface-200"
-                } rounded-lg text-charcoal focus:outline-none focus:ring-2 focus:ring-orange/40 focus:border-orange transition-colors duration-200 appearance-none cursor-pointer`}
+                } rounded-lg text-charcoal focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200 appearance-none cursor-pointer`}
                 aria-invalid={!!errors.companyType}
                 aria-describedby={errors.companyType ? "companyType-error" : undefined}
               >
@@ -470,7 +470,7 @@ export default function ClientOnboardingForm({
               type="url"
               value={form.companyWebsite}
               onChange={handleFieldChange}
-              className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange/40 focus:border-orange transition-colors duration-200"
+              className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200"
               placeholder="https://yourwebsite.com"
             />
           </div>
@@ -483,7 +483,7 @@ export default function ClientOnboardingForm({
           <div>
             <p className="font-body text-sm font-medium text-charcoal">
               What services are you interested in?{" "}
-              <span className="text-orange">*</span>
+              <span className="text-teal">*</span>
             </p>
             <p className="font-body text-xs text-text-muted mt-1">
               Select all that apply
@@ -499,7 +499,7 @@ export default function ClientOnboardingForm({
                 >
                   <input
                     type="checkbox"
-                    className="h-4 w-4 rounded border-surface-200 text-orange focus:ring-orange/40"
+                    className="h-4 w-4 rounded border-surface-200 text-teal focus:ring-teal/40"
                     checked={checked}
                     onChange={() => toggleService(service.value)}
                   />
@@ -524,7 +524,7 @@ export default function ClientOnboardingForm({
           <div>
             <p className="font-body text-sm font-medium text-charcoal mb-2">
               How many properties do you manage?{" "}
-              <span className="text-orange">*</span>
+              <span className="text-teal">*</span>
             </p>
             <div className="flex flex-wrap gap-3">
               {PORTFOLIO_SIZE_OPTIONS.map((option) => {
@@ -536,8 +536,8 @@ export default function ClientOnboardingForm({
                     onClick={() => handlePortfolioSelect(option.value)}
                     className={`px-4 py-2 text-sm font-body rounded-full border ${
                       selected
-                        ? "border-orange bg-orange-muted text-orange font-medium"
-                        : "border-surface-200 bg-white text-charcoal hover:border-orange/50 hover:text-orange"
+                        ? "border-teal bg-teal-muted text-teal font-medium"
+                        : "border-surface-200 bg-white text-charcoal hover:border-teal/50 hover:text-teal"
                     } transition-colors duration-200`}
                   >
                     {option.label}
@@ -557,7 +557,7 @@ export default function ClientOnboardingForm({
               htmlFor="propertyLocations"
               className="block font-body text-sm font-medium text-charcoal mb-1"
             >
-              Primary Property Locations <span className="text-orange">*</span>
+              Primary Property Locations <span className="text-teal">*</span>
             </label>
             <input
               id="propertyLocations"
@@ -567,7 +567,7 @@ export default function ClientOnboardingForm({
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
                 errors.propertyLocations ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange/40 focus:border-orange transition-colors duration-200`}
+              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
               placeholder="e.g. Dallas, Houston, Austin, San Antonio"
               aria-invalid={!!errors.propertyLocations}
               aria-describedby={
@@ -606,7 +606,7 @@ export default function ClientOnboardingForm({
             rows={5}
             value={form.additionalNotes}
             onChange={handleFieldChange}
-            className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-orange/40 focus:border-orange transition-colors duration-200 resize-y"
+            className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200 resize-y"
             placeholder="Describe your property portfolio, specific maintenance challenges, service frequency expectations, or anything else that would help us understand your needs better..."
           />
         </div>
@@ -621,7 +621,7 @@ export default function ClientOnboardingForm({
               type="checkbox"
               checked={form.agreeToTerms}
               onChange={handleTermsChange}
-              className="mt-1 h-4 w-4 rounded border-surface-300 text-orange focus:ring-orange focus:ring-offset-0 cursor-pointer"
+              className="mt-1 h-4 w-4 rounded border-surface-300 text-teal focus:ring-teal focus:ring-offset-0 cursor-pointer"
               aria-invalid={!!errors.agreeToTerms}
               aria-describedby={
                 errors.agreeToTerms ? "client-agreeToTerms-error" : undefined
@@ -634,7 +634,7 @@ export default function ClientOnboardingForm({
               I agree to the{" "}
               <Link
                 href="/terms"
-                className="text-orange hover:text-orange-dark underline underline-offset-2"
+                className="text-teal hover:text-teal-dark underline underline-offset-2"
               >
                 Terms &amp; Conditions
               </Link>{" "}

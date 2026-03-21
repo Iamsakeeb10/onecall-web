@@ -165,7 +165,7 @@ export default function TermsPage() {
                   <a
                     key={term.id}
                     href={`#${term.id}`}
-                    className="block font-body text-sm text-text-muted hover:text-orange transition-colors duration-300 py-1"
+                    className="block font-body text-sm text-text-muted hover:text-teal transition-colors duration-300 py-1"
                   >
                     {index + 1}. {term.title}
                   </a>
@@ -204,7 +204,7 @@ export default function TermsPage() {
                               <td className="font-body text-charcoal py-2">
                                 <a
                                   href="mailto:info@homeproxsvcs.com"
-                                  className="text-orange hover:text-orange-dark transition-colors duration-300"
+                                  className="text-teal hover:text-teal-dark transition-colors duration-300"
                                 >
                                   info@homeproxsvcs.com
                                 </a>
@@ -215,7 +215,7 @@ export default function TermsPage() {
                               <td className="font-body text-charcoal py-2">
                                 <a
                                   href="tel:4693789262"
-                                  className="text-orange hover:text-orange-dark transition-colors duration-300"
+                                  className="text-teal hover:text-teal-dark transition-colors duration-300"
                                 >
                                   (469) 378-9262
                                 </a>
@@ -238,7 +238,7 @@ export default function TermsPage() {
             <div className="mt-8 text-center">
               <Link
                 href="/"
-                className="font-body text-orange hover:text-orange-dark transition-colors duration-300"
+                className="font-body text-teal hover:text-teal-dark transition-colors duration-300"
               >
                 ← Back to Home
               </Link>

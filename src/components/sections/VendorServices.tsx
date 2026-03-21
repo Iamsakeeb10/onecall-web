@@ -35,9 +35,9 @@ export default function VendorServices() {
             const Icon = cat.icon;
             return (
               <AnimatedSection key={cat.label} variant="scaleIn" delay={index * 0.08} className="h-full">
-                <div className="h-full min-h-[120px] bg-white border border-surface-200 rounded-xl shadow-card p-6 text-center hover:border-orange/40 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-3">
-                  <span className="w-12 h-12 rounded-lg bg-orange-muted flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-orange" />
+                <div className="h-full min-h-[120px] bg-white border border-surface-200 rounded-xl shadow-card p-6 text-center hover:border-teal/40 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-3">
+                  <span className="w-12 h-12 rounded-lg bg-teal-muted flex items-center justify-center">
+                    <Icon className="w-6 h-6 text-teal" />
                   </span>
                   <p className="font-body text-sm font-medium text-charcoal leading-snug">
                     {cat.label}

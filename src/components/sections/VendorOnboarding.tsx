@@ -43,8 +43,8 @@ export default function VendorOnboarding() {
 
           {steps.map((step, index) => (
             <AnimatedSection key={step.number} variant="fadeUp" delay={index * 0.15}>
-              <div className="relative bg-white border border-surface-200 rounded-xl shadow-card p-8 text-center hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange text-white font-display text-xl font-bold mb-5 shadow-orange-glow">
+              <div className="relative bg-white border border-surface-200 rounded-xl shadow-card p-8 text-center hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-teal text-white font-display text-xl font-bold mb-5 shadow-teal-glow">
                   {step.number}
                 </div>
                 <h3 className="font-display text-xl font-bold text-charcoal mb-3">

@@ -28,7 +28,7 @@ export default function VendorHero() {
           variant="primary"
           size="lg"
           asChild
-          className="inline-flex items-center justify-center px-10 py-4 rounded-full text-base sm:text-lg shadow-orange-glow hover:shadow-card-hover"
+          className="inline-flex items-center justify-center px-10 py-4 rounded-full text-base sm:text-lg shadow-teal-glow hover:shadow-card-hover"
         >
           <a href="#vendor-application">Apply Now</a>
         </Button>

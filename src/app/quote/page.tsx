@@ -61,7 +61,7 @@ export default function QuotePage() {
             {/* Right: Contact Info Panel (40%) */}
             <div className="lg:col-span-2">
               <AnimatedSection variant="fadeRight">
-                <div className="bg-surface-100 border-l-4 border-orange rounded-lg p-8 h-full">
+                <div className="bg-surface-100 border-l-4 border-teal rounded-lg p-8 h-full">
                   <h3 className="font-display text-2xl font-bold text-charcoal mb-6">
                     Get in Touch
                   </h3>
@@ -70,9 +70,9 @@ export default function QuotePage() {
                     <div>
                       <a
                         href="tel:4693789262"
-                        className="flex items-center gap-3 font-body text-charcoal hover:text-orange transition-colors duration-300"
+                        className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
                       >
-                        <Phone className="w-5 h-5 text-orange flex-shrink-0" aria-hidden="true" />
+                        <Phone className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
                         <span>(469) 378-9262</span>
                       </a>
                     </div>
@@ -80,16 +80,16 @@ export default function QuotePage() {
                     <div>
                       <a
                         href="mailto:info@homeproxsvcs.com"
-                        className="flex items-center gap-3 font-body text-charcoal hover:text-orange transition-colors duration-300"
+                        className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
                       >
-                        <Mail className="w-5 h-5 text-orange flex-shrink-0" aria-hidden="true" />
+                        <Mail className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
                         <span>info@homeproxsvcs.com</span>
                       </a>
                     </div>
 
                     <div>
                       <div className="flex items-start gap-3">
-                        <MapPin className="w-5 h-5 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
+                        <MapPin className="w-5 h-5 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
                         <div>
                           <p className="font-body text-charcoal">
                             517 WATERVIEW DR, COPPELL, TX 75019
@@ -100,7 +100,7 @@ export default function QuotePage() {
 
                     <div>
                       <div className="flex items-start gap-3">
-                        <Map className="w-5 h-5 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
+                        <Map className="w-5 h-5 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
                         <div>
                           <p className="font-body text-charcoal">All of Texas Statewide</p>
                         </div>
@@ -109,7 +109,7 @@ export default function QuotePage() {
 
                     <div>
                       <div className="flex items-start gap-3">
-                        <Clock className="w-5 h-5 text-orange mt-1 flex-shrink-0" aria-hidden="true" />
+                        <Clock className="w-5 h-5 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
                         <div>
                           <p className="font-body text-charcoal mb-1">
                             Monday – Friday: 8:00 AM – 6:00 PM
@@ -122,10 +122,10 @@ export default function QuotePage() {
 
                     <div className="pt-4 border-t border-surface-200">
                       <div className="flex flex-wrap gap-3">
-                        <span className="inline-flex items-center px-3 py-1 bg-surface-200 rounded-full text-xs font-accent text-orange">
+                        <span className="inline-flex items-center px-3 py-1 bg-surface-200 rounded-full text-xs font-accent text-teal">
                           Fully Insured
                         </span>
-                        <span className="inline-flex items-center px-3 py-1 bg-surface-200 rounded-full text-xs font-accent text-orange">
+                        <span className="inline-flex items-center px-3 py-1 bg-surface-200 rounded-full text-xs font-accent text-teal">
                           Licensed Professionals
                         </span>
                       </div>
@@ -162,7 +162,7 @@ export default function QuotePage() {
               <AnimatedSection key={card.title} variant="fadeUp" delay={index * 0.1}>
                 <div className="bg-white border border-surface-200 rounded-xl p-8 text-center h-full">
                   <card.icon
-                    className="w-10 h-10 text-orange mx-auto mb-4"
+                    className="w-10 h-10 text-teal mx-auto mb-4"
                     aria-hidden="true"
                   />
                   <h3 className="font-display text-xl font-bold text-charcoal mb-2">

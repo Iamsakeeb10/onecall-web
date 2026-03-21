@@ -8,13 +8,13 @@ export default function VendorCTABanner() {
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(45deg, #E8621A 0, #E8621A 1px, transparent 0, transparent 50%)",
+            "repeating-linear-gradient(45deg, #14B8A6 0, #14B8A6 1px, transparent 0, transparent 50%)",
           backgroundSize: "20px 20px",
         }}
         aria-hidden="true"
       />
-      {/* Top orange rule */}
-      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-orange to-transparent opacity-40" />
+      {/* Top teal rule */}
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-teal to-transparent opacity-40" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">

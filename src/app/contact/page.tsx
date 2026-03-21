@@ -67,12 +67,12 @@ export default function ContactPage() {
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2">
                 Contact Information
               </h2>
-              <div className="h-0.5 w-12 bg-orange rounded-full mb-8" />
+              <div className="h-0.5 w-12 bg-teal rounded-full mb-8" />
 
               <div className="space-y-4">
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-orange-muted flex items-center justify-center flex-shrink-0">
-                    <Phone className="text-orange" size={20} aria-hidden="true" />
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center flex-shrink-0">
+                    <Phone className="text-teal" size={20} aria-hidden="true" />
                   </div>
                   <div>
                     <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
@@ -80,16 +80,16 @@ export default function ContactPage() {
                     </p>
                     <a
                       href="tel:+14693789262"
-                      className="font-body text-charcoal font-medium hover:text-orange transition-colors"
+                      className="font-body text-charcoal font-medium hover:text-teal transition-colors"
                     >
                       (469) 378-9262
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-orange-muted flex items-center justify-center flex-shrink-0">
-                    <Mail className="text-orange" size={20} aria-hidden="true" />
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center flex-shrink-0">
+                    <Mail className="text-teal" size={20} aria-hidden="true" />
                   </div>
                   <div>
                     <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
@@ -97,16 +97,16 @@ export default function ContactPage() {
                     </p>
                     <a
                       href="mailto:info@homeproxsvcs.com"
-                      className="font-body text-charcoal font-medium hover:text-orange transition-colors"
+                      className="font-body text-charcoal font-medium hover:text-teal transition-colors"
                     >
                       info@homeproxsvcs.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-orange-muted flex items-center justify-center flex-shrink-0">
-                    <MapPin className="text-orange" size={20} aria-hidden="true" />
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center flex-shrink-0">
+                    <MapPin className="text-teal" size={20} aria-hidden="true" />
                   </div>
                   <div>
                     <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
@@ -119,9 +119,9 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-orange-muted flex items-center justify-center flex-shrink-0">
-                    <Clock className="text-orange" size={20} aria-hidden="true" />
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-surface-50 border border-surface-200 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center flex-shrink-0">
+                    <Clock className="text-teal" size={20} aria-hidden="true" />
                   </div>
                   <div>
                     <p className="font-accent text-xs font-semibold text-text-muted uppercase tracking-wider mb-0.5">
@@ -143,37 +143,37 @@ export default function ContactPage() {
                 <div className="flex flex-col gap-3">
                   <Link
                     href="/clients"
-                    className="flex items-center gap-3 group font-body text-charcoal hover:text-orange transition-colors duration-200"
+                    className="flex items-center gap-3 group font-body text-charcoal hover:text-teal transition-colors duration-200"
                   >
-                    <Building2 className="text-orange" size={18} aria-hidden="true" />
+                    <Building2 className="text-teal" size={18} aria-hidden="true" />
                     <span className="font-medium">Become a Client</span>
                     <ChevronRight
                       size={16}
-                      className="text-text-muted group-hover:text-orange group-hover:translate-x-1 transition-all duration-200 ml-auto"
+                      className="text-text-muted group-hover:text-teal group-hover:translate-x-1 transition-all duration-200 ml-auto"
                       aria-hidden="true"
                     />
                   </Link>
                   <Link
                     href="/vendors"
-                    className="flex items-center gap-3 group font-body text-charcoal hover:text-orange transition-colors duration-200"
+                    className="flex items-center gap-3 group font-body text-charcoal hover:text-teal transition-colors duration-200"
                   >
-                    <Wrench className="text-orange" size={18} aria-hidden="true" />
+                    <Wrench className="text-teal" size={18} aria-hidden="true" />
                     <span className="font-medium">Become a Vendor</span>
                     <ChevronRight
                       size={16}
-                      className="text-text-muted group-hover:text-orange group-hover:translate-x-1 transition-all duration-200 ml-auto"
+                      className="text-text-muted group-hover:text-teal group-hover:translate-x-1 transition-all duration-200 ml-auto"
                       aria-hidden="true"
                     />
                   </Link>
                   <Link
                     href="#contact-form"
-                    className="flex items-center gap-3 group font-body text-charcoal hover:text-orange transition-colors duration-200"
+                    className="flex items-center gap-3 group font-body text-charcoal hover:text-teal transition-colors duration-200"
                   >
-                    <ClipboardList className="text-orange" size={18} aria-hidden="true" />
+                    <ClipboardList className="text-teal" size={18} aria-hidden="true" />
                     <span className="font-medium">Request Service</span>
                     <ChevronRight
                       size={16}
-                      className="text-text-muted group-hover:text-orange group-hover:translate-x-1 transition-all duration-200 ml-auto"
+                      className="text-text-muted group-hover:text-teal group-hover:translate-x-1 transition-all duration-200 ml-auto"
                       aria-hidden="true"
                     />
                   </Link>
@@ -187,7 +187,7 @@ export default function ContactPage() {
                 <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal mb-2">
                   Send Us a Message
                 </h2>
-                <div className="h-0.5 w-12 bg-orange rounded-full mb-8" />
+                <div className="h-0.5 w-12 bg-teal rounded-full mb-8" />
                 <ContactForm />
               </div>
             </AnimatedSection>
@@ -202,7 +202,7 @@ export default function ContactPage() {
             {TRUST_ITEMS.map((label, index) => (
               <AnimatedSection key={label} variant="fadeUp" delay={index * 0.05}>
                 <div className="flex flex-col items-center gap-2">
-                  <CheckCircle2 className="text-orange" size={24} aria-hidden="true" />
+                  <CheckCircle2 className="text-teal" size={24} aria-hidden="true" />
                   <span className="font-body font-medium text-charcoal text-sm">{label}</span>
                 </div>
               </AnimatedSection>
@@ -220,9 +220,9 @@ export default function ContactPage() {
             </p>
             <a
               href="tel:+14693789262"
-              className="font-display text-2xl sm:text-3xl font-bold text-white hover:text-orange transition-colors duration-200 flex items-center justify-center gap-3"
+              className="font-display text-2xl sm:text-3xl font-bold text-white hover:text-teal transition-colors duration-200 flex items-center justify-center gap-3"
             >
-              <Phone className="text-orange" size={28} aria-hidden="true" />
+              <Phone className="text-teal" size={28} aria-hidden="true" />
               (469) 378-9262
             </a>
             <p className="font-body text-surface-300 mt-2 text-sm">

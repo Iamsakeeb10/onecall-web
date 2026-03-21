@@ -89,7 +89,7 @@ export function Testimonials() {
           <div className="flex justify-between items-center mt-6 px-2">
             <button
               onClick={scrollPrev}
-              className="w-10 h-10 rounded-full bg-surface-100 border border-surface-200 flex items-center justify-center text-orange hover:border-orange transition-colors duration-200"
+              className="w-10 h-10 rounded-full bg-surface-100 border border-surface-200 flex items-center justify-center text-teal hover:border-teal transition-colors duration-200"
               aria-label="Previous testimonial"
             >
               <ChevronLeft className="w-5 h-5" aria-hidden="true" />
@@ -104,7 +104,7 @@ export function Testimonials() {
                   aria-label={`Go to testimonial ${index + 1}`}
                   className={`rounded-full transition-all duration-300 ${
                     index === selectedIndex
-                      ? "bg-orange w-4 h-3"
+                      ? "bg-teal w-4 h-3"
                       : "bg-surface-200 w-2 h-2"
                   }`}
                 />
@@ -113,7 +113,7 @@ export function Testimonials() {
 
             <button
               onClick={scrollNext}
-              className="w-10 h-10 rounded-full bg-surface-100 border border-surface-200 flex items-center justify-center text-orange hover:border-orange transition-colors duration-200"
+              className="w-10 h-10 rounded-full bg-surface-100 border border-surface-200 flex items-center justify-center text-teal hover:border-teal transition-colors duration-200"
               aria-label="Next testimonial"
             >
               <ChevronRight className="w-5 h-5" aria-hidden="true" />

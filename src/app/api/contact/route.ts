@@ -48,20 +48,20 @@ export async function POST(req: Request) {
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #F5EFE0; padding: 24px; text-align: center;">
-            <h1 style="color: #C89B3C; margin: 0; font-size: 24px;">HomeProX Services LLC</h1>
+            <h1 style="color: #14B8A6; margin: 0; font-size: 24px;">HomeProX Services LLC</h1>
             <p style="color: #7A6A52; margin: 8px 0 0;">${headerLine}</p>
           </div>
           <div style="background: #EDE3CC; padding: 32px;">
             <table style="width: 100%; border-collapse: collapse;">
               <tr><td style="padding: 10px 0; color: #7A6A52; width: 40%;">Full Name</td><td style="padding: 10px 0; color: #1C1410; font-weight: bold;">${fullName}</td></tr>
               <tr><td style="padding: 10px 0; color: #7A6A52;">Company</td><td style="padding: 10px 0; color: #1C1410;">${companyName || 'N/A'}</td></tr>
-              <tr><td style="padding: 10px 0; color: #7A6A52;">Email</td><td style="padding: 10px 0; color: #C89B3C;">${email}</td></tr>
+              <tr><td style="padding: 10px 0; color: #7A6A52;">Email</td><td style="padding: 10px 0; color: #14B8A6;">${email}</td></tr>
               <tr><td style="padding: 10px 0; color: #7A6A52;">Phone</td><td style="padding: 10px 0; color: #1C1410;">${phone}</td></tr>
               <tr><td style="padding: 10px 0; color: #7A6A52;">${isClientOnboarding ? 'Company Type' : 'Property Type'}</td><td style="padding: 10px 0; color: #1C1410;">${propertyType}</td></tr>
               <tr><td style="padding: 10px 0; color: #7A6A52;">Service Needed</td><td style="padding: 10px 0; color: #1C1410;">${serviceNeeded}</td></tr>
               <tr><td style="padding: 10px 0; color: #7A6A52;">${isClientOnboarding ? 'Property Locations' : 'Location'}</td><td style="padding: 10px 0; color: #1C1410;">${location}</td></tr>
             </table>
-            <div style="margin-top: 24px; padding: 16px; background: #F5EFE0; border-left: 4px solid #C89B3C; border-radius: 4px;">
+            <div style="margin-top: 24px; padding: 16px; background: #F5EFE0; border-left: 4px solid #14B8A6; border-radius: 4px;">
               <p style="color: #7A6A52; margin: 0 0 8px; font-size: 13px;">${
                 isClientOnboarding ? 'Additional Notes / Portfolio Details' : 'Message / Project Details'
               }</p>
@@ -83,15 +83,15 @@ export async function POST(req: Request) {
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #F5EFE0; padding: 24px; text-align: center;">
-            <h1 style="color: #C89B3C; margin: 0; font-size: 24px;">HomeProX Services LLC</h1>
+            <h1 style="color: #14B8A6; margin: 0; font-size: 24px;">HomeProX Services LLC</h1>
             <p style="color: #7A6A52; margin: 8px 0 0;">Texas Statewide Property Maintenance</p>
           </div>
           <div style="background: #EDE3CC; padding: 32px;">
             <h2 style="color: #1C1410; margin: 0 0 16px;">Hi ${fullName},</h2>
-            <p style="color: #7A6A52; line-height: 1.7;">Thank you for reaching out to <strong style="color: #C89B3C;">HomeProX Services LLC</strong>. We've received your ${
+            <p style="color: #7A6A52; line-height: 1.7;">Thank you for reaching out to <strong style="color: #14B8A6;">HomeProX Services LLC</strong>. We've received your ${
               isClientOnboarding ? 'client application' : isContactForm ? 'message' : 'quote request'
             } and a member of our team will be in touch within <strong style="color: #1C1410;">24 hours</strong>.</p>
-            <div style="margin: 24px 0; padding: 20px; background: #F5EFE0; border-left: 4px solid #C89B3C; border-radius: 4px;">
+            <div style="margin: 24px 0; padding: 20px; background: #F5EFE0; border-left: 4px solid #14B8A6; border-radius: 4px;">
               <p style="color: #7A6A52; margin: 0 0 12px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">${
                 isClientOnboarding ? 'Your Application Summary' : 'Your Request Summary'
               }</p>
@@ -104,8 +104,8 @@ export async function POST(req: Request) {
               }:</strong> ${location}</p>
             </div>
             <p style="color: #7A6A52; line-height: 1.7;">If you need to reach us sooner, don't hesitate to call or email directly:</p>
-            <p style="margin: 8px 0;"><a href="tel:4693789262" style="color: #C89B3C; text-decoration: none; font-weight: bold;">📞 (469) 378-9262</a></p>
-            <p style="margin: 8px 0;"><a href="mailto:info@homeproxsvcs.com" style="color: #C89B3C; text-decoration: none;">✉️ info@homeproxsvcs.com</a></p>
+            <p style="margin: 8px 0;"><a href="tel:4693789262" style="color: #14B8A6; text-decoration: none; font-weight: bold;">📞 (469) 378-9262</a></p>
+            <p style="margin: 8px 0;"><a href="mailto:info@homeproxsvcs.com" style="color: #14B8A6; text-decoration: none;">✉️ info@homeproxsvcs.com</a></p>
           </div>
           <div style="background: #F5EFE0; padding: 16px; text-align: center;">
             <p style="color: #7A6A52; margin: 0; font-size: 12px;">© 2026 HomeProX Services LLC — 517 WATERVIEW DR, COPPELL, TX 75019. All rights reserved.</p>

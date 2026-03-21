@@ -110,8 +110,8 @@ export default function AboutPage() {
                 <p className="font-body text-base sm:text-lg text-text-muted mb-6">
                   Many of our clients rely on us to manage routine property maintenance, emergency service calls, turnover repairs, preservation services, and compliance inspections.
                 </p>
-                <div className="bg-surface-100 border-l-4 border-orange rounded-lg p-4 sm:p-6 mb-8">
-                  <p className="font-body text-base sm:text-lg text-orange italic font-medium">
+                <div className="bg-surface-100 border-l-4 border-teal rounded-lg p-4 sm:p-6 mb-8">
+                  <p className="font-body text-base sm:text-lg text-teal italic font-medium">
                     &quot;We understand that every property represents an investment — and we treat it accordingly.&quot;
                   </p>
                 </div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 What We Do
               </h2>
-              <div className="w-20 h-1 bg-orange rounded-full mx-auto mb-4" />
+              <div className="w-20 h-1 bg-teal rounded-full mx-auto mb-4" />
               <p className="font-body text-base sm:text-lg text-text-muted max-w-3xl mx-auto">
                 Comprehensive property maintenance solutions across Texas — from routine upkeep to full property cleanouts.
               </p>
@@ -156,7 +156,7 @@ export default function AboutPage() {
                 delay={index * 0.1}
               >
                 <div className="bg-white border border-surface-200 rounded-xl p-8 text-center h-full">
-                  <category.icon className="w-12 h-12 text-orange mx-auto mb-4" aria-hidden="true" />
+                  <category.icon className="w-12 h-12 text-teal mx-auto mb-4" aria-hidden="true" />
                   <h3 className="font-display text-xl font-bold text-charcoal mb-3">
                     {category.title}
                   </h3>
@@ -224,7 +224,7 @@ export default function AboutPage() {
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
                 Our Values
               </h2>
-              <div className="w-20 h-1 bg-orange rounded-full mx-auto" />
+              <div className="w-20 h-1 bg-teal rounded-full mx-auto" />
             </div>
           </AnimatedSection>
 
@@ -236,7 +236,7 @@ export default function AboutPage() {
                 delay={index * 0.1}
               >
                 <div className="bg-surface-100 border border-surface-200 rounded-xl p-8 text-center h-full">
-                  <value.icon className="w-12 h-12 text-orange mx-auto mb-4" aria-hidden="true" />
+                  <value.icon className="w-12 h-12 text-teal mx-auto mb-4" aria-hidden="true" />
                   <h3 className="font-display text-2xl font-bold text-charcoal mb-3">
                     {value.title}
                   </h3>
@@ -251,10 +251,10 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-orange/20">
+      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-teal/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
-            <div className="bg-surface-100 border border-orange/30 rounded-2xl p-8 md:p-12 text-center">
+            <div className="bg-surface-100 border border-teal/30 rounded-2xl p-8 md:p-12 text-center">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 Ready to Protect Your Properties?
               </h2>

@@ -10,14 +10,14 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative py-20 lg:py-28 bg-surface-50 border-t-2 border-orange/20"
+      className="relative py-20 lg:py-28 bg-surface-50 border-t-2 border-teal/20"
     >
       {/* Subtle diagonal accent overlay (matches vendor CTA pattern, but on light bg) */}
       <div
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(45deg, #E8621A 0, #E8621A 1px, transparent 0, transparent 50%)",
+            "repeating-linear-gradient(45deg, #14B8A6 0, #14B8A6 1px, transparent 0, transparent 50%)",
           backgroundSize: "20px 20px",
         }}
         aria-hidden="true"
@@ -36,16 +36,16 @@ export function ContactSection() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-text-muted mb-8">
                 <a
                   href="tel:4693789262"
-                  className="flex items-center gap-2 font-body hover:text-orange transition-colors duration-300"
+                  className="flex items-center gap-2 font-body hover:text-teal transition-colors duration-300"
                 >
-                  <Phone className="w-5 h-5 text-orange" aria-hidden="true" />
+                  <Phone className="w-5 h-5 text-teal" aria-hidden="true" />
                   (469) 378-9262
                 </a>
                 <a
                   href="mailto:info@homeproxsvcs.com"
-                  className="flex items-center gap-2 font-body hover:text-orange transition-colors duration-300"
+                  className="flex items-center gap-2 font-body hover:text-teal transition-colors duration-300"
                 >
-                  <Mail className="w-5 h-5 text-orange" aria-hidden="true" />
+                  <Mail className="w-5 h-5 text-teal" aria-hidden="true" />
                   info@homeproxsvcs.com
                 </a>
               </div>
@@ -57,7 +57,7 @@ export function ContactSection() {
         </AnimatedSection>
       </div>
       <div
-        className="mt-10 h-0.5 bg-gradient-to-r from-transparent via-orange to-transparent opacity-40"
+        className="mt-10 h-0.5 bg-gradient-to-r from-transparent via-teal to-transparent opacity-40"
         aria-hidden="true"
       />
     </section>

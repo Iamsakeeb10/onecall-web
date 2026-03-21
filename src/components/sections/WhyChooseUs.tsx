@@ -53,9 +53,9 @@ export function WhyChooseUs() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-white border border-surface-200 rounded-xl p-6 h-full shadow-card hover:border-orange/40 hover:shadow-card-hover transition-all duration-300">
+                <div className="bg-white border border-surface-200 rounded-xl p-6 h-full shadow-card hover:border-teal/40 hover:shadow-card-hover transition-all duration-300">
                   <Icon
-                    className="w-10 h-10 text-orange mb-4"
+                    className="w-10 h-10 text-teal mb-4"
                     aria-hidden="true"
                   />
                   <h3 className="font-display text-xl font-bold text-charcoal mb-3">

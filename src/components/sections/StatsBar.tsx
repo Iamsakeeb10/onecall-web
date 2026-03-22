@@ -23,7 +23,7 @@ function CountUpNumber({ value, label }: StatItem) {
   const shouldReduceMotion = useReducedMotion();
 
   const getIcon = (label: string) => {
-    const iconProps = "w-4 h-4 text-teal";
+    const iconProps = "w-4 h-4 text-steel";
     switch (label) {
       case "Years Experience":
         return <Clock className={iconProps} />;
@@ -72,10 +72,10 @@ function CountUpNumber({ value, label }: StatItem) {
 
   return (
     <div ref={ref} className="flex flex-col items-center gap-1">
-      <div className="w-8 h-8 rounded-full bg-teal-muted flex items-center justify-center">
+      <div className="w-8 h-8 rounded-full bg-steel-muted flex items-center justify-center">
         {getIcon(label)}
       </div>
-      <div className="text-3xl md:text-4xl font-display font-bold text-charcoal">
+      <div className="text-3xl md:text-4xl font-display font-bold text-navy">
         {displayValue}
         {value.includes("+") && !displayValue.includes("+") && "+"}
         {value.includes("%") && !displayValue.includes("%") && "%"}
@@ -89,7 +89,7 @@ export function StatsBar() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="w-full bg-surface-100 pt-0 py-12 md:py-16 border-t-2 border-teal">
+    <section className="w-full bg-pearl-100 pt-0 py-12 md:py-16 border-t-2 border-steel">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -103,7 +103,7 @@ export function StatsBar() {
               }
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="md:border-l md:border-surface-200 md:pl-8"
+              className="md:border-l md:border-pearl-200 md:pl-8"
             >
               <CountUpNumber value={stat.value} label={stat.label} />
             </motion.div>

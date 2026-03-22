@@ -12,7 +12,7 @@ export function ClientsSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section id="clients" className="pt-12 pb-20 lg:pt-16 lg:pb-28 bg-surface-50">
+    <section id="clients" className="pt-12 pb-20 lg:pt-16 lg:pb-28 bg-pearl-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
@@ -23,7 +23,7 @@ export function ClientsSection() {
             />
             <Link
               href="/clients"
-              className="inline-flex items-center gap-1 text-teal font-medium text-sm hover:gap-2 transition-all duration-300 whitespace-nowrap"
+              className="inline-flex items-center gap-1 text-steel font-medium text-sm hover:gap-2 transition-all duration-300 whitespace-nowrap"
             >
               Our Clients
               <ArrowRight className="w-4 h-4" />

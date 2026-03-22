@@ -25,14 +25,14 @@ export function ServicesPageHero({ children }: ServicesPageHeroProps) {
             onError={() => setImgError(true)}
           />
         ) : (
-          <div className="w-full h-full bg-surface-100 border border-surface-200 flex items-center justify-center">
-            <span className="text-charcoal font-display font-bold text-sm">
+          <div className="w-full h-full bg-pearl-100 border border-pearl-200 flex items-center justify-center">
+            <span className="text-navy font-display font-bold text-sm">
               Property Maintenance Services
             </span>
           </div>
         )}
       </div>
-      <div className="absolute inset-0 z-10 bg-charcoal/72" />
+      <div className="absolute inset-0 z-10 bg-navy/72" />
       <div className="relative z-20">{children}</div>
     </section>
   );

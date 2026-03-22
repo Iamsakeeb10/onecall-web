@@ -46,15 +46,15 @@ export default function ContactPage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-charcoal/72 z-10" />
+        <div className="absolute inset-0 bg-navy/72 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Contact ONECALL FIELD SERVICES LLC
           </h1>
           <div className="flex justify-center my-3">
-            <div className="h-px w-16 bg-teal/50" />
+            <div className="h-px w-16 bg-steel/50" />
           </div>
-          <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
+          <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
             Questions about available services, business development, or partnership opportunities? Reach out to discuss your property care requirements.
           </p>
         </div>
@@ -66,24 +66,24 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Quick Contact Cards - 2x2 Grid */}
           <div className="mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-10 text-center">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-10 text-center">
               Get in Touch
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               {/* Phone */}
               <AnimatedSection variant="fadeUp">
-                <div className="bg-gradient-to-br from-teal/5 to-transparent rounded-2xl p-8 border border-teal/20 hover:border-teal/40 transition-all duration-300">
+                <div className="bg-gradient-to-br from-steel/5 to-transparent rounded-2xl p-8 border border-steel/20 hover:border-steel/40 transition-all duration-300">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-teal" />
+                    <div className="w-12 h-12 rounded-full bg-steel/20 flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-steel" />
                     </div>
                     <div>
-                      <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                      <h3 className="font-display text-xl font-bold text-navy mb-2">
                         Phone
                       </h3>
                       <a
                         href="tel:1234567890"
-                        className="font-body text-lg text-teal hover:text-teal-dark transition-colors"
+                        className="font-body text-lg text-steel hover:text-steel-dark transition-colors"
                       >
                         123-456-7890
                       </a>
@@ -95,18 +95,18 @@ export default function ContactPage() {
 
               {/* Email */}
               <AnimatedSection variant="fadeUp" delay={0.1}>
-                <div className="bg-gradient-to-br from-teal/5 to-transparent rounded-2xl p-8 border border-teal/20 hover:border-teal/40 transition-all duration-300">
+                <div className="bg-gradient-to-br from-steel/5 to-transparent rounded-2xl p-8 border border-steel/20 hover:border-steel/40 transition-all duration-300">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-teal" />
+                    <div className="w-12 h-12 rounded-full bg-steel/20 flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-steel" />
                     </div>
                     <div>
-                      <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                      <h3 className="font-display text-xl font-bold text-navy mb-2">
                         Email
                       </h3>
                       <a
                         href="mailto:info@onecallfield.com"
-                        className="font-body text-lg text-teal hover:text-teal-dark transition-colors"
+                        className="font-body text-lg text-steel hover:text-steel-dark transition-colors"
                       >
                         info@onecallfield.com
                       </a>
@@ -118,16 +118,16 @@ export default function ContactPage() {
 
               {/* Service Area */}
               <AnimatedSection variant="fadeUp" delay={0.2}>
-                <div className="bg-gradient-to-br from-teal/5 to-transparent rounded-2xl p-8 border border-teal/20 hover:border-teal/40 transition-all duration-300">
+                <div className="bg-gradient-to-br from-steel/5 to-transparent rounded-2xl p-8 border border-steel/20 hover:border-steel/40 transition-all duration-300">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-teal" />
+                    <div className="w-12 h-12 rounded-full bg-steel/20 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-steel" />
                     </div>
                     <div>
-                      <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                      <h3 className="font-display text-xl font-bold text-navy mb-2">
                         Service Area
                       </h3>
-                      <p className="font-body text-lg text-charcoal">
+                      <p className="font-body text-lg text-navy">
                         All of Texas Statewide
                       </p>
                       <p className="font-body text-sm text-text-muted mt-1">Comprehensive coverage everywhere</p>
@@ -138,16 +138,16 @@ export default function ContactPage() {
 
               {/* Hours */}
               <AnimatedSection variant="fadeUp" delay={0.3}>
-                <div className="bg-gradient-to-br from-teal/5 to-transparent rounded-2xl p-8 border border-teal/20 hover:border-teal/40 transition-all duration-300">
+                <div className="bg-gradient-to-br from-steel/5 to-transparent rounded-2xl p-8 border border-steel/20 hover:border-steel/40 transition-all duration-300">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-teal" />
+                    <div className="w-12 h-12 rounded-full bg-steel/20 flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-steel" />
                     </div>
                     <div>
-                      <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                      <h3 className="font-display text-xl font-bold text-navy mb-2">
                         Hours
                       </h3>
-                      <p className="font-body text-charcoal">Mon–Fri: 8am–6pm</p>
+                      <p className="font-body text-navy">Mon–Fri: 8am–6pm</p>
                       <p className="font-body text-text-muted text-sm mt-1">Closed weekends</p>
                     </div>
                   </div>
@@ -159,8 +159,8 @@ export default function ContactPage() {
           {/* Contact Form */}
           <AnimatedSection variant="fadeUp">
             <div className="max-w-2xl mx-auto">
-              <div className="bg-surface-50 rounded-2xl p-10 md:p-14 border border-surface-200">
-                <h2 className="font-display text-2xl md:text-3xl font-bold text-charcoal mb-2 text-center">
+              <div className="bg-pearl-50 rounded-2xl p-10 md:p-14 border border-pearl-200">
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-2 text-center">
                   Send us a Message
                 </h2>
                 <p className="font-body text-text-muted text-center mb-10">
@@ -174,14 +174,14 @@ export default function ContactPage() {
       </section>
 
       {/* Trust Indicators Strip */}
-      <section className="py-12 bg-surface-50 border-t border-surface-200">
+      <section className="py-12 bg-pearl-50 border-t border-pearl-200">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             {TRUST_ITEMS.map((label, index) => (
               <AnimatedSection key={label} variant="fadeUp" delay={index * 0.05}>
                 <div className="flex flex-col items-center gap-2">
-                  <CheckCircle2 className="text-teal" size={24} aria-hidden="true" />
-                  <span className="font-body font-medium text-charcoal text-sm">{label}</span>
+                  <CheckCircle2 className="text-steel" size={24} aria-hidden="true" />
+                  <span className="font-body font-medium text-navy text-sm">{label}</span>
                 </div>
               </AnimatedSection>
             ))}
@@ -190,20 +190,20 @@ export default function ContactPage() {
       </section>
 
       {/* Final CTA strip */}
-      <section className="py-12 bg-charcoal">
+      <section className="py-12 bg-navy">
         <AnimatedSection variant="fadeUp">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="font-body text-surface-300 mb-1 text-sm uppercase tracking-wider font-accent">
+            <p className="font-body text-pearl-300 mb-1 text-sm uppercase tracking-wider font-accent">
               Prefer to talk?
             </p>
             <a
               href="tel:+11234567890"
-              className="font-display text-2xl sm:text-3xl font-bold text-white hover:text-teal transition-colors duration-200 flex items-center justify-center gap-3"
+              className="font-display text-2xl sm:text-3xl font-bold text-white hover:text-steel transition-colors duration-200 flex items-center justify-center gap-3"
             >
-              <Phone className="text-teal" size={28} aria-hidden="true" />
+              <Phone className="text-steel" size={28} aria-hidden="true" />
               123-456-7890
             </a>
-            <p className="font-body text-surface-300 mt-2 text-sm">
+            <p className="font-body text-pearl-300 mt-2 text-sm">
               Monday – Friday: 8:00 AM – 6:00 PM &nbsp;·&nbsp; Saturday: closed &nbsp;·&nbsp; Sunday: Closed
             </p>
           </div>

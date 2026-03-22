@@ -24,7 +24,7 @@ export function Navbar() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 w-full overflow-x-hidden bg-white/98 backdrop-blur-md shadow-navbar border-b border-surface-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 w-full overflow-x-hidden bg-white/98 backdrop-blur-md shadow-navbar border-b border-pearl-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between h-20 w-full">
           <Link href="/" className="flex items-center relative inline-block">
@@ -43,11 +43,11 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-accent text-base text-charcoal hover:text-teal transition-colors duration-300 relative group"
+                className="font-accent text-base text-navy hover:text-steel transition-colors duration-300 relative group"
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-teal transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-steel transition-all duration-300 ${
                     pathname === link.href ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
@@ -57,8 +57,8 @@ export function Navbar() {
               href={ctaLink.href}
               className={`px-6 py-2 rounded-full font-accent font-medium text-sm transition-all duration-300 hover:scale-105 ${
                 pathname === ctaLink.href
-                  ? "bg-charcoal text-white hover:bg-charcoal-light"
-                  : "bg-teal text-white hover:bg-teal-dark"
+                  ? "bg-navy text-white hover:bg-navy-light"
+                  : "bg-steel text-white hover:bg-steel-dark"
               }`}
             >
               {ctaLink.label}
@@ -67,7 +67,7 @@ export function Navbar() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden transition-colors duration-300 p-2 flex-shrink-0 ml-2 text-charcoal hover:text-teal"
+            className="lg:hidden transition-colors duration-300 p-2 flex-shrink-0 ml-2 text-navy hover:text-steel"
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -87,7 +87,7 @@ export function Navbar() {
             animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, height: "auto" }}
             exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white border-t border-surface-200"
+            className="lg:hidden bg-white border-t border-pearl-200"
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) => (
@@ -96,7 +96,7 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block font-accent text-lg py-2 transition-colors duration-300 ${
-                    pathname === link.href ? "text-teal" : "text-charcoal hover:text-teal"
+                    pathname === link.href ? "text-steel" : "text-navy hover:text-steel"
                   }`}
                 >
                   {link.label}
@@ -105,7 +105,7 @@ export function Navbar() {
               <Link
                 href={ctaLink.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center w-full bg-teal text-white hover:bg-teal-dark px-6 py-3 rounded-full font-accent font-medium transition-all duration-300"
+                className="flex items-center justify-center w-full bg-steel text-white hover:bg-steel-dark px-6 py-3 rounded-full font-accent font-medium transition-all duration-300"
               >
                 {ctaLink.label}
               </Link>

@@ -35,8 +35,8 @@ export default function Loading() {
           transition={{ duration: 0.3, delay: 0.2 }}
           className="relative w-24 h-24 mx-auto"
         >
-          <div className="absolute inset-0 border-4 border-surface-200 rounded-full" />
-          <div className="absolute inset-0 border-4 border-transparent border-t-teal rounded-full animate-spin" />
+          <div className="absolute inset-0 border-4 border-pearl-200 rounded-full" />
+          <div className="absolute inset-0 border-4 border-transparent border-t-steel rounded-full animate-spin" />
         </motion.div>
       </div>
     </motion.div>

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/Button";
 
 export default function VendorCTABanner() {
   return (
-    <section className="relative py-20 lg:py-28 bg-charcoal overflow-hidden">
+    <section className="relative py-20 lg:py-28 bg-navy overflow-hidden">
       {/* Accent overlay */}
       <div
         className="absolute inset-0 opacity-5"
@@ -13,14 +13,14 @@ export default function VendorCTABanner() {
         }}
         aria-hidden="true"
       />
-      {/* Top teal rule */}
-      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-teal to-transparent opacity-40" />
+      {/* Top steel rule */}
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-steel to-transparent opacity-40" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
           Launch Your Partnership Today
         </h2>
-        <p className="font-body text-lg text-surface-300 mb-8">
+        <p className="font-body text-lg text-pearl-300 mb-8">
           Join an established vendor network dedicated to professional standards and mutual success.
         </p>
         <Button variant="primary" size="lg" asChild>

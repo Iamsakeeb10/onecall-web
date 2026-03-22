@@ -59,11 +59,11 @@ export function Testimonials() {
   }, [emblaApi]);
 
   return (
-    <section className="py-24 lg:py-32 bg-surface-50">
+    <section className="py-24 lg:py-32 bg-pearl-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <div className="text-center mb-2">
-            <span className="font-display text-8xl font-bold text-teal/15 leading-none select-none">
+            <span className="font-display text-8xl font-bold text-steel/15 leading-none select-none">
               "
             </span>
           </div>
@@ -94,7 +94,7 @@ export function Testimonials() {
           <div className="flex justify-between items-center mt-6 px-2">
             <button
               onClick={scrollPrev}
-              className="w-10 h-10 rounded-full bg-surface-100 border border-surface-200 flex items-center justify-center text-teal hover:border-teal transition-colors duration-200"
+              className="w-10 h-10 rounded-full bg-pearl-100 border border-pearl-200 flex items-center justify-center text-steel hover:border-steel transition-colors duration-200"
               aria-label="Previous testimonial"
             >
               <ChevronLeft className="w-5 h-5" aria-hidden="true" />
@@ -109,8 +109,8 @@ export function Testimonials() {
                   aria-label={`Go to testimonial ${index + 1}`}
                   className={`rounded-full transition-all duration-300 ${
                     index === selectedIndex
-                      ? "bg-teal w-2 h-2"
-                      : "bg-surface-300 w-2 h-2"
+                      ? "bg-steel w-2 h-2"
+                      : "bg-pearl-300 w-2 h-2"
                   }`}
                 />
               ))}
@@ -118,7 +118,7 @@ export function Testimonials() {
 
             <button
               onClick={scrollNext}
-              className="w-10 h-10 rounded-full bg-surface-100 border border-surface-200 flex items-center justify-center text-teal hover:border-teal transition-colors duration-200"
+              className="w-10 h-10 rounded-full bg-pearl-100 border border-pearl-200 flex items-center justify-center text-steel hover:border-steel transition-colors duration-200"
               aria-label="Next testimonial"
             >
               <ChevronRight className="w-5 h-5" aria-hidden="true" />

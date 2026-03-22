@@ -17,15 +17,15 @@ export function SectionHeading({
 
   const accentElement = (
     <div className="flex items-center gap-2 mt-3">
-      <div className="h-1 w-8 bg-teal rounded-full" />
-      <div className="h-1 w-1 bg-teal/50 rounded-full" />
-      <div className="h-1 w-1 bg-teal/30 rounded-full" />
+      <div className="h-1 w-8 bg-steel rounded-full" />
+      <div className="h-1 w-1 bg-steel/50 rounded-full" />
+      <div className="h-1 w-1 bg-steel/30 rounded-full" />
     </div>
   );
 
   return (
     <div className={`flex flex-col gap-3 mb-10 ${alignmentClasses} ${className}`}>
-      <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal">
+      <h2 className="font-display text-4xl md:text-5xl font-bold text-navy">
         {title}
       </h2>
       {subtitle && (

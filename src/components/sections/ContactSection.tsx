@@ -32,8 +32,8 @@ export function ContactSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-8 sm:p-10">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4 text-center">
+            <div className="bg-white border border-pearl-200 rounded-2xl shadow-card p-8 sm:p-10">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-4 text-center">
                 Tell Us About Your Property Maintenance Requirements
               </h2>
               <p className="font-body text-text-muted mb-8 text-center">
@@ -45,11 +45,11 @@ export function ContactSection() {
                 {contactItems.map((item, index) => {
                   const Icon = item.icon;
                   const content = (
-                    <div className="flex items-start gap-3 pl-3 border-l-2 border-teal/40">
-                      <Icon className="text-teal mt-0.5 w-5 h-5 flex-shrink-0" aria-hidden="true" />
+                    <div className="flex items-start gap-3 pl-3 border-l-2 border-steel/40">
+                      <Icon className="text-steel mt-0.5 w-5 h-5 flex-shrink-0" aria-hidden="true" />
                       <div>
                         <div className="font-body text-sm text-text-muted">{item.label}</div>
-                        <div className="font-body font-medium text-charcoal">{item.value}</div>
+                        <div className="font-body font-medium text-navy">{item.value}</div>
                       </div>
                     </div>
                   );

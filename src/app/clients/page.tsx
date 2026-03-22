@@ -33,15 +33,15 @@ export default function ClientsPage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-charcoal/72 z-10" />
+        <div className="absolute inset-0 bg-navy/72 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Our Clients
           </h1>
           <div className="flex justify-center my-3">
-            <div className="h-px w-16 bg-teal/50" />
+            <div className="h-px w-16 bg-steel/50" />
           </div>
-          <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
+          <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
             Trusted Property Maintenance Partner Across Texas
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function ClientsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection variant="fadeLeft">
               <div>
-                <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-6">
                   Excellence Through Collaboration
                 </h2>
                 <p className="font-body text-lg text-text-muted mb-4">
@@ -63,20 +63,20 @@ export default function ClientsPage() {
                 <p className="font-body text-lg text-text-muted mb-4">
                   Property professionals, banking organizations, real estate specialists, and asset managers depend on us for maintenance, emergency support, asset care, and property compliance.
                 </p>
-                <p className="font-body text-lg text-teal italic font-medium">
+                <p className="font-body text-lg text-steel italic font-medium">
                   &quot;Real outcomes create lasting partnerships.&quot;
                 </p>
               </div>
             </AnimatedSection>
 
             <AnimatedSection variant="fadeRight">
-              <div className="bg-surface-100 border border-surface-200 rounded-xl p-8">
-                <h3 className="font-display text-2xl font-bold text-charcoal mb-6">
+              <div className="bg-pearl-100 border border-pearl-200 rounded-xl p-8">
+                <h3 className="font-display text-2xl font-bold text-navy mb-6">
                   By The Numbers
                 </h3>
                 <div className="space-y-6">
                   <div>
-                    <div className="text-4xl font-display font-bold text-teal mb-2">
+                    <div className="text-4xl font-display font-bold text-steel mb-2">
                       500+
                     </div>
                     <div className="font-body text-text-muted">
@@ -84,7 +84,7 @@ export default function ClientsPage() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-teal mb-2">
+                    <div className="text-4xl font-display font-bold text-steel mb-2">
                       Texas
                     </div>
                     <div className="font-body text-text-muted">
@@ -92,7 +92,7 @@ export default function ClientsPage() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-teal mb-2">
+                    <div className="text-4xl font-display font-bold text-steel mb-2">
                       100%
                     </div>
                     <div className="font-body text-text-muted">
@@ -100,7 +100,7 @@ export default function ClientsPage() {
                     </div>
                   </div>
                   <div>
-                    <div className="text-4xl font-display font-bold text-teal mb-2">
+                    <div className="text-4xl font-display font-bold text-steel mb-2">
                       10+
                     </div>
                     <div className="font-body text-text-muted">
@@ -116,7 +116,7 @@ export default function ClientsPage() {
 
       {/* Divider */}
       <div
-        className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent"
+        className="h-px bg-gradient-to-r from-transparent via-pearl-300 to-transparent"
         aria-hidden="true"
       />
 
@@ -125,12 +125,12 @@ export default function ClientsPage() {
         return (
           <section
             key={client.id}
-            className={`py-24 lg:py-32 ${index % 2 === 0 ? "bg-white" : "bg-surface-50"}`}
+            className={`py-24 lg:py-32 ${index % 2 === 0 ? "bg-white" : "bg-pearl-50"}`}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Section number badge */}
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-teal/10 border border-teal/30 mb-6">
-                <span className="font-display text-lg font-bold text-teal">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-steel/10 border border-steel/30 mb-6">
+                <span className="font-display text-lg font-bold text-steel">
                   {String(index + 1).padStart(2, '0')}
                 </span>
               </div>
@@ -139,7 +139,7 @@ export default function ClientsPage() {
                 {/* Left: Title + Description */}
                 <div className="lg:col-span-2">
                   <AnimatedSection variant="fadeLeft">
-                    <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
+                    <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-4">
                       {client.title}
                     </h2>
                     <p className="font-body text-lg text-text-muted mb-6">
@@ -148,7 +148,7 @@ export default function ClientsPage() {
                     <div className="space-y-3">
                       {client.benefits.map((benefit, idx) => (
                         <div key={idx} className="flex items-start gap-3">
-                          <span className="text-teal font-bold text-lg mt-0.5">→</span>
+                          <span className="text-steel font-bold text-lg mt-0.5">→</span>
                           <span className="font-body text-text-muted">{benefit}</span>
                         </div>
                       ))}
@@ -170,23 +170,23 @@ export default function ClientsPage() {
 
       {/* Why Choose ONECALL FIELD SERVICES LLC Section */}
       <div
-        className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent"
+        className="h-px bg-gradient-to-r from-transparent via-pearl-300 to-transparent"
         aria-hidden="true"
       />
       <WhyChooseUs />
 
       {/* Divider */}
       <div
-        className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent"
+        className="h-px bg-gradient-to-r from-transparent via-pearl-300 to-transparent"
         aria-hidden="true"
       />
 
       {/* Quality Assurance Process Section - Redesigned */}
-      <section className="py-24 lg:py-32 bg-surface-100">
+      <section className="py-24 lg:py-32 bg-pearl-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="max-w-3xl mx-auto mb-16">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6 text-center">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-6 text-center">
                 How We Ensure Quality
               </h2>
               <p className="font-body text-lg text-text-muted text-center">
@@ -229,17 +229,17 @@ export default function ClientsPage() {
                 <div className="flex gap-6">
                   {/* Number + Line */}
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-teal text-white flex items-center justify-center font-display font-bold text-lg mb-4">
+                    <div className="w-12 h-12 rounded-full bg-steel text-white flex items-center justify-center font-display font-bold text-lg mb-4">
                       {step.number}
                     </div>
                     {index < 2 && (
-                      <div className="w-1 h-24 bg-teal/20" />
+                      <div className="w-1 h-24 bg-steel/20" />
                     )}
                   </div>
 
                   {/* Content */}
                   <div className="pb-4 flex-grow">
-                    <h3 className="font-display text-2xl font-bold text-charcoal mb-2">
+                    <h3 className="font-display text-2xl font-bold text-navy mb-2">
                       {step.title}
                     </h3>
                     <p className="font-body text-text-muted">

@@ -49,15 +49,15 @@ export default function ServicesPage() {
       {/* Page Hero — Split Layout: Text Left (Charcoal), Image Right */}
       <section className="flex flex-col md:flex-row min-h-[60vh] md:min-h-[55vh] overflow-hidden pt-20 md:pt-28">
         {/* Left: Charcoal Text Section */}
-        <div className="w-full md:w-1/2 bg-charcoal flex items-center justify-center px-6 sm:px-8 md:px-12 py-16 sm:py-20 md:py-24">
+        <div className="w-full md:w-1/2 bg-navy flex items-center justify-center px-6 sm:px-8 md:px-12 py-16 sm:py-20 md:py-24">
           <div className="text-center md:text-left max-w-2xl">
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               Complete Maintenance Solutions
             </h1>
             <div className="flex justify-center md:justify-start mb-6">
-              <div className="h-px w-16 bg-teal/50" />
+              <div className="h-px w-16 bg-steel/50" />
             </div>
-            <p className="font-body text-base sm:text-lg text-surface-200">
+            <p className="font-body text-base sm:text-lg text-pearl-200">
               Seven specialized maintenance areas addressing every property requirement across Texas. From regular maintenance to urgent service calls, we deliver expert results for homes, commercial spaces, and investment portfolios.
             </p>
           </div>
@@ -80,8 +80,8 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Left-Bordered Heading */}
           <AnimatedSection variant="fadeUp" className="mb-12">
-            <div className="border-l-4 border-teal pl-6 mb-12">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mb-4">
+            <div className="border-l-4 border-steel pl-6 mb-12">
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4">
                 Seven Specialized Services
               </h2>
               <p className="font-body text-lg text-text-muted max-w-3xl">
@@ -92,17 +92,17 @@ export default function ServicesPage() {
 
           {/* Stat Strip with Dividers */}
           <AnimatedSection variant="fadeUp" className="mb-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-surface-200 bg-surface-50 rounded-2xl overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-pearl-200 bg-pearl-50 rounded-2xl overflow-hidden">
               <div className="px-6 sm:px-8 py-8 text-center">
-                <span className="font-display text-teal font-bold text-2xl md:text-3xl block mb-1">Statewide</span>
+                <span className="font-display text-steel font-bold text-2xl md:text-3xl block mb-1">Statewide</span>
                 <p className="font-body text-sm text-text-muted">Coverage</p>
               </div>
               <div className="px-6 sm:px-8 py-8 text-center">
-                <span className="font-display text-teal font-bold text-2xl md:text-3xl block mb-1">Licensed</span>
+                <span className="font-display text-steel font-bold text-2xl md:text-3xl block mb-1">Licensed</span>
                 <p className="font-body text-sm text-text-muted">& Insured</p>
               </div>
               <div className="px-6 sm:px-8 py-8 text-center">
-                <span className="font-display text-teal font-bold text-2xl md:text-3xl block mb-1">24-Hour</span>
+                <span className="font-display text-steel font-bold text-2xl md:text-3xl block mb-1">24-Hour</span>
                 <p className="font-body text-sm text-text-muted">Response</p>
               </div>
             </div>
@@ -119,7 +119,7 @@ export default function ServicesPage() {
                 <div
                   className={`flex flex-col ${
                     index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"
-                  } border border-surface-200 rounded-2xl overflow-hidden hover:border-teal/40 hover:shadow-card-hover transition-all duration-300`}
+                  } border border-pearl-200 rounded-2xl overflow-hidden hover:border-steel/40 hover:shadow-card-hover transition-all duration-300`}
                 >
                   {/* Image: 40% on desktop, full on mobile */}
                   <div className="relative w-full md:w-2/5 h-48 md:h-auto md:min-h-[320px] flex-shrink-0">
@@ -134,12 +134,12 @@ export default function ServicesPage() {
                   {/* Content: 60% on desktop, full on mobile */}
                   <div className="flex flex-col justify-between p-6 sm:p-8 w-full md:w-3/5">
                     {/* Icon Badge */}
-                    <div className="w-10 h-10 rounded-xl bg-teal-muted flex items-center justify-center mb-3">
-                      <ServiceIconComponent iconName={service.icon} className="w-5 h-5 text-teal" />
+                    <div className="w-10 h-10 rounded-xl bg-steel-muted flex items-center justify-center mb-3">
+                      <ServiceIconComponent iconName={service.icon} className="w-5 h-5 text-steel" />
                     </div>
 
                     {/* Title */}
-                    <h3 className="font-display text-2xl font-bold text-charcoal mb-3">
+                    <h3 className="font-display text-2xl font-bold text-navy mb-3">
                       {service.title}
                     </h3>
 
@@ -150,7 +150,7 @@ export default function ServicesPage() {
 
                     {/* Coverage Badge */}
                     <div className="mb-4">
-                      <span className="inline-flex items-center px-3 py-1 bg-skyblue-light rounded-full text-xs font-accent text-skyblue">
+                      <span className="inline-flex items-center px-3 py-1 bg-brass-light rounded-full text-xs font-accent text-brass">
                         Available Statewide Across Texas
                       </span>
                     </div>
@@ -159,7 +159,7 @@ export default function ServicesPage() {
                     <ul className="space-y-2 mb-6 flex-grow">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-teal mt-0.5 flex-shrink-0" aria-hidden="true" />
+                          <CheckCircle className="w-5 h-5 text-steel mt-0.5 flex-shrink-0" aria-hidden="true" />
                           <span className="font-body text-text-muted text-sm">{feature}</span>
                         </li>
                       ))}
@@ -177,13 +177,13 @@ export default function ServicesPage() {
 
           {/* Bottom CTA Banner — Two Column Layout */}
           <AnimatedSection variant="fadeUp">
-            <div className="bg-charcoal rounded-2xl p-8 sm:p-10 md:p-14 flex flex-col md:flex-row items-center md:items-center justify-between gap-8">
+            <div className="bg-navy rounded-2xl p-8 sm:p-10 md:p-14 flex flex-col md:flex-row items-center md:items-center justify-between gap-8">
               {/* Left: Text Content */}
               <div className="flex-1 text-center md:text-left">
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
                   Prepared to Begin?
                 </h2>
-                <p className="font-body text-surface-200">
+                <p className="font-body text-pearl-200">
                   Get a personalized estimate tailored to your property maintenance requirements. We'll get back to you within 24 hours.
                 </p>
               </div>
@@ -193,10 +193,10 @@ export default function ServicesPage() {
                 <Button variant="primary" size="lg" asChild>
                   <Link href="/quote">Get a Free Quote</Link>
                 </Button>
-                <div className="h-px w-12 bg-teal my-4" />
+                <div className="h-px w-12 bg-steel my-4" />
                 <a
                   href="tel:1234567890"
-                  className="font-body text-teal hover:text-teal-light transition-colors"
+                  className="font-body text-steel hover:text-steel-light transition-colors"
                 >
                   123-456-7890
                 </a>

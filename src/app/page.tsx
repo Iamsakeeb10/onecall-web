@@ -21,11 +21,11 @@ export default function Home() {
     <>
       <Hero />
       <StatsBar />
-      <div className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent" aria-hidden="true" />
+      <div className="h-px bg-gradient-to-r from-transparent via-pearl-300 to-transparent" aria-hidden="true" />
       <ServicesSection />
       <ClientsSection />
       <WhyChooseUs />
-      <div className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent" aria-hidden="true" />
+      <div className="h-px bg-gradient-to-r from-transparent via-pearl-300 to-transparent" aria-hidden="true" />
       <QualityProcess />
       <Testimonials />
       {/* <CTABanner variant="dark" /> */}

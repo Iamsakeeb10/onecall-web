@@ -80,19 +80,19 @@ function ReviewRow({
   onEdit?: () => void;
 }) {
   return (
-    <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3 border-b border-surface-100 last:border-0">
+    <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3 border-b border-pearl-100 last:border-0">
       <span className="font-body text-xs uppercase tracking-wider text-text-muted sm:w-44 flex-shrink-0 pt-0.5">
         {label}
       </span>
       <div className="flex items-center gap-2 min-w-0 flex-1">
-        <span className="font-body text-sm text-charcoal font-medium break-words">
+        <span className="font-body text-sm text-navy font-medium break-words">
           {value || <span className="text-text-muted italic font-normal">Not provided</span>}
         </span>
         {onEdit && (
           <button
             type="button"
             onClick={onEdit}
-            className="font-accent text-xs text-teal hover:text-teal-dark hover:underline transition-colors shrink-0"
+            className="font-accent text-xs text-steel hover:text-steel-dark hover:underline transition-colors shrink-0"
           >
             Edit
           </button>
@@ -232,10 +232,10 @@ export default function VendorApplicationForm() {
   if (isSuccess) {
     return (
       <div className="max-w-2xl mx-auto text-center py-16">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-teal-muted mb-6">
-          <CheckCircle2 className="w-10 h-10 text-teal" />
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-steel-muted mb-6">
+          <CheckCircle2 className="w-10 h-10 text-steel" />
         </div>
-        <h2 className="font-display text-3xl font-bold text-charcoal mb-4">
+        <h2 className="font-display text-3xl font-bold text-navy mb-4">
           Application Submitted!
         </h2>
         <p className="font-body text-text-muted text-lg">
@@ -254,17 +254,17 @@ export default function VendorApplicationForm() {
           <div
             className={`flex items-center justify-center w-9 h-9 rounded-full font-accent text-sm font-semibold transition-colors duration-300 ${
               currentStep === step.id
-                ? "bg-teal text-white shadow-teal-glow"
+                ? "bg-steel text-white shadow-steel-glow"
                 : currentStep > step.id
-                ? "bg-charcoal text-white"
-                : "bg-surface-100 text-text-muted border border-surface-200"
+                ? "bg-navy text-white"
+                : "bg-pearl-100 text-text-muted border border-pearl-200"
             }`}
           >
             {currentStep > step.id ? <CheckCircle2 className="w-4 h-4" /> : step.id}
           </div>
           <span
             className={`hidden sm:block font-accent text-sm ${
-              currentStep === step.id ? "text-charcoal font-semibold" : "text-text-muted"
+              currentStep === step.id ? "text-navy font-semibold" : "text-text-muted"
             }`}
           >
             {step.title}
@@ -272,7 +272,7 @@ export default function VendorApplicationForm() {
           {i < STEPS.length - 1 && (
             <div
               className={`w-8 h-0.5 mx-1 rounded-full transition-colors duration-300 ${
-                currentStep > step.id ? "bg-charcoal" : "bg-surface-200"
+                currentStep > step.id ? "bg-navy" : "bg-pearl-200"
               }`}
             />
           )}
@@ -283,10 +283,10 @@ export default function VendorApplicationForm() {
 
   // ── Input class helper ──
   const inputClass = (field: keyof VendorFormErrors) =>
-    `w-full font-body text-sm px-4 py-3 border rounded-lg bg-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-teal focus:border-teal placeholder:text-text-muted ${
+    `w-full font-body text-sm px-4 py-3 border rounded-lg bg-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-steel focus:border-steel placeholder:text-text-muted ${
       errors[field]
         ? "border-error text-error"
-        : "border-surface-200 text-text-body"
+        : "border-pearl-200 text-text-body"
     }`;
 
   return (
@@ -300,12 +300,12 @@ export default function VendorApplicationForm() {
       <div className="mt-10 max-w-3xl mx-auto" suppressHydrationWarning>
         <StepIndicator />
 
-        <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-8 sm:p-10">
+        <div className="bg-white border border-pearl-200 rounded-2xl shadow-card p-8 sm:p-10">
           {/* Step label */}
-          <p className="font-accent text-xs uppercase tracking-widest text-teal mb-1">
+          <p className="font-accent text-xs uppercase tracking-widest text-steel mb-1">
             Step {currentStep} of {STEPS.length}
           </p>
-          <h3 className="font-display text-2xl font-bold text-charcoal mb-1">
+          <h3 className="font-display text-2xl font-bold text-navy mb-1">
             {STEPS[currentStep - 1].title}
           </h3>
           <p className="font-body text-text-muted mb-8">
@@ -317,8 +317,8 @@ export default function VendorApplicationForm() {
             <div className="space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Company Name <span className="text-teal">*</span>
+                  <label className="block font-body text-sm font-medium text-navy mb-1.5">
+                    Company Name <span className="text-steel">*</span>
                   </label>
                   <input
                     type="text"
@@ -332,8 +332,8 @@ export default function VendorApplicationForm() {
                   )}
                 </div>
                 <div>
-                  <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Contact Person <span className="text-teal">*</span>
+                  <label className="block font-body text-sm font-medium text-navy mb-1.5">
+                    Contact Person <span className="text-steel">*</span>
                   </label>
                   <input
                     type="text"
@@ -350,8 +350,8 @@ export default function VendorApplicationForm() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Phone Number <span className="text-teal">*</span>
+                  <label className="block font-body text-sm font-medium text-navy mb-1.5">
+                    Phone Number <span className="text-steel">*</span>
                   </label>
                   <input
                     type="tel"
@@ -365,8 +365,8 @@ export default function VendorApplicationForm() {
                   )}
                 </div>
                 <div>
-                  <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Email Address <span className="text-teal">*</span>
+                  <label className="block font-body text-sm font-medium text-navy mb-1.5">
+                    Email Address <span className="text-steel">*</span>
                   </label>
                   <input
                     type="email"
@@ -384,7 +384,7 @@ export default function VendorApplicationForm() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
+                  <label className="block font-body text-sm font-medium text-navy mb-1.5">
                     Business Website{" "}
                     <span className="text-text-muted font-normal">(Optional)</span>
                   </label>
@@ -397,8 +397,8 @@ export default function VendorApplicationForm() {
                   />
                 </div>
                 <div>
-                  <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                    Years in Business <span className="text-teal">*</span>
+                  <label className="block font-body text-sm font-medium text-navy mb-1.5">
+                    Years in Business <span className="text-steel">*</span>
                   </label>
                   <div className="relative">
                     <select
@@ -427,8 +427,8 @@ export default function VendorApplicationForm() {
           {currentStep === 2 && (
             <div className="space-y-6">
               <div>
-                <label className="block font-body text-sm font-medium text-charcoal mb-3">
-                  Service Categories <span className="text-teal">*</span>{" "}
+                <label className="block font-body text-sm font-medium text-navy mb-3">
+                  Service Categories <span className="text-steel">*</span>{" "}
                   <span className="text-text-muted font-normal">(Select all that apply)</span>
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -441,13 +441,13 @@ export default function VendorApplicationForm() {
                         onClick={() => toggleServiceCategory(cat)}
                         className={`flex items-center gap-3 px-4 py-3 rounded-lg border text-left font-body text-sm transition-all duration-200 ${
                           selected
-                            ? "border-teal bg-teal-muted text-charcoal font-medium"
-                            : "border-surface-200 text-text-muted hover:border-teal/50 hover:bg-surface-50"
+                            ? "border-steel bg-steel-muted text-navy font-medium"
+                            : "border-pearl-200 text-text-muted hover:border-steel/50 hover:bg-pearl-50"
                         }`}
                       >
                         <span
                           className={`w-4 h-4 rounded border flex-shrink-0 flex items-center justify-center transition-colors ${
-                            selected ? "bg-teal border-teal" : "border-surface-300"
+                            selected ? "bg-steel border-steel" : "border-pearl-300"
                           }`}
                         >
                           {selected && <CheckCircle2 className="w-3 h-3 text-white" />}
@@ -463,8 +463,8 @@ export default function VendorApplicationForm() {
               </div>
 
               <div>
-                <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                  Coverage Areas <span className="text-teal">*</span>{" "}
+                <label className="block font-body text-sm font-medium text-navy mb-1.5">
+                  Coverage Areas <span className="text-steel">*</span>{" "}
                   <span className="text-text-muted font-normal">(City / County / Region)</span>
                 </label>
                 <textarea
@@ -480,8 +480,8 @@ export default function VendorApplicationForm() {
               </div>
 
               <div>
-                <label className="block font-body text-sm font-medium text-charcoal mb-1.5">
-                  Service Radius <span className="text-teal">*</span>
+                <label className="block font-body text-sm font-medium text-navy mb-1.5">
+                  Service Radius <span className="text-steel">*</span>
                 </label>
                 <div className="relative">
                   <select
@@ -510,7 +510,7 @@ export default function VendorApplicationForm() {
               <div
                 role="button"
                 tabIndex={0}
-                className="border-2 border-dashed border-surface-300 rounded-xl p-8 text-center hover:border-teal/50 transition-colors cursor-pointer"
+                className="border-2 border-dashed border-pearl-300 rounded-xl p-8 text-center hover:border-steel/50 transition-colors cursor-pointer"
                 onClick={() => fileInputRef.current?.click()}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
@@ -530,18 +530,18 @@ export default function VendorApplicationForm() {
                   onChange={handleFileChange}
                 />
                 <div className="flex flex-col items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-teal-muted flex items-center justify-center">
-                    <Upload className="w-6 h-6 text-teal" />
+                  <div className="w-12 h-12 rounded-full bg-steel-muted flex items-center justify-center">
+                    <Upload className="w-6 h-6 text-steel" />
                   </div>
                   <div>
-                    <p className="font-body font-medium text-charcoal">
+                    <p className="font-body font-medium text-navy">
                       Click to upload or drag &amp; drop files
                     </p>
                     <p className="font-body text-sm text-text-muted mt-1">
                       PDF, JPG, PNG — up to 10 MB per file
                     </p>
                   </div>
-                  <span className="inline-block text-xs font-accent text-text-muted bg-surface-100 border border-surface-200 rounded-full px-3 py-1">
+                  <span className="inline-block text-xs font-accent text-text-muted bg-pearl-100 border border-pearl-200 rounded-full px-3 py-1">
                     Optional
                   </span>
                 </div>
@@ -552,11 +552,11 @@ export default function VendorApplicationForm() {
                   {formData.attachments.map((file, index) => (
                     <li
                       key={index}
-                      className="flex items-center justify-between bg-surface-50 border border-surface-200 rounded-lg px-4 py-3"
+                      className="flex items-center justify-between bg-pearl-50 border border-pearl-200 rounded-lg px-4 py-3"
                     >
                       <div className="flex items-center gap-3 min-w-0">
-                        <FileText className="w-4 h-4 text-teal shrink-0" />
-                        <span className="font-body text-sm text-charcoal truncate">
+                        <FileText className="w-4 h-4 text-steel shrink-0" />
+                        <span className="font-body text-sm text-navy truncate">
                           {file.name}
                         </span>
                         <span className="font-body text-xs text-text-muted shrink-0">
@@ -588,11 +588,11 @@ export default function VendorApplicationForm() {
 
               {/* Company Information */}
               <div>
-                <h4 className="font-display text-base font-bold text-charcoal mb-1 flex items-center gap-2">
-                  <span className="w-1.5 h-5 rounded-full bg-teal inline-block" />
+                <h4 className="font-display text-base font-bold text-navy mb-1 flex items-center gap-2">
+                  <span className="w-1.5 h-5 rounded-full bg-steel inline-block" />
                   Company Information
                 </h4>
-                <div className="bg-surface-50 rounded-xl border border-surface-200 px-5 py-1 mt-3">
+                <div className="bg-pearl-50 rounded-xl border border-pearl-200 px-5 py-1 mt-3">
                   <ReviewRow label="Company Name" value={formData.companyName} />
                   <ReviewRow label="Contact Person" value={formData.contactPerson} />
                   <ReviewRow label="Phone" value={formData.phone} />
@@ -603,7 +603,7 @@ export default function VendorApplicationForm() {
                 <button
                   type="button"
                   onClick={() => { setErrors({}); setCurrentStep(1); }}
-                  className="mt-2 font-accent text-xs text-teal hover:text-teal-dark hover:underline transition-colors"
+                  className="mt-2 font-accent text-xs text-steel hover:text-steel-dark hover:underline transition-colors"
                 >
                   Edit
                 </button>
@@ -611,11 +611,11 @@ export default function VendorApplicationForm() {
 
               {/* Services Offered */}
               <div>
-                <h4 className="font-display text-base font-bold text-charcoal mb-1 flex items-center gap-2">
-                  <span className="w-1.5 h-5 rounded-full bg-teal inline-block" />
+                <h4 className="font-display text-base font-bold text-navy mb-1 flex items-center gap-2">
+                  <span className="w-1.5 h-5 rounded-full bg-steel inline-block" />
                   Services Offered
                 </h4>
-                <div className="bg-surface-50 rounded-xl border border-surface-200 px-5 py-1 mt-3">
+                <div className="bg-pearl-50 rounded-xl border border-pearl-200 px-5 py-1 mt-3">
                   <ReviewRow
                     label="Service Categories"
                     value={
@@ -630,7 +630,7 @@ export default function VendorApplicationForm() {
                 <button
                   type="button"
                   onClick={() => { setErrors({}); setCurrentStep(2); }}
-                  className="mt-2 font-accent text-xs text-teal hover:text-teal-dark hover:underline transition-colors"
+                  className="mt-2 font-accent text-xs text-steel hover:text-steel-dark hover:underline transition-colors"
                 >
                   Edit
                 </button>
@@ -638,11 +638,11 @@ export default function VendorApplicationForm() {
 
               {/* Documents & Attachments */}
               <div>
-                <h4 className="font-display text-base font-bold text-charcoal mb-1 flex items-center gap-2">
-                  <span className="w-1.5 h-5 rounded-full bg-teal inline-block" />
+                <h4 className="font-display text-base font-bold text-navy mb-1 flex items-center gap-2">
+                  <span className="w-1.5 h-5 rounded-full bg-steel inline-block" />
                   Documents & Attachments
                 </h4>
-                <div className="bg-surface-50 rounded-xl border border-surface-200 px-5 py-1 mt-3">
+                <div className="bg-pearl-50 rounded-xl border border-pearl-200 px-5 py-1 mt-3">
                   <ReviewRow
                     label="Attachments"
                     value={
@@ -663,15 +663,15 @@ export default function VendorApplicationForm() {
                     id="vendor-agreeToTerms"
                     checked={formData.agreeToTerms}
                     onChange={(e) => handleChange("agreeToTerms", e.target.checked)}
-                    className="mt-1 h-4 w-4 rounded border-surface-300 text-teal focus:ring-teal focus:ring-offset-0 cursor-pointer"
+                    className="mt-1 h-4 w-4 rounded border-pearl-300 text-steel focus:ring-steel focus:ring-offset-0 cursor-pointer"
                     aria-describedby={errors.agreeToTerms ? "vendor-agreeToTerms-error" : undefined}
                     aria-invalid={errors.agreeToTerms ? "true" : "false"}
                   />
-                  <label htmlFor="vendor-agreeToTerms" className="font-body text-sm text-charcoal cursor-pointer">
+                  <label htmlFor="vendor-agreeToTerms" className="font-body text-sm text-navy cursor-pointer">
                     I agree to the{" "}
                     <Link
                       href="/terms"
-                      className="text-teal hover:text-teal-dark underline underline-offset-2"
+                      className="text-steel hover:text-steel-dark underline underline-offset-2"
                     >
                       Terms and Conditions
                     </Link>{" "}
@@ -686,9 +686,9 @@ export default function VendorApplicationForm() {
               </div>
 
               {/* Confirmation notice */}
-              <div className="flex items-start gap-3 p-4 bg-teal-muted border border-teal/20 rounded-xl">
-                <CheckCircle2 className="w-5 h-5 text-teal mt-0.5 flex-shrink-0" />
-                <p className="font-body text-sm text-charcoal">
+              <div className="flex items-start gap-3 p-4 bg-steel-muted border border-steel/20 rounded-xl">
+                <CheckCircle2 className="w-5 h-5 text-steel mt-0.5 flex-shrink-0" />
+                <p className="font-body text-sm text-navy">
                   By submitting this application you confirm that all information provided
                   is accurate and that you meet ONECALL FIELD SERVICES LLC&apos;s vendor requirements.
                 </p>
@@ -705,7 +705,7 @@ export default function VendorApplicationForm() {
           )}
 
           {/* ── Navigation buttons ───────────────────────────── */}
-          <div className="flex items-center justify-between mt-8 pt-6 border-t border-surface-200">
+          <div className="flex items-center justify-between mt-8 pt-6 border-t border-pearl-200">
             <div>
               {currentStep > 1 && (
                 <Button

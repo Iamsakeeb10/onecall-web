@@ -44,18 +44,18 @@ export default function VendorFAQ() {
         <div className="mt-10 space-y-3">
           {faqs.map((faq, index) => (
             <AnimatedSection key={faq.question} variant="fadeUp" delay={index * 0.08}>
-              <div className="border border-surface-200 rounded-xl overflow-hidden">
+              <div className="border border-pearl-200 rounded-xl overflow-hidden">
                 <button
                   type="button"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left bg-white hover:bg-surface-50 transition-colors duration-200"
+                  className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left bg-white hover:bg-pearl-50 transition-colors duration-200"
                   aria-expanded={openIndex === index}
                 >
-                  <span className="font-display text-base font-semibold text-charcoal">
+                  <span className="font-display text-base font-semibold text-navy">
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-teal flex-shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-steel flex-shrink-0 transition-transform duration-300 ${
                       openIndex === index ? "rotate-180" : ""
                     }`}
                   />

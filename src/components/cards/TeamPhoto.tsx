@@ -18,9 +18,9 @@ export function TeamPhoto() {
           onError={() => setImgError(true)}
         />
       ) : (
-        <div className="w-full h-full bg-surface-100 flex items-center justify-center">
-          <div className="w-24 h-24 rounded-full bg-teal/20 flex items-center justify-center">
-            <span className="font-display text-5xl font-bold text-teal">H</span>
+        <div className="w-full h-full bg-pearl-100 flex items-center justify-center">
+          <div className="w-24 h-24 rounded-full bg-steel/20 flex items-center justify-center">
+            <span className="font-display text-5xl font-bold text-steel">H</span>
           </div>
         </div>
       )}

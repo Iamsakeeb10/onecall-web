@@ -37,8 +37,8 @@ export function ClientImage({ client }: ClientImageProps) {
           onError={() => setImgError(true)}
         />
       ) : (
-        <div className="w-full h-full bg-surface-100 flex items-center justify-center">
-          <IconComponent className="w-16 h-16 text-teal" aria-hidden="true" />
+        <div className="w-full h-full bg-pearl-100 flex items-center justify-center">
+          <IconComponent className="w-16 h-16 text-steel" aria-hidden="true" />
         </div>
       )}
     </div>

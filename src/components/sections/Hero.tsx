@@ -29,7 +29,7 @@ export function Hero() {
       <div className="hero-texture absolute inset-0 pointer-events-none" />
 
       {/* Teal top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-teal to-transparent opacity-60" />
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-steel to-transparent opacity-60" />
 
       {/* Main content grid */}
       <div className="relative z-10 flex-1 flex items-center">
@@ -38,9 +38,9 @@ export function Hero() {
             {/* LEFT: Text column */}
             <div className="flex flex-col gap-6 text-center min-[1131px]:text-left">
               {/* Eyebrow badge */}
-              <div className="inline-flex items-center gap-2 self-center min-[1131px]:self-start bg-teal/15 border border-teal/30 rounded-full px-4 py-1.5">
-                <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
-                <span className="font-accent text-sm font-medium text-teal tracking-wide uppercase">
+              <div className="inline-flex items-center gap-2 self-center min-[1131px]:self-start bg-steel/15 border border-steel/30 rounded-full px-4 py-1.5">
+                <span className="w-2 h-2 rounded-full bg-steel animate-pulse" />
+                <span className="font-accent text-sm font-medium text-steel tracking-wide uppercase">
                   Texas Statewide Property Maintenance
                 </span>
               </div>
@@ -48,7 +48,7 @@ export function Hero() {
               {/* H1 */}
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Expert Property Maintenance{" "}
-                <span className="text-teal">Across Texas</span>
+                <span className="text-steel">Across Texas</span>
               </h1>
 
               {/* Body copy */}
@@ -80,9 +80,9 @@ export function Hero() {
                 ].map(({ icon: Icon, label }) => (
                   <div
                     key={label}
-                    className="flex items-center gap-2 text-sm text-surface-300"
+                    className="flex items-center gap-2 text-sm text-pearl-300"
                   >
-                    <Icon className="w-4 h-4 text-teal flex-shrink-0" />
+                    <Icon className="w-4 h-4 text-steel flex-shrink-0" />
                     <span>{label}</span>
                   </div>
                 ))}
@@ -109,18 +109,18 @@ export function Hero() {
                     duration: 0.55,
                     ease: "easeOut",
                   }}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-5 lg:p-6 flex flex-col gap-3 hover:bg-white/10 hover:border-teal/30 transition-all duration-300 group"
+                  className="bg-white/5 border border-white/10 rounded-2xl p-5 lg:p-6 flex flex-col gap-3 hover:bg-white/10 hover:border-steel/30 transition-all duration-300 group"
                 >
                   {/* Icon circle */}
-                  <div className="w-10 h-10 rounded-xl bg-teal/15 flex items-center justify-center group-hover:bg-teal/25 transition-colors">
-                    <stat.icon className="w-5 h-5 text-teal" />
+                  <div className="w-10 h-10 rounded-xl bg-steel/15 flex items-center justify-center group-hover:bg-steel/25 transition-colors">
+                    <stat.icon className="w-5 h-5 text-steel" />
                   </div>
                   {/* Big number */}
                   <div className="font-display text-3xl lg:text-4xl font-bold text-white">
                     {stat.value}
                   </div>
                   {/* Label */}
-                  <div className="font-body text-sm text-surface-300 leading-snug">
+                  <div className="font-body text-sm text-pearl-300 leading-snug">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -131,9 +131,9 @@ export function Hero() {
       </div>
 
       {/* BOTTOM: Trust strip */}
-      <div className="relative z-10 border-t border-white/10 bg-charcoal/60 backdrop-blur-sm">
+      <div className="relative z-10 border-t border-white/10 bg-navy/60 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-surface-300">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-pearl-300">
             <span className="font-accent font-semibold text-white tracking-wide">
               ONECALL FIELD SERVICES LLC
             </span>

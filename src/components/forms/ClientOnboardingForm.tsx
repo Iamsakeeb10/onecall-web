@@ -268,11 +268,11 @@ export default function ClientOnboardingForm({
   if (isSuccess) {
     return (
       <AnimatedSection variant="scaleIn">
-        <div className="bg-teal-muted rounded-xl p-8 text-center">
+        <div className="bg-steel-muted rounded-xl p-8 text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/80 mb-4">
-            <CheckCircle2 className="w-10 h-10 text-teal" aria-hidden="true" />
+            <CheckCircle2 className="w-10 h-10 text-steel" aria-hidden="true" />
           </div>
-          <h3 className="font-display text-2xl font-bold text-charcoal mb-3">
+          <h3 className="font-display text-2xl font-bold text-navy mb-3">
             Application Received!
           </h3>
           <p className="font-body text-text-muted text-base max-w-xl mx-auto">
@@ -298,9 +298,9 @@ export default function ClientOnboardingForm({
           <div>
             <label
               htmlFor="companyName"
-              className="block font-body text-sm font-medium text-charcoal mb-1"
+              className="block font-body text-sm font-medium text-navy mb-1"
             >
-              Company Name <span className="text-teal">*</span>
+              Company Name <span className="text-steel">*</span>
             </label>
             <input
               id="companyName"
@@ -309,8 +309,8 @@ export default function ClientOnboardingForm({
               value={form.companyName}
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
-                errors.companyName ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
+                errors.companyName ? "border-error" : "border-pearl-200"
+              } rounded-lg text-navy placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-steel/40 focus:border-steel transition-colors duration-200`}
               placeholder="ABC Property Management"
               aria-invalid={!!errors.companyName}
               aria-describedby={errors.companyName ? "companyName-error" : undefined}
@@ -325,9 +325,9 @@ export default function ClientOnboardingForm({
           <div>
             <label
               htmlFor="contactPerson"
-              className="block font-body text-sm font-medium text-charcoal mb-1"
+              className="block font-body text-sm font-medium text-navy mb-1"
             >
-              Contact Person <span className="text-teal">*</span>
+              Contact Person <span className="text-steel">*</span>
             </label>
             <input
               id="contactPerson"
@@ -336,8 +336,8 @@ export default function ClientOnboardingForm({
               value={form.contactPerson}
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
-                errors.contactPerson ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
+                errors.contactPerson ? "border-error" : "border-pearl-200"
+              } rounded-lg text-navy placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-steel/40 focus:border-steel transition-colors duration-200`}
               placeholder="Jane Doe"
               aria-invalid={!!errors.contactPerson}
               aria-describedby={errors.contactPerson ? "contactPerson-error" : undefined}
@@ -356,9 +356,9 @@ export default function ClientOnboardingForm({
           <div>
             <label
               htmlFor="email"
-              className="block font-body text-sm font-medium text-charcoal mb-1"
+              className="block font-body text-sm font-medium text-navy mb-1"
             >
-              Email Address <span className="text-teal">*</span>
+              Email Address <span className="text-steel">*</span>
             </label>
             <input
               id="email"
@@ -367,8 +367,8 @@ export default function ClientOnboardingForm({
               value={form.email}
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
-                errors.email ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
+                errors.email ? "border-error" : "border-pearl-200"
+              } rounded-lg text-navy placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-steel/40 focus:border-steel transition-colors duration-200`}
               placeholder="you@example.com"
               aria-invalid={!!errors.email}
               aria-describedby={errors.email ? "email-error" : undefined}
@@ -383,9 +383,9 @@ export default function ClientOnboardingForm({
           <div>
             <label
               htmlFor="phone"
-              className="block font-body text-sm font-medium text-charcoal mb-1"
+              className="block font-body text-sm font-medium text-navy mb-1"
             >
-              Phone Number <span className="text-teal">*</span>
+              Phone Number <span className="text-steel">*</span>
             </label>
             <input
               id="phone"
@@ -394,8 +394,8 @@ export default function ClientOnboardingForm({
               value={form.phone}
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
-                errors.phone ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
+                errors.phone ? "border-error" : "border-pearl-200"
+              } rounded-lg text-navy placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-steel/40 focus:border-steel transition-colors duration-200`}
               placeholder="(469) 555-1234"
               aria-invalid={!!errors.phone}
               aria-describedby={errors.phone ? "phone-error" : undefined}
@@ -415,9 +415,9 @@ export default function ClientOnboardingForm({
           <div>
             <label
               htmlFor="companyType"
-              className="block font-body text-sm font-medium text-charcoal mb-1"
+              className="block font-body text-sm font-medium text-navy mb-1"
             >
-              Company Type <span className="text-teal">*</span>
+              Company Type <span className="text-steel">*</span>
             </label>
             <div className="relative">
               <select
@@ -426,8 +426,8 @@ export default function ClientOnboardingForm({
                 value={form.companyType}
                 onChange={handleFieldChange}
                 className={`w-full px-4 py-3 pr-10 bg-white border ${
-                  errors.companyType ? "border-error" : "border-surface-200"
-                } rounded-lg text-charcoal focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200 appearance-none cursor-pointer`}
+                  errors.companyType ? "border-error" : "border-pearl-200"
+                } rounded-lg text-navy focus:outline-none focus:ring-2 focus:ring-steel/40 focus:border-steel transition-colors duration-200 appearance-none cursor-pointer`}
                 aria-invalid={!!errors.companyType}
                 aria-describedby={errors.companyType ? "companyType-error" : undefined}
               >
@@ -459,7 +459,7 @@ export default function ClientOnboardingForm({
           <div>
             <label
               htmlFor="companyWebsite"
-              className="block font-body text-sm font-medium text-charcoal mb-1"
+              className="block font-body text-sm font-medium text-navy mb-1"
             >
               Company Website{" "}
               <span className="text-text-muted font-normal">(Optional)</span>
@@ -470,7 +470,7 @@ export default function ClientOnboardingForm({
               type="url"
               value={form.companyWebsite}
               onChange={handleFieldChange}
-              className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200"
+              className="w-full px-4 py-3 bg-white border border-pearl-200 rounded-lg text-navy placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-steel/40 focus:border-steel transition-colors duration-200"
               placeholder="https://yourwebsite.com"
             />
           </div>
@@ -481,9 +481,9 @@ export default function ClientOnboardingForm({
       <AnimatedSection variant="fadeUp" delay={0.1}>
         <div className="space-y-3">
           <div>
-            <p className="font-body text-sm font-medium text-charcoal">
+            <p className="font-body text-sm font-medium text-navy">
               What services are you interested in?{" "}
-              <span className="text-teal">*</span>
+              <span className="text-steel">*</span>
             </p>
             <p className="font-body text-xs text-text-muted mt-1">
               Select all that apply
@@ -499,11 +499,11 @@ export default function ClientOnboardingForm({
                 >
                   <input
                     type="checkbox"
-                    className="h-4 w-4 rounded border-surface-200 text-teal focus:ring-teal/40"
+                    className="h-4 w-4 rounded border-pearl-200 text-steel focus:ring-steel/40"
                     checked={checked}
                     onChange={() => toggleService(service.value)}
                   />
-                  <span className="font-body text-sm text-charcoal">
+                  <span className="font-body text-sm text-navy">
                     {service.label}
                   </span>
                 </label>
@@ -522,9 +522,9 @@ export default function ClientOnboardingForm({
       <AnimatedSection variant="fadeUp" delay={0.15}>
         <div className="space-y-6">
           <div>
-            <p className="font-body text-sm font-medium text-charcoal mb-2">
+            <p className="font-body text-sm font-medium text-navy mb-2">
               How many properties do you manage?{" "}
-              <span className="text-teal">*</span>
+              <span className="text-steel">*</span>
             </p>
             <div className="flex flex-wrap gap-3">
               {PORTFOLIO_SIZE_OPTIONS.map((option) => {
@@ -536,8 +536,8 @@ export default function ClientOnboardingForm({
                     onClick={() => handlePortfolioSelect(option.value)}
                     className={`px-4 py-2 text-sm font-body rounded-full border ${
                       selected
-                        ? "border-teal bg-teal-muted text-teal font-medium"
-                        : "border-surface-200 bg-white text-charcoal hover:border-teal/50 hover:text-teal"
+                        ? "border-steel bg-steel-muted text-steel font-medium"
+                        : "border-pearl-200 bg-white text-navy hover:border-steel/50 hover:text-steel"
                     } transition-colors duration-200`}
                   >
                     {option.label}
@@ -555,9 +555,9 @@ export default function ClientOnboardingForm({
           <div>
             <label
               htmlFor="propertyLocations"
-              className="block font-body text-sm font-medium text-charcoal mb-1"
+              className="block font-body text-sm font-medium text-navy mb-1"
             >
-              Primary Property Locations <span className="text-teal">*</span>
+              Primary Property Locations <span className="text-steel">*</span>
             </label>
             <input
               id="propertyLocations"
@@ -566,8 +566,8 @@ export default function ClientOnboardingForm({
               value={form.propertyLocations}
               onChange={handleFieldChange}
               className={`w-full px-4 py-3 bg-white border ${
-                errors.propertyLocations ? "border-error" : "border-surface-200"
-              } rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200`}
+                errors.propertyLocations ? "border-error" : "border-pearl-200"
+              } rounded-lg text-navy placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-steel/40 focus:border-steel transition-colors duration-200`}
               placeholder="e.g. Dallas, Houston, Austin, San Antonio"
               aria-invalid={!!errors.propertyLocations}
               aria-describedby={
@@ -595,7 +595,7 @@ export default function ClientOnboardingForm({
         <div>
           <label
             htmlFor="additionalNotes"
-            className="block font-body text-sm font-medium text-charcoal mb-1"
+            className="block font-body text-sm font-medium text-navy mb-1"
           >
             Tell us about your portfolio or maintenance needs{" "}
             <span className="text-text-muted font-normal">(Optional)</span>
@@ -606,7 +606,7 @@ export default function ClientOnboardingForm({
             rows={5}
             value={form.additionalNotes}
             onChange={handleFieldChange}
-            className="w-full px-4 py-3 bg-white border border-surface-200 rounded-lg text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors duration-200 resize-y"
+            className="w-full px-4 py-3 bg-white border border-pearl-200 rounded-lg text-navy placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-steel/40 focus:border-steel transition-colors duration-200 resize-y"
             placeholder="Describe your property portfolio, specific maintenance challenges, service frequency expectations, or anything else that would help us understand your needs better..."
           />
         </div>
@@ -621,7 +621,7 @@ export default function ClientOnboardingForm({
               type="checkbox"
               checked={form.agreeToTerms}
               onChange={handleTermsChange}
-              className="mt-1 h-4 w-4 rounded border-surface-300 text-teal focus:ring-teal focus:ring-offset-0 cursor-pointer"
+              className="mt-1 h-4 w-4 rounded border-pearl-300 text-steel focus:ring-steel focus:ring-offset-0 cursor-pointer"
               aria-invalid={!!errors.agreeToTerms}
               aria-describedby={
                 errors.agreeToTerms ? "client-agreeToTerms-error" : undefined
@@ -629,12 +629,12 @@ export default function ClientOnboardingForm({
             />
             <label
               htmlFor="client-agreeToTerms"
-              className="font-body text-sm text-charcoal cursor-pointer"
+              className="font-body text-sm text-navy cursor-pointer"
             >
               I agree to the{" "}
               <Link
                 href="/terms"
-                className="text-teal hover:text-teal-dark underline underline-offset-2"
+                className="text-steel hover:text-steel-dark underline underline-offset-2"
               >
                 Terms &amp; Conditions
               </Link>{" "}

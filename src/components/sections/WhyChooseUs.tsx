@@ -33,7 +33,7 @@ const stats = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-24 lg:py-32 bg-charcoal">
+    <section id="why-us" className="py-24 lg:py-32 bg-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
@@ -54,17 +54,17 @@ export function WhyChooseUs() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-5 lg:p-6 h-full hover:bg-white/10 hover:border-teal/30 transition-all duration-300">
-                  <div className="w-10 h-10 bg-teal/20 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-5 lg:p-6 h-full hover:bg-white/10 hover:border-steel/30 transition-all duration-300">
+                  <div className="w-10 h-10 bg-steel/20 rounded-lg flex items-center justify-center mb-4">
                     <Icon
-                      className="w-5 h-5 text-teal"
+                      className="w-5 h-5 text-steel"
                       aria-hidden="true"
                     />
                   </div>
                   <h3 className="font-display text-xl font-bold text-white mb-3">
                     {feature.title}
                   </h3>
-                  <p className="font-body text-surface-300">
+                  <p className="font-body text-pearl-300">
                     {feature.description}
                   </p>
                 </div>
@@ -79,10 +79,10 @@ export function WhyChooseUs() {
             {stats.map((stat, index) => (
               <React.Fragment key={stat.value}>
                 <div className="text-center">
-                  <div className="font-display text-2xl md:text-3xl font-bold text-teal mb-1">
+                  <div className="font-display text-2xl md:text-3xl font-bold text-steel mb-1">
                     {stat.value}
                   </div>
-                  <div className="font-body text-surface-300 text-sm">
+                  <div className="font-body text-pearl-300 text-sm">
                     {stat.label}
                   </div>
                 </div>

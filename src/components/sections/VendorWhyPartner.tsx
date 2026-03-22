@@ -29,9 +29,9 @@ export default function VendorWhyPartner() {
   return (
     <>
       {/* Subtext strip */}
-      <div className="bg-charcoal text-white py-4">
+      <div className="bg-navy text-white py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-accent text-sm sm:text-base text-center text-surface-300 tracking-wide">
+          <p className="font-accent text-sm sm:text-base text-center text-pearl-300 tracking-wide">
             Serving Residential Portfolios&nbsp;•&nbsp;Investment
             Properties&nbsp;•&nbsp;Managed Communities&nbsp;•&nbsp;Institutional
             Assets
@@ -57,12 +57,12 @@ export default function VendorWhyPartner() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-5 lg:p-6 hover:border-teal/40 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex gap-4">
+                <div className="bg-white border border-pearl-200 rounded-2xl shadow-card p-5 lg:p-6 hover:border-steel/40 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex gap-4">
                   <span className="mt-1 flex-shrink-0">
-                    <CheckCircle2 className="w-6 h-6 text-teal" />
+                    <CheckCircle2 className="w-6 h-6 text-steel" />
                   </span>
                   <div>
-                    <h3 className="font-display text-lg font-bold text-charcoal mb-2">
+                    <h3 className="font-display text-lg font-bold text-navy mb-2">
                       {benefit.title}
                     </h3>
                     <p className="font-body text-text-muted">

@@ -82,16 +82,16 @@ export default function AboutPage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-charcoal/72 z-10" />
+        <div className="absolute inset-0 bg-navy/72 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24">
           <div className="text-center">
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               About ONECALL FIELD SERVICES LLC
             </h1>
             <div className="flex justify-center my-3">
-              <div className="h-px w-16 bg-teal/50" />
+              <div className="h-px w-16 bg-steel/50" />
             </div>
-          <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
+          <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
             Rooted in Texas. Serving statewide. Engineered for professional operations.
           </p>
           </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <AnimatedSection variant="fadeLeft" className="lg:col-span-3">
               <div>
-                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-6">
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-navy mb-6">
                   Our Purpose
                 </h2>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-4">
@@ -114,8 +114,8 @@ export default function AboutPage() {
                 <p className="font-body text-base sm:text-lg text-text-muted mb-6">
                   Our clients depend on us to handle regular maintenance duties, urgent service needs, transition preparations, asset preservation, and property inspections.
                 </p>
-                <div className="bg-surface-100 border-l-4 border-teal rounded-lg p-4 sm:p-6 mb-8">
-                  <p className="font-body text-base sm:text-lg text-teal italic font-medium">
+                <div className="bg-pearl-100 border-l-4 border-steel rounded-lg p-4 sm:p-6 mb-8">
+                  <p className="font-body text-base sm:text-lg text-steel italic font-medium">
                     &quot;We view every property as a valued investment — and we manage it that way.&quot;
                   </p>
                 </div>
@@ -138,14 +138,14 @@ export default function AboutPage() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-24 lg:py-32 bg-surface-100">
+      <section className="py-24 lg:py-32 bg-pearl-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
                 Our Capabilities
               </h2>
-              <div className="w-20 h-1 bg-teal rounded-full mx-auto mb-4" />
+              <div className="w-20 h-1 bg-steel rounded-full mx-auto mb-4" />
               <p className="font-body text-base sm:text-lg text-text-muted max-w-3xl mx-auto">
                 Complete property maintenance systems throughout Texas—providing targeted expertise in interior solutions, exterior offerings, and property cleanout services.
               </p>
@@ -159,9 +159,9 @@ export default function AboutPage() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="bg-white border border-surface-200 rounded-2xl p-8 text-center h-full hover:border-teal/40 hover:shadow-card transition-all duration-300">
-                  <category.icon className="w-12 h-12 text-teal mx-auto mb-4" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-charcoal mb-3">
+                <div className="bg-white border border-pearl-200 rounded-2xl p-8 text-center h-full hover:border-steel/40 hover:shadow-card transition-all duration-300">
+                  <category.icon className="w-12 h-12 text-steel mx-auto mb-4" aria-hidden="true" />
+                  <h3 className="font-display text-xl font-bold text-navy mb-3">
                     {category.title}
                   </h3>
                   <p className="font-body text-text-muted">
@@ -187,7 +187,7 @@ export default function AboutPage() {
         </div>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-charcoal/72 z-10" />
+        <div className="absolute inset-0 bg-navy/72 z-10" />
 
         {/* Content — same design and font colors as CTABanner dark variant */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -196,10 +196,10 @@ export default function AboutPage() {
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                 Across the Entire Lone Star State
               </h2>
-              <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-6">
+              <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto mb-6">
                 From the boundaries to the center, ONECALL FIELD SERVICES LLC serves properties anywhere throughout Texas. Specialized knowledge. Regional connections. Statewide infrastructure.
               </p>
-              <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
+              <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
                 Supporting Dallas, Houston, Austin, San Antonio, and surrounding areas
               </p>
             </div>
@@ -225,10 +225,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center mb-12">
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
                 Our Values
               </h2>
-              <div className="w-20 h-1 bg-teal rounded-full mx-auto" />
+              <div className="w-20 h-1 bg-steel rounded-full mx-auto" />
             </div>
           </AnimatedSection>
 
@@ -239,8 +239,8 @@ export default function AboutPage() {
                 variant="fadeUp"
                 delay={index * 0.1}
               >
-                <div className="pl-4 border-l-2 border-teal/40">
-                  <h3 className="font-display font-semibold text-charcoal mb-2 text-xl">{value.title}</h3>
+                <div className="pl-4 border-l-2 border-steel/40">
+                  <h3 className="font-display font-semibold text-navy mb-2 text-xl">{value.title}</h3>
                   <p className="font-body text-text-muted">{value.description}</p>
                 </div>
               </AnimatedSection>
@@ -250,24 +250,24 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-24 lg:py-32 bg-charcoal text-white">
+      <section className="py-24 lg:py-32 bg-navy text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <div className="text-center">
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 Want to Begin?
               </h2>
-              <p className="font-body text-lg text-surface-300 mb-10 max-w-2xl mx-auto">
+              <p className="font-body text-lg text-pearl-300 mb-10 max-w-2xl mx-auto">
                 Join hundreds of successful property professionals across Texas who depend on ONECALL FIELD SERVICES LLC for dependable maintenance solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button variant="primary" size="lg" asChild>
                   <Link href="/quote">Get a Free Quote</Link>
                 </Button>
-                <span className="text-surface-300">or</span>
+                <span className="text-pearl-300">or</span>
                 <a
                   href="tel:1234567890"
-                  className="font-body text-teal hover:text-teal-light transition-colors"
+                  className="font-body text-steel hover:text-steel-light transition-colors"
                 >
                   Call: 123-456-7890
                 </a>

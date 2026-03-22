@@ -8,7 +8,7 @@ interface SkeletonProps {
 }
 
 export function Skeleton({ width, height, className = "", variant = "text" }: SkeletonProps) {
-  const baseStyles = "bg-surface-100 rounded animate-pulse";
+  const baseStyles = "bg-pearl-100 rounded animate-pulse";
   
   const variantStyles = {
     text: "h-4",
@@ -30,7 +30,7 @@ export function Skeleton({ width, height, className = "", variant = "text" }: Sk
       style={style}
       aria-hidden="true"
     >
-      <div className="w-full h-full bg-gradient-to-r from-surface-100 via-surface-50 to-surface-100 bg-[length:200%_100%] animate-shimmer" />
+      <div className="w-full h-full bg-gradient-to-r from-pearl-100 via-pearl-50 to-pearl-100 bg-[length:200%_100%] animate-shimmer" />
     </div>
   );
 }

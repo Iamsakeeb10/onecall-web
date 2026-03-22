@@ -22,7 +22,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const initials = getInitials(testimonial.name);
 
   return (
-    <div className="bg-white border border-surface-200 rounded-2xl shadow-card p-4 sm:p-6 h-full hover:border-teal/40 hover:shadow-card-hover transition-all duration-300 flex flex-col">
+    <div className="bg-white border border-pearl-200 rounded-2xl shadow-card p-4 sm:p-6 h-full hover:border-steel/40 hover:shadow-card-hover transition-all duration-300 flex flex-col">
       {/* Author Info — moved to top */}
       <div className="flex items-center gap-3 mb-4">
         {/* Avatar */}
@@ -33,13 +33,13 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
               alt={testimonial.name}
               width={48}
               height={48}
-              className="w-12 h-12 rounded-full object-cover ring-2 ring-teal/25"
+              className="w-12 h-12 rounded-full object-cover ring-2 ring-steel/25"
               style={{ aspectRatio: "1 / 1" }}
               onError={() => setImgError(true)}
             />
           ) : (
-            <div className="w-12 h-12 rounded-full bg-surface-100 flex items-center justify-center ring-2 ring-teal/25">
-              <span className="font-display text-sm font-bold text-charcoal">
+            <div className="w-12 h-12 rounded-full bg-pearl-100 flex items-center justify-center ring-2 ring-steel/25">
+              <span className="font-display text-sm font-bold text-navy">
                 {initials}
               </span>
             </div>
@@ -48,7 +48,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
 
         {/* Name and Role */}
         <div className="flex-grow">
-          <p className="font-body text-charcoal font-semibold">
+          <p className="font-body text-navy font-semibold">
             {testimonial.name}
           </p>
           <p className="font-body text-text-muted text-sm">
@@ -58,19 +58,19 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
         </div>
       </div>
 
-      {/* Stars — skyblue for prestige accent */}
+      {/* Stars — brass for prestige accent */}
       <div className="flex gap-1 mb-4">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star
             key={i}
-            className="w-5 h-5 text-skyblue fill-skyblue"
+            className="w-5 h-5 text-brass fill-brass"
             aria-hidden="true"
           />
         ))}
       </div>
 
       {/* Quote with left border accent */}
-      <p className="font-body text-sm sm:text-base text-text-muted italic border-l-2 border-teal/30 pl-3 flex-grow">
+      <p className="font-body text-sm sm:text-base text-text-muted italic border-l-2 border-steel/30 pl-3 flex-grow">
         &quot;{testimonial.content}&quot;
       </p>
     </div>

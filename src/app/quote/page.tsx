@@ -29,12 +29,12 @@ export default function QuotePage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-charcoal/72 z-10" />
+        <div className="absolute inset-0 bg-navy/72 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Get a Quote
           </h1>
-          <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
+          <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
             Let&apos;s talk about your property needs. Fill out the form and we&apos;ll respond within
             24 hours.
           </p>
@@ -48,7 +48,7 @@ export default function QuotePage() {
             {/* Form - Takes 3 columns */}
             <div className="lg:col-span-3">
               <AnimatedSection variant="fadeLeft">
-                <h2 className="font-display text-3xl sm:text-4xl font-bold text-charcoal mb-3">
+                <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy mb-3">
                   Request Your Quote
                 </h2>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-10">
@@ -62,43 +62,43 @@ export default function QuotePage() {
             <div className="lg:col-span-1">
               <AnimatedSection variant="fadeRight" className="space-y-6">
                 {/* Quick Contact */}
-                <div className="bg-surface-50 rounded-2xl p-6 border border-surface-200">
-                  <h3 className="font-display text-lg font-bold text-charcoal mb-4">
+                <div className="bg-pearl-50 rounded-2xl p-6 border border-pearl-200">
+                  <h3 className="font-display text-lg font-bold text-navy mb-4">
                     Quick Contact
                   </h3>
                   <div className="space-y-3">
                     <a
                       href="tel:1234567890"
-                      className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
+                      className="flex items-center gap-3 font-body text-navy hover:text-steel transition-colors duration-300"
                     >
-                      <Phone className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
+                      <Phone className="w-5 h-5 text-steel flex-shrink-0" aria-hidden="true" />
                       <span className="text-sm">123-456-7890</span>
                     </a>
 
                     <a
                       href="mailto:info@onecallfield.com"
-                      className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
+                      className="flex items-center gap-3 font-body text-navy hover:text-steel transition-colors duration-300"
                     >
-                      <Mail className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
+                      <Mail className="w-5 h-5 text-steel flex-shrink-0" aria-hidden="true" />
                       <span className="text-sm">info@onecallfield.com</span>
                     </a>
                   </div>
                 </div>
 
                 {/* Service Coverage */}
-                <div className="bg-teal/5 rounded-2xl p-6 border border-teal/20">
-                  <h3 className="font-display text-lg font-bold text-charcoal mb-4">
+                <div className="bg-steel/5 rounded-2xl p-6 border border-steel/20">
+                  <h3 className="font-display text-lg font-bold text-navy mb-4">
                     Service Area
                   </h3>
                   <div className="space-y-2">
                     <div className="flex items-start gap-2">
-                      <MapPin className="w-4 h-4 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
+                      <MapPin className="w-4 h-4 text-steel mt-1 flex-shrink-0" aria-hidden="true" />
                       <span className="font-body text-sm text-text-muted">
                         All of Texas Statewide
                       </span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <Clock className="w-4 h-4 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
+                      <Clock className="w-4 h-4 text-steel mt-1 flex-shrink-0" aria-hidden="true" />
                       <span className="font-body text-sm text-text-muted">
                         M-F: 8am–6pm
                       </span>
@@ -107,22 +107,22 @@ export default function QuotePage() {
                 </div>
 
                 {/* Trust Badges */}
-                <div className="bg-surface-50 rounded-2xl p-6 border border-surface-200">
-                  <h3 className="font-display text-sm font-bold text-charcoal uppercase tracking-wider mb-4">
+                <div className="bg-pearl-50 rounded-2xl p-6 border border-pearl-200">
+                  <h3 className="font-display text-sm font-bold text-navy uppercase tracking-wider mb-4">
                     Why ONECALL
                   </h3>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <span className="text-teal font-bold">✓</span>
-                      <span className="font-body text-sm text-charcoal">Fully Insured</span>
+                      <span className="text-steel font-bold">✓</span>
+                      <span className="font-body text-sm text-navy">Fully Insured</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-teal font-bold">✓</span>
-                      <span className="font-body text-sm text-charcoal">Licensed</span>
+                      <span className="text-steel font-bold">✓</span>
+                      <span className="font-body text-sm text-navy">Licensed</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-teal font-bold">✓</span>
-                      <span className="font-body text-sm text-charcoal">10+ Years</span>
+                      <span className="text-steel font-bold">✓</span>
+                      <span className="font-body text-sm text-navy">10+ Years</span>
                     </div>
                   </div>
                 </div>
@@ -133,9 +133,9 @@ export default function QuotePage() {
       </section>
 
       {/* Bottom Info Cards - Redesigned */}
-      <section className="py-24 lg:py-32 bg-surface-50">
+      <section className="py-24 lg:py-32 bg-pearl-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-charcoal mb-12 text-center">
+          <h2 className="font-display text-3xl font-bold text-navy mb-12 text-center">
             What to Expect
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -163,11 +163,11 @@ export default function QuotePage() {
                   variant="fadeUp"
                   delay={index * 0.1}
                 >
-                  <div className="bg-white rounded-2xl p-8 border border-surface-200 text-center hover:border-teal/40 hover:shadow-card transition-all duration-300">
-                    <div className="w-14 h-14 rounded-full bg-teal/10 flex items-center justify-center mx-auto mb-4">
-                      <Icon className="w-7 h-7 text-teal" aria-hidden="true" />
+                  <div className="bg-white rounded-2xl p-8 border border-pearl-200 text-center hover:border-steel/40 hover:shadow-card transition-all duration-300">
+                    <div className="w-14 h-14 rounded-full bg-steel/10 flex items-center justify-center mx-auto mb-4">
+                      <Icon className="w-7 h-7 text-steel" aria-hidden="true" />
                     </div>
-                    <h3 className="font-display text-xl font-bold text-charcoal mb-2">
+                    <h3 className="font-display text-xl font-bold text-navy mb-2">
                       {card.title}
                     </h3>
                     <p className="font-body text-text-muted">

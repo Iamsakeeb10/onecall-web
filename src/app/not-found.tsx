@@ -15,8 +15,8 @@ export default function NotFound() {
     <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden">
       {/* Animated Background Element */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-surface-100 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-surface-200 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pearl-100 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pearl-200 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
       </div>
 
       {/* Content */}
@@ -31,10 +31,10 @@ export default function NotFound() {
             priority
           />
         </div>
-        <h1 className="font-display text-9xl font-bold text-surface-100 mb-4">
+        <h1 className="font-display text-9xl font-bold text-pearl-100 mb-4">
           404
         </h1>
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-4">
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-4">
           Page Not Found
         </h2>
         <p className="font-body text-text-muted text-lg mb-8 max-w-md mx-auto">

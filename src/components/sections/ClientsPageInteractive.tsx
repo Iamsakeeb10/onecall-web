@@ -60,7 +60,7 @@ export default function ClientsPageInteractive() {
   return (
     <>
       {/* Ready to Partner CTA Banner */}
-      <section className="py-20 lg:py-28 bg-surface-50 border-t-2 border-teal/20">
+      <section className="py-20 lg:py-28 bg-pearl-50 border-t-2 border-steel/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={shouldReduceMotion ? {} : { opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ export default function ClientsPageInteractive() {
             transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-6">
                 Ready to Partner with ONECALL FIELD SERVICES LLC?
               </h2>
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
@@ -80,16 +80,16 @@ export default function ClientsPageInteractive() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
                 <a
                   href="tel:1234567890"
-                  className="flex items-center gap-2 font-body text-charcoal hover:text-teal transition-colors duration-300"
+                  className="flex items-center gap-2 font-body text-navy hover:text-steel transition-colors duration-300"
                 >
-                  <Phone className="w-5 h-5 text-teal" aria-hidden="true" />
+                  <Phone className="w-5 h-5 text-steel" aria-hidden="true" />
                   123-456-7890
                 </a>
                 <a
                   href="mailto:info@onecallfield.com"
-                  className="flex items-center gap-2 font-body text-charcoal hover:text-teal transition-colors duration-300"
+                  className="flex items-center gap-2 font-body text-navy hover:text-steel transition-colors duration-300"
                 >
-                  <Mail className="w-5 h-5 text-teal" aria-hidden="true" />
+                  <Mail className="w-5 h-5 text-steel" aria-hidden="true" />
                   info@onecallfield.com
                 </a>
               </div>
@@ -122,7 +122,7 @@ export default function ClientsPageInteractive() {
             }}
           >
             {/* WHY PARTNER BENEFIT STRIP */}
-            <div className="bg-charcoal py-10 lg:py-12">
+            <div className="bg-navy py-10 lg:py-12">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                   className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4"
@@ -146,7 +146,7 @@ export default function ClientsPageInteractive() {
                       }}
                     >
                       <CheckCircle2
-                        className="w-5 h-5 text-teal flex-shrink-0"
+                        className="w-5 h-5 text-steel flex-shrink-0"
                         aria-hidden="true"
                       />
                       <span className="font-body text-sm text-white font-medium">
@@ -165,7 +165,7 @@ export default function ClientsPageInteractive() {
             </div>
 
             {/* FORM SECTION */}
-            <div className="bg-surface-50 py-20 lg:py-28">
+            <div className="bg-pearl-50 py-20 lg:py-28">
               <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Heading */}
                 <motion.div
@@ -184,7 +184,7 @@ export default function ClientsPageInteractive() {
 
                 {/* Form Card */}
                 <motion.div
-                  className="mt-10 bg-white rounded-2xl shadow-card border border-surface-200 p-8 sm:p-10"
+                  className="mt-10 bg-white rounded-2xl shadow-card border border-pearl-200 p-8 sm:p-10"
                   initial={
                     shouldReduceMotion ? {} : { opacity: 0, y: 30 }
                   }

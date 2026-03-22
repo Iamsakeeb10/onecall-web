@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { services } from "@/lib/data/services";
 import { generatePageMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = generatePageMetadata({
@@ -16,14 +17,28 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function ServicesPage() {
   const featuredServices = services.slice(0, 3);
+  const heroImageUrl = "/images/heroes/hero-services.jpg";
 
   return (
     <>
-      <section className="relative h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh] flex items-center justify-center overflow-hidden bg-hero-bg pt-28 sm:pt-32">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
+      <section className="relative h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={heroImageUrl}
+            alt="Professional property maintenance services"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-navy/72 z-10" />
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Our Services
           </h1>
+          <div className="flex justify-center my-3">
+            <div className="h-px w-16 bg-steel/50" />
+          </div>
           <p className="font-body text-lg text-pearl-200 max-w-3xl mx-auto">
             Statewide property maintenance solutions designed for property
             managers, banks, investors, and commercial operators across Texas.
@@ -42,6 +57,7 @@ export default function ServicesPage() {
             </Button>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
       </section>
 
       <section className="py-20 lg:py-28 bg-white">

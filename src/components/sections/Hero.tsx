@@ -2,6 +2,7 @@
 
 import { easeInOut, motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Clock, MapPin, ShieldCheck } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 /* ─── Trust Items ────────────────────────────────────────── */
@@ -10,6 +11,8 @@ const TRUST = [
   { icon: MapPin, label: "Complete State Coverage" },
   { icon: Clock, label: "Prompt Service Delivery" },
 ];
+
+const HERO_IMAGE = "/images/heroes/hero-services.jpg";
 
 /* ─── Animation helpers ──────────────────────────────────── */
 const fadeUp = (delay = 0, skipDelay: boolean | null = false) => ({
@@ -31,306 +34,120 @@ export function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex flex-col overflow-hidden"
-      style={{ background: "#0F1623" }}
+      className="relative min-h-[92vh] sm:min-h-screen flex flex-col overflow-hidden"
       aria-label="Hero"
     >
-      {/* ══════════════════════════════════════ */}
-      {/*  BACKGROUND SYSTEM                     */}
-      {/* ══════════════════════════════════════ */}
-
-      {/* Gradient mesh base */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background: [
-            /* top-left navy anchor */
-            "radial-gradient(ellipse 90% 70% at -10% -10%, #1A2233 0%, transparent 60%)",
-            /* top-right steel bloom */
-            "radial-gradient(ellipse 70% 55% at 110% -5%, rgba(37,99,235,0.45) 0%, transparent 55%)",
-            /* center-left deep navy */
-            "radial-gradient(ellipse 60% 60% at 0% 60%, #111827 0%, transparent 55%)",
-            /* bottom-right steel bloom */
-            "radial-gradient(ellipse 65% 50% at 100% 110%, rgba(29,78,216,0.35) 0%, transparent 55%)",
-            /* mid-canvas atmosphere */
-            "radial-gradient(ellipse 100% 80% at 50% 50%, rgba(30,42,59,0.90) 0%, transparent 75%)",
-            /* base fill */
-            "linear-gradient(160deg, #0F1623 0%, #1A2233 50%, #0F1623 100%)",
-          ].join(","),
-        }}
-      />
-
-      {/* Grain noise overlay */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.032]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
-          backgroundSize: "200px 200px",
-        }}
-      />
-
-      {/* Geometric texture grid */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.025]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px)," +
-            "linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
-          backgroundSize: "80px 80px",
-        }}
-      />
-
-      {/* Decorative rotating ring — top right */}
-      <div
-        aria-hidden
-        className={`pointer-events-none absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full border opacity-[0.07] ${
-          reduced ? "" : "animate-spin-slow"
-        }`}
-        style={{ borderColor: "#2563EB", borderWidth: "1px" }}
-      />
-      {/* Inner ring */}
-      <div
-        aria-hidden
-        className={`pointer-events-none absolute -top-16 -right-16 w-[420px] h-[420px] rounded-full border opacity-[0.05] ${
-          reduced ? "" : "animate-spin-slower"
-        }`}
-        style={{ borderColor: "#2563EB", borderWidth: "1px" }}
-      />
-
-      {/* Decorative ring — bottom left */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-48 -left-48 w-[700px] h-[700px] rounded-full border opacity-[0.04]"
-        style={{ borderColor: "#2563EB", borderWidth: "1px" }}
-      />
-
-      {/* Top accent rule */}
-      <div
-        aria-hidden
-        className="absolute top-0 left-0 right-0 h-[2px]"
-        style={{
-          background:
-            "linear-gradient(90deg, transparent 0%, rgba(37,99,235,0.8) 35%, #2563EB 50%, rgba(37,99,235,0.8) 65%, transparent 100%)",
-        }}
-      />
-
-      {/* ══════════════════════════════════════ */}
-      {/*  MAIN CONTENT                          */}
-      {/* ══════════════════════════════════════ */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-8">
-        {/* Content column — centered, max readable width */}
-        <div className="w-full max-w-5xl mx-auto flex flex-col items-center text-center gap-8">
-          {/* ── Eyebrow badge ── */}
-          <motion.div
-            initial={reduced ? {} : { opacity: 0, scale: 0.92 }}
-            animate={reduced ? {} : { opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-          >
-            <span
-              className="inline-flex items-center gap-2.5 rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white"
-              style={{
-                background: "rgba(37,99,235,0.12)",
-                borderColor: "rgba(37,99,235,0.30)",
-                fontFamily: "var(--font-body)",
-                backdropFilter: "blur(10px)",
-              }}
-            >
-              <span
-                className={`w-1.5 h-1.5 rounded-full bg-steel ${
-                  reduced ? "" : "animate-pulse"
-                }`}
-                style={{ background: "#2563EB" }}
-                aria-hidden
-              />
-              Texas Statewide Property Maintenance
-            </span>
-          </motion.div>
-
-          {/* ── Giant display headline ── */}
-          <motion.div
-            variants={fadeUp(0.15, reduced)}
-            initial="hidden"
-            animate="visible"
-            className="flex flex-col items-center"
-          >
-            <h1
-              className="leading-none tracking-wider select-none"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {/* Line 1 */}
-              <span
-                className="block text-[clamp(2.8rem,11vw,6.9rem)] text-white"
-                style={{ letterSpacing: "0.04em" }}
-              >
-                EXPERT
-              </span>
-
-              {/* Line 2 — outlined ghost text */}
-              <span
-                className="block text-[clamp(1.7rem,6vw,4.6rem)]"
-                style={{
-                  letterSpacing: "0.06em",
-                  color: "transparent",
-                  WebkitTextStroke: "1.5px rgba(255,255,255,0.35)",
-                }}
-              >
-                PROPERTY MAINTENANCE
-              </span>
-
-              {/* Line 3 — steel blue */}
-              <span
-                className="block text-[clamp(2.3rem,8.8vw,6.4rem)]"
-                style={{
-                  letterSpacing: "0.05em",
-                  color: "#2563EB",
-                  textShadow:
-                    "0 0 60px rgba(37,99,235,0.50), 0 0 120px rgba(37,99,235,0.25)",
-                }}
-              >
-                ACROSS TEXAS
-              </span>
-            </h1>
-          </motion.div>
-
-          {/* ── Thin divider rule ── */}
-          <motion.div
-            variants={fadeUp(0.25, reduced)}
-            initial="hidden"
-            animate="visible"
-            className="w-24 h-px"
-            style={{
-              background:
-                "linear-gradient(90deg, transparent, #2563EB, transparent)",
-            }}
-            aria-hidden
-          />
-
-          {/* ── Body copy ── */}
-          <motion.p
-            variants={fadeUp(0.3, reduced)}
-            initial="hidden"
-            animate="visible"
-            className="text-base sm:text-lg leading-relaxed max-w-2xl"
-            style={{ color: "#B8C4D6", fontFamily: "var(--font-body)" }}
-          >
-            Institutional-grade property maintenance delivered statewide.
-            Single-family, multifamily, and commercial — one call, every
-            service.
-          </motion.p>
-
-          {/* ── CTA buttons ── */}
-          <motion.div
-            variants={fadeUp(0.35, reduced)}
-            initial="hidden"
-            animate="visible"
-            className="flex flex-wrap items-center justify-center gap-4"
-          >
-            {/* Primary */}
-            <Link
-              href="/quote"
-              className="group inline-flex items-center gap-2.5 rounded-full px-8 py-3 text-sm font-semibold text-white transition-all duration-300"
-              style={{
-                background: "linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)",
-                boxShadow:
-                  "0 0 0 1px rgba(37,99,235,0.5), 0 8px 24px rgba(37,99,235,0.40)",
-                fontFamily: "var(--font-body)",
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLElement;
-                el.style.boxShadow =
-                  "0 0 0 1px rgba(37,99,235,0.8), 0 12px 32px rgba(37,99,235,0.60)";
-                el.style.transform = "translateY(-2px)";
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLElement;
-                el.style.boxShadow =
-                  "0 0 0 1px rgba(37,99,235,0.5), 0 8px 24px rgba(37,99,235,0.40)";
-                el.style.transform = "translateY(0)";
-              }}
-            >
-              Get a Free Quote
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
-
-            {/* Secondary */}
-            <Link
-              href="/services"
-              className="inline-flex items-center gap-2 rounded-full border px-8 py-3 text-sm font-semibold text-white transition-all duration-300"
-              style={{
-                background: "rgba(255,255,255,0.05)",
-                borderColor: "rgba(255,255,255,0.18)",
-                fontFamily: "var(--font-body)",
-                backdropFilter: "blur(12px)",
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLElement;
-                el.style.background = "rgba(255,255,255,0.11)";
-                el.style.borderColor = "rgba(255,255,255,0.38)";
-                el.style.transform = "translateY(-2px)";
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLElement;
-                el.style.background = "rgba(255,255,255,0.05)";
-                el.style.borderColor = "rgba(255,255,255,0.18)";
-                el.style.transform = "translateY(0)";
-              }}
-            >
-              View Our Services
-            </Link>
-          </motion.div>
-
-          {/* ── Trust micro-row ── */}
-          <motion.div
-            variants={fadeUp(0.4, reduced)}
-            initial="hidden"
-            animate="visible"
-            className="flex flex-wrap justify-center gap-x-7 gap-y-2"
-          >
-            {TRUST.map(({ icon: Icon, label }) => (
-              <span
-                key={label}
-                className="inline-flex items-center gap-1.5 text-xs sm:text-sm"
-                style={{ color: "#C8CAD4", fontFamily: "var(--font-body)" }}
-              >
-                <Icon
-                  className="w-3.5 h-3.5 shrink-0"
-                  style={{ color: "#2563EB" }}
-                />
-                {label}
-              </span>
-            ))}
-          </motion.div>
-        </div>
-        {/* END CONTENT COLUMN */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={HERO_IMAGE}
+          alt="Professional property maintenance services"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
       </div>
-      {/* END MAIN CONTENT */}
+      <div className="absolute inset-0 z-10 bg-navy/70" aria-hidden="true" />
+      <div
+        className="absolute inset-0 z-10 bg-gradient-to-r from-navy/85 via-navy/70 to-navy/80"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 z-10 hero-texture opacity-25"
+        aria-hidden="true"
+      />
 
-      {/* ══════════════════════════════════════ */}
-      {/*  TRUST STRIP                           */}
-      {/* ══════════════════════════════════════ */}
+      <div className="relative z-20 flex-1 flex items-center pt-28 sm:pt-32 pb-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-3xl">
+            <motion.div
+              initial={reduced ? {} : { opacity: 0, scale: 0.96 }}
+              animate={reduced ? {} : { opacity: 1, scale: 1 }}
+              transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
+              className="mb-5"
+            >
+              <span className="inline-flex items-center gap-2 rounded-full border border-steel/45 bg-steel/20 px-4 py-1.5 text-xs font-accent font-semibold uppercase tracking-[0.12em] text-white backdrop-blur-sm">
+                <span
+                  className={`h-1.5 w-1.5 rounded-full bg-steel ${reduced ? "" : "animate-pulse"}`}
+                  aria-hidden="true"
+                />
+                Texas Statewide Property Maintenance
+              </span>
+            </motion.div>
+
+            <motion.h1
+              variants={fadeUp(0.12, reduced)}
+              initial="hidden"
+              animate="visible"
+              className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.04]"
+            >
+              Expert Property Maintenance Across Texas
+            </motion.h1>
+
+            <motion.p
+              variants={fadeUp(0.2, reduced)}
+              initial="hidden"
+              animate="visible"
+              className="mt-5 text-base sm:text-lg text-pearl-200 max-w-2xl leading-relaxed"
+            >
+              Institutional-grade field services for residential, multifamily,
+              and commercial portfolios with one accountable statewide partner.
+            </motion.p>
+
+            <motion.div
+              variants={fadeUp(0.28, reduced)}
+              initial="hidden"
+              animate="visible"
+              className="mt-8 flex flex-wrap items-center gap-4"
+            >
+              <Link
+                href="/quote"
+                className="group inline-flex items-center gap-2 rounded-full bg-steel px-8 py-3 text-sm sm:text-base font-accent font-semibold text-white transition-all duration-300 hover:bg-steel-dark hover:-translate-y-0.5 hover:shadow-steel-glow"
+              >
+                Get a Free Quote
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 rounded-full border border-pearl-300/55 bg-white/10 px-8 py-3 text-sm sm:text-base font-accent font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-pearl-200"
+              >
+                View Our Services
+              </Link>
+            </motion.div>
+
+            <motion.div
+              variants={fadeUp(0.34, reduced)}
+              initial="hidden"
+              animate="visible"
+              className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2"
+            >
+              {TRUST.map(({ icon: Icon, label }) => (
+                <span
+                  key={label}
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm text-pearl-200"
+                >
+                  <Icon
+                    className="w-3.5 h-3.5 text-steel shrink-0"
+                    aria-hidden="true"
+                  />
+                  {label}
+                </span>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
       <motion.div
         initial={reduced ? {} : { opacity: 0 }}
         animate={reduced ? {} : { opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="relative z-10 border-t py-4"
-        style={{
-          background: "rgba(15,22,35,0.75)",
-          borderColor: "rgba(255,255,255,0.08)",
-          backdropFilter: "blur(16px)",
-        }}
+        className="relative z-20 border-t border-white/15 py-4 bg-navy/65 backdrop-blur-md"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs sm:text-sm">
-            <span
-              className="font-semibold uppercase tracking-[0.14em] text-white"
-              style={{
-                fontFamily: "var(--font-body)",
-                letterSpacing: "0.14em",
-              }}
-            >
+            <span className="font-accent font-semibold uppercase tracking-[0.14em] text-white">
               OneCall Field Services
             </span>
 
@@ -347,14 +164,7 @@ export function Hero() {
                     style={{ background: "rgba(255,255,255,0.18)" }}
                   />
                 )}
-                <span
-                  style={{
-                    color: "#C8CAD4",
-                    fontFamily: "var(--font-body)",
-                  }}
-                >
-                  {text}
-                </span>
+                <span className="text-pearl-300">{text}</span>
               </span>
             ))}
           </div>

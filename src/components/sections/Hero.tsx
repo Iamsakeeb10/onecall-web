@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { motion, useReducedMotion, easeInOut } from 'framer-motion'
-import { ShieldCheck, MapPin, Clock, ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import { easeInOut, motion, useReducedMotion } from "framer-motion";
+import { ArrowRight, Clock, MapPin, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 /* ─── Trust Items ────────────────────────────────────────── */
 const TRUST = [
-  { icon: ShieldCheck, label: 'Fully Protected & Bonded' },
-  { icon: MapPin, label: 'Complete State Coverage' },
-  { icon: Clock, label: 'Prompt Service Delivery' },
-]
+  { icon: ShieldCheck, label: "Fully Protected & Bonded" },
+  { icon: MapPin, label: "Complete State Coverage" },
+  { icon: Clock, label: "Prompt Service Delivery" },
+];
 
 /* ─── Animation helpers ──────────────────────────────────── */
 const fadeUp = (delay = 0, skipDelay: boolean | null = false) => ({
@@ -23,16 +23,16 @@ const fadeUp = (delay = 0, skipDelay: boolean | null = false) => ({
       delay: skipDelay ? 0 : delay,
     },
   },
-})
+});
 
 /* ═══════════════════════════════════════════════════════════ */
 export function Hero() {
-  const reduced = useReducedMotion()
+  const reduced = useReducedMotion();
 
   return (
     <section
       className="relative min-h-screen flex flex-col overflow-hidden"
-      style={{ background: '#0F1623' }}
+      style={{ background: "#0F1623" }}
       aria-label="Hero"
     >
       {/* ══════════════════════════════════════ */}
@@ -46,18 +46,18 @@ export function Hero() {
         style={{
           background: [
             /* top-left navy anchor */
-            'radial-gradient(ellipse 90% 70% at -10% -10%, #1A2233 0%, transparent 60%)',
+            "radial-gradient(ellipse 90% 70% at -10% -10%, #1A2233 0%, transparent 60%)",
             /* top-right steel bloom */
-            'radial-gradient(ellipse 70% 55% at 110% -5%, rgba(37,99,235,0.45) 0%, transparent 55%)',
+            "radial-gradient(ellipse 70% 55% at 110% -5%, rgba(37,99,235,0.45) 0%, transparent 55%)",
             /* center-left deep navy */
-            'radial-gradient(ellipse 60% 60% at 0% 60%, #111827 0%, transparent 55%)',
+            "radial-gradient(ellipse 60% 60% at 0% 60%, #111827 0%, transparent 55%)",
             /* bottom-right steel bloom */
-            'radial-gradient(ellipse 65% 50% at 100% 110%, rgba(29,78,216,0.35) 0%, transparent 55%)',
+            "radial-gradient(ellipse 65% 50% at 100% 110%, rgba(29,78,216,0.35) 0%, transparent 55%)",
             /* mid-canvas atmosphere */
-            'radial-gradient(ellipse 100% 80% at 50% 50%, rgba(30,42,59,0.90) 0%, transparent 75%)',
+            "radial-gradient(ellipse 100% 80% at 50% 50%, rgba(30,42,59,0.90) 0%, transparent 75%)",
             /* base fill */
-            'linear-gradient(160deg, #0F1623 0%, #1A2233 50%, #0F1623 100%)',
-          ].join(','),
+            "linear-gradient(160deg, #0F1623 0%, #1A2233 50%, #0F1623 100%)",
+          ].join(","),
         }}
       />
 
@@ -67,7 +67,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 opacity-[0.032]"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
-          backgroundSize: '200px 200px',
+          backgroundSize: "200px 200px",
         }}
       />
 
@@ -77,9 +77,9 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(255,255,255,1) 1px, transparent 1px),' +
-            'linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)',
-          backgroundSize: '80px 80px',
+            "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px)," +
+            "linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
         }}
       />
 
@@ -87,24 +87,24 @@ export function Hero() {
       <div
         aria-hidden
         className={`pointer-events-none absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full border opacity-[0.07] ${
-          reduced ? '' : 'animate-spin-slow'
+          reduced ? "" : "animate-spin-slow"
         }`}
-        style={{ borderColor: '#2563EB', borderWidth: '1px' }}
+        style={{ borderColor: "#2563EB", borderWidth: "1px" }}
       />
       {/* Inner ring */}
       <div
         aria-hidden
         className={`pointer-events-none absolute -top-16 -right-16 w-[420px] h-[420px] rounded-full border opacity-[0.05] ${
-          reduced ? '' : 'animate-spin-slower'
+          reduced ? "" : "animate-spin-slower"
         }`}
-        style={{ borderColor: '#2563EB', borderWidth: '1px' }}
+        style={{ borderColor: "#2563EB", borderWidth: "1px" }}
       />
 
       {/* Decorative ring — bottom left */}
       <div
         aria-hidden
         className="pointer-events-none absolute -bottom-48 -left-48 w-[700px] h-[700px] rounded-full border opacity-[0.04]"
-        style={{ borderColor: '#2563EB', borderWidth: '1px' }}
+        style={{ borderColor: "#2563EB", borderWidth: "1px" }}
       />
 
       {/* Top accent rule */}
@@ -113,7 +113,7 @@ export function Hero() {
         className="absolute top-0 left-0 right-0 h-[2px]"
         style={{
           background:
-            'linear-gradient(90deg, transparent 0%, rgba(37,99,235,0.8) 35%, #2563EB 50%, rgba(37,99,235,0.8) 65%, transparent 100%)',
+            "linear-gradient(90deg, transparent 0%, rgba(37,99,235,0.8) 35%, #2563EB 50%, rgba(37,99,235,0.8) 65%, transparent 100%)",
         }}
       />
 
@@ -127,22 +127,22 @@ export function Hero() {
           <motion.div
             initial={reduced ? {} : { opacity: 0, scale: 0.92 }}
             animate={reduced ? {} : { opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
           >
             <span
               className="inline-flex items-center gap-2.5 rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white"
               style={{
-                background: 'rgba(37,99,235,0.12)',
-                borderColor: 'rgba(37,99,235,0.30)',
-                fontFamily: 'var(--font-body)',
-                backdropFilter: 'blur(10px)',
+                background: "rgba(37,99,235,0.12)",
+                borderColor: "rgba(37,99,235,0.30)",
+                fontFamily: "var(--font-body)",
+                backdropFilter: "blur(10px)",
               }}
             >
               <span
                 className={`w-1.5 h-1.5 rounded-full bg-steel ${
-                  reduced ? '' : 'animate-pulse'
+                  reduced ? "" : "animate-pulse"
                 }`}
-                style={{ background: '#2563EB' }}
+                style={{ background: "#2563EB" }}
                 aria-hidden
               />
               Texas Statewide Property Maintenance
@@ -158,23 +158,23 @@ export function Hero() {
           >
             <h1
               className="leading-none tracking-wider select-none"
-              style={{ fontFamily: 'var(--font-display)' }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               {/* Line 1 */}
               <span
-                className="block text-[clamp(3rem,12vw,7.5rem)] text-white"
-                style={{ letterSpacing: '0.04em' }}
+                className="block text-[clamp(2.8rem,11vw,6.9rem)] text-white"
+                style={{ letterSpacing: "0.04em" }}
               >
                 EXPERT
               </span>
 
               {/* Line 2 — outlined ghost text */}
               <span
-                className="block text-[clamp(1.8rem,6.5vw,5rem)]"
+                className="block text-[clamp(1.7rem,6vw,4.6rem)]"
                 style={{
-                  letterSpacing: '0.06em',
-                  color: 'transparent',
-                  WebkitTextStroke: '1.5px rgba(255,255,255,0.35)',
+                  letterSpacing: "0.06em",
+                  color: "transparent",
+                  WebkitTextStroke: "1.5px rgba(255,255,255,0.35)",
                 }}
               >
                 PROPERTY MAINTENANCE
@@ -182,12 +182,12 @@ export function Hero() {
 
               {/* Line 3 — steel blue */}
               <span
-                className="block text-[clamp(2.5rem,9.5vw,7rem)]"
+                className="block text-[clamp(2.3rem,8.8vw,6.4rem)]"
                 style={{
-                  letterSpacing: '0.05em',
-                  color: '#2563EB',
+                  letterSpacing: "0.05em",
+                  color: "#2563EB",
                   textShadow:
-                    '0 0 60px rgba(37,99,235,0.50), 0 0 120px rgba(37,99,235,0.25)',
+                    "0 0 60px rgba(37,99,235,0.50), 0 0 120px rgba(37,99,235,0.25)",
                 }}
               >
                 ACROSS TEXAS
@@ -202,7 +202,8 @@ export function Hero() {
             animate="visible"
             className="w-24 h-px"
             style={{
-              background: 'linear-gradient(90deg, transparent, #2563EB, transparent)',
+              background:
+                "linear-gradient(90deg, transparent, #2563EB, transparent)",
             }}
             aria-hidden
           />
@@ -213,10 +214,11 @@ export function Hero() {
             initial="hidden"
             animate="visible"
             className="text-base sm:text-lg leading-relaxed max-w-2xl"
-            style={{ color: '#B8C4D6', fontFamily: 'var(--font-body)' }}
+            style={{ color: "#B8C4D6", fontFamily: "var(--font-body)" }}
           >
-            Institutional-grade property maintenance delivered statewide. Single-family,
-            multifamily, and commercial — one call, every service.
+            Institutional-grade property maintenance delivered statewide.
+            Single-family, multifamily, and commercial — one call, every
+            service.
           </motion.p>
 
           {/* ── CTA buttons ── */}
@@ -231,22 +233,22 @@ export function Hero() {
               href="/quote"
               className="group inline-flex items-center gap-2.5 rounded-full px-8 py-3 text-sm font-semibold text-white transition-all duration-300"
               style={{
-                background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
+                background: "linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)",
                 boxShadow:
-                  '0 0 0 1px rgba(37,99,235,0.5), 0 8px 24px rgba(37,99,235,0.40)',
-                fontFamily: 'var(--font-body)',
+                  "0 0 0 1px rgba(37,99,235,0.5), 0 8px 24px rgba(37,99,235,0.40)",
+                fontFamily: "var(--font-body)",
               }}
               onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLElement
+                const el = e.currentTarget as HTMLElement;
                 el.style.boxShadow =
-                  '0 0 0 1px rgba(37,99,235,0.8), 0 12px 32px rgba(37,99,235,0.60)'
-                el.style.transform = 'translateY(-2px)'
+                  "0 0 0 1px rgba(37,99,235,0.8), 0 12px 32px rgba(37,99,235,0.60)";
+                el.style.transform = "translateY(-2px)";
               }}
               onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLElement
+                const el = e.currentTarget as HTMLElement;
                 el.style.boxShadow =
-                  '0 0 0 1px rgba(37,99,235,0.5), 0 8px 24px rgba(37,99,235,0.40)'
-                el.style.transform = 'translateY(0)'
+                  "0 0 0 1px rgba(37,99,235,0.5), 0 8px 24px rgba(37,99,235,0.40)";
+                el.style.transform = "translateY(0)";
               }}
             >
               Get a Free Quote
@@ -258,22 +260,22 @@ export function Hero() {
               href="/services"
               className="inline-flex items-center gap-2 rounded-full border px-8 py-3 text-sm font-semibold text-white transition-all duration-300"
               style={{
-                background: 'rgba(255,255,255,0.05)',
-                borderColor: 'rgba(255,255,255,0.18)',
-                fontFamily: 'var(--font-body)',
-                backdropFilter: 'blur(12px)',
+                background: "rgba(255,255,255,0.05)",
+                borderColor: "rgba(255,255,255,0.18)",
+                fontFamily: "var(--font-body)",
+                backdropFilter: "blur(12px)",
               }}
               onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLElement
-                el.style.background = 'rgba(255,255,255,0.11)'
-                el.style.borderColor = 'rgba(255,255,255,0.38)'
-                el.style.transform = 'translateY(-2px)'
+                const el = e.currentTarget as HTMLElement;
+                el.style.background = "rgba(255,255,255,0.11)";
+                el.style.borderColor = "rgba(255,255,255,0.38)";
+                el.style.transform = "translateY(-2px)";
               }}
               onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLElement
-                el.style.background = 'rgba(255,255,255,0.05)'
-                el.style.borderColor = 'rgba(255,255,255,0.18)'
-                el.style.transform = 'translateY(0)'
+                const el = e.currentTarget as HTMLElement;
+                el.style.background = "rgba(255,255,255,0.05)";
+                el.style.borderColor = "rgba(255,255,255,0.18)";
+                el.style.transform = "translateY(0)";
               }}
             >
               View Our Services
@@ -291,9 +293,12 @@ export function Hero() {
               <span
                 key={label}
                 className="inline-flex items-center gap-1.5 text-xs sm:text-sm"
-                style={{ color: '#C8CAD4', fontFamily: 'var(--font-body)' }}
+                style={{ color: "#C8CAD4", fontFamily: "var(--font-body)" }}
               >
-                <Icon className="w-3.5 h-3.5 shrink-0" style={{ color: '#2563EB' }} />
+                <Icon
+                  className="w-3.5 h-3.5 shrink-0"
+                  style={{ color: "#2563EB" }}
+                />
                 {label}
               </span>
             ))}
@@ -312,9 +317,9 @@ export function Hero() {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="relative z-10 border-t py-4"
         style={{
-          background: 'rgba(15,22,35,0.75)',
-          borderColor: 'rgba(255,255,255,0.08)',
-          backdropFilter: 'blur(16px)',
+          background: "rgba(15,22,35,0.75)",
+          borderColor: "rgba(255,255,255,0.08)",
+          backdropFilter: "blur(16px)",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -322,30 +327,30 @@ export function Hero() {
             <span
               className="font-semibold uppercase tracking-[0.14em] text-white"
               style={{
-                fontFamily: 'var(--font-body)',
-                letterSpacing: '0.14em',
+                fontFamily: "var(--font-body)",
+                letterSpacing: "0.14em",
               }}
             >
               OneCall Field Services
             </span>
 
             {[
-              { sep: true, text: 'Texas-Licensed & Insured' },
-              { sep: true, text: 'Statewide Dispatch Network' },
-              { sep: false, text: 'Residential · Commercial · HOA' },
+              { sep: true, text: "Texas-Licensed & Insured" },
+              { sep: true, text: "Statewide Dispatch Network" },
+              { sep: false, text: "Residential · Commercial · HOA" },
             ].map(({ sep, text }) => (
               <span key={text} className="flex items-center gap-x-8">
                 {sep && (
                   <span
                     aria-hidden
                     className="hidden sm:block h-4 w-px"
-                    style={{ background: 'rgba(255,255,255,0.18)' }}
+                    style={{ background: "rgba(255,255,255,0.18)" }}
                   />
                 )}
                 <span
                   style={{
-                    color: '#C8CAD4',
-                    fontFamily: 'var(--font-body)',
+                    color: "#C8CAD4",
+                    fontFamily: "var(--font-body)",
                   }}
                 >
                   {text}
@@ -356,5 +361,5 @@ export function Hero() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }

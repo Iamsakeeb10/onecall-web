@@ -1,22 +1,28 @@
-import type { Metadata } from "next";
-import { Bebas_Neue, Plus_Jakarta_Sans } from "next/font/google";
-import "./globals.css";
-import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Navbar } from "@/components/layout/Navbar";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { ScrollToTop } from "@/components/shared/ScrollToTop";
 import { defaultMetadata } from "@/lib/metadata";
+import type { Metadata } from "next";
+import { Inter, Manrope } from "next/font/google";
+import "./globals.css";
 
-const bebasNeue = Bebas_Neue({
+const display = Manrope({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: "400",
+  weight: ["600", "700", "800"],
 });
 
-const body = Plus_Jakarta_Sans({
+const body = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-body",
+});
+
+const accent = Manrope({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-accent",
 });
 
 export const metadata: Metadata = defaultMetadata;
@@ -27,7 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${bebasNeue.variable} ${body.variable}`}>
+    <html
+      lang="en"
+      className={`${display.variable} ${body.variable} ${accent.variable}`}
+    >
       <body className="antialiased bg-white">
         {/* Skip Navigation Link */}
         <a

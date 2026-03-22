@@ -2,58 +2,76 @@
 
 @theme {
   /* === PRIMARY SURFACES — White & Cool Pearl === */
-  --color-white:        #FFFFFF;
-  --color-pearl-50:     #F9F9FB;
-  --color-pearl-100:    #F1F2F5;
-  --color-pearl-200:    #E2E4EA;
-  --color-pearl-300:    #C8CAD4;
+  --color-white: #ffffff;
+  --color-pearl-50: #f9f9fb;
+  --color-pearl-100: #f1f2f5;
+  --color-pearl-200: #e2e4ea;
+  --color-pearl-300: #c8cad4;
 
   /* === DEEP NAVY (Primary Dark Accent) === */
-  --color-navy:         #1A2233;
-  --color-navy-light:   #2D3A52;
-  --color-navy-muted:   #64748B;
+  --color-navy: #1a2233;
+  --color-navy-light: #2d3a52;
+  --color-navy-muted: #64748b;
 
   /* === STEEL BLUE (Primary Brand Accent) === */
-  --color-steel:        #2563EB;
-  --color-steel-dark:   #1D4ED8;
-  --color-steel-light:  #EFF6FF;
-  --color-steel-muted:  rgba(37,99,235,0.10);
+  --color-steel: #2563eb;
+  --color-steel-dark: #1d4ed8;
+  --color-steel-light: #eff6ff;
+  --color-steel-muted: rgba(37, 99, 235, 0.1);
 
   /* === WARM BRASS (Prestige Accent — trust indicators & badges) === */
-  --color-brass:        #92751F;
-  --color-brass-light:  #FBF6E7;
+  --color-brass: #92751f;
+  --color-brass-light: #fbf6e7;
 
   /* === TEXT === */
-  --color-text-primary:   #1A2233;
-  --color-text-body:      #374155;
-  --color-text-muted:     #64748B;
-  --color-text-inverse:   #FFFFFF;
+  --color-text-primary: #1a2233;
+  --color-text-body: #374155;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #ffffff;
 
   /* === HERO (Inner page hero backgrounds) === */
-  --color-hero-bg:        #1E2A3B;
-  --color-hero-bg-dark:   #111827;
-  --color-hero-text:      #FFFFFF;
-  --color-hero-muted:     #B8C4D6;
+  --color-hero-bg: #1e2a3b;
+  --color-hero-bg-dark: #111827;
+  --color-hero-text: #ffffff;
+  --color-hero-muted: #b8c4d6;
 
   /* === UTILITY === */
-  --color-error:        #DC2626;
-  --color-success:      #15803D;
-  --color-divider:      #E2E4EA;
+  --color-error: #dc2626;
+  --color-success: #15803d;
+  --color-divider: #e2e4ea;
 
   /* Fonts */
-  --font-display: 'Bebas Neue', sans-serif;
-  --font-body:    'Plus Jakarta Sans', sans-serif;
-  --font-accent:  'Bebas Neue', sans-serif;
+  --font-display: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Manrope", sans-serif;
+
+  /* Slightly reduced global text scale */
+  --text-xs: 0.71rem;
+  --text-sm: 0.83rem;
+  --text-base: 0.95rem;
+  --text-lg: 1.07rem;
+  --text-xl: 1.19rem;
+  --text-2xl: 1.43rem;
+  --text-3xl: 1.78rem;
+  --text-4xl: 2.14rem;
+  --text-5xl: 2.85rem;
+  --text-6xl: 3.56rem;
+  --text-7xl: 4.27rem;
+  --text-8xl: 5.7rem;
+  --text-9xl: 7.6rem;
 
   /* Box shadows */
-  --shadow-card:        0 1px 3px rgba(26,34,51,0.06), 0 4px 12px rgba(26,34,51,0.05);
-  --shadow-card-hover:  0 4px 16px rgba(37,99,235,0.12), 0 12px 32px rgba(26,34,51,0.10);
-  --shadow-steel-glow:  0 0 0 3px rgba(37,99,235,0.20);
-  --shadow-navbar:      0 1px 0 rgba(26,34,51,0.06), 0 4px 16px rgba(26,34,51,0.08);
+  --shadow-card:
+    0 1px 3px rgba(26, 34, 51, 0.06), 0 4px 12px rgba(26, 34, 51, 0.05);
+  --shadow-card-hover:
+    0 4px 16px rgba(37, 99, 235, 0.12), 0 12px 32px rgba(26, 34, 51, 0.1);
+  --shadow-steel-glow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  --shadow-navbar:
+    0 1px 0 rgba(26, 34, 51, 0.06), 0 4px 16px rgba(26, 34, 51, 0.08);
 
   /* Keyframe animations */
   --animate-fade-up: fadeUp 0.6s ease forwards;
-  --animate-float:   float 4s ease-in-out infinite;
+  --animate-float: float 4s ease-in-out infinite;
   --animate-spin-slow: spin 18s linear infinite;
   --animate-spin-slower: spin 28s linear infinite reverse;
 }
@@ -61,7 +79,7 @@
 /* Prevent flash of unstyled content and horizontal overflow */
 html,
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: var(--color-text-body);
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -72,12 +90,19 @@ body {
 
 /* Top accent line — steel blue brand signature */
 body::before {
-  content: '';
+  content: "";
   display: block;
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-navy) 0%, var(--color-steel) 50%, var(--color-navy) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--color-navy) 0%,
+    var(--color-steel) 50%,
+    var(--color-navy) 100%
+  );
   z-index: 100;
 }
 
@@ -95,18 +120,33 @@ body::before {
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-16px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
 }
 
 @keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-float {
@@ -122,8 +162,12 @@ body::before {
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .animate-shimmer {

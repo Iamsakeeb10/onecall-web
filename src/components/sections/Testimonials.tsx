@@ -14,20 +14,20 @@ export function Testimonials() {
   const shouldReduceMotion = useReducedMotion();
 
   // Embla carousel setup for mobile
-  const autoplayOptions = Autoplay({ 
-    delay: 5000, 
+  const autoplayOptions = Autoplay({
+    delay: 5000,
     stopOnInteraction: true,
-    stopOnMouseEnter: true 
+    stopOnMouseEnter: true,
   });
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
-      loop: true, 
-      align: 'center', 
+    {
+      loop: true,
+      align: "center",
       skipSnaps: false,
-      duration: shouldReduceMotion ? 0 : 20
+      duration: shouldReduceMotion ? 0 : 20,
     },
-    shouldReduceMotion ? [] : [autoplayOptions]
+    shouldReduceMotion ? [] : [autoplayOptions],
   );
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -37,16 +37,16 @@ export function Testimonials() {
     if (!emblaApi) return;
 
     setScrollSnaps(emblaApi.scrollSnapList());
-    
+
     const onSelect = () => {
       setSelectedIndex(emblaApi.selectedScrollSnap());
     };
 
-    emblaApi.on('select', onSelect);
+    emblaApi.on("select", onSelect);
     onSelect(); // Set initial index
 
     return () => {
-      emblaApi.off('select', onSelect);
+      emblaApi.off("select", onSelect);
     };
   }, [emblaApi]);
 
@@ -59,11 +59,16 @@ export function Testimonials() {
   }, [emblaApi]);
 
   return (
-    <section className="py-24 lg:py-32 bg-pearl-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+      {/* Subtle accent overlay */}
+      <div className="absolute inset-0 opacity-3 pointer-events-none" style={{
+        backgroundImage: "radial-gradient(circle at 30% 60%, rgba(146, 117, 31, 0.08) 0%, transparent 50%)"
+      }} />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <AnimatedSection variant="fadeUp">
           <div className="text-center mb-2">
-            <span className="font-display text-8xl font-bold text-steel/15 leading-none select-none">
+            <span className="font-display text-7xl md:text-8xl font-bold text-steel/12 leading-none select-none block -mt-4">
               "
             </span>
           </div>
@@ -91,10 +96,10 @@ export function Testimonials() {
           </div>
 
           {/* Navigation arrows and indicator dots */}
-          <div className="flex justify-between items-center mt-6 px-2">
+          <div className="flex justify-between items-center mt-8 px-2">
             <button
               onClick={scrollPrev}
-              className="w-10 h-10 rounded-full bg-pearl-100 border border-pearl-200 flex items-center justify-center text-steel hover:border-steel transition-colors duration-200"
+              className="w-10 h-10 rounded-full bg-pearl-100 border border-pearl-200 flex items-center justify-center text-steel hover:border-steel hover:bg-pearl-50 transition-all duration-200"
               aria-label="Previous testimonial"
             >
               <ChevronLeft className="w-5 h-5" aria-hidden="true" />
@@ -109,8 +114,8 @@ export function Testimonials() {
                   aria-label={`Go to testimonial ${index + 1}`}
                   className={`rounded-full transition-all duration-300 ${
                     index === selectedIndex
-                      ? "bg-steel w-2 h-2"
-                      : "bg-pearl-300 w-2 h-2"
+                      ? "bg-steel w-2.5 h-2.5"
+                      : "bg-pearl-300 w-2 h-2 hover:bg-pearl-300/80"
                   }`}
                 />
               ))}
@@ -118,7 +123,7 @@ export function Testimonials() {
 
             <button
               onClick={scrollNext}
-              className="w-10 h-10 rounded-full bg-pearl-100 border border-pearl-200 flex items-center justify-center text-steel hover:border-steel transition-colors duration-200"
+              className="w-10 h-10 rounded-full bg-pearl-100 border border-pearl-200 flex items-center justify-center text-steel hover:border-steel hover:bg-pearl-50 transition-all duration-200"
               aria-label="Next testimonial"
             >
               <ChevronRight className="w-5 h-5" aria-hidden="true" />
@@ -126,13 +131,14 @@ export function Testimonials() {
           </div>
         </div>
 
-        {/* Desktop: 3-column grid */}
+        {/* Desktop: Masonry-style Grid */}
         <div className="hidden lg:grid lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <AnimatedSection
               key={testimonial.id}
               variant="fadeUp"
               delay={index * 0.1}
+              className={index === 1 ? "lg:translate-y-6" : index === 2 ? "lg:-translate-y-6" : ""}
             >
               <TestimonialCard testimonial={testimonial} />
             </AnimatedSection>

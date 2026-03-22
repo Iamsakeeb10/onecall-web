@@ -120,7 +120,7 @@ export function Hero() {
       {/* ══════════════════════════════════════ */}
       {/*  MAIN CONTENT                          */}
       {/* ══════════════════════════════════════ */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-24 pb-8">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-8">
         {/* Content column — centered, max readable width */}
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center text-center gap-8">
           {/* ── Eyebrow badge ── */}

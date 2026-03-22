@@ -1,6 +1,6 @@
 import { QuoteForm } from "@/components/forms/QuoteForm";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { CheckCircle2, Clock, Mail, Map, MapPin, Phone, Tag } from "lucide-react";
+import { CheckCircle2, Clock, Mail, MapPin, Phone, Tag } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -35,94 +35,85 @@ export default function QuotePage() {
             Get a Quote
           </h1>
           <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
-            Let&apos;s talk about your property needs. Fill out the form and we&apos;ll respond within
-            24 hours.
+            Let&apos;s talk about your property needs. Fill out the form and
+            we&apos;ll respond within 24 hours.
           </p>
         </div>
       </section>
 
       {/* Split Layout: Quote Form (Full Width) + Floating Info */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
-            {/* Form - Takes 3 columns */}
-            <div className="lg:col-span-3">
-              <AnimatedSection variant="fadeLeft">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12 items-start">
+            <div className="lg:col-span-3 order-2 lg:order-1">
+              <AnimatedSection variant="fadeRight">
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy mb-3">
                   Request Your Quote
                 </h2>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-10">
-                  Tell us about your property needs and we'll provide a customized quote within 24 hours. No hidden fees—just transparent, professional pricing.
+                  Tell us about your property needs and we&apos;ll provide a
+                  customized quote within 24 hours. No hidden fees, just
+                  transparent and professional pricing.
                 </p>
                 <QuoteForm />
               </AnimatedSection>
             </div>
 
-            {/* Right: Stacked Info Boxes */}
-            <div className="lg:col-span-1">
-              <AnimatedSection variant="fadeRight" className="space-y-6">
-                {/* Quick Contact */}
-                <div className="bg-pearl-50 rounded-2xl p-6 border border-pearl-200">
-                  <h3 className="font-display text-lg font-bold text-navy mb-4">
-                    Quick Contact
+            <div className="lg:col-span-2 order-1 lg:order-2">
+              <AnimatedSection variant="fadeLeft">
+                <div className="bg-pearl-50 rounded-2xl p-6 sm:p-7 border border-pearl-200 lg:sticky lg:top-28">
+                  <h3 className="font-display text-xl font-bold text-navy mb-5">
+                    Before You Submit
                   </h3>
-                  <div className="space-y-3">
+                  <div className="space-y-4 mb-6">
+                    {[
+                      "Property type and location",
+                      "Primary service need",
+                      "Preferred timeline",
+                    ].map((item) => (
+                      <div key={item} className="flex items-start gap-3">
+                        <CheckCircle2
+                          className="w-5 h-5 text-steel mt-0.5 flex-shrink-0"
+                          aria-hidden="true"
+                        />
+                        <span className="font-body text-sm text-navy">
+                          {item}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="border-t border-pearl-200 pt-5 space-y-3">
                     <a
                       href="tel:1234567890"
                       className="flex items-center gap-3 font-body text-navy hover:text-steel transition-colors duration-300"
                     >
-                      <Phone className="w-5 h-5 text-steel flex-shrink-0" aria-hidden="true" />
-                      <span className="text-sm">123-456-7890</span>
+                      <Phone
+                        className="w-5 h-5 text-steel flex-shrink-0"
+                        aria-hidden="true"
+                      />
+                      <span className="text-sm font-medium">123-456-7890</span>
                     </a>
-
                     <a
                       href="mailto:info@onecallfield.com"
                       className="flex items-center gap-3 font-body text-navy hover:text-steel transition-colors duration-300"
                     >
-                      <Mail className="w-5 h-5 text-steel flex-shrink-0" aria-hidden="true" />
-                      <span className="text-sm">info@onecallfield.com</span>
+                      <Mail
+                        className="w-5 h-5 text-steel flex-shrink-0"
+                        aria-hidden="true"
+                      />
+                      <span className="text-sm font-medium">
+                        info@onecallfield.com
+                      </span>
                     </a>
-                  </div>
-                </div>
-
-                {/* Service Coverage */}
-                <div className="bg-steel/5 rounded-2xl p-6 border border-steel/20">
-                  <h3 className="font-display text-lg font-bold text-navy mb-4">
-                    Service Area
-                  </h3>
-                  <div className="space-y-2">
-                    <div className="flex items-start gap-2">
-                      <MapPin className="w-4 h-4 text-steel mt-1 flex-shrink-0" aria-hidden="true" />
-                      <span className="font-body text-sm text-text-muted">
-                        All of Texas Statewide
+                    <div className="flex items-start gap-3 font-body text-text-muted">
+                      <MapPin
+                        className="w-5 h-5 text-steel flex-shrink-0 mt-0.5"
+                        aria-hidden="true"
+                      />
+                      <span className="text-sm">
+                        Serving all of Texas · Mon–Fri: 8am–6pm
                       </span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <Clock className="w-4 h-4 text-steel mt-1 flex-shrink-0" aria-hidden="true" />
-                      <span className="font-body text-sm text-text-muted">
-                        M-F: 8am–6pm
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Trust Badges */}
-                <div className="bg-pearl-50 rounded-2xl p-6 border border-pearl-200">
-                  <h3 className="font-display text-sm font-bold text-navy uppercase tracking-wider mb-4">
-                    Why ONECALL
-                  </h3>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-steel font-bold">✓</span>
-                      <span className="font-body text-sm text-navy">Fully Insured</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-steel font-bold">✓</span>
-                      <span className="font-body text-sm text-navy">Licensed</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-steel font-bold">✓</span>
-                      <span className="font-body text-sm text-navy">10+ Years</span>
                     </div>
                   </div>
                 </div>
@@ -132,28 +123,31 @@ export default function QuotePage() {
         </div>
       </section>
 
-      {/* Bottom Info Cards - Redesigned */}
-      <section className="py-24 lg:py-32 bg-pearl-50">
+      {/* Bottom Info Cards - Process */}
+      <section className="py-20 lg:py-28 bg-pearl-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold text-navy mb-12 text-center">
-            What to Expect
+            What Happens Next
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 icon: Clock,
-                title: "Fast Response",
-                description: "We respond to all inquiries within 24 hours",
+                title: "1. Quick Review",
+                description:
+                  "Our team reviews your request and checks coverage details.",
               },
               {
                 icon: Tag,
-                title: "Transparent Pricing",
-                description: "No hidden fees. What you see is what you pay",
+                title: "2. Scope & Pricing",
+                description:
+                  "We prepare a clear service scope with transparent pricing.",
               },
               {
                 icon: CheckCircle2,
-                title: "Professional Service",
-                description: "Licensed, insured, and fully trained teams",
+                title: "3. Confirmation",
+                description:
+                  "You receive next steps to schedule and move forward.",
               },
             ].map((card, index) => {
               const Icon = card.icon;

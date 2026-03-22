@@ -4,17 +4,6 @@ import { motion, useReducedMotion, easeInOut } from 'framer-motion'
 import { ShieldCheck, MapPin, Clock, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
-/* ─── Service Pills ──────────────────────────────────────── */
-const SERVICES = [
-  'Lawn & Grounds Care',
-  'Pressure Washing',
-  'Junk Removal',
-  'Snow & Ice Control',
-  'Painting & Patching',
-  'HVAC Filter Service',
-  'Gutter Cleaning',
-]
-
 /* ─── Trust Items ────────────────────────────────────────── */
 const TRUST = [
   { icon: ShieldCheck, label: 'Fully Protected & Bonded' },
@@ -173,7 +162,7 @@ export function Hero() {
             >
               {/* Line 1 */}
               <span
-                className="block text-[clamp(4rem,14vw,10rem)] text-white"
+                className="block text-[clamp(3rem,12vw,7.5rem)] text-white"
                 style={{ letterSpacing: '0.04em' }}
               >
                 EXPERT
@@ -181,7 +170,7 @@ export function Hero() {
 
               {/* Line 2 — outlined ghost text */}
               <span
-                className="block text-[clamp(2.4rem,8.5vw,6.2rem)]"
+                className="block text-[clamp(1.8rem,6.5vw,5rem)]"
                 style={{
                   letterSpacing: '0.06em',
                   color: 'transparent',
@@ -193,7 +182,7 @@ export function Hero() {
 
               {/* Line 3 — steel blue */}
               <span
-                className="block text-[clamp(3.5rem,12vw,9rem)]"
+                className="block text-[clamp(2.5rem,9.5vw,7rem)]"
                 style={{
                   letterSpacing: '0.05em',
                   color: '#2563EB',
@@ -223,7 +212,7 @@ export function Hero() {
             variants={fadeUp(0.3, reduced)}
             initial="hidden"
             animate="visible"
-            className="text-lg sm:text-xl leading-relaxed max-w-2xl"
+            className="text-base sm:text-lg leading-relaxed max-w-2xl"
             style={{ color: '#B8C4D6', fontFamily: 'var(--font-body)' }}
           >
             Institutional-grade property maintenance delivered statewide. Single-family,
@@ -240,7 +229,7 @@ export function Hero() {
             {/* Primary */}
             <Link
               href="/quote"
-              className="group inline-flex items-center gap-2.5 rounded-full px-8 py-4 text-base font-semibold text-white transition-all duration-300"
+              className="group inline-flex items-center gap-2.5 rounded-full px-8 py-3 text-sm font-semibold text-white transition-all duration-300"
               style={{
                 background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
                 boxShadow:
@@ -267,7 +256,7 @@ export function Hero() {
             {/* Secondary */}
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 rounded-full border px-8 py-4 text-base font-semibold text-white transition-all duration-300"
+              className="inline-flex items-center gap-2 rounded-full border px-8 py-3 text-sm font-semibold text-white transition-all duration-300"
               style={{
                 background: 'rgba(255,255,255,0.05)',
                 borderColor: 'rgba(255,255,255,0.18)',
@@ -301,7 +290,7 @@ export function Hero() {
             {TRUST.map(({ icon: Icon, label }) => (
               <span
                 key={label}
-                className="inline-flex items-center gap-1.5 text-sm"
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm"
                 style={{ color: '#C8CAD4', fontFamily: 'var(--font-body)' }}
               >
                 <Icon className="w-3.5 h-3.5 shrink-0" style={{ color: '#2563EB' }} />
@@ -309,65 +298,6 @@ export function Hero() {
               </span>
             ))}
           </motion.div>
-
-          {/* ══════════════════════════════════════ */}
-          {/*  SERVICE PILLS ROW                     */}
-          {/* ══════════════════════════════════════ */}
-          <motion.div
-            variants={fadeUp(0.5, reduced)}
-            initial="hidden"
-            animate="visible"
-            className="w-full pt-4"
-          >
-            {/* Label */}
-            <p
-              className="text-xs uppercase tracking-[0.2em] mb-4 text-center"
-              style={{
-                color: 'rgba(184,196,214,0.55)',
-                fontFamily: 'var(--font-body)',
-              }}
-            >
-              Our Services
-            </p>
-
-            {/* Pills */}
-            <div className="flex flex-wrap justify-center gap-2.5">
-              {SERVICES.map((service, i) => (
-                <motion.span
-                  key={service}
-                  initial={reduced ? {} : { opacity: 0, scale: 0.88 }}
-                  animate={reduced ? {} : { opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.4,
-                    ease: 'easeOut',
-                    delay: 0.55 + i * 0.06,
-                  }}
-                  className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium cursor-default transition-all duration-200 hover:border-steel/50 hover:text-white"
-                  style={{
-                    background: 'rgba(37,99,235,0.08)',
-                    borderColor: 'rgba(37,99,235,0.22)',
-                    color: '#B8C4D6',
-                    fontFamily: 'var(--font-body)',
-                  }}
-                  onMouseEnter={(e) => {
-                    const el = e.currentTarget as HTMLElement
-                    el.style.background = 'rgba(37,99,235,0.18)'
-                    el.style.borderColor = 'rgba(37,99,235,0.50)'
-                    el.style.color = '#FFFFFF'
-                  }}
-                  onMouseLeave={(e) => {
-                    const el = e.currentTarget as HTMLElement
-                    el.style.background = 'rgba(37,99,235,0.08)'
-                    el.style.borderColor = 'rgba(37,99,235,0.22)'
-                    el.style.color = '#B8C4D6'
-                  }}
-                >
-                  {service}
-                </motion.span>
-              ))}
-            </div>
-          </motion.div>
-          {/* END PILLS */}
         </div>
         {/* END CONTENT COLUMN */}
       </div>
@@ -388,7 +318,7 @@ export function Hero() {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs sm:text-sm">
             <span
               className="font-semibold uppercase tracking-[0.14em] text-white"
               style={{

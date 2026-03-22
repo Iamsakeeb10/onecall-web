@@ -120,7 +120,7 @@ Do NOT use tailwind.config.ts — this is the only place theme config lives in v
   --color-navy-800: #111827;
   --color-navy-700: #1F2D47;
   --color-gold:     #C89B3C;
-  --color-orange:   #E07B39;
+  --color-steel:   #E07B39;
   --color-muted:    #A0AEC0;
 
   /* Fonts */
@@ -304,7 +304,7 @@ Services list with image URLs:
 - Drywall Repair & Interior Painting
   icon: "Paintbrush"
   image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80"
-  features: Hole & crack patching, Texture matching, Interior painting, Touch-up work, Surface prep
+  features: Hole & crack patching, Texture matching, Interior painting, Touch-up work, Pearl prep
 
 - Property Cleaning
   icon: "Sparkles"
@@ -1224,7 +1224,7 @@ FINAL DELIVERABLE CHECK:
 |---|---|---|---|
 | Primary Dark | `#0A0F1E` | `bg-navy-950` | Page backgrounds |
 | Secondary Navy | `#1A2340` | `bg-navy-900` | Section backgrounds |
-| Surface | `#111827` | `bg-navy-800` | Cards |
+| Pearl | `#111827` | `bg-navy-800` | Cards |
 | Border | `#1F2D47` | `border-navy-700` | Card borders |
 | Accent Gold | `#C89B3C` | `bg-gold` / `text-gold` | Primary accent, icons, CTAs |
 | Accent Orange | `#E07B39` | `bg-orange` / `text-orange` | CTA hover, warm accents |

@@ -30,10 +30,10 @@
 
 - **Tone:** Premium B2B, corporate, trustworthy — not a local handyman site.
 - **Feel:** Statewide B2B services brand; clean, confident, professional.
-- **Backgrounds:** White primary; light gray section alternation (`surface-50`, `surface-100`) for rhythm.
-- **Primary dark:** Deep charcoal (`#1F2A33`) for headings, footer, and authority.
-- **Primary accent:** Vibrant teal (`#14B8A6`) for CTAs, links, active states, icons, and focus rings.
-- **Prestige accent:** Sky blue (`#0EA5E9`) for secondary highlights and badges.
+- **Backgrounds:** White primary; light gray section alternation (`pearl-50`, `pearl-100`) for rhythm.
+- **Primary dark:** Deep navy (`#1A2233`) for headings, footer, and authority.
+- **Primary accent:** Vibrant steel (`#2563EB`) for CTAs, links, active states, icons, and focus rings.
+- **Prestige accent:** Sky blue (`#92751F`) for secondary highlights and badges.
 - **Typography:** Outfit (display/accent) + Plus Jakarta Sans (body); bold headlines, generous spacing.
 - **Responsiveness:** Mobile-first; breakpoints at `sm`, `md`, `lg`, `xl`, and custom `min-[1131px]` for hero layout.
 
@@ -68,7 +68,7 @@ src/
 │   │   └── PageWrapper.tsx     # Framer Motion page transition wrapper; scroll reset on route change
 │   ├── ui/
 │   │   ├── Button.tsx          # Primary / secondary / ghost; sizes sm | md | lg; loading; asChild
-│   │   ├── SectionHeading.tsx  # Title, optional subtitle, orange/40 rule; align left | center
+│   │   ├── SectionHeading.tsx  # Title, optional subtitle, steel rule; align left | center
 │   │   ├── AnimatedSection.tsx # Scroll-triggered fade/slide (fadeUp, fadeLeft, fadeRight, scaleIn); reduced motion support
 │   │   └── Skeleton.tsx        # Loading skeleton: text | card | image variant; shimmer
 │   ├── sections/
@@ -84,16 +84,16 @@ src/
 │   │   ├── ServicesPageHero.tsx # Optional hero wrapper for services page (image + overlay)
 │   │   ├── TestimonialsLazy.tsx # Lazy placeholder for testimonials
 │   │   ├── VendorHero.tsx      # Vendors page hero: bg-hero-bg, Apply Now / Vendor Login → #vendor-application
-│   │   ├── VendorWhyPartner.tsx # Subtext strip (charcoal) + 4 benefit cards with CheckCircle2
+│   │   ├── VendorWhyPartner.tsx # Subtext strip (navy) + 4 benefit cards with CheckCircle2
 │   │   ├── VendorOnboarding.tsx # 3-step process cards (01 Submit, 02 Review, 03 Work Orders) with connector line
-│   │   ├── VendorRequirements.tsx # Required vs Preferred two-column lists (teal/skyblue bars)
+│   │   ├── VendorRequirements.tsx # Required vs Preferred two-column lists (steel/brass bars)
 │   │   ├── VendorServices.tsx  # 6 service category icon cards (equal height); scaleIn animation
 │   │   ├── VendorFAQ.tsx       # Accordion FAQ (4 items); "use client"
-│   │   └── VendorCTABanner.tsx # Dark charcoal CTA: "Ready to Join...", Apply Now → #vendor-application
+│   │   └── VendorCTABanner.tsx # Dark navy CTA: "Ready to Join...", Apply Now → #vendor-application
 │   ├── cards/
 │   │   ├── ServiceCard.tsx     # Service card: image, icon, title, description, features; variants grid | list | featured
 │   │   ├── ClientTypeCard.tsx  # Client type: icon, title, description, benefits; variants compact | full
-│   │   ├── TestimonialCard.tsx # Quote, stars (skyblue), avatar/initials, name/role
+│   │   ├── TestimonialCard.tsx # Quote, stars (brass), avatar/initials, name/role
 │   │   ├── ClientImage.tsx     # Client image with fallback
 │   │   └── TeamPhoto.tsx       # Team/avatar placeholder
 │   ├── forms/
@@ -137,7 +137,7 @@ src/
 ### 3.1 Clients Page (`/clients`)
 
 - **Purpose:** Explain who ONECALL FIELD SERVICES LLC serves (property managers, financial institutions, real estate professionals, investors) and provide a tailored onboarding path for new client partners.
-- **Hero:** Background image with dark charcoal overlay, h1 "Our Clients" and subtitle "Trusted Property Maintenance Partner Across Texas".
+- **Hero:** Background image with dark navy overlay, h1 "Our Clients" and subtitle "Trusted Property Maintenance Partner Across Texas".
 - **Main sections:**
   - **Intro:** Two-column layout with narrative about long-term partnerships and a "By The Numbers" stats card (properties maintained, statewide coverage, insurance, years of experience).
   - **Client Types:** Alternating sections for each `ClientType` (text + `ClientTypeCard` on one side, `ClientImage` on the other) with `AnimatedSection` fadeLeft/fadeRight variants.
@@ -145,7 +145,7 @@ src/
   - **Quality Assurance Process:** Three-step process cards (Detailed Documentation, Vendor & Team Screening, Proactive Communication) with a connecting line on desktop.
   - **Ready to Partner CTA:** Card with headline, supporting copy, phone and email links, and a primary button **"Get Started"**.
   - **Client Onboarding Section:** Anchored at `#client-onboarding`, includes:
-    - A charcoal **benefits strip** ("Reliable Vendor Network", "Fast Response Times", "Work Order Transparency", "Photo Documentation", "Scalable Property Maintenance Solutions") with CheckCircle2 icons.
+    - A navy **benefits strip** ("Reliable Vendor Network", "Fast Response Times", "Work Order Transparency", "Photo Documentation", "Scalable Property Maintenance Solutions") with CheckCircle2 icons.
     - Centered `SectionHeading` titled **"Become a ONECALL FIELD SERVICES LLC Client"**.
     - A white card containing the `ClientOnboardingForm`:
       - Captures company info, company type, website, service needs (multi-select checkboxes), portfolio size (pills), property locations, optional notes, and terms consent.
@@ -155,7 +155,7 @@ src/
   - The "Ready to Partner" button uses `Button` with `asChild` + `Link href="#client-onboarding"` so clicking it scrolls to the onboarding form section.
 
 **Inner-page hero pattern (About, Services, Clients, Contact, Vendors):**  
-`section` with `h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh]`, `bg-hero-bg`, `pt-28 sm:pt-32`. Content: `text-white` heading, `text-surface-200` subtitle, centered. No background image; solid color only.
+`section` with `h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh]`, `bg-hero-bg`, `pt-28 sm:pt-32`. Content: `text-white` heading, `text-pearl-200` subtitle, centered. No background image; solid color only.
 
 ---
 
@@ -165,18 +165,18 @@ src/
 
 **Navbar** (`src/components/layout/Navbar.tsx`)
 
-- Fixed, full width; `z-50`. Background: `bg-white/98 backdrop-blur-md shadow-navbar border-b border-surface-200`.
+- Fixed, full width; `z-50`. Background: `bg-white/98 backdrop-blur-md shadow-navbar border-b border-pearl-200`.
 - Logo: `/images/logo.png`, `h-14 sm:h-20`, link to `/`.
-- Links: Home, Services, Our Clients, Vendor, About, Contact — `text-charcoal hover:text-teal`; active route: `h-0.5 bg-teal` underline.
-- CTA: "Get a Quote" → `/quote`, `bg-teal text-white hover:bg-teal-dark`, rounded-full, `px-6 py-2`.
+- Links: Home, Services, Our Clients, Vendor, About, Contact — `text-navy hover:text-steel`; active route: `h-0.5 bg-steel` underline.
+- CTA: "Get a Quote" → `/quote`, `bg-steel text-white hover:bg-steel-dark`, rounded-full, `px-6 py-2`.
 - Mobile: Hamburger (Menu/X); drawer with same links + CTA; `lg:hidden` / `hidden lg:flex`.
 - Uses `usePathname()`; no scroll state in current implementation (navbar always solid).
 
 **Footer** (`src/components/layout/Footer.tsx`)
 
-- `bg-charcoal text-white`; top accent: `h-0.5 bg-gradient-to-r from-transparent via-teal to-transparent opacity-40`.
-- Grid: 4 columns (1 on mobile, 2 md, 4 lg): (1) Logo + tagline + Fully Insured/Licensed, (2) Quick Links (includes Vendors), (3) Services list, (4) Contact (phone, email, location). Links: `text-surface-300 hover:text-white`. Contact icons: `text-teal`.
-- Social row: Facebook, Twitter, LinkedIn, Instagram — `text-surface-300 hover:text-white hover:scale-110`.
+- `bg-navy text-white`; top accent: `h-0.5 bg-gradient-to-r from-transparent via-steel to-transparent opacity-40`.
+- Grid: 4 columns (1 on mobile, 2 md, 4 lg): (1) Logo + tagline + Fully Insured/Licensed, (2) Quick Links (includes Vendors), (3) Services list, (4) Contact (phone, email, location). Links: `text-pearl-300 hover:text-white`. Contact icons: `text-steel`.
+- Social row: Facebook, Twitter, LinkedIn, Instagram — `text-pearl-300 hover:text-white hover:scale-110`.
 - Bottom: copyright, Terms & Conditions link; `border-t border-white/10`.
 
 **PageWrapper** (`src/components/layout/PageWrapper.tsx`)
@@ -190,14 +190,14 @@ src/
 **Button** (`src/components/ui/Button.tsx`)
 
 - **Props:** `variant?: "primary" | "secondary" | "ghost"`, `size?: "sm" | "md" | "lg"`, `loading?`, `asChild?`, `children`, `className`, plus standard button attributes.
-- **Variants:** Primary: `bg-teal text-white hover:bg-teal-dark hover:scale-105 shadow-sm hover:shadow-teal-glow`. Secondary: `border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white`. Ghost: `text-teal hover:text-teal-dark hover:underline`.
+- **Variants:** Primary: `bg-steel text-white hover:bg-steel-dark hover:scale-105 shadow-sm hover:shadow-steel-glow`. Secondary: `border-2 border-navy text-navy hover:bg-navy hover:text-white`. Ghost: `text-steel hover:text-steel-dark hover:underline`.
 - **Sizes:** sm `px-4 py-2 text-sm`, md `px-6 py-3 text-base`, lg `px-8 py-4 text-lg`.
 - **Loading:** Shows `<Loader2 className="animate-spin" />`. `asChild`: merges styles into child (e.g. `<Link>`).
 
 **SectionHeading** (`src/components/ui/SectionHeading.tsx`)
 
 - **Props:** `title: string`, `subtitle?: string`, `align?: "left" | "center"`, `className?`.
-- **Markup:** `h2` with `font-display text-4xl md:text-5xl font-bold text-charcoal`; optional `p` with `font-body text-lg text-text-muted max-w-2xl`; rule: `h-0.5 w-12 bg-teal` + `w-4 bg-surface-300` rounded-full.
+- **Markup:** `h2` with `font-display text-4xl md:text-5xl font-bold text-navy`; optional `p` with `font-body text-lg text-text-muted max-w-2xl`; rule: `h-0.5 w-12 bg-steel` + `w-4 bg-pearl-300` rounded-full.
 
 **AnimatedSection** (`src/components/ui/AnimatedSection.tsx`)
 
@@ -208,7 +208,7 @@ src/
 
 **ScrollToTop** (`src/components/shared/ScrollToTop.tsx`)
 
-- Visible when `window.scrollY > 400`. Fixed `bottom-8 right-8 z-50`; `bg-teal text-white rounded-full` button, ArrowUp icon; `hover:bg-teal-dark hover:shadow-teal-glow hover:scale-110`.
+- Visible when `window.scrollY > 400`. Fixed `bottom-8 right-8 z-50`; `bg-steel text-white rounded-full` button, ArrowUp icon; `hover:bg-steel-dark hover:shadow-steel-glow hover:scale-110`.
 - AnimatePresence for mount/unmount; `scrollTo({ top: 0, behavior: "smooth" })` on click. Respects `useReducedMotion()`.
 
 ### 4.3 Cards
@@ -216,21 +216,21 @@ src/
 **ServiceCard** (`src/components/cards/ServiceCard.tsx`)
 
 - **Props:** `service: Service`, `variant?: "grid" | "list" | "featured"`.
-- **Grid:** Image (h-48) + icon + title + description + features list + "Learn more →" link. Hover: `hover:border-teal/40 hover:shadow-card-hover hover:-translate-y-1`. Icon and link: `text-teal`.
+- **Grid:** Image (h-48) + icon + title + description + features list + "Learn more →" link. Hover: `hover:border-steel/40 hover:shadow-card-hover hover:-translate-y-1`. Icon and link: `text-steel`.
 - **Featured:** Larger image, badge ("Featured"), same content pattern. Uses `iconMap` for Lucide icons (Wrench, Droplets, Paintbrush, Sparkles, Leaf, Home, Trash2).
 - **Image:** Next.js `Image` with `fill` and `object-cover`; fallback on error. `service.image` (Unsplash URLs).
 
 **ClientTypeCard** (`src/components/cards/ClientTypeCard.tsx`)
 
 - **Props:** `client: ClientType`, `variant?: "compact" | "full"`.
-- **Compact:** Icon (`text-teal`), title, description (line-clamp-2), benefits with CheckCircle; hover lift and border/shadow like ServiceCard.
+- **Compact:** Icon (`text-steel`), title, description (line-clamp-2), benefits with CheckCircle; hover lift and border/shadow like ServiceCard.
 - **Full:** Larger layout with image support. Icons: Building2, Landmark, KeyRound, TrendingUp.
 
 **TestimonialCard** (`src/components/cards/TestimonialCard.tsx`)
 
 - **Props:** `testimonial: Testimonial`.
-- **Content:** 5 sky blue stars (`text-skyblue fill-skyblue`), quote (`text-text-muted italic`), avatar (image or initials fallback) with `ring-2 ring-teal/25`, name (`text-charcoal font-semibold`).
-- Card: `bg-white border border-surface-200 rounded-xl shadow-card`; `hover:border-teal/40 hover:shadow-card-hover`.
+- **Content:** 5 warm brass stars (`text-brass fill-brass`), quote (`text-text-muted italic`), avatar (image or initials fallback) with `ring-2 ring-steel/25`, name (`text-navy font-semibold`).
+- Card: `bg-white border border-pearl-200 rounded-xl shadow-card`; `hover:border-steel/40 hover:shadow-card-hover`.
 
 ### 4.4 Vendor Page Sections & Form
 
@@ -240,19 +240,19 @@ src/
 
 **VendorWhyPartner** (`src/components/sections/VendorWhyPartner.tsx`)
 
-- Charcoal subtext strip; then section "Why Partner With ONECALL FIELD SERVICES LLC?" with 4 benefit cards (CheckCircle2, title, description). Cards: standard border/shadow and hover lift.
+- Navy subtext strip; then section "Why Partner With ONECALL FIELD SERVICES LLC?" with 4 benefit cards (CheckCircle2, title, description). Cards: standard border/shadow and hover lift.
 
 **VendorOnboarding** (`src/components/sections/VendorOnboarding.tsx`)
 
-- Section "A Structured Path to Getting Work Orders"; 3 numbered step cards (01 Submit Application, 02 Review & Approval, 03 Start Receiving Work Orders) with desktop connector line; orange/40 circular step numbers.
+- Section "A Structured Path to Getting Work Orders"; 3 numbered step cards (01 Submit Application, 02 Review & Approval, 03 Start Receiving Work Orders) with desktop connector line; steel circular step numbers.
 
 **VendorRequirements** (`src/components/sections/VendorRequirements.tsx`)
 
-- Two columns: Requirements (teal bar, CheckCircle2, 5 items) and Preferred (sky blue bar, Star, 3 items). AnimatedSection fadeLeft/fadeRight.
+- Two columns: Requirements (steel bar, CheckCircle2, 5 items) and Preferred (warm brass bar, Star, 3 items). AnimatedSection fadeLeft/fadeRight.
 
 **VendorServices** (`src/components/sections/VendorServices.tsx`)
 
-- Grid of 6 service categories (Wrench, RefreshCcw, Leaf, Droplets, Trash2, Shield); each card has icon in `bg-teal-muted`, label; equal height (`h-full`), scaleIn animation.
+- Grid of 6 service categories (Wrench, RefreshCcw, Leaf, Droplets, Trash2, Shield); each card has icon in `bg-steel-muted`, label; equal height (`h-full`), scaleIn animation.
 
 **VendorFAQ** (`src/components/sections/VendorFAQ.tsx`)
 
@@ -260,7 +260,7 @@ src/
 
 **VendorCTABanner** (`src/components/sections/VendorCTABanner.tsx`)
 
-- Dark section `bg-charcoal`, orange/40 diagonal overlay, top orange/40 rule; heading "Ready to Join the ONECALL FIELD SERVICES LLC Vendor Network?", Apply Now → `#vendor-application`.
+- Dark section `bg-navy`, steel diagonal overlay, top steel rule; heading "Ready to Join the ONECALL FIELD SERVICES LLC Vendor Network?", Apply Now → `#vendor-application`.
 
 **VendorApplicationForm** (`src/components/forms/VendorApplicationForm.tsx`)
 
@@ -275,27 +275,27 @@ src/
 | Token | Hex / Value | Usage |
 |-------|-------------|--------|
 | `white` | `#FFFFFF` | Primary backgrounds, inverse text |
-| `surface-50` | `#F7F9FA` | Section alt background |
-| `surface-100` | `#E9EDF0` | Cards, form inputs, stats bar |
-| `surface-200` | `#CBD2D8` | Card borders, dividers |
-| `surface-300` | `#AFC2CC` | Stronger borders |
-| `charcoal` | `#1F2A33` | Headings, footer bg |
-| `charcoal-light` | `#323F4B` | Hover on dark |
-| `charcoal-muted` | `#637381` | Subdued text on dark |
-| `teal` | `#14B8A6` | Buttons, links, active states, icons |
-| `teal-dark` | `#0D9488` | Button/link hover |
-| `teal-light` | `#E6FFFA` | Ghost hover bg, focus tint |
-| `teal-muted` | `rgba(20,184,166,0.12)` | Subtle card/badge tint |
-| `skyblue` | `#0EA5E9` | Badge highlights, secondary elements |
-| `skyblue-light` | `#EFF8FF` | Badge background |
-| `text-primary` | `#1F2A33` | Headings |
+| `pearl-50` | `#F9F9FB` | Section alt background |
+| `pearl-100` | `#F1F2F5` | Cards, form inputs, stats bar |
+| `pearl-200` | `#E2E4EA` | Card borders, dividers |
+| `pearl-300` | `#C8CAD4` | Stronger borders |
+| `navy` | `#1A2233` | Headings, footer bg |
+| `navy-light` | `#2D3A52` | Hover on dark |
+| `navy-muted` | `#637381` | Subdued text on dark |
+| `teal` | `#2563EB` | Buttons, links, active states, icons |
+| `steel-dark` | `#1D4ED8` | Button/link hover |
+| `steel-light` | `#EFF6FF` | Ghost hover bg, focus tint |
+| `steel-muted` | `rgba(20,184,166,0.12)` | Subtle card/badge tint |
+| `brass` | `#92751F` | Badge highlights, secondary elements |
+| `brass-light` | `#FBF6E7` | Badge background |
+| `text-primary` | `#1A2233` | Headings |
 | `text-body` | `#3E4C59` | Body |
 | `text-muted` | `#64748B` | Captions, placeholders |
 | `text-inverse` | `#FFFFFF` | Text on dark |
-| `hero-bg` | `#374151` | Home hero background |
-| `hero-bg-dark` | `#1F2937` | Hero fallback/cards |
+| `hero-bg` | `#1E2A3B` | Home hero background |
+| `hero-bg-dark` | `#111827` | Hero fallback/cards |
 | `hero-text` | `#FFFFFF` | Hero headline |
-| `hero-muted` | `#CBD5E1` | Hero subtitle |
+| `hero-muted` | `#B8C4D6` | Hero subtitle |
 | `error` | `#EF4444` | Form error |
 | `success` | `#22C55E` | Success state |
 
@@ -315,7 +315,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 |-------|--------|
 | `shadow-card` | `0 1px 3px rgba(31,42,51,0.06), 0 4px 12px rgba(31,42,51,0.05)` |
 | `shadow-card-hover` | `0 4px 16px rgba(20,184,166,0.12), 0 12px 32px rgba(31,42,51,0.10)` |
-| `shadow-teal-glow` | `0 0 0 3px rgba(20,184,166,0.22)` |
+| `shadow-steel-glow` | `0 0 0 3px rgba(20,184,166,0.22)` |
 | `shadow-navbar` | `0 1px 0 rgba(31,42,51,0.06), 0 4px 16px rgba(31,42,51,0.08)` |
 
 ### 5.4 Spacing & Breakpoints
@@ -326,16 +326,16 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 
 ### 5.5 Buttons (Summary)
 
-- **Primary:** `bg-teal text-white hover:bg-teal-dark`; rounded-lg; shadow and hover scale/glow.
-- **Secondary:** `border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white`.
-- **Ghost:** `text-teal hover:text-teal-dark hover:underline`.
-- **Pill (hero/nav):** `rounded-full`, same teal fill/hover.
+- **Primary:** `bg-steel text-white hover:bg-steel-dark`; rounded-lg; shadow and hover scale/glow.
+- **Secondary:** `border-2 border-navy text-navy hover:bg-navy hover:text-white`.
+- **Ghost:** `text-steel hover:text-steel-dark hover:underline`.
+- **Pill (hero/nav):** `rounded-full`, same steel fill/hover.
 
 ### 5.6 Cards (Summary)
 
-- Base: `bg-white border border-surface-200 rounded-xl shadow-card`.
-- Hover: `hover:border-teal/40 hover:shadow-card-hover`; some use `hover:-translate-y-1`.
-- Icons and links: `text-teal` / `hover:text-teal-dark`.
+- Base: `bg-white border border-pearl-200 rounded-xl shadow-card`.
+- Hover: `hover:border-steel/40 hover:shadow-card-hover`; some use `hover:-translate-y-1`.
+- Icons and links: `text-steel` / `hover:text-steel-dark`.
 
 ---
 
@@ -349,9 +349,9 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 ### 6.2 Global Styles
 
 - **body:** `background-color: #FFFFFF`, `color: var(--color-text-body)`, `font-family: var(--font-body)`, `overflow-x: hidden`, `-webkit-font-smoothing: antialiased`.
-- **body::before:** Fixed 3px top bar; gradient `charcoal → orange/40 → charcoal`; `z-index: 100`.
-- **:focus-visible:** `outline: 2px solid var(--color-orange/40)`, `outline-offset: 3px`, `border-radius: 4px`.
-- **::selection:** `background: var(--color-orange/40-light)`, `color: var(--color-charcoal)`.
+- **body::before:** Fixed 3px top bar; gradient `navy → steel → navy`; `z-index: 100`.
+- **:focus-visible:** `outline: 2px solid var(--color-steel)`, `outline-offset: 3px`, `border-radius: 4px`.
+- **::selection:** `background: var(--color-steel-light)`, `color: var(--color-navy)`.
 
 ### 6.3 Keyframes
 
@@ -393,7 +393,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 - **Location:** Used on `/quote` and can be embedded in sections if needed.
 - **Fields:** `fullName`, `companyName`, `email`, `phone`, `propertyType` (Residential, Commercial, Multi-Unit, REO/Bank Owned, Other), `serviceNeeded` (from services list + "Multiple Services"), `location`, `message`, `agreeToTerms`, `formSource?: "quote"`.
 - **Validation:** `validateForm()` in `src/lib/utils/formValidation.ts` — required checks, email regex, phone min 10 digits, propertyType/serviceNeeded/location non-empty, message min 10 characters, terms acceptance.
-- **Submit:** `POST /api/contact` with JSON body `{ ...formData, formSource: "quote" }`; success shows orange/40-muted success block; errors per field + optional submit error message.
+- **Submit:** `POST /api/contact` with JSON body `{ ...formData, formSource: "quote" }`; success shows steel-muted success block; errors per field + optional submit error message.
 - **UX:** Full-width card layout, field-level error messages, accessible labels/ARIA attributes; terms checkbox links to `/terms`.
 
 **ContactForm** (`src/components/forms/ContactForm.tsx`)
@@ -466,7 +466,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 - **Layout:** `layout.tsx` exports `metadata: Metadata = defaultMetadata`.
 - **Canonical:** Set via `generatePageMetadata` `alternates.canonical`.
 - **Headings:** Single `h1` per page (hero); sections use `SectionHeading` (`h2`) and card titles `h3` for structure and accessibility.
-- **Skip link:** `<a href="#main-content">Skip to main content</a>` in layout; focus styles (orange/40 outline) for keyboard users.
+- **Skip link:** `<a href="#main-content">Skip to main content</a>` in layout; focus styles (steel outline) for keyboard users.
 
 ---
 
@@ -487,7 +487,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 
 1. Create `src/app/your-route/page.tsx`.
 2. Export `metadata` via `generatePageMetadata({ title: "...", description: "...", path: "/your-route" })`.
-3. Use shared layout (Navbar/Footer from root layout). Optionally use same hero pattern: `section` with `bg-hero-bg`, `h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh]`, `pt-28 sm:pt-32`, and centered `text-white` / `text-surface-200` content.
+3. Use shared layout (Navbar/Footer from root layout). Optionally use same hero pattern: `section` with `bg-hero-bg`, `h-[40vh] min-h-[320px] md:h-[50vh] lg:h-[55vh]`, `pt-28 sm:pt-32`, and centered `text-white` / `text-pearl-200` content.
 4. Add route to Navbar `navLinks` and Footer if needed.
 5. Update `sitemap.ts` if you want the route in the sitemap.
 
@@ -495,7 +495,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 
 1. Place in `components/layout`, `ui`, `sections`, `cards`, `forms`, or `shared` as appropriate.
 2. Use `"use client"` if the component uses hooks, Framer Motion, or browser APIs.
-3. Use design tokens: `text-charcoal`, `text-teal`, `bg-surface-50`, `border-surface-200`, `font-display`, `font-body`, `font-accent`, etc.
+3. Use design tokens: `text-navy`, `text-steel`, `bg-pearl-50`, `border-pearl-200`, `font-display`, `font-body`, `font-accent`, etc.
 4. For scroll animations, wrap content in `<AnimatedSection variant="fadeUp">` or use `motion` with `whileInView` and `viewport={{ once: true }}`. Respect `useReducedMotion()`.
 
 ### 12.3 Adding a Service
@@ -528,7 +528,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 - Use `font-display` for headings, `font-body` for body, `font-accent` for buttons and nav.
 - Use `SectionHeading` for section titles. Use `Button` with `variant` and `size`; use `asChild` with `Link` for CTAs.
 - Keep spacing consistent: section padding `py-20 lg:py-28` (or reduced top where used); container `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`.
-- Ensure focus and selection styles remain (orange/40 outline, orange/40-light selection). Do not remove `body::before` top accent.
+- Ensure focus and selection styles remain (steel outline, steel-light selection). Do not remove `body::before` top accent.
 
 ### 12.8 Handling Images
 
@@ -553,7 +553,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 <ServiceCard service={service} variant="grid" />
 // service: { id, title, description, icon, image, slug, features }
 // Renders: image block, icon, title, description, feature list, "Learn more →" link
-// Hover: border-orange/40/40, shadow-card-hover, -translate-y-1
+// Hover: border-steel/40, shadow-card-hover, -translate-y-1
 ```
 
 ### 13.2 ClientTypeCard (compact)
@@ -572,7 +572,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
     <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
       Page Title
     </h1>
-    <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
+    <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
       Tagline or short description.
     </p>
   </div>
@@ -588,7 +588,7 @@ import { QuoteForm } from "@/components/forms/QuoteForm";
 <QuoteForm />
 // Form includes: fullName, companyName, email, phone, propertyType, serviceNeeded, location, message, agreeToTerms
 // Validates via validateForm(); submits to POST /api/contact with formSource="quote"
-// Success: orange/40-muted box with thank-you message
+// Success: steel-muted box with thank-you message
 ```
 
 ### 13.5 SectionHeading
@@ -613,7 +613,7 @@ import { QuoteForm } from "@/components/forms/QuoteForm";
 
 ```tsx
 // In vendors/page.tsx the form is mounted inside an anchor-targeted section:
-<section id="vendor-application" className="py-20 lg:py-28 bg-surface-50">
+<section id="vendor-application" className="py-20 lg:py-28 bg-pearl-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <VendorApplicationForm />
   </div>
@@ -660,14 +660,14 @@ layout (Navbar + PageWrapper(main) + Footer + ScrollToTop)
 | Tailwind class | Theme variable |
 |----------------|----------------|
 | `bg-white` | `--color-white` |
-| `bg-surface-50` … `bg-surface-300` | `--color-surface-*` |
-| `bg-charcoal`, `text-charcoal` | `--color-charcoal` |
-| `bg-teal`, `text-teal`, `border-teal` | `--color-orange/40` |
-| `hover:bg-teal-dark` | `--color-orange/40-dark` |
-| `text-skyblue`, `fill-skyblue` | `--color-skyblue` (badges) |
+| `bg-pearl-50` … `bg-pearl-300` | `--color-pearl-*` |
+| `bg-navy`, `text-navy` | `--color-navy` |
+| `bg-steel`, `text-steel`, `border-steel` | `--color-steel` |
+| `hover:bg-steel-dark` | `--color-steel-dark` |
+| `text-brass`, `fill-brass` | `--color-brass` (badges) |
 | `text-text-muted` | `--color-text-muted` |
 | `bg-hero-bg`, `text-hero-text` | `--color-hero-*` |
-| `shadow-card`, `shadow-card-hover`, `shadow-teal-glow` | `--shadow-*` |
+| `shadow-card`, `shadow-card-hover`, `shadow-steel-glow` | `--shadow-*` |
 
 ### 14.3 Component Variants Summary
 
@@ -679,7 +679,7 @@ layout (Navbar + PageWrapper(main) + Footer + ScrollToTop)
 | AnimatedSection | variant | fadeUp, fadeLeft, fadeRight, scaleIn | — |
 | ServiceCard | variant | grid, list, featured | grid = default |
 | ClientTypeCard | variant | compact, full | compact = default |
-| CTABanner | variant | dark, light | dark = image + overlay; light = surface-50 |
+| CTABanner | variant | dark, light | dark = image + overlay; light = pearl-50 |
 
 ---
 

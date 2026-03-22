@@ -16,7 +16,7 @@
 └───────────────────────────────────┘
 
 ┌─ AFTER ───────────────────────────┐
-│ Split: Charcoal text + Image      │
+│ Split: Navy text + Image      │
 │ Left-bordered heading + Stat strip│
 │ Alternating horizontal rows       │
 │ 2-column CTA (text + buttons)     │
@@ -79,9 +79,9 @@
 
 ```
 ┌───────────────────────────────────────────────────┐
-│ CHARCOAL LEFT (50%)  │  IMAGE RIGHT (50%)        │
+│ NAVY LEFT (50%)  │  IMAGE RIGHT (50%)        │
 │ ┌─────────────────┐  │  ┌──────────────────────┐ │
-│ │ Bg: Charcoal    │  │  │  Service image       │ │
+│ │ Bg: Navy    │  │  │  Service image       │ │
 │ │ ┌─────────────┐ │  │  │  (No overlay!)       │ │
 │ │ │ Complete    │ │  │  │                      │ │
 │ │ │ Maintenance │ │  │  │  Clear, vibrant      │ │
@@ -136,7 +136,7 @@
 ┌──────────────────────────────────────────┐
 │                                          │
 │ ├─ Seven Specialized Services           │
-│ │  (4px teal left border)                │
+│ │  (4px steel left border)                │
 │ │                                        │
 │ │  ONECALL FIELD SERVICES LLC provides specialized support │
 │ │  across all property maintenance...    │
@@ -146,7 +146,7 @@
 │  │ Coverage │ & Insured│ Response    │  │
 │  │          │          │             │  │
 │  └──────────┴──────────┴──────────────┘  │
-│   Light gray background (surface-50)     │
+│   Light gray background (pearl-50)     │
 │   Vertical dividers on desktop           │
 │                                          │
 └──────────────────────────────────────────┘
@@ -233,7 +233,7 @@ Row 2 (Even) — Image Right (flex-row-reverse):
 
 ```
 ┌──────────────────────────────────────────┐
-│  Dark Charcoal Background (bg-charcoal)  │
+│  Dark Navy Background (bg-navy)  │
 │                                          │
 │        Prepared to Begin?                │
 │                                          │
@@ -265,7 +265,7 @@ Row 2 (Even) — Image Right (flex-row-reverse):
 │                   │  │ Get a Free Quote     │ │
 │ Get a personal-   │  └──────────────────────┘ │
 │ ized estimate     │                            │
-│ tailored to your  │      ─ teal ─ (1px)      │
+│ tailored to your  │      ─ steel ─ (1px)      │
 │ property maint... │                            │
 │                   │  123-456-7890           │
 │                   │                            │
@@ -275,7 +275,7 @@ Row 2 (Even) — Image Right (flex-row-reverse):
 **Improvements:**
 - ✓ 2-column layout (professional)
 - ✓ Text left, CTAs right (visual flow)
-- ✓ Teal divider (accent detail)
+- ✓ Steel divider (accent detail)
 - ✓ Better visual balance
 
 ---
@@ -376,7 +376,7 @@ Tablet (md):
 Desktop (lg+):
 ┌────────────────────────────────────┐
 │  TEXT (50%)    │  IMAGE (50%)      │
-│  Charcoal BG   │  Full width image │
+│  Navy BG   │  Full width image │
 │                │  (no overlay)     │
 └────────────────────────────────────┘
 ```
@@ -429,7 +429,7 @@ Desktop (lg+):
 ```
 Desktop only (respects reduced-motion):
 - Initial: opacity 0, y: 30px (pushed down)
-- Hover: y: -4px (lifts up), shadow increases, border teal
+- Hover: y: -4px (lifts up), shadow increases, border steel
 - Duration: 300ms ease
 - Stagger: 0, 0.08s, 0.16s, 0.24s, ... (per service)
 ```
@@ -450,7 +450,7 @@ Same animation as services page:
 
 ### Both Layouts
 ```
-Colors:        All preserved (charcoal, teal, surface, skyblue)
+Colors:        All preserved (navy, steel, surface, brass)
 Fonts:         All preserved (Outfit, Plus Jakarta Sans)
 Shadows:       All preserved (shadow-card, shadow-card-hover)
 Spacing:       Responsive (gap-6, px-4 to px-8)

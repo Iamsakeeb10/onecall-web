@@ -103,12 +103,12 @@ responsive:     1 column on mobile, 2 columns on tablet/desktop
 
 ```
 Background:         white
-Border:             1px surface-200
+Border:             1px pearl-200
 Border radius:      rounded-2xl (16px)
 Box shadow:         shadow-card (normal), shadow-card-hover (on hover)
 Display:            flex flex-col sm:flex-row (stack on mobile, row on tablet+)
 Height:             h-full (full height for equal cards)
-Hover effect:       Border teal/40, shadow elevated, -4px lift
+Hover effect:       Border steel/40, shadow elevated, -4px lift
 Transition:         all 300ms ease
 ```
 
@@ -126,7 +126,7 @@ Image properties:
   onError:          Shows icon fallback
   
 Fallback (on image error):
-  Background:       surface-200 (light gray)
+  Background:       pearl-200 (light gray)
   Icon:             service.icon (teal)
   Size:             w-12 h-12 (48px)
 ```
@@ -151,10 +151,10 @@ Sub-elements spacing:
 
 ```
 Size:               w-8 h-8 (32px)
-Background:         bg-teal-muted (12% opacity teal)
+Background:         bg-steel-muted (12% opacity steel)
 Border radius:      rounded-lg (8px)
 Display:            flex items-center justify-center
-Icon:               w-4 h-4 (16px, teal color)
+Icon:               w-4 h-4 (16px, steel color)
 ```
 
 ### Title
@@ -163,7 +163,7 @@ Icon:               w-4 h-4 (16px, teal color)
 Font:               font-display (Outfit)
 Size:               text-base (mobile) → sm:text-lg (16px → 18px)
 Weight:             bold (700)
-Color:              charcoal
+Color:              navy
 Line clamp:         line-clamp-2 (max 2 lines)
 Margin:             mb-2
 ```
@@ -188,7 +188,7 @@ Flex grow:          flex-grow (pushes to middle, link to bottom)
 
 Feature item:
   Display:          flex items-start gap-1.5
-  Icon:             CheckCircle w-3.5 h-3.5 (14px, teal)
+  Icon:             CheckCircle w-3.5 h-3.5 (14px, steel)
   Text:             font-body text-xs text-text-muted
   Text clamp:       line-clamp-1 (single line, no wrap)
 ```
@@ -198,7 +198,7 @@ Feature item:
 ```
 Display:            inline-flex items-center gap-1
 Font:               font-accent (Outfit), medium (500), text-sm (14px)
-Color:              teal (normal) → teal-dark (hover)
+Color:              steel (normal) → steel-dark (hover)
 Text decoration:    none (normal) → underline (hover)
 Icon:               ArrowRight w-3.5 h-3.5 (14px)
 Transition:         all 300ms ease
@@ -210,7 +210,7 @@ Icon animation on link hover:
   Easing:           ease
 
 Focus state:
-  Ring:             2px teal
+  Ring:             2px steel
   Outline:          none
   Offset:           2px (focus-ring-offset-2)
   Offset color:     white
@@ -264,13 +264,13 @@ Reduced motion:  Instant appearance (no animation)
 
 ```
 Card hover:
-  Border:        surface-200 → teal/40
+  Border:        pearl-200 → steel/40
   Shadow:        shadow-card → shadow-card-hover (elevated)
   Transform:     -translate-y-1 (4px up)
   Duration:      300ms ease
   
 Link hover:
-  Color:         teal → teal-dark
+  Color:         steel → steel-dark
   Underline:     appears (text-decoration: underline)
   Arrow icon:    translateX(4px) (moves right)
   Duration:      300ms ease
@@ -287,15 +287,15 @@ Mobile/Touch:
 | Element | Color | Hex | CSS Variable |
 |---|---|---|---|
 | Background | white | `#FFFFFF` | `--color-white` |
-| Border (normal) | surface-200 | `#CBD2D8` | `--color-surface-200` |
-| Border (hover) | teal/40 | rgba(20,184,166,0.4) | opacity variant |
-| Icon badge bg | teal-muted | rgba(20,184,166,0.12) | `--color-teal-muted` |
-| Icon | teal | `#14B8A6` | `--color-teal` |
-| Title | charcoal | `#1F2A33` | `--color-charcoal` |
+| Border (normal) | pearl-200 | `#E2E4EA` | `--color-pearl-200` |
+| Border (hover) | steel/40 | rgba(20,184,166,0.4) | opacity variant |
+| Icon badge bg | steel-muted | rgba(20,184,166,0.12) | `--color-steel-muted` |
+| Icon | steel | `#2563EB` | `--color-steel` |
+| Title | navy | `#1A2233` | `--color-navy` |
 | Description | text-muted | `#64748B` | `--color-text-muted` |
-| Feature icon | teal | `#14B8A6` | `--color-teal` |
-| Link | teal | `#14B8A6` | `--color-teal` |
-| Link hover | teal-dark | `#0D9488` | `--color-teal-dark` |
+| Feature icon | steel | `#2563EB` | `--color-steel` |
+| Link | steel | `#2563EB` | `--color-steel` |
+| Link hover | steel-dark | `#1D4ED8` | `--color-steel-dark` |
 
 ---
 
@@ -303,10 +303,10 @@ Mobile/Touch:
 
 | Element | Font | Size | Weight | Color |
 |---|---|---|---|---|
-| Title | Outfit | text-base → lg (14px → 18px) | bold (700) | charcoal |
+| Title | Outfit | text-base → lg (14px → 18px) | bold (700) | navy |
 | Description | Plus Jakarta Sans | text-sm (14px) | regular (400) | text-muted |
 | Feature text | Plus Jakarta Sans | text-xs (12px) | regular (400) | text-muted |
-| Link text | Outfit | text-sm (14px) | medium (500) | teal |
+| Link text | Outfit | text-sm (14px) | medium (500) | steel |
 
 ---
 
@@ -346,7 +346,7 @@ Mobile/Touch:
 aria-hidden="true"    Decorative icons (service icons, CheckCircle)
 alt={service.title}   All images with descriptive alt text
 href={service.slug}   Links to service detail sections
-focus-visible         2px teal ring on links (focus ring)
+focus-visible         2px steel ring on links (focus ring)
 ```
 
 ### Keyboard Navigation
@@ -354,16 +354,16 @@ focus-visible         2px teal ring on links (focus ring)
 ```
 Tab:           Navigate through all links
 Enter/Space:   Activate links
-Focus ring:    2px teal outline with white offset
+Focus ring:    2px steel outline with white offset
 Visible:       Always visible on focus
 ```
 
 ### Color Contrast (WCAG AA)
 
 ```
-Charcoal on white:   14.5:1 ✓ AAA
+Navy on white:   14.5:1 ✓ AAA
 Text-muted on white: 7.1:1 ✓ AA
-Teal link on white:  2.8:1 ⚠️ Requires underline (provided)
+Steel link on white:  2.8:1 ⚠️ Requires underline (provided)
 ```
 
 ---

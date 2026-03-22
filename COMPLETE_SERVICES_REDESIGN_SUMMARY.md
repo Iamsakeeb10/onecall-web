@@ -22,7 +22,7 @@ All changes preserve **100% of content, colors, fonts, accessibility, and animat
 
 #### Hero Section
 - **Before:** Centered overlay on full image
-- **After:** Split layout (charcoal left 50% + image right 50%)
+- **After:** Split layout (navy left 50% + image right 50%)
 - Mobile: Stacks vertically
 
 #### Introduction Section  
@@ -41,7 +41,7 @@ All changes preserve **100% of content, colors, fonts, accessibility, and animat
 - **Before:** Centered text + 2-button row
 - **After:** 2-column layout
   - Left: Text (60%, left-aligned)
-  - Right: Buttons (40%, centered, stacked vertically with teal divider)
+  - Right: Buttons (40%, centered, stacked vertically with steel divider)
 
 ### 2. Home Page Services Section (`src/components/sections/ServicesSection.tsx`)
 
@@ -120,11 +120,11 @@ Mobile (< lg):
 
 ### Colors (All Unchanged)
 ```
-Charcoal:        #1F2A33 (headings, dark elements)
-Teal:            #14B8A6 (accents, CTAs)
-Surface 50:      #F7F9FA (light backgrounds)
-Surface 200:     #CBD2D8 (borders, dividers)
-Sky Blue:        #0EA5E9 (prestige badges)
+Navy:        #1A2233 (headings, dark elements)
+Teal:            #2563EB (accents, CTAs)
+Pearl 50:      #F9F9FB (light backgrounds)
+Pearl 200:     #E2E4EA (borders, dividers)
+Warm Brass:        #92751F (prestige badges)
 Text Muted:      #64748B (secondary text)
 ```
 
@@ -158,7 +158,7 @@ shadow-card-hover:  0 4px 16px rgba(teal), 0 12px 32px rgba(...)
 ## Key Features
 
 ### Services Page
-- **Split Hero:** Modern two-column layout with charcoal + image
+- **Split Hero:** Modern two-column layout with navy + image
 - **Stat Strip:** Visual hierarchy with left border accent
 - **Alternating Rows:** Engaging, professional layout (distinct from home)
 - **2-Column CTA:** Text + buttons with visual balance

@@ -9,7 +9,7 @@
 ### Desktop (lg+)
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│  CHARCOAL LEFT (50%)  │  IMAGE RIGHT (50%)                       │
+│  NAVY LEFT (50%)  │  IMAGE RIGHT (50%)                       │
 │                       │                                          │
 │  ┌─────────────────┐  │  ┌──────────────────────────────────────┐│
 │  │ Complete        │  │  │                                      ││
@@ -65,7 +65,7 @@ Same as desktop but with responsive padding
 └──────────────────────────────────────────────────────────────┘
 
 Stat Strip Details:
-- Background: surface-50 (light gray)
+- Background: pearl-50 (light gray)
 - Dividers: Vertical on desktop (md:divide-x)
 - Height: py-8 per stat
 - Padding: px-6 sm:px-8
@@ -105,7 +105,7 @@ Desktop (lg+):
 │ │              │  │ │ 🔧 Icon Badge                   │  │
 │ │   Service    │  │ │ Service Title                    │  │
 │ │   Image      │  │ │ Service description text...      │  │
-│ │   (640px)    │  │ │ [Sky Blue: Statewide Badge]     │  │
+│ │   (640px)    │  │ │ [Warm Brass: Statewide Badge]     │  │
 │ │              │  │ │ ✓ Feature 1                      │  │
 │ │              │  │ │ ✓ Feature 2                      │  │
 │ │              │  │ │ ✓ Feature 3                      │  │
@@ -123,7 +123,7 @@ Desktop (lg+):
 │ │ 💧 Icon Badge                   │  │ │              │  │
 │ │ Service Title                    │  │ │   Service    │  │
 │ │ Service description text...      │  │ │   Image      │  │
-│ │ [Sky Blue: Statewide Badge]     │  │ │   (640px)    │  │
+│ │ [Warm Brass: Statewide Badge]     │  │ │   (640px)    │  │
 │ │ ✓ Feature 1                      │  │ │              │  │
 │ │ ✓ Feature 2                      │  │ │              │  │
 │ │ ✓ Feature 3                      │  │ │              │  │
@@ -159,7 +159,7 @@ All rows stack vertically:
 ### Card Hover Effects
 ```
 Desktop Only:
-- Border: surface-200 → teal/40 (teal highlight)
+- Border: pearl-200 → steel/40 (teal highlight)
 - Shadow: shadow-card → shadow-card-hover
 - Transform: translateY(-4px) lift
 - Duration: 300ms ease
@@ -181,7 +181,7 @@ Mobile/Touch:
 │ Prepared to Begin?       │  ┌──────────────────────┐ │
 │ Get a personalized...    │  │ Get a Free Quote     │ │
 │                          │  └──────────────────────┘ │
-│                          │         ─ teal ─          │
+│                          │         ─ steel ─          │
 │                          │  123-456-7890          │
 │                          │                            │
 └────────────────────────────────────────────────────────┘
@@ -198,7 +198,7 @@ Mobile/Touch:
 │    ┌─────────────────────┐   │
 │    │ Get a Free Quote    │   │
 │    └─────────────────────┘   │
-│             ─ teal ─         │
+│             ─ steel ─         │
 │    123-456-7890            │
 └──────────────────────────────┘
 ```
@@ -206,7 +206,7 @@ Mobile/Touch:
 ### CTA Banner Details
 ```
 Container:
-  Background: bg-charcoal (#1F2A33)
+  Background: bg-navy (#1A2233)
   Padding: p-8 sm:p-10 md:p-14
   Border Radius: rounded-2xl
   Gap: gap-8
@@ -214,7 +214,7 @@ Container:
 Divider:
   Height: h-px (1px)
   Width: w-12 (48px)
-  Color: bg-teal
+  Color: bg-steel
   Margin: my-4
 ```
 
@@ -262,35 +262,35 @@ Reduced motion: Instant appearance (respects prefers-reduced-motion)
 
 ### Hero Section
 ```
-Left (Text):      bg-charcoal (#1F2A33), text-white, accent teal/50
+Left (Text):      bg-navy (#1A2233), text-white, accent steel/50
 Right (Image):    No color overlay (direct image)
 ```
 
 ### Intro Section
 ```
-Heading border:   border-teal (4px)
-Stat background:  bg-surface-50 (#F7F9FA)
-Stat text:        text-teal (numbers), text-text-muted (labels)
-Dividers:         divide-surface-200 (#CBD2D8)
+Heading border:   border-steel (4px)
+Stat background:  bg-pearl-50 (#F9F9FB)
+Stat text:        text-steel (numbers), text-text-muted (labels)
+Dividers:         divide-pearl-200 (#E2E4EA)
 ```
 
 ### Service Cards
 ```
-Border:           border-surface-200 (normal) → teal/40 (hover)
-Icon badge:       bg-teal-muted (12% opacity)
-Badge bg:         bg-skyblue-light (#EFF8FF)
-Badge text:       text-skyblue (#0EA5E9)
-Feature icons:    text-teal (#14B8A6)
-Button:           bg-charcoal → hover: darker shade
+Border:           border-pearl-200 (normal) → steel/40 (hover)
+Icon badge:       bg-steel-muted (12% opacity)
+Badge bg:         bg-brass-light (#FBF6E7)
+Badge text:       text-brass (#92751F)
+Feature icons:    text-steel (#2563EB)
+Button:           bg-navy → hover: darker shade
 ```
 
 ### CTA Banner
 ```
-Background:       bg-charcoal (#1F2A33)
+Background:       bg-navy (#1A2233)
 Text (heading):   text-white
-Text (body):      text-surface-200
-Divider:          bg-teal
-Link:             text-teal → hover: teal-light
+Text (body):      text-pearl-200
+Divider:          bg-steel
+Link:             text-steel → hover: steel-light
 ```
 
 ---
@@ -300,20 +300,20 @@ Link:             text-teal → hover: teal-light
 ### Hero
 ```
 H1: Outfit, 3xl (30px) → 4xl (36px) → 5xl (48px)
-P:  Plus Jakarta Sans, base–lg, surface-200 color
+P:  Plus Jakarta Sans, base–lg, pearl-200 color
 ```
 
 ### Intro
 ```
 H2: Outfit, 4xl (36px) → 5xl (48px)
 P:  Plus Jakarta Sans, lg, text-muted
-Stat numbers: Outfit, 2xl → 3xl, bold, teal
+Stat numbers: Outfit, 2xl → 3xl, bold, steel
 Stat labels: Plus Jakarta Sans, sm, text-muted
 ```
 
 ### Service Cards
 ```
-H3: Outfit, 2xl, bold, charcoal
+H3: Outfit, 2xl, bold, navy
 P:  Plus Jakarta Sans, base, text-muted
 List items: Plus Jakarta Sans, sm, text-muted
 ```
@@ -321,8 +321,8 @@ List items: Plus Jakarta Sans, sm, text-muted
 ### CTA Banner
 ```
 H2: Outfit, 3xl → 4xl
-P:  Plus Jakarta Sans, base, surface-200
-Phone link: Plus Jakarta Sans, base, teal
+P:  Plus Jakarta Sans, base, pearl-200
+Phone link: Plus Jakarta Sans, base, steel
 ```
 
 ---
@@ -349,7 +349,7 @@ role="article"         Service card rows (implicit in article context)
 
 ### Focus Management
 ```
-Focus ring: 2px teal outline with 3px offset
+Focus ring: 2px steel outline with 3px offset
 Visible on: Links, buttons, interactive elements
 Keyboard nav: Tab through all focusable elements
 ```

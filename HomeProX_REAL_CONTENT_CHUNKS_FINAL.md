@@ -847,7 +847,7 @@ Only update text content.
 
 2. src/components/sections/VendorWhyPartner.tsx
 
-  Subtext strip (charcoal band below hero):
+  Subtext strip (navy band below hero):
     "Serving Residential Portfolios • Investment Properties •
     Managed Communities • Institutional Assets"
 

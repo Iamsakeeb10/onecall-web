@@ -24,7 +24,7 @@ Successfully completed a comprehensive redesign of all ONECALL FIELD SERVICES LL
 #### 1. `src/app/services/page.tsx`
 ```diff
 - Full-width centered hero with overlay
-+ Split layout: charcoal text (50%) + image (50%)
++ Split layout: navy text (50%) + image (50%)
 
 - Centered heading with pill badges
 + Left-bordered heading + 3-column stat strip
@@ -164,10 +164,10 @@ Route (app)
 ## Key Features & Improvements
 
 ### Services Page ✨
-- **Split Hero:** Modern charcoal + image side-by-side (vs centered overlay)
+- **Split Hero:** Modern navy + image side-by-side (vs centered overlay)
 - **Stat Strip:** Professional 3-column stat display with dividers
 - **Alternating Rows:** Engaging left/right rhythm (vs uniform grid)
-- **2-Column CTA:** Text left, buttons right with teal divider accent
+- **2-Column CTA:** Text left, buttons right with steel divider accent
 - **Mobile Optimized:** All sections stack vertically, touch-friendly
 
 ### Home Page Services ✨
@@ -218,7 +218,7 @@ Route (app)
 - Image priority loading (featured = priority)
 
 ✅ **All Styling**
-- Colors: Charcoal, teal, surface, skyblue all preserved
+- Colors: Navy, steel, surface, brass all preserved
 - Fonts: Outfit, Plus Jakarta Sans all preserved
 - Shadows: shadow-card, shadow-card-hover preserved
 - Tailwind utilities: All existing classes

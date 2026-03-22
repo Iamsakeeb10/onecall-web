@@ -34,7 +34,7 @@ Z-Index:         50 (z-50)
 Width:           100% (full viewport)
 Backdrop:        Blur + 98% white background opacity
 Shadow:          Subtle shadow-navbar (0 1px 0 rgba(...), 0 4px 16px rgba(...))
-Border:          Bottom border, surface-200 (light gray)
+Border:          Bottom border, pearl-200 (light gray)
 ```
 
 #### Grid Layout (Desktop: lg breakpoint)
@@ -104,7 +104,7 @@ gap:             8 (2rem spacing between nav items)
 ```
 font-family:      font-accent (Outfit)
 font-size:        base (16px)
-color:            charcoal (#1F2A33)
+color:            navy (#1A2233)
 text-decoration:  none
 transition:       color 300ms ease
 cursor:           pointer
@@ -112,14 +112,14 @@ cursor:           pointer
 
 **Hover State:**
 ```
-color:            teal (#14B8A6)
+color:            steel (#2563EB)
 underline-effect: Bottom accent bar animates in
 ```
 
 **Active State (Current Page):**
 ```
-color:            teal (#14B8A6)
-underline:        Full width bottom bar (h-0.5, teal)
+color:            steel (#2563EB)
+underline:        Full width bottom bar (h-0.5, steel)
 ```
 
 #### Underline Animation (Desktop)
@@ -128,7 +128,7 @@ position:         absolute (relative to link)
 location:         bottom: -1 (1px below text baseline)
 left:             0 (starts at link start)
 height:           h-0.5 (2px thick)
-color:            teal (#14B8A6)
+color:            steel (#2563EB)
 width-inactive:   w-0 (hidden)
 width-hover:      w-full (animates in)
 width-active:     w-full (static)
@@ -156,16 +156,16 @@ hover:effect:     scale(105%) — slight zoom
 
 **Active / Current Page (`/quote`):**
 ```
-background:       charcoal (#1F2A33)
+background:       navy (#1A2233)
 text-color:       white
-hover:bg:         charcoal-light (#323F4B) — slightly lighter
+hover:bg:         navy-light (#2D3A52) — slightly lighter
 ```
 
 **Inactive (not on `/quote`):**
 ```
-background:       teal (#14B8A6)
+background:       steel (#2563EB)
 text-color:       white
-hover:bg:         teal-dark (#0D9488)
+hover:bg:         steel-dark (#1D4ED8)
 ```
 
 **Interaction:**
@@ -184,8 +184,8 @@ transition:      colors 300ms ease
 padding:         p-2 (8px all sides)
 flex-shrink:     0 (never compress)
 margin-left:     ml-2 (small spacing from other elements)
-color-base:      charcoal (#1F2A33)
-color-hover:     teal (#14B8A6)
+color-base:      navy (#1A2233)
+color-hover:     steel (#2563EB)
 ```
 
 #### Icon Properties (Lucide React)
@@ -223,7 +223,7 @@ library:         Framer Motion (AnimatePresence)
 ```
 display:         lg:hidden (mobile/tablet only)
 background:      white
-border-top:      surface-200 (light gray divider)
+border-top:      pearl-200 (light gray divider)
 ```
 
 **Inner Container:**
@@ -241,14 +241,14 @@ font-family:     font-accent (Outfit)
 font-size:       lg (18px — larger on mobile for touch)
 padding-y:       py-2 (8px vertical)
 transition:      colors 300ms ease
-color-inactive:  charcoal (#1F2A33)
-color-active:    teal (#14B8A6)
-color-hover:     teal (#14B8A6)
+color-inactive:  navy (#1A2233)
+color-active:    steel (#2563EB)
+color-hover:     steel (#2563EB)
 ```
 
 **Behavior on Mobile:**
 - Tapping a link closes the menu (`setMobileMenuOpen(false)`)
-- Active page highlights in teal
+- Active page highlights in steel
 - Inactive links gray out
 
 **CTA Button in Mobile Menu:**
@@ -257,13 +257,13 @@ display:         flex (centered layout)
 align-items:     center
 justify-center:  center
 width:           w-full (full drawer width)
-background:      teal (#14B8A6)
+background:      steel (#2563EB)
 text-color:      white
 padding:         px-6 py-3 (24px × 12px)
 border-radius:   rounded-full
 font-family:     font-accent (Outfit)
 font-weight:     medium (500)
-hover:bg:        teal-dark (#0D9488)
+hover:bg:        steel-dark (#1D4ED8)
 transition:      all 300ms ease
 ```
 
@@ -304,7 +304,7 @@ object-fit:      cover (crops to fill dimensions)
 position:        absolute
 inset:           0 (covers full section)
 z-index:         10
-background:      charcoal/72 (dark overlay, 72% opacity)
+background:      navy/72 (dark overlay, 72% opacity)
 purpose:         Darkens background image for text readability
 ```
 
@@ -339,7 +339,7 @@ margin-y:        my-3 (12px vertical)
 line-element:
   height:        h-px (1px)
   width:         w-16 (64px)
-  background:    teal/50 (50% opacity)
+  background:    steel/50 (50% opacity)
   purpose:       Visual separator, premium accent
 ```
 
@@ -347,7 +347,7 @@ line-element:
 ```
 font-family:     font-body (Plus Jakarta Sans)
 font-size:       lg (18px)
-color:           surface-200 (light gray)
+color:           pearl-200 (light gray)
 max-width:       max-w-2xl (672px)
 margin:          auto
 content:         "Seven specialized maintenance areas addressing every property requirement across Texas..."
@@ -398,7 +398,7 @@ text-align:      center
   font-family:   font-display (Outfit)
   font-size:     md: text-4xl | lg: text-5xl
   font-weight:   bold (700)
-  color:         charcoal
+  color:         navy
   margin-bottom: mb-6 (24px)
   content:       "Seven Specialized Services"
   ```
@@ -421,12 +421,12 @@ text-align:      center
     display:     inline-flex
     align:       center
     padding:     px-4 py-2 (16px × 8px)
-    background:  teal/10 (10% opacity)
-    border:      1px teal/20 (20% opacity)
+    background:  steel/10 (10% opacity)
+    border:      1px steel/20 (20% opacity)
     border-radius: rounded-full
     font-size:   sm (14px)
     font-family: font-body
-    color:       teal
+    color:       steel
     content:     "✓ Statewide Coverage" | "✓ Licensed & Insured" | "✓ 24-Hour Response"
   ```
 
@@ -457,7 +457,7 @@ margin-bottom:   mb-8 (32px)
 **Card Container:**
 ```
 background:      white
-border:          1px surface-200 (light gray)
+border:          1px pearl-200 (light gray)
 border-radius:   rounded-2xl (16px)
 overflow:        hidden
 display:         flex flex-col (stacking)
@@ -465,13 +465,13 @@ height:          100% (full)
 box-shadow:      shadow-card (subtle depth)
 
 hover-state:
-  border-color:  teal/40 (teal highlight)
-  box-shadow:    shadow-card-hover (elevated with teal tint)
+  border-color:  steel/40 (teal highlight)
+  box-shadow:    shadow-card-hover (elevated with steel tint)
   transform:     -translate-y-1 (lift up 4px)
   transition:    all 300ms ease
   
 focus-within:
-  ring:          2px teal
+  ring:          2px steel
   outline:       none
 ```
 
@@ -487,9 +487,9 @@ overflow:        hidden
   border-radius: rounded-t-2xl (matches card top corners)
   
 fallback (on error):
-  background:    surface-200
+  background:    pearl-200
   display:       flex center
-  icon:          service icon (16px, teal)
+  icon:          service icon (16px, steel)
 ```
 
 **Card Content Section:**
@@ -502,14 +502,14 @@ flex-grow:       1 (expands to push button to bottom)
 **Service Icon Badge:**
 ```
 width:           w-12 h-12 (48px square)
-background:      teal-muted (rgba(20,184,166,0.12))
+background:      steel-muted (rgba(20,184,166,0.12))
 border-radius:   rounded-xl (12px)
 display:         flex center
 margin-bottom:   mb-4 (16px)
 
 icon:
   width:         w-6 h-6 (24px)
-  color:         teal
+  color:         steel
   aria-hidden:   true
 ```
 
@@ -518,7 +518,7 @@ icon:
 font-family:     font-display (Outfit)
 font-size:       text-2xl (28px)
 font-weight:     bold (700)
-color:           charcoal
+color:           navy
 margin-bottom:   mb-3 (12px)
 ```
 
@@ -534,11 +534,11 @@ margin-bottom:   mb-4 (16px)
 display:         inline-flex
 align-items:     center
 padding:         px-3 py-1 (12px × 4px)
-background:      skyblue-light (#EFF8FF)
+background:      brass-light (#FBF6E7)
 border-radius:   rounded-full
 font-size:       xs (12px)
 font-family:     font-accent (Outfit)
-color:           skyblue (#0EA5E9)
+color:           brass (#92751F)
 margin-bottom:   mb-4 (16px)
 content:         "Available Statewide Across Texas"
 ```
@@ -555,7 +555,7 @@ list-item:
   
   icon (CheckCircle):
     width:       w-5 h-5 (20px)
-    color:       teal
+    color:       steel
     flex-shrink: 0 (doesn't compress)
     margin-top:  mt-0.5 (aligns with text)
     aria-hidden: true
@@ -572,7 +572,7 @@ variant:         secondary
 size:            md
 
 button-style:
-  background:    charcoal (hover → charcoal-light)
+  background:    navy (hover → navy-light)
   text:          white
   padding:       md size (standard padding)
   border-radius: matches component
@@ -590,7 +590,7 @@ link:
 #### Container (Animated — fadeUp variant)
 ```
 animation:       Scroll-triggered fade-up
-background:      charcoal (#1F2A33)
+background:      navy (#1A2233)
 color:           white
 border-radius:   rounded-2xl (16px)
 padding:         p-10 md:p-14 (40px / 56px responsive)
@@ -610,7 +610,7 @@ content:         "Prepared to Begin?"
 **Description:**
 ```
 font-family:     font-body (Plus Jakarta Sans)
-color:           surface-200 (light gray)
+color:           pearl-200 (light gray)
 margin-bottom:   mb-8 (32px)
 max-width:       max-w-2xl (672px)
 margin-x:        auto
@@ -636,14 +636,14 @@ align-items:     center
 
 - **Divider Text:** "or" (only visible on desktop)
   ```
-  color:         surface-300
+  color:         pearl-300
   ```
 
 - **Phone Link:**
   ```
   href:          tel:4693789262
   label:         "123-456-7890"
-  color:         teal (hover → teal-light)
+  color:         steel (hover → steel-light)
   font-family:   font-body
   transition:    colors 300ms
   ```
@@ -690,36 +690,36 @@ align-items:     center
 #### Primary Surfaces
 ```
 White:        #FFFFFF
-Surface-50:   #F7F9FA (light background)
-Surface-100:  #E9EDF0 (card background)
-Surface-200:  #CBD2D8 (borders)
-Surface-300:  #AFC2CC (strong borders)
+Surface-50:   #F9F9FB (light background)
+Surface-100:  #F1F2F5 (card background)
+Surface-200:  #E2E4EA (borders)
+Surface-300:  #C8CAD4 (strong borders)
 ```
 
-#### Primary Dark (Charcoal)
+#### Primary Dark (Navy)
 ```
-Charcoal:      #1F2A33 (headings, footer)
-Charcoal-light: #323F4B (hover state)
-Charcoal-muted: #637381 (subdued text)
+Navy:      #1A2233 (headings, footer)
+Navy-light: #2D3A52 (hover state)
+Navy-muted: #637381 (subdued text)
 ```
 
 #### Primary Accent (Teal)
 ```
-Teal:        #14B8A6 (CTAs, links, focus)
-Teal-dark:   #0D9488 (hover state)
-Teal-light:  #E6FFFA (ghost buttons)
+Teal:        #2563EB (CTAs, links, focus)
+Teal-dark:   #1D4ED8 (hover state)
+Teal-light:  #EFF6FF (ghost buttons)
 Teal-muted:  rgba(20,184,166,0.12) (badge background)
 ```
 
-#### Prestige Accent (Sky Blue)
+#### Prestige Accent (Warm Brass)
 ```
-Sky Blue:      #0EA5E9 (badges, secondary highlights)
-Sky Blue-light: #EFF8FF (badge background)
+Warm Brass:      #92751F (badges, secondary highlights)
+Warm Brass-light: #FBF6E7 (badge background)
 ```
 
 #### Text Colors
 ```
-Text-primary:  #1F2A33 (headings, main text)
+Text-primary:  #1A2233 (headings, main text)
 Text-body:     #3E4C59 (paragraphs)
 Text-muted:    #64748B (captions, secondary text)
 Text-inverse:  #FFFFFF (on dark backgrounds)
@@ -778,7 +778,7 @@ trigger:        Hover or Active state
 animation:      Width transition (0% → 100%)
 duration:       300ms ease
 direction:      Left to right
-color:          Teal (#14B8A6)
+color:          Steel (#2563EB)
 ```
 
 ### Service Card Hover Animation
@@ -790,7 +790,7 @@ animation:      Framer Motion `whileHover`
 transform:      translateY(-4px) — lifts up 4px
 duration:       300ms ease
 shadow-change:  Normal → elevated
-border-change:  Gray → teal tint
+border-change:  Gray → steel tint
 ```
 
 **On Mobile/Reduced Motion:**
@@ -877,7 +877,7 @@ viewport:
 #### Focus Management
 ```css
 :focus-visible {
-  outline: 2px solid var(--color-orange);
+  outline: 2px solid var(--color-steel);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -900,7 +900,7 @@ viewport:
 #### Icon Handling
 ```html
 <CheckCircle 
-  className="w-5 h-5 text-teal" 
+  className="w-5 h-5 text-steel" 
   aria-hidden="true" 
 />
 <span>Leaking faucet repairs</span>
@@ -966,20 +966,20 @@ Space:         Same as Enter for button elements
 **WCAG AA Compliance:**
 ```
 Text on White:
-  Charcoal (#1F2A33) on White: 14.5:1 ✓ Exceeds AA
+  Navy (#1A2233) on White: 14.5:1 ✓ Exceeds AA
   Text-muted (#64748B) on White: 7.1:1 ✓ AA
 
-Text on Charcoal:
-  White on Charcoal: 14.5:1 ✓ Exceeds AA
+Text on Navy:
+  White on Navy: 14.5:1 ✓ Exceeds AA
 
 Text on Teal:
   White on Teal: 4.5:1 ✓ AA (minimum for text)
 
 Links:
-  Teal links on White: 2.8:1 ⚠️ Requires underline (provided)
+  Steel links on White: 2.8:1 ⚠️ Requires underline (provided)
 ```
 
-**Note:** Teal links use underline as additional visual indicator to meet WCAG standards.
+**Note:** Steel links use underline as additional visual indicator to meet WCAG standards.
 
 ### Semantic HTML
 
@@ -1029,7 +1029,7 @@ tailwindcss (v4)    — Styling via @theme system
 ### Custom Tailwind Classes Used
 ```
 shadow-card              — Subtle card shadow
-shadow-card-hover        — Elevated shadow + teal tint
+shadow-card-hover        — Elevated shadow + steel tint
 shadow-navbar            — Subtle navbar shadow
 rounded-2xl (16px)       — Card and banner corners
 rounded-xl (12px)        — Icon badge corners

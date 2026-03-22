@@ -210,7 +210,7 @@ Benefits:
 │ Badge: Sky blue "Statewide"      │
 │ Features: All 6 items            │
 │ Button: "Get a Quote"            │
-│         (charcoal, secondary)    │
+│         (navy, secondary)    │
 └──────────────────────────────────┘
 ```
 
@@ -224,7 +224,7 @@ Benefits:
 │ Description: Line-clamped × 2    │
 │ Features: First 3 items          │
 │ Link: "Learn More →"             │
-│         (text link, teal)        │
+│         (text link, steel)        │
 └──────────────────────────────────┘
 ```
 
@@ -276,7 +276,7 @@ Timeline:
 
 Hover effect (desktop only):
 - Card lift: -4px (translateY)
-- Border: teal/40
+- Border: steel/40
 - Shadow: elevated
 - Duration: 300ms
 ```

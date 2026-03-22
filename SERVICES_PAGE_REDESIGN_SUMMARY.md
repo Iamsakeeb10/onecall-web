@@ -19,21 +19,21 @@ The Services page has been completely redesigned with a fresh layout while prese
 **Before:** Full-width background image with centered dark overlay and centered text.
 
 **After:** Two-column split layout:
-- **Left (50%):** Charcoal background (`bg-charcoal`) with centered text on mobile, left-aligned on desktop
+- **Left (50%):** Navy background (`bg-navy`) with centered text on mobile, left-aligned on desktop
 - **Right (50%):** Hero background image (no overlay), edge-to-edge
 - **Mobile:** Stacks vertically (text on top, image below at `h-48`)
 
 **Technical Details:**
 ```
 Container:        flex flex-col md:flex-row min-h-[60vh] md:min-h-[55vh]
-Left text section: w-full md:w-1/2 bg-charcoal flex items-center justify-center
+Left text section: w-full md:w-1/2 bg-navy flex items-center justify-center
 Right image:      w-full md:w-1/2 relative overflow-hidden (height: auto on desktop)
 ```
 
 **Preserved:**
 - ✓ Headline: "Complete Maintenance Solutions"
 - ✓ Subtitle text (unchanged)
-- ✓ Accent divider line (teal, `bg-teal/50`)
+- ✓ Accent divider line (teal, `bg-steel/50`)
 - ✓ Top padding: `pt-20 md:pt-28` (accounts for fixed navbar)
 - ✓ Hero image path and priority loading
 - ✓ Alt text for accessibility
@@ -45,10 +45,10 @@ Right image:      w-full md:w-1/2 relative overflow-hidden (height: auto on desk
 **Before:** Centered heading, centered paragraph, 3 horizontal pill badges.
 
 **After:** 
-- **Heading:** Left-aligned with 4px left border in teal (`border-l-4 border-teal pl-6`)
+- **Heading:** Left-aligned with 4px left border in steel (`border-l-4 border-steel pl-6`)
 - **Stat Strip:** 3-column grid with vertical dividers on desktop, horizontal on mobile
-  - Light background: `bg-surface-50`
-  - Dividers: `divide-surface-200`
+  - Light background: `bg-pearl-50`
+  - Dividers: `divide-pearl-200`
   - Responsive columns: `grid grid-cols-1 md:grid-cols-3`
 
 **Stat Items:**
@@ -57,7 +57,7 @@ Stat Item 1:  "Statewide" (label: "Coverage")
 Stat Item 2:  "Licensed" (label: "& Insured")
 Stat Item 3:  "24-Hour" (label: "Response")
 
-Styling:      text-2xl md:text-3xl font-bold text-teal (Outfit font)
+Styling:      text-2xl md:text-3xl font-bold text-steel (Outfit font)
               Descriptive text: text-sm text-text-muted
 ```
 
@@ -82,8 +82,8 @@ Styling:      text-2xl md:text-3xl font-bold text-teal (Outfit font)
 ```
 Card container:
   flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}
-  border border-surface-200 rounded-2xl overflow-hidden
-  hover:border-teal/40 hover:shadow-card-hover transition-all duration-300
+  border border-pearl-200 rounded-2xl overflow-hidden
+  hover:border-steel/40 hover:shadow-card-hover transition-all duration-300
 
 Image section:
   w-full md:w-2/5 h-48 md:h-auto md:min-h-[320px] flex-shrink-0
@@ -94,7 +94,7 @@ Content section:
 ```
 
 **Card Content (Preserved Exactly):**
-- ✓ Icon badge: Teal background (`bg-teal-muted`), dynamic icon
+- ✓ Icon badge: Steel background (`bg-steel-muted`), dynamic icon
 - ✓ Service title (Outfit font, `text-2xl font-bold`)
 - ✓ Description text
 - ✓ Prestige badge: Sky blue background, "Available Statewide Across Texas"
@@ -115,14 +115,14 @@ Desktop (lg+):    Same layout with optimized spacing
 
 **Before:** Centered heading, centered description, 2-button row below.
 
-**After:** Two-column layout inside charcoal banner:
+**After:** Two-column layout inside navy banner:
 - **Left column (flex-1):** Left-aligned heading and description
 - **Right column:** Vertically centered CTA stack (button + divider line + phone)
 
 **Technical Details:**
 ```
 Banner container:
-  bg-charcoal rounded-2xl p-8 sm:p-10 md:p-14
+  bg-navy rounded-2xl p-8 sm:p-10 md:p-14
   flex flex-col md:flex-row items-center md:items-center justify-between gap-8
 
 Left section:
@@ -133,7 +133,7 @@ Right section:
   (gap-0 with my-4 on divider for spacing control)
 
 Divider line:
-  h-px w-12 bg-teal my-4
+  h-px w-12 bg-steel my-4
 ```
 
 **Preserved:**
@@ -141,7 +141,7 @@ Divider line:
 - ✓ Description text (unchanged)
 - ✓ Primary button: "Get a Free Quote" → `/quote`
 - ✓ Phone link: `tel:4693789262` → "123-456-7890"
-- ✓ Phone link styling: `text-teal hover:text-teal-light transition-colors`
+- ✓ Phone link styling: `text-steel hover:text-steel-light transition-colors`
 - ✓ All animations (fadeUp scroll trigger)
 
 **Responsive Behavior:**
@@ -157,7 +157,7 @@ Desktop (md+):   Two-column layout, text left-aligned, buttons on right
 ### 1. `src/app/services/page.tsx` (Main Services Page)
 
 **Changes:**
-- ✓ Split hero layout with charcoal text section + image
+- ✓ Split hero layout with navy text section + image
 - ✓ New left-bordered heading with stat strip
 - ✓ Alternating horizontal card rows instead of 3-column grid
 - ✓ New 2-column CTA banner layout
@@ -192,12 +192,12 @@ All colors, shadows, and design tokens preserved:
 
 | Element | Color | CSS Variable |
 |---|---|---|
-| Charcoal (hero bg, text) | `#1F2A33` | `--color-charcoal` |
-| Teal (accents, buttons) | `#14B8A6` | `--color-teal` |
+| Navy (hero bg, text) | `#1A2233` | `--color-navy` |
+| Steel (accents, buttons) | `#2563EB` | `--color-steel` |
 | Text muted | `#64748B` | `--color-text-muted` |
-| Surface 50 (stat background) | `#F7F9FA` | `--color-surface-50` |
-| Surface 200 (borders, dividers) | `#CBD2D8` | `--color-surface-200` |
-| Sky blue (prestige badge) | `#0EA5E9` | `--color-skyblue` |
+| Pearl 50 (stat background) | `#F9F9FB` | `--color-pearl-50` |
+| Pearl 200 (borders, dividers) | `#E2E4EA` | `--color-pearl-200` |
+| Sky blue (prestige badge) | `#92751F` | `--color-brass` |
 
 ---
 
@@ -311,7 +311,7 @@ Large Desktop:      1280px (xl)   — Optimized spacing
 
 | Section | Visual Change | Business Impact |
 |---|---|---|
-| Hero | Split charcoal/image | More modern, premium feel |
+| Hero | Split navy/image | More modern, premium feel |
 | Intro | Stat strip | Better information hierarchy |
 | Cards | Alternating rows | More engaging, distinctive layout |
 | CTA | 2-column | Improved visual balance |

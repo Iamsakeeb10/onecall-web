@@ -105,8 +105,8 @@ src/
 
 The project uses Tailwind CSS v4 with a CSS-based theme configuration. All design tokens are defined in `src/app/globals.css` under `@theme {}`:
 
-- **Colors**: Navy shades (950, 900, 800, 700), Gold (#C89B3C), Orange (#E07B39), Muted (#A0AEC0)
-- **Fonts**: Barlow Condensed (display), DM Sans (body), Barlow (accent)
+- **Colors**: Pearl shades (50, 100, 200, 300), Navy (#1A2233), Steel Blue (#2563EB), Brass (#92751F)
+- **Fonts**: Outfit (display), Plus Jakarta Sans (body), Outfit (accent)
 - **No tailwind.config.ts** - All theme configuration lives in `globals.css`
 
 ## Image Credits

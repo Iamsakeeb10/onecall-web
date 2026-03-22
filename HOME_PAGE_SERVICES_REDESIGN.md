@@ -128,14 +128,14 @@ Mobile:   Full width, single row
 │  Teal-muted background           │
 │  Service icon (w-6 h-6)          │
 │                                  │
-│  Title (text-2xl, bold, charcoal) │
+│  Title (text-2xl, bold, navy) │
 │  Service Title Text              │
 │                                  │
 │  Description                      │
 │  Full service description text... │
 │                                  │
 │  Coverage Badge                   │
-│  Sky blue background, teal text  │
+│  Sky blue background, steel text  │
 │  "Available Statewide..."         │
 │                                  │
 │  Features List (All items)       │
@@ -148,17 +148,17 @@ Mobile:   Full width, single row
 │                                  │
 │  [Get a Quote Button]            │
 │  Secondary variant, md size      │
-│  Charcoal background             │
+│  Navy background             │
 └──────────────────────────────────┘
 ```
 
 **Styling:**
 ```
 Background:       white
-Border:           1px surface-200
+Border:           1px pearl-200
 Border-radius:    rounded-2xl
 Box-shadow:       shadow-card (normal), shadow-card-hover (hover)
-Hover effects:    Border teal/40, elevated shadow, -4px lift
+Hover effects:    Border steel/40, elevated shadow, -4px lift
 Transition:       all 300ms ease
 ```
 
@@ -276,7 +276,7 @@ Reduced motion:   instant appearance (no animation)
 
 **Card hover:**
 ```
-Border:          surface-200 → teal/40
+Border:          pearl-200 → steel/40
 Shadow:          shadow-card → shadow-card-hover
 Transform:       none on mobile, -4px on desktop
 Duration:        300ms ease
@@ -284,7 +284,7 @@ Duration:        300ms ease
 
 **Link hover (grid cards):**
 ```
-Color:           teal → teal-dark
+Color:           steel → steel-dark
 Underline:       appears (text-decoration: underline)
 Arrow icon:      translateX(4px) right
 Duration:        300ms ease
@@ -299,26 +299,26 @@ Duration:        300ms ease
 | Element | Color | Hex |
 |---|---|---|
 | Background | white | `#FFFFFF` |
-| Border (normal) | surface-200 | `#CBD2D8` |
-| Border (hover) | teal/40 | `rgba(20,184,166,0.4)` |
-| Icon badge bg | teal-muted | `rgba(20,184,166,0.12)` |
-| Icon | teal | `#14B8A6` |
-| Title text | charcoal | `#1F2A33` |
+| Border (normal) | pearl-200 | `#E2E4EA` |
+| Border (hover) | steel/40 | `rgba(20,184,166,0.4)` |
+| Icon badge bg | steel-muted | `rgba(20,184,166,0.12)` |
+| Icon | steel | `#2563EB` |
+| Title text | navy | `#1A2233` |
 | Description | text-muted | `#64748B` |
-| Badge bg | skyblue-light | `#EFF8FF` |
-| Badge text | skyblue | `#0EA5E9` |
-| Feature icon | teal | `#14B8A6` |
-| Link | teal | `#14B8A6` |
-| Link hover | teal-dark | `#0D9488` |
-| Button | charcoal | `#1F2A33` |
-| Button hover | charcoal-light | `#323F4B` |
+| Badge bg | brass-light | `#FBF6E7` |
+| Badge text | brass | `#92751F` |
+| Feature icon | steel | `#2563EB` |
+| Link | steel | `#2563EB` |
+| Link hover | steel-dark | `#1D4ED8` |
+| Button | navy | `#1A2233` |
+| Button hover | navy-light | `#2D3A52` |
 
 ### Shadows
 
 | Shadow | Value | Used When |
 |---|---|---|
 | `shadow-card` | `0 1px 3px rgba(...), 0 4px 12px rgba(...)` | Normal card state |
-| `shadow-card-hover` | `0 4px 16px rgba(20,184,166,0.12), 0 12px 32px rgba(...)` | Card hover state (with teal tint) |
+| `shadow-card-hover` | `0 4px 16px rgba(20,184,166,0.12), 0 12px 32px rgba(...)` | Card hover state (with steel tint) |
 
 ---
 
@@ -371,7 +371,7 @@ Duration:        300ms ease
 ### Focus Management
 
 ```
-Focus ring:      2px solid teal outline
+Focus ring:      2px solid steel outline
 Outline offset:  3px
 Border radius:   4px (on links)
 
@@ -384,10 +384,10 @@ Keyboard nav:    Tab moves through all focusable elements
 
 | Text | Background | Ratio | WCAG |
 |---|---|---|---|
-| Charcoal | White | 14.5:1 | AAA ✓ |
+| Navy | White | 14.5:1 | AAA ✓ |
 | Text-muted | White | 7.1:1 | AA ✓ |
-| Teal link | White | 2.8:1 | Requires underline ✓ |
-| White | Charcoal | 14.5:1 | AAA ✓ |
+| Steel link | White | 2.8:1 | Requires underline ✓ |
+| White | Navy | 14.5:1 | AAA ✓ |
 
 ---
 

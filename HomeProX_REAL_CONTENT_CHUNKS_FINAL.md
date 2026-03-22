@@ -1,4 +1,4 @@
-# HomeProX Home Services LLC — Final Real Content Integration Prompts
+# ONECALL FIELD SERVICES LLC — Final Real Content Integration Prompts
 ### Complete Client-Approved Copy | Use These Chunks in Cursor to Replace All Placeholder Text
 
 ---
@@ -16,7 +16,7 @@
 ## CONTENT CHUNK A — Services Data & Services Page
 
 ```
-The HomeProX website is fully built.
+The ONECALL FIELD SERVICES LLC website is fully built.
 Use @codebase to review all existing files before making any changes.
 
 TASK: Replace all placeholder/dummy content in the services data file and
@@ -127,7 +127,7 @@ SERVICE 7:
 2. UPDATE src/app/services/page.tsx
 
 Replace the page intro paragraph with:
-  "HomeProX Home Services LLC provides reliable, affordable, and professional
+  "ONECALL FIELD SERVICES LLC provides reliable, affordable, and professional
   property maintenance services throughout Texas. We serve homeowners,
   landlords, property managers, real estate investors, and commercial clients
   across the state with solutions designed to protect, preserve, and enhance
@@ -150,7 +150,7 @@ Coverage regions section — add or update with this content:
     - South Texas
     - Major metropolitan areas including Dallas, Houston, Austin, and San Antonio
   Closing line: "No matter where your property is located in Texas,
-  HomeProX Home Services LLC delivers dependable maintenance solutions."
+  ONECALL FIELD SERVICES LLC delivers dependable maintenance solutions."
 
 "Why Choose" strip on services page — update with:
   ✔ Texas-based property maintenance company
@@ -163,7 +163,7 @@ Coverage regions section — add or update with this content:
 Replace the bottom CTA section with:
   Heading: "Looking for a Professional Property Maintenance Company in Texas?"
   Body: "If you're searching for property maintenance services in Texas —
-  residential, commercial, rental, or investment properties — HomeProX Home
+  residential, commercial, rental, or investment properties — ONECALL FIELD SERVICES LLC Home
   Services LLC is your trusted statewide partner."
   Body line 2 (search intent keywords — render as plain paragraph):
     "Property maintenance services Texas | Commercial property maintenance Texas |
@@ -171,7 +171,7 @@ Replace the bottom CTA section with:
     Statewide property maintenance provider"
   Button: "Get a Free Quote"
   Contact line below button:
-    "📞 (469) 378-9262  |  📧 info@homeproxsvcs.com"
+    "📞 123-456-7890  |  📧 info@onecallsvcs.com"
 
 Replace the coverage note on each service card with:
   "Available Statewide Across Texas"
@@ -190,7 +190,7 @@ Replace the coverage note on each service card with:
 ## CONTENT CHUNK B — Clients Data & Clients Page
 
 ```
-The HomeProX website is fully built.
+The ONECALL FIELD SERVICES LLC website is fully built.
 Use @codebase to review all existing files before making any changes.
 
 TASK: Replace all placeholder/dummy content in the clients data file and
@@ -262,7 +262,7 @@ Page hero:
 
 Intro section:
   Heading: "Building Long-Term Partnerships"
-  Paragraph 1: "At HomeProX Home Services LLC, we take pride in building
+  Paragraph 1: "At ONECALL FIELD SERVICES LLC, we take pride in building
   long-term partnerships with clients across Texas. Our reputation is built
   on reliability, professional execution, and consistent performance across
   residential and commercial properties."
@@ -279,7 +279,7 @@ Intro stat card (right side) — 4 stats:
   "100%" / "Fully Insured"
   "10+" / "Years Experience"
 
-"Why Clients Choose HomeProX" section — 4 cards:
+"Why Clients Choose ONECALL FIELD SERVICES LLC" section — 4 cards:
 
   Card 1 — Reliability:
     Icon: Clock (lucide)
@@ -318,7 +318,7 @@ Quality Assurance Process section — 3 steps:
     Title: "Vendor & Team Screening"
     Body: "We conduct thorough background checks and verify qualifications
     to ensure that only professional and trustworthy team members represent
-    HomeProX on your property."
+    ONECALL FIELD SERVICES LLC on your property."
 
   Step 3:
     Icon: Bell (lucide)
@@ -329,17 +329,17 @@ Quality Assurance Process section — 3 steps:
 
 "A Property Maintenance Partner You Can Trust" section:
   Heading: "A Property Maintenance Partner You Can Trust"
-  Body: "At HomeProX Home Services LLC, our clients are at the center of
+  Body: "At ONECALL FIELD SERVICES LLC, our clients are at the center of
   everything we do. We are committed to exceeding expectations and delivering
   consistent, professional property maintenance services across Texas."
 
 Bottom CTA banner:
-  Heading: "Ready to Partner with HomeProX?"
-  Body: "At HomeProX Home Services LLC, our clients are at the center of
+  Heading: "Ready to Partner with ONECALL FIELD SERVICES LLC?"
+  Body: "At ONECALL FIELD SERVICES LLC, our clients are at the center of
   everything we do. We are committed to exceeding expectations and delivering
   consistent, professional property maintenance services across Texas."
-  Phone: "(469) 378-9262"
-  Email: "info@homeproxsvcs.com"
+  Phone: "123-456-7890"
+  Email: "info@onecallsvcs.com"
   Button: "Get Started"
 
 Client Onboarding Form section (id="client-onboarding"):
@@ -350,18 +350,18 @@ Client Onboarding Form section (id="client-onboarding"):
     "Photo Documentation"
     "Scalable Property Maintenance Solutions"
 
-  SectionHeading title: "Become a HomeProX Client"
-  SectionHeading subtitle: "Partner with HomeProX for reliable property
+  SectionHeading title: "Become a ONECALL FIELD SERVICES LLC Client"
+  SectionHeading subtitle: "Partner with ONECALL FIELD SERVICES LLC for reliable property
   maintenance and field service support. Our team supports property managers,
   investors, asset managers, and organizations across residential and
   commercial portfolios."
 
   Form confirmation message after submit:
-    "Thank you for your interest in partnering with HomeProX.
+    "Thank you for your interest in partnering with ONECALL FIELD SERVICES LLC.
     Our team will review your request and contact you within 1 business day."
 
 SEO metadata:
-  title: "Our Clients | HomeProX Home Services LLC"
+  title: "Our Clients | ONECALL FIELD SERVICES LLC"
   description: "Trusted property maintenance partner for property managers,
   financial institutions, real estate professionals, and investors across Texas."
 
@@ -370,7 +370,7 @@ SEO metadata:
 - /clients page hero shows correct heading and subtitle
 - Intro section shows real paragraphs and quote callout
 - All 4 alternating client sections show real content
-- "Why Clients Choose HomeProX" shows all 4 real feature cards
+- "Why Clients Choose ONECALL FIELD SERVICES LLC" shows all 4 real feature cards
 - Quality Assurance 3-step process shows real descriptions
 - "Partner You Can Trust" section shows real copy
 - Bottom CTA shows real content with phone and email
@@ -383,7 +383,7 @@ SEO metadata:
 ## CONTENT CHUNK C — About Page
 
 ```
-The HomeProX website is fully built.
+The ONECALL FIELD SERVICES LLC website is fully built.
 Use @codebase to review all existing files before making any changes.
 
 TASK: Replace all placeholder/dummy content on the About page with the
@@ -394,7 +394,7 @@ Only update text content.
 UPDATE src/app/about/page.tsx:
 
 1. PAGE HERO
-  H1: "About HomeProX Home Services LLC"
+  H1: "About ONECALL FIELD SERVICES LLC"
   Subtitle: "Texas-based. Statewide reach. Built for serious property operators."
   Breadcrumb: "Home > About"
 
@@ -402,7 +402,7 @@ UPDATE src/app/about/page.tsx:
   H2: "Our Mission"
 
   Paragraph 1:
-    "HomeProX Home Services LLC is a Texas-based statewide property
+    "ONECALL FIELD SERVICES LLC is a Texas-based statewide property
     maintenance partner built for property managers, investors, financial
     institutions, and real estate professionals. We provide reliable,
     affordable, and professional maintenance services throughout Texas —
@@ -448,7 +448,7 @@ UPDATE src/app/about/page.tsx:
 
 4. COVERAGE SECTION
   H2: "Serving Clients Across Texas"
-  Body: "No matter where your property is located in Texas, HomeProX Home
+  Body: "No matter where your property is located in Texas, ONECALL FIELD SERVICES LLC Home
   Services LLC delivers dependable maintenance solutions."
 
   Region badges (5):
@@ -482,10 +482,10 @@ UPDATE src/app/about/page.tsx:
   Heading: "Ready to Protect Your Properties?"
   Subtext: "Partner with Texas's trusted property maintenance team."
   Button 1: "Get a Free Quote" → /contact
-  Button 2: "Call Now: (469) 378-9262" → tel:4693789262
+  Button 2: "Call Now: 123-456-7890" → tel:4693789262
 
 7. SEO METADATA
-  title: "About Us | HomeProX Home Services LLC"
+  title: "About Us | ONECALL FIELD SERVICES LLC"
   description: "Texas-based statewide property maintenance company serving
   property managers, investors, banks, and real estate professionals across
   Texas. Reliable, insured, and professional."
@@ -505,7 +505,7 @@ UPDATE src/app/about/page.tsx:
 ## CONTENT CHUNK D — Homepage Sections
 
 ```
-The HomeProX website is fully built.
+The ONECALL FIELD SERVICES LLC website is fully built.
 Use @codebase to review all existing files before making any changes.
 
 TASK: Replace all placeholder/dummy content in homepage section components
@@ -544,7 +544,7 @@ Only update text content.
   Link text below grid: "Learn More About Our Clients →"
 
 5. src/components/sections/WhyChooseUs.tsx
-  Section heading title: "Why Choose HomeProX"
+  Section heading title: "Why Choose ONECALL FIELD SERVICES LLC"
   Section heading subtitle: "Responsive property maintenance backed by
   dependable service and professional support."
 
@@ -596,7 +596,7 @@ Only update text content.
     Title: "Vendor & Team Screening"
     Body: "We conduct thorough background checks and verify qualifications
     to ensure that only professional and trustworthy team members represent
-    HomeProX on your property."
+    ONECALL FIELD SERVICES LLC on your property."
 
   Step 3:
     Number badge: "03"
@@ -612,23 +612,23 @@ Only update text content.
     H2: "Ready to Protect Your Properties?"
     Subtext: "Partner with Texas's trusted property maintenance team."
     Button 1: "Get a Free Quote"
-    Button 2: "Call Now: (469) 378-9262"
+    Button 2: "Call Now: 123-456-7890"
 
   Light/gold variant (used at bottom of /services and /clients pages):
     H2: "Looking for a Trusted Maintenance Partner?"
-    Subtext: "HomeProX Home Services LLC is ready to serve your properties
+    Subtext: "ONECALL FIELD SERVICES LLC is ready to serve your properties
     across Texas."
     Button: "Contact Us Today"
 
 8. src/components/sections/ContactSection.tsx (compact homepage strip)
   Heading: "Ready to Get Started?"
   Subtext: "Contact us today for a free, no-obligation estimate."
-  Phone: "(469) 378-9262"
-  Email: "info@homeproxsvcs.com"
+  Phone: "123-456-7890"
+  Email: "info@onecallsvcs.com"
   Button: "Get a Free Quote"
 
 9. src/app/page.tsx — SEO METADATA
-  title: "HomeProX Home Services LLC | Texas Statewide Property Maintenance"
+  title: "ONECALL FIELD SERVICES LLC | Texas Statewide Property Maintenance"
   description: "Professional property maintenance services across Texas.
   Serving property managers, investors, banks, and REO departments statewide.
   Reliable, insured, and scalable."
@@ -651,7 +651,7 @@ Only update text content.
 ## CONTENT CHUNK E — Contact Page, Quote Form & Footer
 
 ```
-The HomeProX website is fully built.
+The ONECALL FIELD SERVICES LLC website is fully built.
 Use @codebase to review all existing files before making any changes.
 
 TASK: Replace all placeholder/dummy content on the contact page, forms,
@@ -662,7 +662,7 @@ Only update text content.
 1. src/app/contact/page.tsx
 
   Page hero:
-    H1: "Contact HomeProX"
+    H1: "Contact ONECALL FIELD SERVICES LLC"
     Subtitle: "Have a question about property maintenance, partnerships,
     or vendor opportunities? Send us a message and our team will respond
     shortly."
@@ -670,8 +670,8 @@ Only update text content.
 
   LEFT SIDE — Contact info panel:
     Heading: "Contact Information"
-    Phone: (469) 378-9262 — clickable tel:4693789262
-    Email: info@homeproxsvcs.com — clickable mailto:
+    Phone: 123-456-7890 — clickable tel:4693789262
+    Email: info@onecallsvcs.com — clickable mailto:
     Service Coverage label: "Service Coverage"
     Service Coverage value: "Serving Residential & Investment Properties"
     Hours heading: "Business Hours"
@@ -691,7 +691,7 @@ Only update text content.
   Final CTA strip:
     Heading: "Prefer to talk?"
     Body: "Call us directly:"
-    Phone: "(469) 378-9262" — clickable tel:4693789262
+    Phone: "123-456-7890" — clickable tel:4693789262
 
   Quick links section below the form (add if not already present):
     Intro text: "Looking for something specific?"
@@ -708,10 +708,10 @@ Only update text content.
       Body: "We serve all major regions across Texas"
 
   SEO metadata:
-    title: "Contact Us | HomeProX Home Services LLC"
-    description: "Contact HomeProX Home Services LLC for professional
-    property maintenance across Texas. Call (469) 378-9262 or email
-    info@homeproxsvcs.com for a free estimate."
+    title: "Contact Us | ONECALL FIELD SERVICES LLC"
+    description: "Contact ONECALL FIELD SERVICES LLC for professional
+    property maintenance across Texas. Call 123-456-7890 or email
+    info@onecallsvcs.com for a free estimate."
 
 2. src/components/forms/ContactForm.tsx
 
@@ -767,7 +767,7 @@ Only update text content.
 
   Success message heading: "Thank you!"
   Success message body: "We'll be in touch within 24 hours. Our team at
-  HomeProX Home Services LLC will review your request and contact you shortly."
+  ONECALL FIELD SERVICES LLC will review your request and contact you shortly."
 
 4. src/components/layout/Footer.tsx
 
@@ -798,12 +798,12 @@ Only update text content.
 
   Column 4 — Contact:
     Heading: "Contact Us"
-    Phone: (469) 378-9262 — clickable tel:4693789262
-    Email: info@homeproxsvcs.com — clickable mailto:
+    Phone: 123-456-7890 — clickable tel:4693789262
+    Email: info@onecallsvcs.com — clickable mailto:
     Location: Collin County, TX
 
   Bottom bar:
-    Left: "© 2026 HomeProX Home Services LLC. All rights reserved."
+    Left: "© 2026 ONECALL FIELD SERVICES LLC. All rights reserved."
     Right link: "Terms & Conditions" → /terms
 
 5. VERIFY
@@ -828,7 +828,7 @@ Only update text content.
 ## CONTENT CHUNK F — Vendor Page
 
 ```
-The HomeProX website is fully built.
+The ONECALL FIELD SERVICES LLC website is fully built.
 Use @codebase to review all existing files before making any changes.
 
 TASK: Replace all placeholder/dummy content on the /vendors page and its
@@ -838,7 +838,7 @@ Only update text content.
 
 1. src/components/sections/VendorHero.tsx
 
-  H1: "Join the HomeProX Property Maintenance Network"
+  H1: "Join the ONECALL FIELD SERVICES LLC Network"
   Subtitle: "Become part of a structured, performance-driven property
   maintenance team supporting residential portfolios and managed assets
   across Texas."
@@ -851,7 +851,7 @@ Only update text content.
     "Serving Residential Portfolios • Investment Properties •
     Managed Communities • Institutional Assets"
 
-  Section heading title: "Why Partner With HomeProX?"
+  Section heading title: "Why Partner With ONECALL FIELD SERVICES LLC?"
   Section heading subtitle: "Built for Professionals. Designed for Growth."
 
   4 benefit cards:
@@ -957,14 +957,14 @@ Only update text content.
 
 7. src/components/sections/VendorCTABanner.tsx
 
-  Heading: "Ready to Join the HomeProX Vendor Network?"
+  Heading: "Ready to Join the ONECALL FIELD SERVICES LLC Vendor Network?"
   Subtext: "Partner with a structured, professional property maintenance
   operator."
   Button: "Apply Now"
 
 8. src/app/vendors/page.tsx — SEO METADATA
-  title: "Vendor Partners | HomeProX Home Services LLC"
-  description: "Join the HomeProX vendor network in Texas. Apply to become
+  title: "Vendor Partners | ONECALL FIELD SERVICES LLC"
+  description: "Join the ONECALL FIELD SERVICES LLC vendor network in Texas. Apply to become
   a property maintenance vendor partner. Steady work orders, transparent
   payments, statewide coverage."
 
@@ -985,7 +985,7 @@ Only update text content.
 ## CONTENT CHUNK G — Terms & Conditions Page
 
 ```
-The HomeProX website is fully built.
+The ONECALL FIELD SERVICES LLC website is fully built.
 Use @codebase to review all existing files before making any changes.
 
 TASK: Replace all placeholder content on the Terms & Conditions page at
@@ -998,8 +998,8 @@ height and styling), then a clean two-column layout with TOC sidebar on
 desktop and inline on mobile.
 
 SEO METADATA:
-  title: "Terms & Conditions | HomeProX Home Services LLC"
-  description: "Terms and Conditions for HomeProX Home Services LLC.
+  title: "Terms & Conditions | ONECALL FIELD SERVICES LLC"
+  description: "Terms and Conditions for ONECALL FIELD SERVICES LLC.
   Governing use of our website and services. Collin County, Texas."
 
 PAGE HEADER (use inner-page hero pattern):
@@ -1026,7 +1026,7 @@ SECTIONS (use exact text):
 
 Section 1 (id="acceptance"):
   H2: "1. Acceptance of Terms"
-  "By accessing or using the HomeProX Home Services LLC website ('Website'),
+  "By accessing or using the ONECALL FIELD SERVICES LLC website ('Website'),
   you agree to be bound by these Terms & Conditions and our Privacy Policy.
   If you do not agree with any part of these terms, please do not use this
   Website."
@@ -1037,7 +1037,7 @@ Section 1 (id="acceptance"):
 Section 2 (id="website-services"):
   H2: "2. Website Services"
   "This Website is provided for informational purposes regarding handyman,
-  renovation, maintenance, and related home services offered by HomeProX
+  renovation, maintenance, and related home services offered by ONECALL FIELD SERVICES LLC
   Home Services LLC."
   "All content and services are provided on an 'AS IS' basis. We reserve
   the right to modify, suspend, or discontinue any portion of the Website
@@ -1087,18 +1087,18 @@ Section 6 (id="estimates"):
 Section 7 (id="third-party"):
   H2: "7. Third-Party Services"
   "This Website may reference third-party products, materials, or services.
-  HomeProX Home Services LLC is not responsible for third-party
+  ONECALL FIELD SERVICES LLC is not responsible for third-party
   representations, warranties, or performance."
 
 Section 8 (id="ip"):
   H2: "8. Intellectual Property"
   "All content on this Website — including logos, text, images, service
-  descriptions, and branding — is the property of HomeProX Home Services LLC
+  descriptions, and branding — is the property of ONECALL FIELD SERVICES LLC
   and may not be reproduced without written permission."
 
 Section 9 (id="liability"):
   H2: "9. Limitation of Liability"
-  "To the fullest extent permitted by Texas law, HomeProX Home Services LLC
+  "To the fullest extent permitted by Texas law, ONECALL FIELD SERVICES LLC
   shall not be liable for:"
   Bullet list:
     "Direct or indirect damages"
@@ -1120,7 +1120,7 @@ Section 10 (id="warranties"):
 
 Section 11 (id="indemnification"):
   H2: "11. Indemnification"
-  "You agree to indemnify and hold harmless HomeProX Home Services LLC,
+  "You agree to indemnify and hold harmless ONECALL FIELD SERVICES LLC,
   its owners, employees, contractors, and affiliates from any claims,
   damages, or legal expenses arising from your misuse of the Website or
   violation of these Terms."
@@ -1135,8 +1135,8 @@ Section 13 (id="copyright"):
   "If you believe any material on this Website infringes your intellectual
   property rights, please contact:"
   Contact details (render as a clean card or simple table):
-    Email:    info@homeproxsvcs.com  (clickable mailto:)
-    Phone:    (469) 378-9262                 (clickable tel:4693789262)
+    Email:    info@onecallsvcs.com  (clickable mailto:)
+    Phone:    123-456-7890                 (clickable tel:4693789262)
     Location: Collin County, Texas
 
 Section 14 (id="miscellaneous"):
@@ -1159,7 +1159,7 @@ VERIFY
 ## CONTENT CHUNK H — Final Content Audit & Full Verification
 
 ```
-The HomeProX website is fully built and all real content has been integrated
+The ONECALL FIELD SERVICES LLC website is fully built and all real content has been integrated
 (Content Chunks A through G complete).
 
 Use @codebase to do a thorough audit of every file.
@@ -1175,9 +1175,9 @@ Search every .tsx and .ts file for the following and fix any found:
   - Any text containing "placeholder"
   - Any text containing "Your Company" or "Company Name"
   - Any text containing "dummy"
-  - Any email other than: info@homeproxsvcs.com
-  - Any phone number other than: (469) 378-9262
-  - Any URL containing megafixx other than: https://homeproxsvcs.com
+  - Any email other than: info@onecallsvcs.com
+  - Any phone number other than: 123-456-7890
+  - Any URL containing megafixx other than: https://onecallsvcs.com
   - Any address/location other than "Collin County, Texas" or "Texas"
   - Any copyright year other than 2026
   - Any "Home Services" tagline that doesn't include "LLC"
@@ -1186,49 +1186,49 @@ Search every .tsx and .ts file for the following and fix any found:
 2. VERIFY CONTACT DETAILS ARE CONSISTENT SITE-WIDE
 
 Every page, every component — confirm:
-  Company:      HomeProX Home Services LLC
-  Phone:        (469) 378-9262
-  Email:        info@homeproxsvcs.com
+  Company:      ONECALL FIELD SERVICES LLC
+  Phone:        123-456-7890
+  Email:        info@onecallsvcs.com
   Location:     Collin County, Texas
   Service area: All of Texas Statewide
-  Website URL:  https://homeproxsvcs.com
-  Copyright:    © 2026 HomeProX Home Services LLC
+  Website URL:  https://onecallsvcs.com
+  Copyright:    © 2026 ONECALL FIELD SERVICES LLC
 
 3. VERIFY ALL PAGE SEO METADATA
 
   / (homepage):
-    title: "HomeProX Home Services LLC | Texas Statewide Property Maintenance"
+    title: "ONECALL FIELD SERVICES LLC | Texas Statewide Property Maintenance"
     description: "Professional property maintenance services across Texas.
     Serving property managers, investors, banks, and REO departments statewide."
 
   /services:
-    title: "Our Services | HomeProX Home Services LLC"
+    title: "Our Services | ONECALL FIELD SERVICES LLC"
     description: "Professional property maintenance services across Texas
     including plumbing, gutter cleaning, drywall repair, landscaping, and more."
 
   /clients:
-    title: "Our Clients | HomeProX Home Services LLC"
+    title: "Our Clients | ONECALL FIELD SERVICES LLC"
     description: "Trusted property maintenance partner for property managers,
     financial institutions, real estate professionals, and investors across Texas."
 
   /about:
-    title: "About Us | HomeProX Home Services LLC"
+    title: "About Us | ONECALL FIELD SERVICES LLC"
     description: "Texas-based statewide property maintenance company serving
     property managers, investors, banks, and real estate professionals."
 
   /contact:
-    title: "Contact Us | HomeProX Home Services LLC"
-    description: "Contact HomeProX Home Services LLC for a free estimate.
-    Call (469) 378-9262 or email info@homeproxsvcs.com."
+    title: "Contact Us | ONECALL FIELD SERVICES LLC"
+    description: "Contact ONECALL FIELD SERVICES LLC for a free estimate.
+    Call 123-456-7890 or email info@onecallsvcs.com."
 
   /vendors:
-    title: "Vendor Partners | HomeProX Home Services LLC"
-    description: "Join the HomeProX vendor network in Texas. Steady work
+    title: "Vendor Partners | ONECALL FIELD SERVICES LLC"
+    description: "Join the ONECALL FIELD SERVICES LLC vendor network in Texas. Steady work
     orders, transparent payments, statewide coverage."
 
   /terms:
-    title: "Terms & Conditions | HomeProX Home Services LLC"
-    description: "Terms and Conditions for HomeProX Home Services LLC.
+    title: "Terms & Conditions | ONECALL FIELD SERVICES LLC"
+    description: "Terms and Conditions for ONECALL FIELD SERVICES LLC.
     Governing use of our website and services. Collin County, Texas."
 
 4. VERIFY ALL INTERNAL LINKS WORK
@@ -1247,7 +1247,7 @@ Every page, every component — confirm:
     All Services column links go to /services
     "Terms & Conditions" → /terms
     Phone → tel:4693789262
-    Email → mailto:info@homeproxsvcs.com
+    Email → mailto:info@onecallsvcs.com
 
   Homepage CTAs:
     "Get a Free Quote" → /quote or /contact
@@ -1304,10 +1304,10 @@ Expected result:
     [ ] Intro: "Building Long-Term Partnerships" heading
     [ ] Quote callout: "We build relationships based on performance..."
     [ ] All 4 alternating client sections show real content
-    [ ] "Why Clients Choose HomeProX" 4 cards show real descriptions
+    [ ] "Why Clients Choose ONECALL FIELD SERVICES LLC" 4 cards show real descriptions
     [ ] Quality Assurance 3 steps show real descriptions
     [ ] "Partner You Can Trust" section shows real copy
-    [ ] Bottom CTA: "Ready to Partner with HomeProX?" + phone/email
+    [ ] Bottom CTA: "Ready to Partner with ONECALL FIELD SERVICES LLC?" + phone/email
     [ ] Benefits strip: 5 items shown when form is revealed
     [ ] Form section hidden until "Get Started" is clicked
 
@@ -1360,13 +1360,13 @@ npm run build completes with zero errors.
 
 | Item | Real Value |
 |---|---|
-| Company Name | HomeProX Home Services LLC |
-| Phone | (469) 378-9262 |
+| Company Name | ONECALL FIELD SERVICES LLC |
+| Phone | 123-456-7890 |
 | Phone Link | tel:4693789262 |
-| Email | info@homeproxsvcs.com |
+| Email | info@onecallsvcs.com |
 | Location | Collin County, Texas |
 | Service Area | All of Texas Statewide |
-| Website | https://homeproxsvcs.com |
+| Website | https://onecallsvcs.com |
 | Business Hours | Mon–Fri 8:00 AM – 5:00 PM |
 | T&C Last Updated | February 24, 2026 |
 | Copyright Year | 2026 |
@@ -1388,7 +1388,7 @@ npm run build completes with zero errors.
 | Contact hours | Mon–Fri 8AM–6PM | Mon–Fri 8AM–5PM |
 | Contact service coverage | "Collin County, Texas" | "Serving Residential & Investment Properties" |
 | Contact trust strip | Fast Response / Free Estimates / Statewide Coverage | Reliable Property Maintenance / Fast Response Times / Serving Residential & Investment Properties |
-| Contact final CTA | Generic | "Prefer to talk? Call us directly: (469) 378-9262" |
+| Contact final CTA | Generic | "Prefer to talk? Call us directly: 123-456-7890" |
 | Contact quick links | Not present | Become a Client / Become a Vendor / Request Service |
 | Vendor subtext strip | Not present | "Serving Residential Portfolios • Investment Properties • Managed Communities • Institutional Assets" |
 | Vendor benefit card titles | Generic | Consistent Work Opportunities / Fast & Transparent Payments / Professional Work Environment / Statewide Coverage Opportunities |

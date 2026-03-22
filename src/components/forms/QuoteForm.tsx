@@ -66,35 +66,36 @@ export function QuoteForm() {
     setIsSubmitting(true);
     setSubmitError('');
 
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, formSource: "quote" }),
-      })
-
-      const data = await res.json()
-
-      if (res.ok && data.success) {
-        setIsSuccess(true)
-        setFormData({
-          fullName: '',
-          companyName: '',
-          email: '',
-          phone: '',
-          propertyType: '',
-          serviceNeeded: '',
-          location: '',
-          message: '',
-          agreeToTerms: false,
-          formSource: "quote",
+      try {
+        setSubmitError('');
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...formData, formSource: "quote" }),
         })
-        setErrors({})
-      } else {
-        setSubmitError(data.error || 'Something went wrong. Please call us directly at (469) 378-9262.')
-      }
-    } catch {
-      setSubmitError('Network error. Please check your connection or call us at (469) 378-9262.')
+
+        const data = await res.json()
+
+        if (res.ok && data.success) {
+          setIsSuccess(true)
+          setFormData({
+            fullName: '',
+            companyName: '',
+            email: '',
+            phone: '',
+            propertyType: '',
+            serviceNeeded: '',
+            location: '',
+            message: '',
+            agreeToTerms: false,
+            formSource: "quote",
+          })
+          setErrors({})
+        } else {
+          setSubmitError(data.error || 'Something went wrong. Please call us directly at 123-456-7890.')
+        }
+      } catch {
+        setSubmitError('Network error. Please check your connection or call us at 123-456-7890.')
     } finally {
       setIsSubmitting(false)
     }
@@ -112,7 +113,7 @@ export function QuoteForm() {
           <div>
             <h3 className="font-display text-lg font-bold mb-2">Thank you!</h3>
             <p className="font-body">
-              We&apos;ll be in touch within 24 hours. Our team at HomeProX Services LLC will review your request and contact you shortly.
+              We&apos;ll be in touch within 24 hours. Our team at ONECALL FIELD SERVICES LLC will review your request and contact you shortly.
             </p>
           </div>
         </div>
@@ -366,7 +367,7 @@ export function QuoteForm() {
             >
               Terms and Conditions
             </Link>{" "}
-            provided by the company. By providing my phone number, I agree to receive text messages from HomeProX Services LLC.
+            provided by the company. By providing my phone number, I agree to receive text messages from ONECALL FIELD SERVICES LLC.
           </label>
         </div>
         {errors.agreeToTerms && (

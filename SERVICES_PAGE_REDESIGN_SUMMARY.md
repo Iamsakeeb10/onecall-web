@@ -140,7 +140,7 @@ Divider line:
 - ✓ Heading: "Prepared to Begin?"
 - ✓ Description text (unchanged)
 - ✓ Primary button: "Get a Free Quote" → `/quote`
-- ✓ Phone link: `tel:4693789262` → "(469) 378-9262"
+- ✓ Phone link: `tel:4693789262` → "123-456-7890"
 - ✓ Phone link styling: `text-teal hover:text-teal-light transition-colors`
 - ✓ All animations (fadeUp scroll trigger)
 

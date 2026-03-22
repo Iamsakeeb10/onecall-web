@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/Button";
 
 export function ContactSection() {
   const contactItems = [
-    { icon: Phone, label: "Phone", value: "(469) 378-9262", href: "tel:4693789262" },
-    { icon: Mail, label: "Email", value: "info@homeproxsvcs.com", href: "mailto:info@homeproxsvcs.com" },
+    { icon: Phone, label: "Phone", value: "123-456-7890", href: "tel:1234567890" },
+    { icon: Mail, label: "Email", value: "info@onecallfield.com", href: "mailto:info@onecallfield.com" },
     { icon: MapPin, label: "Location", value: "Serving Texas Statewide", href: null },
     { icon: Clock, label: "Hours", value: "Available 7 days a week", href: null },
   ];

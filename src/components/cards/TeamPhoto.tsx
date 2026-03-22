@@ -12,7 +12,7 @@ export function TeamPhoto() {
       {!imgError ? (
         <Image
           src={teamImageUrl}
-          alt="HomeProX professional team"
+          alt="ONECALL FIELD SERVICES LLC professional team"
           fill
           className="object-cover"
           onError={() => setImgError(true)}

@@ -6,7 +6,7 @@ export const testimonials: Testimonial[] = [
     name: "Sarah M.",
     role: "Property Operations Manager",
     company: "Premier Property Management",
-    content: "HomeProX has become an invaluable maintenance partner. They cut our property turnaround time significantly and maintain outstanding quality standards across our entire portfolio.",
+    content: "ONECALL FIELD SERVICES LLC has become an invaluable maintenance partner. They cut our property turnaround time significantly and maintain outstanding quality standards across our entire portfolio.",
     rating: 5,
     clientType: "property-manager",
     avatar: "/images/testimonials/avatar-1.jpg"
@@ -16,7 +16,7 @@ export const testimonials: Testimonial[] = [
     name: "David K.",
     role: "REO Asset Manager",
     company: "Regional Bank",
-    content: "Managing REO assets demands a vendor with complete reliability. HomeProX provides meticulous documentation and consistent, dependable service on every single job.",
+    content: "Managing REO assets demands a vendor with complete reliability. ONECALL FIELD SERVICES LLC provides meticulous documentation and consistent, dependable service on every single job.",
     rating: 5,
     clientType: "financial",
     avatar: "/images/testimonials/avatar-2.jpg"
@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
     name: "Jennifer L.",
     role: "Real Estate Broker",
     company: "Texas Realty Group",
-    content: "Getting properties market-ready has never been this efficient. HomeProX completes pre-listing prep quickly and delivers results that translate to stronger closing prices.",
+    content: "Getting properties market-ready has never been this efficient. ONECALL FIELD SERVICES LLC completes pre-listing prep quickly and delivers results that translate to stronger closing prices.",
     rating: 5,
     clientType: "real-estate",
     avatar: "/images/testimonials/avatar-3.jpg"
@@ -36,7 +36,7 @@ export const testimonials: Testimonial[] = [
     name: "Marcus T.",
     role: "Portfolio Investor",
     company: "Texas Investment Partners",
-    content: "Coordinating multiple properties across Texas was complicated until we partnered with HomeProX. They streamline everything with one unified point of contact and reliable outcomes.",
+    content: "Coordinating multiple properties across Texas was complicated until we partnered with ONECALL FIELD SERVICES LLC. They streamline everything with one unified point of contact and reliable outcomes.",
     rating: 5,
     clientType: "investor",
     avatar: "/images/testimonials/avatar-4.jpg"
@@ -56,7 +56,7 @@ export const testimonials: Testimonial[] = [
     name: "Brian W.",
     role: "Real Estate Agent",
     company: "Lone Star Realty",
-    content: "I confidently recommend HomeProX to every investor client. They're quick, dependable, and consistently deliver excellent results that enhance property marketability.",
+    content: "I confidently recommend ONECALL FIELD SERVICES LLC to every investor client. They're quick, dependable, and consistently deliver excellent results that enhance property marketability.",
     rating: 5,
     clientType: "real-estate",
     avatar: "/images/testimonials/avatar-6.jpg"

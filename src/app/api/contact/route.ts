@@ -29,10 +29,10 @@ export async function POST(req: Request) {
       : `New Quote Request from ${fullName}`
 
     const clientSubject = isClientOnboarding
-      ? 'We received your HomeProX client application'
+      ? 'We received your ONECALL FIELD SERVICES LLC client application'
       : isContactForm
-      ? 'We received your message — HomeProX Services LLC'
-      : 'We received your request — HomeProX Services LLC'
+      ? 'We received your message — ONECALL FIELD SERVICES LLC'
+      : 'We received your request — ONECALL FIELD SERVICES LLC'
 
     const headerLine = isClientOnboarding
       ? 'New Client Application Received'
@@ -40,15 +40,15 @@ export async function POST(req: Request) {
       ? 'New Contact Message Received'
       : 'New Quote Request Received'
 
-    // 1. Notification email to HomeProX owner
+    // 1. Notification email to ONECALL FIELD SERVICES LLC owner
     await transporter.sendMail({
-      from: `"HomeProX Website" <${process.env.EMAIL_USER}>`,
+      from: `"ONECALL FIELD SERVICES LLC Website" <${process.env.EMAIL_USER}>`,
       to: process.env.CONTACT_EMAIL,
       subject: ownerSubject,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #F5EFE0; padding: 24px; text-align: center;">
-            <h1 style="color: #14B8A6; margin: 0; font-size: 24px;">HomeProX Services LLC</h1>
+            <h1 style="color: #14B8A6; margin: 0; font-size: 24px;">ONECALL FIELD SERVICES LLC</h1>
             <p style="color: #7A6A52; margin: 8px 0 0;">${headerLine}</p>
           </div>
           <div style="background: #EDE3CC; padding: 32px;">
@@ -69,7 +69,7 @@ export async function POST(req: Request) {
             </div>
           </div>
           <div style="background: #F5EFE0; padding: 16px; text-align: center;">
-            <p style="color: #7A6A52; margin: 0; font-size: 12px;">HomeProX Services LLC — 517 WATERVIEW DR, COPPELL, TX 75019</p>
+            <p style="color: #7A6A52; margin: 0; font-size: 12px;">ONECALL FIELD SERVICES LLC — 1102 SUNFLOWER LN, PRINCETON, TX 75407</p>
           </div>
         </div>
       `,
@@ -77,18 +77,18 @@ export async function POST(req: Request) {
 
     // 2. Confirmation email to the client who submitted the form
     await transporter.sendMail({
-      from: `"HomeProX Services LLC" <${process.env.EMAIL_USER}>`,
+      from: `"ONECALL FIELD SERVICES LLC" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: clientSubject,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #F5EFE0; padding: 24px; text-align: center;">
-            <h1 style="color: #14B8A6; margin: 0; font-size: 24px;">HomeProX Services LLC</h1>
-            <p style="color: #7A6A52; margin: 8px 0 0;">Texas Statewide Property Maintenance</p>
+            <h1 style="color: #14B8A6; margin: 0; font-size: 24px;">ONECALL FIELD SERVICES LLC</h1>
+            <p style="color: #7A6A52; margin: 8px 0 0;">Texas Statewide Field Services</p>
           </div>
           <div style="background: #EDE3CC; padding: 32px;">
             <h2 style="color: #1C1410; margin: 0 0 16px;">Hi ${fullName},</h2>
-            <p style="color: #7A6A52; line-height: 1.7;">Thank you for reaching out to <strong style="color: #14B8A6;">HomeProX Services LLC</strong>. We've received your ${
+            <p style="color: #7A6A52; line-height: 1.7;">Thank you for reaching out to <strong style="color: #14B8A6;">ONECALL FIELD SERVICES LLC</strong>. We've received your ${
               isClientOnboarding ? 'client application' : isContactForm ? 'message' : 'quote request'
             } and a member of our team will be in touch within <strong style="color: #1C1410;">24 hours</strong>.</p>
             <div style="margin: 24px 0; padding: 20px; background: #F5EFE0; border-left: 4px solid #14B8A6; border-radius: 4px;">
@@ -104,11 +104,11 @@ export async function POST(req: Request) {
               }:</strong> ${location}</p>
             </div>
             <p style="color: #7A6A52; line-height: 1.7;">If you need to reach us sooner, don't hesitate to call or email directly:</p>
-            <p style="margin: 8px 0;"><a href="tel:4693789262" style="color: #14B8A6; text-decoration: none; font-weight: bold;">📞 (469) 378-9262</a></p>
-            <p style="margin: 8px 0;"><a href="mailto:info@homeproxsvcs.com" style="color: #14B8A6; text-decoration: none;">✉️ info@homeproxsvcs.com</a></p>
+            <p style="margin: 8px 0;"><a href="tel:1234567890" style="color: #14B8A6; text-decoration: none; font-weight: bold;">📞 123-456-7890</a></p>
+            <p style="margin: 8px 0;"><a href="mailto:info@onecallfield.com" style="color: #14B8A6; text-decoration: none;">✉️ info@onecallfield.com</a></p>
           </div>
           <div style="background: #F5EFE0; padding: 16px; text-align: center;">
-            <p style="color: #7A6A52; margin: 0; font-size: 12px;">© 2026 HomeProX Services LLC — 517 WATERVIEW DR, COPPELL, TX 75019. All rights reserved.</p>
+            <p style="color: #7A6A52; margin: 0; font-size: 12px;">© 2026 ONECALL FIELD SERVICES LLC — 1102 SUNFLOWER LN, PRINCETON, TX 75407. All rights reserved.</p>
           </div>
         </div>
       `,

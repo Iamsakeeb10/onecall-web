@@ -19,8 +19,8 @@ import {
 import React from "react";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Our Services | HomeProX Services LLC",
-  description: "Professional property maintenance services across Texas including plumbing, gutter cleaning, drywall repair, landscaping, and more.",
+  title: "Our Services | ONECALL FIELD SERVICES LLC",
+  description: "Professional field services across Texas including plumbing, gutter cleaning, drywall repair, landscaping, and more.",
   path: "/services"
 });
 
@@ -85,7 +85,7 @@ export default function ServicesPage() {
                 Seven Specialized Services
               </h2>
               <p className="font-body text-lg text-text-muted max-w-3xl">
-                HomeProX provides specialized support across all property maintenance areas. From preventive maintenance through urgent repairs, we deliver the right solution for your investment.
+                ONECALL FIELD SERVICES LLC provides specialized support across all property maintenance areas. From preventive maintenance through urgent repairs, we deliver the right solution for your investment.
               </p>
             </div>
           </AnimatedSection>
@@ -195,10 +195,10 @@ export default function ServicesPage() {
                 </Button>
                 <div className="h-px w-12 bg-teal my-4" />
                 <a
-                  href="tel:4693789262"
+                  href="tel:1234567890"
                   className="font-body text-teal hover:text-teal-light transition-colors"
                 >
-                  (469) 378-9262
+                  123-456-7890
                 </a>
               </div>
             </div>

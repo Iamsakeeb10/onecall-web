@@ -11,8 +11,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "HomeProX Services LLC | Texas Statewide Property Maintenance",
-  description: "Professional property maintenance services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
+  title: "ONECALL FIELD SERVICES LLC | Texas Statewide Field Services",
+  description: "Professional field services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
   path: "/"
 });
 

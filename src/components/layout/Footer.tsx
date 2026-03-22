@@ -14,7 +14,7 @@ export function Footer() {
           <div>
             <Image
               src="/images/logo.png"
-              alt="HomeProX Services LLC"
+              alt="ONECALL FIELD SERVICES LLC"
               width={220}
               height={66}
               className="h-16 w-auto object-contain mb-4"
@@ -119,26 +119,26 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="tel:4693789262"
+                  href="tel:1234567890"
                   className="font-body text-surface-300 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
                   <Phone className="w-4 h-4 text-teal" aria-hidden="true" />
-                  (469) 378-9262
+                  123-456-7890
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@homeproxsvcs.com"
+                  href="mailto:info@onecallfield.com"
                   className="font-body text-surface-300 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
                   <Mail className="w-4 h-4 text-teal" aria-hidden="true" />
-                  info@homeproxsvcs.com
+                  info@onecallfield.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-teal mt-1 flex-shrink-0" aria-hidden="true" />
                 <span className="font-body text-surface-300 text-sm">
-                  517 WATERVIEW DR, COPPELL, TX 75019<br />
+                  1102 SUNFLOWER LN, PRINCETON, TX 75407<br />
                   <span className="text-teal">Serving All of Texas</span>
                 </span>
               </li>
@@ -168,7 +168,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-body text-surface-300 text-sm text-center md:text-left">
-              &copy; 2026 HomeProX Services LLC. All rights reserved.
+              &copy; 2026 ONECALL FIELD SERVICES LLC. All rights reserved.
             </p>
             <Link
               href="/terms"

@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = generatePageMetadata({
   title: "Vendor Partners",
   description:
-    "Join the HomeProX Property Maintenance Network. Apply to become a vendor partner and receive consistent work orders across Texas residential portfolios and managed assets.",
+    "Join the ONECALL FIELD SERVICES LLC Network. Apply to become a vendor partner and receive consistent work orders across Texas residential portfolios and managed assets.",
   path: "/vendors",
 });
 

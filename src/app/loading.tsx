@@ -22,7 +22,7 @@ export default function Loading() {
         >
           <Image
             src="/images/logo.png"
-            alt="HomeProX Services LLC"
+            alt="ONECALL FIELD SERVICES LLC"
             width={240}
             height={72}
             className="h-20 w-auto object-contain mx-auto"

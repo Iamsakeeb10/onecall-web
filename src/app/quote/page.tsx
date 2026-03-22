@@ -7,9 +7,9 @@ import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Get a Quote | HomeProX Services LLC",
+  title: "Get a Quote | ONECALL FIELD SERVICES LLC",
   description:
-    "Request a free quote for property maintenance across Texas. Fill out the form and we'll get back to you within 24 hours.",
+    "Request a free quote for field services across Texas. Fill out the form and we'll get back to you within 24 hours.",
   path: "/quote",
 });
 
@@ -23,7 +23,7 @@ export default function QuotePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImageUrl}
-            alt="Get a quote from HomeProX Services"
+            alt="Get a quote from ONECALL FIELD SERVICES LLC"
             fill
             priority
             className="object-cover"
@@ -68,19 +68,19 @@ export default function QuotePage() {
                   </h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:4693789262"
+                      href="tel:1234567890"
                       className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
                     >
                       <Phone className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
-                      <span className="text-sm">(469) 378-9262</span>
+                      <span className="text-sm">123-456-7890</span>
                     </a>
 
                     <a
-                      href="mailto:info@homeproxsvcs.com"
+                      href="mailto:info@onecallfield.com"
                       className="flex items-center gap-3 font-body text-charcoal hover:text-teal transition-colors duration-300"
                     >
                       <Mail className="w-5 h-5 text-teal flex-shrink-0" aria-hidden="true" />
-                      <span className="text-sm">info@homeproxsvcs.com</span>
+                      <span className="text-sm">info@onecallfield.com</span>
                     </a>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function QuotePage() {
                 {/* Trust Badges */}
                 <div className="bg-surface-50 rounded-2xl p-6 border border-surface-200">
                   <h3 className="font-display text-sm font-bold text-charcoal uppercase tracking-wider mb-4">
-                    Why HomeProX
+                    Why ONECALL
                   </h3>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">

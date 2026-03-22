@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "404 - Page Not Found | HomeProX Services LLC",
+  title: "404 - Page Not Found | ONECALL FIELD SERVICES LLC",
   description: "The page you're looking for doesn't exist.",
   path: "/404"
 });
@@ -24,7 +24,7 @@ export default function NotFound() {
         <div className="mb-8">
           <Image
             src="/images/logo.png"
-            alt="HomeProX Services LLC"
+            alt="ONECALL FIELD SERVICES LLC"
             width={220}
             height={66}
             className="h-16 w-auto object-contain mx-auto"

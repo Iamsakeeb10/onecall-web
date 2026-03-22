@@ -135,7 +135,7 @@ export function Hero() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-surface-300">
             <span className="font-accent font-semibold text-white tracking-wide">
-              HomeProX
+              ONECALL FIELD SERVICES LLC
             </span>
             <span className="hidden sm:block w-px h-4 bg-white/20" />
             {[

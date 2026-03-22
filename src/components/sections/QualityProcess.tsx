@@ -15,7 +15,7 @@ const steps = [
     number: "02",
     icon: ShieldCheck,
     title: "Verified Team Members",
-    description: "Comprehensive screening procedures and certification validation guaranteeing only the most reliable, experienced professionals deliver HomeProX services on your properties."
+    description: "Comprehensive screening procedures and certification validation guaranteeing only the most reliable, experienced professionals deliver ONECALL FIELD SERVICES LLC services on your properties."
   },
   {
     number: "03",
@@ -32,7 +32,7 @@ export function QualityProcess() {
         <AnimatedSection variant="fadeUp">
           <SectionHeading
             title="Our Quality Assurance Process"
-            subtitle="Three-stage approach designed to maintain peak standards on every property throughout Texas."
+            subtitle="Three-stage approach designed to maintain peak standards on every property throughout Texas by ONECALL FIELD SERVICES LLC."
             align="center"
           />
         </AnimatedSection>

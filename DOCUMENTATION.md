@@ -1,4 +1,4 @@
-# HomeProX Services LLC — Next.js Website Documentation
+# ONECALL FIELD SERVICES LLC — Next.js Website Documentation
 
 **Complete technical documentation for developers and AI.** Use this file to understand, extend, or customize the site without requiring live code access.
 
@@ -10,7 +10,7 @@
 
 | Field | Value |
 |-------|--------|
-| **Company** | HomeProX Services LLC |
+| **Company** | ONECALL FIELD SERVICES LLC |
 | **Industry** | Statewide Property Maintenance, Texas |
 | **Target audience** | Property managers, banks, asset managers, real estate investors, REO specialists, portfolio owners |
 | **Value proposition** | Reliable, professional property maintenance across Texas — residential, commercial, rental, and investment properties |
@@ -127,26 +127,26 @@ src/
 | **/** | Home | Full-screen hero: solid `bg-hero-bg`, headline + 3 pill CTAs, stacked image cards (Plumbing, Electrical, General Repairs) | StatsBar, Services, Clients, WhyChooseUs, QualityProcess, Testimonials, CTABanner (dark), ContactSection | Hero (Get a Free Quote, View Our Services, Our Clients); each section links; CTABanner; ContactSection |
 | **/services** | Services overview | Solid `bg-hero-bg`, h1 "Our Services", intro paragraph | Featured service grid (ServiceCard featured), "View All Services" button | Bottom CTA area |
 | **/clients** | Who we serve | Solid `bg-hero-bg`, h1 "Our Clients", tagline | Intro, client type cards, process steps, "Ready to Partner" CTA | Learn more link; CTA section with phone/email + Get Started |
-| **/about** | About company | Solid `bg-hero-bg`, h1 "About HomeProX...", tagline | Mission, service categories, coverage map (image + overlay), regions, values, CTA block | Buttons in CTA block |
-| **/contact** | General contact | Hero with background image + dark overlay, h1 "Contact HomeProX", tagline | Two-column layout: contact details (phone, email, coverage, hours) + `ContactForm` card; trust strip; final CTA strip | Contact links; contact form submit; phone CTA in final strip |
+| **/about** | About company | Solid `bg-hero-bg`, h1 "About ONECALL FIELD SERVICES LLC...", tagline | Mission, service categories, coverage map (image + overlay), regions, values, CTA block | Buttons in CTA block |
+| **/contact** | General contact | Hero with background image + dark overlay, h1 "Contact ONECALL FIELD SERVICES LLC", tagline | Two-column layout: contact details (phone, email, coverage, hours) + `ContactForm` card; trust strip; final CTA strip | Contact links; contact form submit; phone CTA in final strip |
 | **/quote** | Dedicated quote request | Hero with background image + dark overlay, h1 "Get a Quote", tagline | Split layout: `QuoteForm` (left) + contact info panel (right); bottom info cards | QuoteForm submit; phone/email CTAs in side panel |
-| **/vendors** | Vendor partners | Solid `bg-hero-bg`, h1 "Join the HomeProX Property Maintenance Network", Apply Now / Vendor Login | Subtext strip, Why Partner (4 cards), 3-step Onboarding, Requirements (required/preferred), Services We Assign (6 icons), **Vendor Application** (4-step form in `#vendor-application`), FAQ accordion, dark CTA banner | Hero + CTA banner → #vendor-application; form Submit on Step 4 |
+| **/vendors** | Vendor partners | Solid `bg-hero-bg`, h1 "Join the ONECALL FIELD SERVICES LLC Network", Apply Now / Vendor Login | Subtext strip, Why Partner (4 cards), 3-step Onboarding, Requirements (required/preferred), Services We Assign (6 icons), **Vendor Application** (4-step form in `#vendor-application`), FAQ accordion, dark CTA banner | Hero + CTA banner → #vendor-application; form Submit on Step 4 |
 | **/terms** | Terms & Conditions | Text hero | TOC + content | — |
 | **404** | Not found | — | Message + Home / Contact buttons | — |
 
 ### 3.1 Clients Page (`/clients`)
 
-- **Purpose:** Explain who HomeProX serves (property managers, financial institutions, real estate professionals, investors) and provide a tailored onboarding path for new client partners.
+- **Purpose:** Explain who ONECALL FIELD SERVICES LLC serves (property managers, financial institutions, real estate professionals, investors) and provide a tailored onboarding path for new client partners.
 - **Hero:** Background image with dark charcoal overlay, h1 "Our Clients" and subtitle "Trusted Property Maintenance Partner Across Texas".
 - **Main sections:**
   - **Intro:** Two-column layout with narrative about long-term partnerships and a "By The Numbers" stats card (properties maintained, statewide coverage, insurance, years of experience).
   - **Client Types:** Alternating sections for each `ClientType` (text + `ClientTypeCard` on one side, `ClientImage` on the other) with `AnimatedSection` fadeLeft/fadeRight variants.
-  - **Why Clients Choose HomeProX:** Four feature cards (Reliability, Quality Workmanship, Scalable Solutions, Professional Communication).
+  - **Why Clients Choose ONECALL FIELD SERVICES LLC:** Four feature cards (Reliability, Quality Workmanship, Scalable Solutions, Professional Communication).
   - **Quality Assurance Process:** Three-step process cards (Detailed Documentation, Vendor & Team Screening, Proactive Communication) with a connecting line on desktop.
   - **Ready to Partner CTA:** Card with headline, supporting copy, phone and email links, and a primary button **"Get Started"**.
   - **Client Onboarding Section:** Anchored at `#client-onboarding`, includes:
     - A charcoal **benefits strip** ("Reliable Vendor Network", "Fast Response Times", "Work Order Transparency", "Photo Documentation", "Scalable Property Maintenance Solutions") with CheckCircle2 icons.
-    - Centered `SectionHeading` titled **"Become a HomeProX Client"**.
+    - Centered `SectionHeading` titled **"Become a ONECALL FIELD SERVICES LLC Client"**.
     - A white card containing the `ClientOnboardingForm`:
       - Captures company info, company type, website, service needs (multi-select checkboxes), portfolio size (pills), property locations, optional notes, and terms consent.
       - Submits via `POST /api/contact` with `formSource: "client-onboarding"`, mapping fields into `ContactFormData`.
@@ -236,11 +236,11 @@ src/
 
 **VendorHero** (`src/components/sections/VendorHero.tsx`)
 
-- Inner-page hero: `bg-hero-bg`, `hero-texture` overlay, h1 "Join the HomeProX Property Maintenance Network", two CTAs (Apply Now, Vendor Login) linking to `#vendor-application`.
+- Inner-page hero: `bg-hero-bg`, `hero-texture` overlay, h1 "Join the ONECALL FIELD SERVICES LLC Network", two CTAs (Apply Now, Vendor Login) linking to `#vendor-application`.
 
 **VendorWhyPartner** (`src/components/sections/VendorWhyPartner.tsx`)
 
-- Charcoal subtext strip; then section "Why Partner With HomeProX?" with 4 benefit cards (CheckCircle2, title, description). Cards: standard border/shadow and hover lift.
+- Charcoal subtext strip; then section "Why Partner With ONECALL FIELD SERVICES LLC?" with 4 benefit cards (CheckCircle2, title, description). Cards: standard border/shadow and hover lift.
 
 **VendorOnboarding** (`src/components/sections/VendorOnboarding.tsx`)
 
@@ -260,7 +260,7 @@ src/
 
 **VendorCTABanner** (`src/components/sections/VendorCTABanner.tsx`)
 
-- Dark section `bg-charcoal`, orange/40 diagonal overlay, top orange/40 rule; heading "Ready to Join the HomeProX Vendor Network?", Apply Now → `#vendor-application`.
+- Dark section `bg-charcoal`, orange/40 diagonal overlay, top orange/40 rule; heading "Ready to Join the ONECALL FIELD SERVICES LLC Vendor Network?", Apply Now → `#vendor-application`.
 
 **VendorApplicationForm** (`src/components/forms/VendorApplicationForm.tsx`)
 
@@ -442,7 +442,7 @@ Loaded in `layout.tsx` via `next/font/google`: `Outfit`, `Plus_Jakarta_Sans`; ap
 
 ### 8.3 Metadata (`src/lib/metadata.ts`)
 
-- **SITE_URL:** `process.env.NEXT_PUBLIC_SITE_URL || "https://homeproxsvcs.com"`.
+- **SITE_URL:** `process.env.NEXT_PUBLIC_SITE_URL || "https://onecallsvcs.com"`.
 - **defaultMetadata:** title template, description, keywords, authors, Open Graph, Twitter, robots.
 - **generatePageMetadata({ title, description, path }):** Returns Next.js `Metadata` with canonical, OG, Twitter overrides for each page.
 
@@ -595,7 +595,7 @@ import { QuoteForm } from "@/components/forms/QuoteForm";
 
 ```tsx
 <SectionHeading
-  title="Why Choose HomeProX"
+  title="Why Choose ONECALL FIELD SERVICES LLC"
   subtitle="Built on reliability, quality, and long-term partnerships"
   align="center"
 />
@@ -683,4 +683,4 @@ layout (Navbar + PageWrapper(main) + Footer + ScrollToTop)
 
 ---
 
-*End of documentation. For live implementation details, refer to the source files under `src/`. This document is intended for developers and AI to understand, extend, and customize the HomeProX Services LLC Next.js website.*
+*End of documentation. For live implementation details, refer to the source files under `src/`. This document is intended for developers and AI to understand, extend, and customize the ONECALL FIELD SERVICES LLC Next.js website.*

@@ -44,7 +44,7 @@ export default function VendorWhyPartner() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <SectionHeading
-              title="Why Choose HomeProX"
+              title="Why Choose ONECALL FIELD SERVICES LLC"
               subtitle="Developed for professionals delivering excellent work."
               align="center"
             />

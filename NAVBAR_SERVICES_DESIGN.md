@@ -65,7 +65,7 @@ z-index:      10 (above other elements)
 | Property | Value |
 |----------|-------|
 | **Source** | `/images/logo.png` |
-| **Alt Text** | "HomeProX Services LLC" |
+| **Alt Text** | "ONECALL FIELD SERVICES LLC" |
 | **Dimensions (static)** | 220w × 66h |
 | **Responsive Height** | sm: h-20 (80px) → lg: h-14 (56px) |
 | **Width** | auto (maintains aspect ratio) |
@@ -642,7 +642,7 @@ align-items:     center
 - **Phone Link:**
   ```
   href:          tel:4693789262
-  label:         "(469) 378-9262"
+  label:         "123-456-7890"
   color:         teal (hover → teal-light)
   font-family:   font-body
   transition:    colors 300ms

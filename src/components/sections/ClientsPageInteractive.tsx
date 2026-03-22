@@ -67,33 +67,30 @@ export default function ClientsPageInteractive() {
             animate={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            <div
-              ref={ctaSectionRef}
-              className="bg-surface-100 border border-teal/30 rounded-2xl p-8 md:p-12 text-center"
-            >
+            <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
-                Ready to Partner with HomeProX?
+                Ready to Partner with ONECALL FIELD SERVICES LLC?
               </h2>
               <p className="font-body text-lg text-text-muted mb-8 max-w-2xl mx-auto">
-                At HomeProX Services LLC, our clients are at the center of
+                At ONECALL FIELD SERVICES LLC, our clients are at the center of
                 everything we do. We are committed to exceeding expectations and
                 delivering consistent, professional property maintenance services
                 across Texas.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
                 <a
-                  href="tel:4693789262"
+                  href="tel:1234567890"
                   className="flex items-center gap-2 font-body text-charcoal hover:text-teal transition-colors duration-300"
                 >
                   <Phone className="w-5 h-5 text-teal" aria-hidden="true" />
-                  (469) 378-9262
+                  123-456-7890
                 </a>
                 <a
-                  href="mailto:info@homeproxsvcs.com"
+                  href="mailto:info@onecallfield.com"
                   className="flex items-center gap-2 font-body text-charcoal hover:text-teal transition-colors duration-300"
                 >
                   <Mail className="w-5 h-5 text-teal" aria-hidden="true" />
-                  info@homeproxsvcs.com
+                  info@onecallfield.com
                 </a>
               </div>
               <Button variant="primary" size="lg" onClick={handleGetStarted}>
@@ -179,8 +176,8 @@ export default function ClientsPageInteractive() {
                   transition={{ delay: 0.3, duration: 0.5 }}
                 >
                   <SectionHeading
-                    title="Become a HomeProX Client"
-                    subtitle="Partner with HomeProX for reliable property maintenance and field service support. Our team supports property managers, investors, asset managers, and organizations across residential and commercial portfolios."
+                    title="Become a ONECALL FIELD SERVICES LLC Client"
+                    subtitle="Partner with ONECALL FIELD SERVICES LLC for reliable property maintenance and field service support. Our team supports property managers, investors, asset managers, and organizations across residential and commercial portfolios."
                     align="center"
                   />
                 </motion.div>

@@ -16,8 +16,8 @@ import Link from "next/link";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "About Us | HomeProX Services LLC",
-  description: "Texas-based statewide property maintenance company serving property managers, investors, banks, and real estate professionals across Texas.",
+  title: "About Us | ONECALL FIELD SERVICES LLC",
+  description: "Texas-based statewide field services company serving property managers, investors, banks, and real estate professionals across Texas.",
   path: "/about"
 });
 
@@ -76,7 +76,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImageUrl}
-            alt="HomeProX professional team at work"
+            alt="ONECALL FIELD SERVICES LLC professional team at work"
             fill
             priority
             className="object-cover"
@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24">
           <div className="text-center">
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              About HomeProX Services LLC
+              About ONECALL FIELD SERVICES LLC
             </h1>
             <div className="flex justify-center my-3">
               <div className="h-px w-16 bg-teal/50" />
@@ -109,7 +109,7 @@ export default function AboutPage() {
                   Our Purpose
                 </h2>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-4">
-                  HomeProX Services LLC operates as a Texas-based statewide maintenance provider serving property owners, asset managers, institutional partners, and commercial clients. We deliver consistent, affordable, and professional maintenance solutions throughout Texas — designed to safeguard, maintain, and grow property investments.
+                  ONECALL FIELD SERVICES LLC operates as a Texas-based statewide maintenance provider serving property owners, asset managers, institutional partners, and commercial clients. We deliver consistent, affordable, and professional maintenance solutions throughout Texas — designed to safeguard, maintain, and grow property investments.
                 </p>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-6">
                   Our clients depend on us to handle regular maintenance duties, urgent service needs, transition preparations, asset preservation, and property inspections.
@@ -197,7 +197,7 @@ export default function AboutPage() {
                 Across the Entire Lone Star State
               </h2>
               <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto mb-6">
-                From the boundaries to the center, HomeProX Services LLC serves properties anywhere throughout Texas. Specialized knowledge. Regional connections. Statewide infrastructure.
+                From the boundaries to the center, ONECALL FIELD SERVICES LLC serves properties anywhere throughout Texas. Specialized knowledge. Regional connections. Statewide infrastructure.
               </p>
               <p className="font-body text-lg text-surface-200 max-w-2xl mx-auto">
                 Supporting Dallas, Houston, Austin, San Antonio, and surrounding areas
@@ -258,7 +258,7 @@ export default function AboutPage() {
                 Want to Begin?
               </h2>
               <p className="font-body text-lg text-surface-300 mb-10 max-w-2xl mx-auto">
-                Join hundreds of successful property professionals across Texas who depend on HomeProX for dependable maintenance solutions.
+                Join hundreds of successful property professionals across Texas who depend on ONECALL FIELD SERVICES LLC for dependable maintenance solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button variant="primary" size="lg" asChild>
@@ -266,10 +266,10 @@ export default function AboutPage() {
                 </Button>
                 <span className="text-surface-300">or</span>
                 <a
-                  href="tel:4693789262"
+                  href="tel:1234567890"
                   className="font-body text-teal hover:text-teal-light transition-colors"
                 >
-                  Call: (469) 378-9262
+                  Call: 123-456-7890
                 </a>
               </div>
             </div>

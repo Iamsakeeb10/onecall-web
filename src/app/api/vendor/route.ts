@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
       <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #1F2A33;">
         <div style="background: #1F2A33; padding: 24px 32px; border-radius: 8px 8px 0 0;">
           <h1 style="color: #ffffff; margin: 0; font-size: 22px;">New Vendor Application</h1>
-          <p style="color: #14B8A6; margin: 6px 0 0; font-size: 14px;">HomeProX Property Maintenance Network</p>
+          <p style="color: #14B8A6; margin: 6px 0 0; font-size: 14px;">ONECALL FIELD SERVICES LLC Network</p>
         </div>
         <div style="background: #f9f9f9; padding: 32px; border: 1px solid #e4e4e7; border-top: none; border-radius: 0 0 8px 8px;">
 
@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
 
         </div>
         <p style="text-align: center; color: #a1a1aa; font-size: 12px; margin-top: 16px;">
-          HomeProX Services LLC &nbsp;•&nbsp; Vendor Network Application
+          ONECALL FIELD SERVICES LLC &nbsp;•&nbsp; Vendor Network Application
         </p>
       </div>
     `;
@@ -100,7 +100,7 @@ export async function POST(request: NextRequest) {
     }
 
     await transporter.sendMail({
-      from: `"HomeProX Vendor Portal" <${process.env.EMAIL_USER}>`,
+      from: `"ONECALL FIELD SERVICES LLC Vendor Portal" <${process.env.EMAIL_USER}>`,
       to: toAddress,
       replyTo: email,
       subject: `New Vendor Application — ${companyName}`,

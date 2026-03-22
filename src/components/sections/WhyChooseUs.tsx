@@ -37,8 +37,8 @@ export function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection variant="fadeUp">
           <SectionHeading
-            title="Why Partner With HomeProX"
-            subtitle="Industry-leading maintenance with responsive team members, demonstrated quality outcomes, and complete professionalism."
+            title="Why Partner With ONECALL FIELD SERVICES LLC"
+            subtitle="Industry-leading field services with responsive team members, demonstrated quality outcomes, and complete professionalism."
             align="center"
             className="titleClassName text-white"
           />

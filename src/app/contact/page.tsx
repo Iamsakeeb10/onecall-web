@@ -18,9 +18,9 @@ import Link from "next/link";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Contact Us | HomeProX Services LLC",
+  title: "Contact Us | ONECALL FIELD SERVICES LLC",
   description:
-    "Contact HomeProX Services LLC. Reach us by phone, email, or send a message. Property maintenance, client partnerships, and vendor inquiries across Texas.",
+    "Contact ONECALL FIELD SERVICES LLC. Reach us by phone, email, or send a message. Field services, client partnerships, and vendor inquiries across Texas.",
   path: "/contact",
 });
 
@@ -40,7 +40,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={CONTACT_HERO_IMAGE}
-            alt="Contact HomeProX Services"
+            alt="Contact ONECALL FIELD SERVICES LLC"
             fill
             priority
             className="object-cover"
@@ -49,7 +49,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-charcoal/72 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Contact HomeProX
+            Contact ONECALL FIELD SERVICES LLC
           </h1>
           <div className="flex justify-center my-3">
             <div className="h-px w-16 bg-teal/50" />
@@ -82,10 +82,10 @@ export default function ContactPage() {
                         Phone
                       </h3>
                       <a
-                        href="tel:4693789262"
+                        href="tel:1234567890"
                         className="font-body text-lg text-teal hover:text-teal-dark transition-colors"
                       >
-                        (469) 378-9262
+                        123-456-7890
                       </a>
                       <p className="font-body text-sm text-text-muted mt-1">Available during business hours</p>
                     </div>
@@ -105,10 +105,10 @@ export default function ContactPage() {
                         Email
                       </h3>
                       <a
-                        href="mailto:info@homeproxsvcs.com"
+                        href="mailto:info@onecallfield.com"
                         className="font-body text-lg text-teal hover:text-teal-dark transition-colors"
                       >
-                        info@homeproxsvcs.com
+                        info@onecallfield.com
                       </a>
                       <p className="font-body text-sm text-text-muted mt-1">Responded within 24 hours</p>
                     </div>
@@ -197,11 +197,11 @@ export default function ContactPage() {
               Prefer to talk?
             </p>
             <a
-              href="tel:+14693789262"
+              href="tel:+11234567890"
               className="font-display text-2xl sm:text-3xl font-bold text-white hover:text-teal transition-colors duration-200 flex items-center justify-center gap-3"
             >
               <Phone className="text-teal" size={28} aria-hidden="true" />
-              (469) 378-9262
+              123-456-7890
             </a>
             <p className="font-body text-surface-300 mt-2 text-sm">
               Monday – Friday: 8:00 AM – 6:00 PM &nbsp;·&nbsp; Saturday: closed &nbsp;·&nbsp; Sunday: Closed

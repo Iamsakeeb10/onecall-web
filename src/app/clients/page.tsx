@@ -11,9 +11,9 @@ import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Our Clients | HomeProX Services LLC",
+  title: "Our Clients | ONECALL FIELD SERVICES LLC",
   description:
-    "Trusted property maintenance partner for property managers, financial institutions, real estate professionals, and investors across Texas.",
+    "Trusted field services partner for property managers, financial institutions, real estate professionals, and investors across Texas.",
   path: "/clients",
 });
 
@@ -58,7 +58,7 @@ export default function ClientsPage() {
                   Excellence Through Collaboration
                 </h2>
                 <p className="font-body text-lg text-text-muted mb-4">
-                  HomeProX Home Services LLC partners with Texas business leaders and institutions seeking consistent maintenance, measurable results, and reliable service delivery. Our track record centers on dependable operations, transparent communication, and proven success managing hundreds of properties.
+                  ONECALL FIELD SERVICES LLC partners with Texas business leaders and institutions seeking consistent maintenance, measurable results, and reliable service delivery. Our track record centers on dependable operations, transparent communication, and proven success managing hundreds of properties.
                 </p>
                 <p className="font-body text-lg text-text-muted mb-4">
                   Property professionals, banking organizations, real estate specialists, and asset managers depend on us for maintenance, emergency support, asset care, and property compliance.
@@ -168,7 +168,7 @@ export default function ClientsPage() {
         );
       })}
 
-      {/* Why Choose HomeProX Section */}
+      {/* Why Choose ONECALL FIELD SERVICES LLC Section */}
       <div
         className="h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent"
         aria-hidden="true"
@@ -190,7 +190,7 @@ export default function ClientsPage() {
                 How We Ensure Quality
               </h2>
               <p className="font-body text-lg text-text-muted text-center">
-                Every HomeProX engagement follows a rigorous three-step quality protocol designed to protect your investment and ensure professional outcomes.
+                Every ONECALL FIELD SERVICES LLC engagement follows a rigorous three-step quality protocol designed to protect your investment and ensure professional outcomes.
               </p>
             </div>
           </AnimatedSection>
@@ -210,7 +210,7 @@ export default function ClientsPage() {
                 icon: ShieldCheck,
                 title: "Vendor & Team Screening",
                 description:
-                  "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent HomeProX on your property.",
+                  "We conduct thorough background checks and verify qualifications to ensure that only professional and trustworthy team members represent ONECALL FIELD SERVICES LLC on your property.",
               },
               {
                 number: "03",

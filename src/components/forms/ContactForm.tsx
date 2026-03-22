@@ -274,7 +274,7 @@ export function ContactForm() {
               Terms and Conditions
             </Link>{" "}
             provided by the company. By providing my phone number, I agree to receive text messages from
-            HomeProX Services LLC.
+            ONECALL FIELD SERVICES LLC.
           </label>
         </div>
         {errors.agreeToTerms && (

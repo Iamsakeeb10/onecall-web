@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-Comprehensive redesign of HomeProX services layouts across the entire site:
+Comprehensive redesign of ONECALL FIELD SERVICES LLC services layouts across the entire site:
 1. **Services Page** — Dedicated page with alternating horizontal rows
 2. **Home Page Services Section** — New mixed layout with featured card + grid
 

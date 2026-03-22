@@ -55,7 +55,7 @@ Same as desktop but with responsive padding
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
 │  ├─ Seven Specialized Services                              │
-│  │  HomeProX provides specialized support across...          │
+│  │  ONECALL FIELD SERVICES LLC provides specialized support across...          │
 │  │                                                           │
 │  ┌──────────────────────────────────────────────────────────┐
 │  │ Statewide  │  Licensed  │  24-Hour                       │
@@ -75,7 +75,7 @@ Stat Strip Details:
 ```
 ┌──────────────────────────────────┐
 │ ├─ Seven Specialized Services   │
-│ │  HomeProX provides...          │
+│ │  ONECALL FIELD SERVICES LLC provides...          │
 │                                  │
 │ ┌─ Statewide                    │
 │ │  Coverage                      │
@@ -182,7 +182,7 @@ Mobile/Touch:
 │ Get a personalized...    │  │ Get a Free Quote     │ │
 │                          │  └──────────────────────┘ │
 │                          │         ─ teal ─          │
-│                          │  (469) 378-9262          │
+│                          │  123-456-7890          │
 │                          │                            │
 └────────────────────────────────────────────────────────┘
 ```
@@ -199,7 +199,7 @@ Mobile/Touch:
 │    │ Get a Free Quote    │   │
 │    └─────────────────────┘   │
 │             ─ teal ─         │
-│    (469) 378-9262            │
+│    123-456-7890            │
 └──────────────────────────────┘
 ```
 

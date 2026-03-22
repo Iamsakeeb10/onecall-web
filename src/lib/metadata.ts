@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://homeproxsvcs.com";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://onecallfield.com";
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    template: "%s | HomeProX Services LLC",
-    default: "HomeProX Services LLC | Texas Statewide Property Maintenance"
+    template: "%s | ONECALL FIELD SERVICES LLC",
+    default: "ONECALL FIELD SERVICES LLC | Texas Statewide Field Services"
   },
   description: "Professional property maintenance services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
   keywords: [
@@ -21,29 +21,29 @@ export const defaultMetadata: Metadata = {
     "drywall repair",
     "landscaping services"
   ],
-  authors: [{ name: "HomeProX Services LLC" }],
-  creator: "HomeProX Services LLC",
-  publisher: "HomeProX Services LLC",
+  authors: [{ name: "ONECALL FIELD SERVICES LLC" }],
+  creator: "ONECALL FIELD SERVICES LLC",
+  publisher: "ONECALL FIELD SERVICES LLC",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "HomeProX Services LLC",
-    title: "HomeProX Services LLC | Texas Statewide Property Maintenance",
-    description: "Professional property maintenance services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
+    siteName: "ONECALL FIELD SERVICES LLC",
+    title: "ONECALL FIELD SERVICES LLC | Texas Statewide Field Services",
+    description: "Professional field services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "HomeProX Services LLC"
+        alt: "ONECALL FIELD SERVICES LLC"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "HomeProX Services LLC | Texas Statewide Property Maintenance",
-    description: "Professional property maintenance services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
+    title: "ONECALL FIELD SERVICES LLC | Texas Statewide Field Services",
+    description: "Professional field services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
     images: [`${SITE_URL}/og-image.jpg`]
   },
   robots: {

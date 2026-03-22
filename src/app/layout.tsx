@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Bebas_Neue, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -7,10 +7,10 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { ScrollToTop } from "@/components/shared/ScrollToTop";
 import { defaultMetadata } from "@/lib/metadata";
 
-const display = Outfit({
+const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
   variable: "--font-display",
+  weight: "400",
 });
 
 const body = Plus_Jakarta_Sans({
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" className={`${bebasNeue.variable} ${body.variable}`}>
       <body className="antialiased bg-white">
         {/* Skip Navigation Link */}
         <a

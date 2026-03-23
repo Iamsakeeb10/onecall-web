@@ -10,9 +10,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "ONECALL FIELD SERVICES LLC | Texas Statewide Field Services",
+  title: "ONECALL FIELD SERVICES LLC | Reliable Property Support",
   description:
-    "Professional field services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
+    "Dependable property support services across Texas for residential and commercial portfolios.",
   path: "/",
 });
 

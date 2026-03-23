@@ -11,16 +11,16 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = generatePageMetadata({
   title: "Contact Us | ONECALL FIELD SERVICES LLC",
   description:
-    "Contact ONECALL FIELD SERVICES LLC. Reach us by phone, email, or send a message. Field services, client partnerships, and vendor inquiries across Texas.",
+    "Contact our team for service questions, partnership inquiries, and property support requests across Texas.",
   path: "/contact",
 });
 
 const CONTACT_HERO_IMAGE = "/images/about/team-photo.jpg";
 
 const TRUST_ITEMS = [
-  "Professional Property Services",
-  "Quick Turnaround",
-  "Supporting Residential & Commercial Properties",
+  "Professional Service Coordination",
+  "Responsive Turnaround",
+  "Residential & Commercial Support",
 ];
 
 export default function ContactPage() {
@@ -40,15 +40,14 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-navy/72 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Contact ONECALL FIELD SERVICES LLC
+            Contact Our Team
           </h1>
           <div className="flex justify-center my-3">
             <div className="h-px w-16 bg-steel/50" />
           </div>
           <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
-            Questions about available services, business development, or
-            partnership opportunities? Reach out to discuss your property care
-            requirements.
+            Have questions about services, timelines, or partnership options?
+            Reach out and we&apos;ll help you plan the next step.
           </p>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />

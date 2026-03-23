@@ -9,7 +9,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = generatePageMetadata({
   title: "Get a Quote | ONECALL FIELD SERVICES LLC",
   description:
-    "Request a free quote for field services across Texas. Fill out the form and we'll get back to you within 24 hours.",
+    "Request a service quote and receive a clear, timely response from our property support team.",
   path: "/quote",
 });
 
@@ -35,8 +35,8 @@ export default function QuotePage() {
             Get a Quote
           </h1>
           <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
-            Let&apos;s talk about your property needs. Fill out the form and
-            we&apos;ll respond within 24 hours.
+            Tell us what you need and we&apos;ll follow up quickly with clear
+            next steps.
           </p>
         </div>
       </section>
@@ -52,8 +52,8 @@ export default function QuotePage() {
                 </h2>
                 <p className="font-body text-base sm:text-lg text-text-muted mb-10">
                   Tell us about your property needs and we&apos;ll provide a
-                  customized quote within 24 hours. No hidden fees, just
-                  transparent and professional pricing.
+                  customized quote with clear scope details and transparent
+                  pricing.
                 </p>
                 <QuoteForm />
               </AnimatedSection>
@@ -135,7 +135,7 @@ export default function QuotePage() {
                 icon: Clock,
                 title: "1. Quick Review",
                 description:
-                  "Our team reviews your request and checks coverage details.",
+                  "Our team reviews your request and confirms service details.",
               },
               {
                 icon: Tag,

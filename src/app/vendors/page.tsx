@@ -21,7 +21,7 @@ const vendorPageAnchors = [
 export const metadata: Metadata = generatePageMetadata({
   title: "Vendor Partners",
   description:
-    "Join the ONECALL FIELD SERVICES LLC Network. Apply to become a vendor partner and receive consistent work orders across Texas residential portfolios and managed assets.",
+    "Join our vendor network to access recurring property service opportunities and reliable coordination across Texas.",
   path: "/vendors",
 });
 

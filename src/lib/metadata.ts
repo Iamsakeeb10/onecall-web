@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://onecallfield.com";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://onecallfield.com";
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: "%s | ONECALL FIELD SERVICES LLC",
-    default: "ONECALL FIELD SERVICES LLC | Texas Statewide Field Services"
+    default: "ONECALL FIELD SERVICES LLC | Reliable Property Support",
   },
-  description: "Professional property maintenance services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
+  description:
+    "Dependable property support services across Texas for residential and commercial portfolios.",
   keywords: [
     "property maintenance",
     "Texas property services",
@@ -19,7 +21,7 @@ export const defaultMetadata: Metadata = {
     "property cleaning",
     "gutter cleaning",
     "drywall repair",
-    "landscaping services"
+    "landscaping services",
   ],
   authors: [{ name: "ONECALL FIELD SERVICES LLC" }],
   creator: "ONECALL FIELD SERVICES LLC",
@@ -29,22 +31,24 @@ export const defaultMetadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "ONECALL FIELD SERVICES LLC",
-    title: "ONECALL FIELD SERVICES LLC | Texas Statewide Field Services",
-    description: "Professional field services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
+    title: "ONECALL FIELD SERVICES LLC | Reliable Property Support",
+    description:
+      "Dependable property support services across Texas for residential and commercial portfolios.",
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "ONECALL FIELD SERVICES LLC"
-      }
-    ]
+        alt: "ONECALL FIELD SERVICES LLC",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ONECALL FIELD SERVICES LLC | Texas Statewide Field Services",
-    description: "Professional field services across Texas. Serving property managers, investors, banks, and REO departments statewide.",
-    images: [`${SITE_URL}/og-image.jpg`]
+    title: "ONECALL FIELD SERVICES LLC | Reliable Property Support",
+    description:
+      "Dependable property support services across Texas for residential and commercial portfolios.",
+    images: [`${SITE_URL}/og-image.jpg`],
   },
   robots: {
     index: true,
@@ -54,15 +58,15 @@ export const defaultMetadata: Metadata = {
       follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
-      "max-snippet": -1
-    }
-  }
+      "max-snippet": -1,
+    },
+  },
 };
 
 export function generatePageMetadata({
   title,
   description,
-  path
+  path,
 }: {
   title: string;
   description: string;
@@ -75,18 +79,18 @@ export function generatePageMetadata({
     title,
     description,
     alternates: {
-      canonical: url
+      canonical: url,
     },
     openGraph: {
       ...defaultMetadata.openGraph,
       url,
       title,
-      description
+      description,
     },
     twitter: {
       ...defaultMetadata.twitter,
       title,
-      description
-    }
+      description,
+    },
   };
 }

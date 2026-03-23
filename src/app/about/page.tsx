@@ -19,7 +19,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = generatePageMetadata({
   title: "About Us | ONECALL FIELD SERVICES LLC",
   description:
-    "Texas-based statewide field services company serving property managers, investors, banks, and real estate professionals across Texas.",
+    "Learn about our Texas-based team delivering reliable property support for residential and commercial operations.",
   path: "/about",
 });
 
@@ -102,12 +102,12 @@ export default function AboutPage() {
               <div className="h-px w-16 bg-steel/50" />
             </div>
             <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
-              Rooted in Texas. Serving statewide. Engineered for professional
-              operations.
+              Built in Texas. Supporting properties statewide with dependable
+              service coordination.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="primary" size="md" asChild>
-                <Link href="/quote">Get a Free Quote</Link>
+                <Link href="/quote">Request a Quote</Link>
               </Button>
               <Button
                 variant="secondary"
@@ -131,7 +131,7 @@ export default function AboutPage() {
               <div>
                 <SectionHeading
                   title="Our Purpose"
-                  subtitle="Supporting property owners, institutional partners, and commercial teams with consistent, professional field execution."
+                  subtitle="Helping property owners and business teams with consistent, professional support and clear communication."
                   align="left"
                   className="mb-6"
                 />
@@ -211,7 +211,7 @@ export default function AboutPage() {
           <AnimatedSection variant="fadeUp">
             <SectionHeading
               title="Our Capabilities"
-              subtitle="Complete property maintenance systems throughout Texas — providing targeted expertise in interior solutions, exterior offerings, and cleanout services."
+              subtitle="Comprehensive property support across Texas, including interior, exterior, and cleanout-focused service categories."
               align="center"
               className="mb-12"
             />
@@ -271,7 +271,7 @@ export default function AboutPage() {
             <AnimatedSection variant="fadeRight">
               <SectionHeading
                 title="Across the Entire Lone Star State"
-                subtitle="From the boundaries to the center, ONECALL FIELD SERVICES LLC serves properties throughout Texas with regional knowledge and statewide execution."
+                subtitle="From major metros to surrounding regions, our team supports properties with consistent statewide execution."
                 align="left"
                 className="mb-8"
               />
@@ -347,13 +347,12 @@ export default function AboutPage() {
                 Want to Begin?
               </h2>
               <p className="font-body text-lg text-pearl-300 mb-10 max-w-2xl mx-auto">
-                Join hundreds of successful property professionals across Texas
-                who depend on ONECALL FIELD SERVICES LLC for dependable
-                maintenance solutions.
+                Partner with a responsive team that helps keep your properties
+                running smoothly with dependable maintenance support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button variant="primary" size="lg" asChild>
-                  <Link href="/quote">Get a Free Quote</Link>
+                  <Link href="/quote">Request a Quote</Link>
                 </Button>
                 <Button
                   variant="secondary"

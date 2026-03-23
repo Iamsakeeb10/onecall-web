@@ -39,7 +39,7 @@ export function WhyChooseUs() {
         <AnimatedSection variant="fadeUp">
           <SectionHeading
             title="Why Choose Us"
-            subtitle="Industry-leading field services with responsive team members, demonstrated quality outcomes, and complete professionalism."
+            subtitle="Dependable service delivery with responsive communication, consistent quality, and professional care."
             align="center"
           />
         </AnimatedSection>

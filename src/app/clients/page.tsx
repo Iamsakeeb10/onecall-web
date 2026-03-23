@@ -20,7 +20,7 @@ import Link from "next/link";
 export const metadata: Metadata = generatePageMetadata({
   title: "Our Clients | ONECALL FIELD SERVICES LLC",
   description:
-    "Trusted field services partner for property managers, financial institutions, real estate professionals, and investors across Texas.",
+    "Learn how we support client teams with dependable property service delivery and transparent coordination across Texas.",
   path: "/clients",
 });
 
@@ -104,7 +104,7 @@ export default function ClientsPage() {
             <div className="h-px w-16 bg-steel/50" />
           </div>
           <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto">
-            Trusted Property Maintenance Partner Across Texas
+            Trusted Property Support Partner Across Texas
           </p>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
@@ -116,7 +116,7 @@ export default function ClientsPage() {
             <AnimatedSection variant="fadeLeft">
               <div>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-6">
-                  Built for Long-Term Client Partnerships
+                  Built for Long-Term Partnerships
                 </h2>
                 <p className="font-body text-lg text-text-muted mb-4">
                   ONECALL FIELD SERVICES LLC supports organizations that need
@@ -183,7 +183,7 @@ export default function ClientsPage() {
           <AnimatedSection variant="fadeUp">
             <SectionHeading
               title="Client Segments We Serve"
-              subtitle="Every client type receives tailored maintenance workflows, transparent reporting, and dependable field execution."
+              subtitle="Every client segment receives tailored workflows, clear reporting, and dependable service execution."
               align="center"
             />
           </AnimatedSection>
@@ -303,7 +303,7 @@ export default function ClientsPage() {
           <AnimatedSection variant="fadeUp">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-4">
-                Ready to Partner with ONECALL FIELD SERVICES LLC?
+                Ready to Partner?
               </h2>
               <p className="font-body text-lg text-text-muted mb-8">
                 Connect with our team to start a reliable, transparent
@@ -357,7 +357,7 @@ export default function ClientsPage() {
           <AnimatedSection variant="fadeUp">
             <SectionHeading
               title="Become a ONECALL FIELD SERVICES LLC Client"
-              subtitle="Tell us about your portfolio and service needs. Our team will follow up quickly with a tailored onboarding path."
+              subtitle="Tell us about your portfolio and service goals, and our team will follow up with a tailored onboarding path."
               align="center"
             />
           </AnimatedSection>

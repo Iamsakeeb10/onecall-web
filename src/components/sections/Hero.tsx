@@ -7,9 +7,9 @@ import Link from "next/link";
 
 /* ─── Trust Items ────────────────────────────────────────── */
 const TRUST = [
-  { icon: ShieldCheck, label: "Fully Protected & Bonded" },
-  { icon: MapPin, label: "Complete State Coverage" },
-  { icon: Clock, label: "Prompt Service Delivery" },
+  { icon: ShieldCheck, label: "Licensed & Insured Professionals" },
+  { icon: MapPin, label: "Statewide Service Areas" },
+  { icon: Clock, label: "Responsive Scheduling" },
 ];
 
 const HERO_IMAGE = "/images/heroes/hero-services.jpg";
@@ -71,7 +71,7 @@ export function Hero() {
                   className={`h-1.5 w-1.5 rounded-full bg-steel ${reduced ? "" : "animate-pulse"}`}
                   aria-hidden="true"
                 />
-                Texas Statewide Property Maintenance
+                Trusted Property Support Across Texas
               </span>
             </motion.div>
 
@@ -81,7 +81,7 @@ export function Hero() {
               animate="visible"
               className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.04]"
             >
-              Expert Property Maintenance Across Texas
+              Reliable Property Services for Every Portfolio
             </motion.h1>
 
             <motion.p
@@ -90,8 +90,8 @@ export function Hero() {
               animate="visible"
               className="mt-5 text-base sm:text-lg text-pearl-200 max-w-2xl leading-relaxed"
             >
-              Institutional-grade field services for residential, multifamily,
-              and commercial portfolios with one accountable statewide partner.
+              Streamlined maintenance and field support for residential and
+              commercial properties with one accountable statewide team.
             </motion.p>
 
             <motion.div
@@ -104,7 +104,7 @@ export function Hero() {
                 href="/quote"
                 className="group inline-flex items-center gap-2 rounded-full bg-steel px-8 py-3 text-sm sm:text-base font-accent font-semibold text-white transition-all duration-300 hover:bg-steel-dark hover:-translate-y-0.5 hover:shadow-steel-glow"
               >
-                Get a Free Quote
+                Request a Service Quote
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
 
@@ -112,7 +112,7 @@ export function Hero() {
                 href="/services"
                 className="inline-flex items-center gap-2 rounded-full border border-pearl-300/55 bg-white/10 px-8 py-3 text-sm sm:text-base font-accent font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-pearl-200"
               >
-                View Our Services
+                Explore Services
               </Link>
             </motion.div>
 
@@ -152,9 +152,9 @@ export function Hero() {
             </span>
 
             {[
-              { sep: true, text: "Texas-Licensed & Insured" },
-              { sep: true, text: "Statewide Dispatch Network" },
-              { sep: false, text: "Residential · Commercial · HOA" },
+              { sep: true, text: "Licensed & Insured Team" },
+              { sep: true, text: "Statewide Service Coordination" },
+              { sep: false, text: "Residential · Commercial · Multi-Site" },
             ].map(({ sep, text }) => (
               <span key={text} className="flex items-center gap-x-8">
                 {sep && (

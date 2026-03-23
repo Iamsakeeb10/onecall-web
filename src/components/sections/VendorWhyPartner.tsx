@@ -1,6 +1,6 @@
-import { CheckCircle2 } from "lucide-react";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
   {
@@ -44,8 +44,8 @@ export default function VendorWhyPartner() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection variant="fadeUp">
             <SectionHeading
-              title="Why Choose ONECALL FIELD SERVICES LLC"
-              subtitle="Developed for professionals delivering excellent work."
+              title="Why Partner With Us"
+              subtitle="Built for professionals who value consistency, quality, and clear communication."
               align="center"
             />
           </AnimatedSection>

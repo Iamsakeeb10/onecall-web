@@ -11,7 +11,7 @@ import Link from "next/link";
 export const metadata: Metadata = generatePageMetadata({
   title: "Our Services | ONECALL FIELD SERVICES LLC",
   description:
-    "Professional field services across Texas including plumbing, gutter cleaning, drywall repair, landscaping, and more.",
+    "Explore our property support services designed for reliable residential and commercial maintenance across Texas.",
   path: "/services",
 });
 
@@ -40,12 +40,12 @@ export default function ServicesPage() {
             <div className="h-px w-16 bg-steel/50" />
           </div>
           <p className="font-body text-lg text-pearl-200 max-w-3xl mx-auto">
-            Statewide property maintenance solutions designed for property
-            managers, banks, investors, and commercial operators across Texas.
+            Practical property support services tailored for residential and
+            commercial operations across Texas.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="primary" size="md" asChild>
-              <Link href="/quote">Get a Free Quote</Link>
+              <Link href="/quote">Request a Quote</Link>
             </Button>
             <Button
               variant="secondary"
@@ -65,7 +65,7 @@ export default function ServicesPage() {
           <AnimatedSection variant="fadeUp">
             <SectionHeading
               title="Full-Service Property Maintenance"
-              subtitle="From routine upkeep to urgent field requests, our team delivers consistent workmanship, transparent updates, and reliable turnaround times."
+              subtitle="From routine maintenance to urgent service needs, our team delivers consistent quality and clear updates."
               align="center"
             />
           </AnimatedSection>
@@ -106,7 +106,7 @@ export default function ServicesPage() {
           <AnimatedSection variant="fadeUp">
             <SectionHeading
               title="Featured Services"
-              subtitle="High-demand solutions trusted by partners throughout Texas."
+              subtitle="Popular service options selected by clients across Texas."
               align="center"
             />
           </AnimatedSection>
@@ -130,7 +130,7 @@ export default function ServicesPage() {
           <AnimatedSection variant="fadeUp">
             <SectionHeading
               title="All Services"
-              subtitle="Explore our complete maintenance lineup for residential, commercial, rental, and investment properties."
+              subtitle="Explore our complete service lineup for residential, commercial, rental, and investment properties."
               align="center"
             />
           </AnimatedSection>

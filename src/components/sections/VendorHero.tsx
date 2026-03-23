@@ -18,13 +18,15 @@ export default function VendorHero() {
       <div className="absolute inset-0 bg-navy/72 z-10" />
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 sm:py-20 lg:py-24 text-center">
         <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-          Join the ONECALL FIELD SERVICES LLC Property Maintenance Network
+          Join Our Property Service Vendor Network
         </h1>
         <div className="flex justify-center my-3">
           <div className="h-px w-16 bg-steel/50" />
         </div>
         <p className="font-body text-lg text-pearl-200 max-w-2xl mx-auto mb-10">
-          Partner with a trusted network built on consistent opportunity, dependable collaborations, and real growth potential throughout Texas property services.
+          Partner with a trusted network focused on consistent opportunities,
+          dependable coordination, and long-term growth across Texas service
+          areas.
         </p>
         <Button
           variant="primary"
@@ -32,7 +34,7 @@ export default function VendorHero() {
           asChild
           className="inline-flex items-center justify-center px-10 py-4 rounded-full text-base sm:text-lg shadow-steel-glow hover:shadow-card-hover"
         >
-          <a href="#vendor-application">Apply Now</a>
+          <a href="#vendor-application">Apply as a Vendor</a>
         </Button>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />

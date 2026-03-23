@@ -34,18 +34,25 @@ export function ServicesSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section id="services" className="py-24 lg:py-32 bg-white relative overflow-hidden">
+    <section
+      id="services"
+      className="py-24 lg:py-32 bg-white relative overflow-hidden"
+    >
       {/* Subtle background accent */}
-      <div className="absolute inset-0 opacity-3 pointer-events-none" style={{
-        backgroundImage: "radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.1) 0%, transparent 50%)"
-      }} />
-      
+      <div
+        className="absolute inset-0 opacity-3 pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.1) 0%, transparent 50%)",
+        }}
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <AnimatedSection variant="fadeUp">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <SectionHeading
               title="Service Offerings"
-              subtitle="Specialized maintenance solutions tailored to address comprehensive property requirements across Texas"
+              subtitle="Practical property support solutions designed for everyday residential and commercial needs"
               align="left"
             />
             <Link
@@ -108,7 +115,7 @@ export function ServicesSection() {
                           aria-hidden="true"
                         />
                       </div>
-                      
+
                       {/* Title */}
                       <h3 className="font-display text-lg font-bold text-navy mb-2 line-clamp-2">
                         {service.title}

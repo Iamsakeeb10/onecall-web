@@ -9,14 +9,14 @@ import { useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Client", href: "/clients" },
-  { label: "Vendor", href: "/vendors" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Our Services", href: "/services" },
+  { label: "Clients", href: "/clients" },
+  { label: "Service Partners", href: "/vendors" },
+  { label: "About Us", href: "/about" },
+  { label: "Get in Touch", href: "/contact" },
 ];
 
-const ctaLink = { label: "Get a Quote", href: "/quote" };
+const ctaLink = { label: "Request a Quote", href: "/quote" };
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -83,9 +83,17 @@ export function Navbar() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, height: 0 }}
-            animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, height: "auto" }}
-            exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, height: 0 }}
+            initial={
+              shouldReduceMotion ? { opacity: 1 } : { opacity: 0, height: 0 }
+            }
+            animate={
+              shouldReduceMotion
+                ? { opacity: 1 }
+                : { opacity: 1, height: "auto" }
+            }
+            exit={
+              shouldReduceMotion ? { opacity: 0 } : { opacity: 0, height: 0 }
+            }
             transition={{ duration: 0.3 }}
             className="lg:hidden bg-white border-t border-pearl-200"
           >
@@ -96,7 +104,9 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block font-accent text-lg py-2 transition-colors duration-300 ${
-                    pathname === link.href ? "text-steel" : "text-navy hover:text-steel"
+                    pathname === link.href
+                      ? "text-steel"
+                      : "text-navy hover:text-steel"
                   }`}
                 >
                   {link.label}

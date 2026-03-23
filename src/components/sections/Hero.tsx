@@ -47,7 +47,7 @@ export function Hero() {
           sizes="100vw"
         />
       </div>
-      <div className="absolute inset-0 z-10 bg-navy/70" aria-hidden="true" />
+      <div className="absolute inset-0 z-10 bg-navy/60" aria-hidden="true" />
       <div
         className="absolute inset-0 z-10 bg-gradient-to-r from-navy/85 via-navy/70 to-navy/80"
         aria-hidden="true"
